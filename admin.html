@@ -33,7 +33,7 @@
 
     <!-- ---------- -->
 
-    <div class="container-fluid">
+    <div class="container">
         <h2>Selectionner le jour</h2>
         <!-- days nav-bar -->
         <ul class="nav nav-pills" role="tablist">
@@ -75,47 +75,47 @@
                     </div>
                     <div id="mealNumberDiv">
                         <label>Numéro du repas:</label>
-                        <select>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="4">5</option>
-                            <option value="4">6</option>
-                            <option value="4">7</option>
+                        <select id="mealNumbSelection">
+                            <option value="meal1">1</option>
+                            <option value="meal2">2</option>
+                            <option value="meal3">3</option>
+                            <option value="meal4">4</option>
+                            <option value="meal5">5</option>
+                            <option value="meal6">6</option>
+                            <option value="meal7">7</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-default" onclick="add()">Ajouter</button>
+                    <button type="submit" class="btn btn-success" onclick="addDay1()">Ajouter</button>
                 </div>
                 <div id="meals">
                     <div class="showBorders">Repas 1:
-                        <ul class="showBorders" id="day1Meal1">
+                        <ul class="showBorders" id="day1meal1">
                             <li>Poulet 200g</li>
                             <li>Haricots 100g</li>
                         </ul>
                     </div>
                     <div class="showBorders">Repas 2:
-                        <ul class="showBorders" id="day1Meal2">
+                        <ul class="showBorders" id="day1meal2">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 3:
-                        <ul class="showBorders" id="day1Meal3">
+                        <ul class="showBorders" id="day1meal3">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 4:
-                        <ul class="showBorders" id="day1Meal4">
+                        <ul class="showBorders" id="day1meal4">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 5:
-                        <ul class="showBorders" id="day1Meal5">
+                        <ul class="showBorders" id="day1meal5">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 6:
-                        <ul class="showBorders" id="day1Meal6">
+                        <ul class="showBorders" id="day1meal6">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 7:
-                        <ul class="showBorders" id="day1Meal7">
+                        <ul class="showBorders" id="day1meal7">
                         </ul>
                     </div>
                 </div>
@@ -146,7 +146,6 @@
                             <option value="unit">Unité</option>
                         </select>
                     </div>
-                    <div id=""> </div>
                     <div id="mealNumberDiv">
                         <label>Numéro du repas:</label>
                         <select>
@@ -154,42 +153,42 @@
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="4">5</option>
-                            <option value="4">6</option>
-                            <option value="4">7</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-default" onclick="add()">Ajouter</button>
+                    <button type="submit" class="btn btn-success" onclick="addDay2()">Ajouter</button>
                 </div>
                 <div id="meals">
                     <div class="showBorders">Repas 1:
-                        <ul class="showBorders" id="day1Meal1">
-                            <li>Poulet 200g</li>
-                            <li>Haricots 100g</li>
+                        <ul class="showBorders" id="day2Meal1">
+                            <li>Patates 200g</li>
+                            <li>Oeufs 100g</li>
                         </ul>
                     </div>
                     <div class="showBorders">Repas 2:
-                        <ul class="showBorders" id="day1Meal2">
+                        <ul class="showBorders" id="day2Meal2">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 3:
-                        <ul class="showBorders" id="day1Meal3">
+                        <ul class="showBorders" id="day2Meal3">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 4:
-                        <ul class="showBorders" id="day1Meal4">
+                        <ul class="showBorders" id="day2Meal4">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 5:
-                        <ul class="showBorders" id="day1Meal5">
+                        <ul class="showBorders" id="day2Meal5">
                         </ul>
                     </div>
                     <div class="showBorders">Repas 6:
-                        <ul class="showBorders" id="day1Meal6">
+                        <ul class="showBorders" id="day2Meal6">
                         </ul>
                     </div>
-                    <div class="showBorders" id="meal7">Repas 7:
-                        <ul class="showBorders" id="day1Meal7">
+                    <div class="showBorders">Repas 7:
+                        <ul class="showBorders" id="day2Meal7">
                         </ul>
                     </div>
                 </div>
