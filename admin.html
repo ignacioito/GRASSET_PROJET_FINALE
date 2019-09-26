@@ -3,10 +3,14 @@
 
 <head>
     <title>BF21 - Administrateur</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <!-- Latest compiled JavaScript -->
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/admin.js"></script>
     <link rel="stylesheet" type="text/css" href="css/headerStyle.css">
     <link rel="stylesheet" type="text/css" href="css/adminStyle.css">
@@ -32,20 +36,93 @@
     <div class="container-fluid">
         <h2>Selectionner le jour</h2>
         <!-- days nav-bar -->
-        <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#day1">Jour 1</a></li>
-            <li><a data-toggle="tab" href="#day2">Jour 2</a></li>
-            <li><a data-toggle="tab" href="#day3">Jour 3</a></li>
-            <li><a data-toggle="tab" href="#day4">Jour 4</a></li>
-            <li><a data-toggle="tab" href="#day5">Jour 5</a></li>
-            <li><a data-toggle="tab" href="#day6">Jour 6</a></li>
-            <li><a data-toggle="tab" href="#day7">Jour 7</a></li>
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#day1">Jour 1</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day2">Jour 2</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day3">Jour 3</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day4">Jour 4</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day5">Jour 5</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day6">Jour 6</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day7">Jour 7</a></li>
         </ul>
         <!-- days -->
         <div class="tab-content showBorders">
             <!-- day1 -->
-            <div id="day1" class="tab-pane fade in active">
+            <div id="day1" class="tab-pane container active">
                 <h2>Jour 1</h2>
+                <div class="form-group">
+                    <div id="ingTypeDiv">
+                        <label>Type de l'aliment:</label>
+                        <select>
+                            <option value="meat">Viande</option>
+                            <option value="vegetable">Legume</option>
+                            <option value="fruit">Fruit</option>
+                        </select>
+                    </div>
+                    <div id="ingDiv">
+                        <label for="ingName">Aliment:</label>
+                        <input type="text" name="ingName" id="ingName">
+                    </div>
+                    <div id="qttDiv">
+                        <label for="foodQtt">Quantite:</label>
+                        <input type="text" name="foodQtt" class="qttInp">
+                        <select>
+                            <option value="g">g</option>
+                            <option value="lb">lb</option>
+                            <option value="L">L</option>
+                            <option value="unit">Unité</option>
+                        </select>
+                    </div>
+                    <div id="mealNumberDiv">
+                        <label>Numéro du repas:</label>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                            <option value="4">7</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-default" onclick="add()">Ajouter</button>
+                </div>
+                <div id="meals">
+                    <div class="showBorders">Repas 1:
+                        <ul class="showBorders" id="day1Meal1">
+                            <li>Poulet 200g</li>
+                            <li>Haricots 100g</li>
+                        </ul>
+                    </div>
+                    <div class="showBorders">Repas 2:
+                        <ul class="showBorders" id="day1Meal2">
+                        </ul>
+                    </div>
+                    <div class="showBorders">Repas 3:
+                        <ul class="showBorders" id="day1Meal3">
+                        </ul>
+                    </div>
+                    <div class="showBorders">Repas 4:
+                        <ul class="showBorders" id="day1Meal4">
+                        </ul>
+                    </div>
+                    <div class="showBorders">Repas 5:
+                        <ul class="showBorders" id="day1Meal5">
+                        </ul>
+                    </div>
+                    <div class="showBorders">Repas 6:
+                        <ul class="showBorders" id="day1Meal6">
+                        </ul>
+                    </div>
+                    <div class="showBorders">Repas 7:
+                        <ul class="showBorders" id="day1Meal7">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- day2 -->
+            <div id="day2" class="tab-pane container">
+                <h2>Jour 2</h2>
                 <div class="form-group">
                     <div id="ingTypeDiv">
                         <label>Type de l'aliment:</label>
@@ -85,29 +162,29 @@
                     <button type="submit" class="btn btn-default" onclick="add()">Ajouter</button>
                 </div>
                 <div id="meals">
-                    <div class="showBorders" id="meal1">Repas 1:
+                    <div class="showBorders">Repas 1:
                         <ul class="showBorders" id="day1Meal1">
                             <li>Poulet 200g</li>
                             <li>Haricots 100g</li>
                         </ul>
                     </div>
-                    <div class="showBorders" id="meal2">Repas 2:
+                    <div class="showBorders">Repas 2:
                         <ul class="showBorders" id="day1Meal2">
                         </ul>
                     </div>
-                    <div class="showBorders" id="meal3">Repas 3:
+                    <div class="showBorders">Repas 3:
                         <ul class="showBorders" id="day1Meal3">
                         </ul>
                     </div>
-                    <div class="showBorders" id="meal4">Repas 4:
+                    <div class="showBorders">Repas 4:
                         <ul class="showBorders" id="day1Meal4">
                         </ul>
                     </div>
-                    <div class="showBorders" id="meal5">Repas 5:
+                    <div class="showBorders">Repas 5:
                         <ul class="showBorders" id="day1Meal5">
                         </ul>
                     </div>
-                    <div class="showBorders" id="meal6">Repas 6:
+                    <div class="showBorders">Repas 6:
                         <ul class="showBorders" id="day1Meal6">
                         </ul>
                     </div>
@@ -116,10 +193,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <!-- day2 -->
-            <div id="day2" class="tab-pane fade">
-                <h2>Jour 2</h2>
             </div>
             <!-- day3 -->
             <div id="day3" class="tab-pane fade">
