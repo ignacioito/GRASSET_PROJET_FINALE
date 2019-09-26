@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>BF21 - Acceuil</title>
+    <title>BF21 - Identification</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!-- jQuery library -->
@@ -28,13 +28,26 @@
             <a class="navbar-brand" href="login.html">Login</a>
         </nav>
     </header>
-    <br>
-    <br>
-    <h2>Qui sommes-nous ?</h2>
-    <img id="healthy-img" alt="healthy food" src="img/healthy.jpg">
-    <p>Nous sommes BF21, une entreprise de conditionnement physique et mentale. <br>Nous prenons soin de vous planifier
-        un
-        menu alimentaire selon vos besoins: prise de masse, perte de poids, compétition.</p>
+    <div class="container">
+        <div class="text-center">
+            <form method="post">
+                <h2 class="text-center">Renseignements Médicaux</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>
+                <a class="clearfix">
+                    <a href="#">Forgot Password?</a>
+                </a>
+        </div>
+    </div>
+    </form>
+    </div>
 </body>
 
 </html>
