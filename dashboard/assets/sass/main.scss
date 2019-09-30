@@ -27,6 +27,8 @@ body {
   top: 0;
   bottom: 0;
 
+  
+
 
   nav{
       padding-top: 150px; 
@@ -155,4 +157,9 @@ input:focus,
 textarea:focus{
   outline: none;
   background: $greyLight;
+}
+
+.logo-img{
+  width: 100px;
+  height: 100px;
 }
