@@ -42,61 +42,12 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
+
             </ul>
 
-            <!-- SEARCH FORM -->
-            <form class="form-inline ml-3">
-                <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <div class="input-group-append">
-                        <button class="btn btn-navbar" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-
-            <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
 
 
-                <!-- Notifications Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-bell"></i>
-                        <span class="badge badge-warning navbar-badge">15</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header">15 Notifications</span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> 4 new messages
-                            <span class="float-right text-muted text-sm">3 mins</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> 8 friend requests
-                            <span class="float-right text-muted text-sm">12 hours</s pan>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-file mr-2"></i> 3 new reports
-                            <span class="float-right text-muted text-sm">2 days</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
-                        <i class="fas fa-th-large"></i>
-                    </a>
-                </li>
-            </ul>
+
         </nav>
         <!-- /.navbar -->
 
@@ -104,8 +55,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="dashboard.html" class="brand-link">
-                <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
+                <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
+                    style="opacity: .8;">
                 <span class="brand-text font-weight-light">Admin BF21</span>
             </a>
 
@@ -117,9 +68,66 @@
                         <img src="dist/img/user2-160x160.jpeg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Ignacio Ito</a>
+                        <p class="d-block text-white">Ignacio Ito</p>
                     </div>
                 </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                       with font-awesome or any other icon font library -->
+                        <!-- Dashboard -->
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link">
+                                <i class="nav-icon fas fa-home"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <!-- Sidebar create plan -->
+                        <li class="nav-item">
+                            <a href="createplan.html" class="nav-link">
+                                <i class="nav-icon fas fa-calendar-plus"></i>
+                                <p>
+                                    Créer un Plan
+                                </p>
+                            </a>
+                        </li>
+                        <!-- Sidebar Gestion des Clients -->
+                        <li class="nav-item">
+                            <a href="manageclient.html" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Gestion des Clients
+                                </p>
+                            </a>
+                        </li>
+
+                        <!-- Sidebar Gestion des Aliments -->
+                        <li class="nav-item">
+                            <a href="manageingredients.html" class="nav-link">
+                                <i class="nav-icon fas fa-utensils"></i>
+                                <p>
+                                    Gestion des Aliments
+                                </p>
+                            </a>
+                        </li>
+
+                        <!-- Sidebar Profil -->
+                        <li class="nav-item">
+                            <a href="manageingredients.html" class="nav-link">
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>
+                                    Profil
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
         </aside>
 
@@ -130,13 +138,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Dashboard BF21 | Conditionnement physique et mental</h1>
-                        </div><!-- /.col -->
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Gestion des Clients</li>
-                            </ol>
+                            <h1 class="m-0 text-dark">Gestion des Clients</h1>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
@@ -144,6 +146,210 @@
             <!-- /.content-header -->
 
             <!-- Main content -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Tableau des Clients</h3>
+            
+                            <div class="card-tools">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+            
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0" style="height: 900px;">
+                            <table class="table table-head-fixed">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>User</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Reason</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>John Doe</td>
+                                        <td>10/01/2019</td>
+                                        <td><span class="tag tag-success">Non traité</span></td>
+                                        <td>Gagne de poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>219</td>
+                                        <td>Alexander Pierce</td>
+                                        <td>31/05/2019</td>
+                                        <td><span class="tag tag-warning">Terminé</span></td>
+                                        <td>Competition</td>
+                                    </tr>
+                                    <tr>
+                                        <td>657</td>
+                                        <td>Bob Doe</td>
+                                        <td>17/07/2019</td>
+                                        <td><span class="tag tag-primary">En cours</span></td>
+                                        <td>Perdre du poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>175</td>
+                                        <td>Mike Doe</td>
+                                        <td>10/05/2018</td>
+                                        <td><span class="tag tag-danger">Terminé</span></td>
+                                        <td>Gagne de poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>134</td>
+                                        <td>Jim Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-success">Terminé</span></td>
+                                        <td>Competition</td>
+                                    </tr>
+                                    <tr>
+                                        <td>494</td>
+                                        <td>Victoria Doe</td>
+                                        <td>19/09/2019</td>
+                                        <td><span class="tag tag-warning">En cours</span></td>
+                                        <td>Perdre du poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>832</td>
+                                        <td>Michael Doe</td>
+                                        <td>29/09/2019</td>
+                                        <td><span class="tag tag-primary">Non traité</span></td>
+                                        <td>Competition.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>982</td>
+                                        <td>Rocky Doe</td>
+                                        <td>10/08/2019</td>
+                                        <td><span class="tag tag-danger">En cours</span></td>
+                                        <td>Competition.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>John Doe</td>
+                                        <td>10/01/2019</td>
+                                        <td><span class="tag tag-success">Non traité</span></td>
+                                        <td>Gagne de poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>219</td>
+                                        <td>Alexander Pierce</td>
+                                        <td>05/01/2019</td>
+                                        <td><span class="tag tag-warning">Terminé</span></td>
+                                        <td>Competition</td>
+                                    </tr>
+                                    <tr>
+                                        <td>657</td>
+                                        <td>Bob Doe</td>
+                                        <td>09/07/2019</td>
+                                        <td><span class="tag tag-primary">En cours</span></td>
+                                        <td>Perdre du poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>175</td>
+                                        <td>Mike Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-danger">Terminé</span></td>
+                                        <td>Gagne de poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>134</td>
+                                        <td>Jim Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-success">Terminé</span></td>
+                                        <td>Competition</td>
+                                    </tr>
+                                    <tr>
+                                        <td>494</td>
+                                        <td>Victoria Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-warning">En cours</span></td>
+                                        <td>Perdre du poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>832</td>
+                                        <td>Michael Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-primary">Non traité</span></td>
+                                        <td>Competition.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>982</td>
+                                        <td>Rocky Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-danger">En cours</span></td>
+                                        <td>Competition.</td>
+                                    <tr>
+                                        <td>183</td>
+                                        <td>John Doe</td>
+                                        <td>10/01/2019</td>
+                                        <td><span class="tag tag-success">Non traité</span></td>
+                                        <td>Gagne de poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>219</td>
+                                        <td>Alexander Pierce</td>
+                                        <td>05/01/2019</td>
+                                        <td><span class="tag tag-warning">Terminé</span></td>
+                                        <td>Competition</td>
+                                    </tr>
+                                    <tr>
+                                        <td>657</td>
+                                        <td>Bob Doe</td>
+                                        <td>09/07/2019</td>
+                                        <td><span class="tag tag-primary">En cours</span></td>
+                                        <td>Perdre du poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>175</td>
+                                        <td>Mike Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-danger">Terminé</span></td>
+                                        <td>Gagne de poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>134</td>
+                                        <td>Jim Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-success">Terminé</span></td>
+                                        <td>Competition</td>
+                                    </tr>
+                                    <tr>
+                                        <td>494</td>
+                                        <td>Victoria Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-warning">En cours</span></td>
+                                        <td>Perdre du poids</td>
+                                    </tr>
+                                    <tr>
+                                        <td>832</td>
+                                        <td>Michael Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-primary">Non traité</span></td>
+                                        <td>Competition.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>982</td>
+                                        <td>Rocky Doe</td>
+                                        <td>11/07/2014</td>
+                                        <td><span class="tag tag-danger">En cours</span></td>
+                                        <td>Competition.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
 
             <!-- /.content -->
         </div>
