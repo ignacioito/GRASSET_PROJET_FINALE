@@ -29,85 +29,72 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <img src="../dashboard/dist/img/bf21.png" alt="Logo" style="width:100px;">
-      <a class="navbar-brand" href="index.html">Acceuil</a>
-      <a class="navbar-brand" href="faq.html">FAQ</a>
-      <a class="navbar-brand" href="#" target="_blank">Forum</a>
-      <a class="navbar-brand" href="contact.html">Contact</a>
-      <a class="navbar-brand" href="login.html">Login</a>
-    </nav>
-  </header>
+<body class="hold-transition login-page">
+  <div class="login-box">
+    <div class="login-logo">
+      <img src="dist/img/bf21.png" alt="" style="width: 10rem; height: 10rem;">
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Sign in to start your session</p>
 
-  <div class="hold-transition login-page">
-    <div class="login-box">
-      <div class="login-logo">
-        <img src="dist/img/bf21.png" alt="" style="width: 10rem; height: 10rem;">
-      </div>
-      <!-- /.login-logo -->
-      <div class="card">
-        <div class="card-body login-card-body">
-          <p class="login-box-msg">Sign in to start your session</p>
-
-          <form action="index.html" method="post">
-            <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="Email">
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-envelope"></span>
-                </div>
+        <form action="index.html" method="post">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
               </div>
             </div>
-            <div class="input-group mb-3">
-              <input type="password" class="form-control" placeholder="Password">
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-lock"></span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-8">
-                <div class="icheck-primary">
-                  <input type="checkbox" id="remember">
-                  <label for="remember">
-                    Remember Me
-                  </label>
-                </div>
-              </div>
-              <!-- /.col -->
-              <div class="col-4">
-                <button type="submit" class="btn btn-block btn-flat btn-primary">Sign In</button>
-              </div>
-              <!-- /.col -->
-            </div>
-          </form>
-
-          <div class="social-auth-links text-center mb-3">
-            <a href="" target="_blank">User</a>
-            ||||
-            <a href="../dashboard/dashboard.html">Admin</a>
-            <p>- OR -</p>
-            <a href="#" class="btn btn-block btn-primary">
-              <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-            </a>
-            <a href="#" class="btn btn-block btn-danger">
-              <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-            </a>
           </div>
-          <!-- /.social-auth-links -->
+          <div class="input-group mb-3">
+            <input type="password" class="form-control" placeholder="Password">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <div class="icheck-primary">
+                <input type="checkbox" id="remember">
+                <label for="remember">
+                  Remember Me
+                </label>
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-4">
+              <button type="submit" class="btn btn-block btn-flat btn-primary">Sign In</button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
 
-          <p class="mb-1">
-            <a href="#">I forgot my password</a>
-          </p>
-          <p class="mb-0">
-            <a href="register.html" class="text-center">Register a new membership</a>
-          </p>
+        <div class="social-auth-links text-center mb-3">
+          <a href="" target="_blank">User</a>
+          ||||
+          <a href="../dashboard/dashboard.html">Admin</a>
+          <p>- OR -</p>
+          <a href="#" class="btn btn-block btn-primary">
+            <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+          </a>
+          <a href="#" class="btn btn-block btn-danger">
+            <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+          </a>
         </div>
-        <!-- /.login-card-body -->
+        <!-- /.social-auth-links -->
+
+        <p class="mb-1">
+          <a href="#">I forgot my password</a>
+        </p>
+        <p class="mb-0">
+          <a href="register.html" class="text-center">Register a new membership</a>
+        </p>
       </div>
+      <!-- /.login-card-body -->
     </div>
   </div>
   <!-- /.login-box -->
