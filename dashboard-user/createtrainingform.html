@@ -84,7 +84,7 @@
                             <a href="createtrainingform.html" class="nav-link">
                                 <i class="nav-icon fas fa-calendar-plus"></i>
                                 <p>
-                                    Renseigner ses informations
+                                    Remplir informations
                                 </p>
                             </a>
                         </li>
@@ -110,10 +110,10 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Renseigner ses informations 1</h1>
-                            <a href="createtrainingform.html">(lien temp)Fiche Client et évaluation</a>
-                            |||||||
-                            <a href="createplanform.html">(lien temp)Questionnaires plan alimentaire</a>
+                            <h1 class="m-0 text-dark">Fiche client et évaluation (1/2)</h1>
+                            <a href="createtrainingform.html">(1/2)</a>
+                            -
+                            <a href="createplanform.html">(2/2)</a>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                     <hr>
@@ -123,29 +123,28 @@
 
             <!-- Main content -->
             <div class="container">
-                <h4 class="m-0 text-dark">Fiche client et évaluation</h4>
+                <h4 class="m-0 text-dark">Renseignements personnels</h4>
                 <br>
                 <form>
                     <div class="form-row">
                         <div class="col-md-3 mb-3">
-                            <label for="validationDefault01">Prénom</label>
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="Prénom"
-                                required>
+                            <label for="formValidation01">Prénom</label>
+                            <input type="text" class="form-control" id="formValidation01" placeholder="Prénom" required>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="validationDefault02">Nom</label>
-                            <input type="text" class="form-control" id="validationDefault02" placeholder="Nom" required>
+                            <label for="formValidation02">Nom</label>
+                            <input type="text" class="form-control" id="formValidation02" placeholder="Nom" required>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label for="age">Âge</label>
+                            <label for="formValidation03">Âge</label>
                             <!-- class="1-100" is called by jQuery and used by javascript in dist/js/trainingform.js -->
-                            <select id="age" class="1-100 form-control">
+                            <select id="formValidation03" class="1-100 form-control">
                                 <option selected>Sélectionner</option>
                             </select>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label for="validationDefault03">Sexe</label>
-                            <select id="age" class="form-control">
+                            <label for="formValidation04">Sexe</label>
+                            <select id="formValidation04" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Masculin</option>
                                 <option>Féminin</option>
@@ -154,40 +153,31 @@
                     </div>
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationDefault04">Adresse</label>
-                            <input type="text" class="form-control" id="validationDefault04" placeholder="Adresse"
+                            <label for="formValidation05">Adresse</label>
+                            <input type="text" class="form-control" id="formValidation05" placeholder="Adresse"
                                 required>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="validationDefault05">Adresse courriel (email)</label>
-                            <input type="text" class="form-control" id="validationDefault05"
-                                placeholder="example@mail.com" required>
+                            <label for="formValidation06">Adresse courriel (email)</label>
+                            <input type="text" class="form-control" id="formValidation06" placeholder="example@mail.com"
+                                required>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label for="validationDefault05">Téléphone</label>
-                            <input type="text" class="form-control" id="validationDefault05" placeholder="XXX-XXX-XXXX"
+                            <label for="formValidation07">Téléphone</label>
+                            <input type="text" class="form-control" id="formValidation07" placeholder="XXX-XXX-XXXX"
                                 required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-2 mb-3">
-                            <label for="validationDefault05">Poids (lbs)</label>
-                            <input type="text" class="form-control" id="validationDefault06" required>
+                            <label for="formValidation08">Poids (lbs)</label>
+                            <input type="text" class="form-control" id="formValidation08" required>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label for="validationDefault06">Grandeur (pieds)</label>
-                            <input type="text" class="form-control" id="validationDefault06" required>
+                            <label for="formValidation09">Grandeur (pieds)</label>
+                            <input type="text" class="form-control" id="formValidation09" required>
                         </div>
                     </div>
-                    <!-- <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                            <label class="form-check-label" for="invalidCheck2">
-                                Agree to terms and conditions
-                            </label>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button> -->
                 </form>
                 <br>
 
@@ -197,8 +187,8 @@
                 <form>
                     <div class="form-row">
                         <div class="col-md-2 mb-3">
-                            <label for="validationDefault07">Pression sanguine</label>
-                            <select id="bloodFlow" class="form-control">
+                            <label for="formValidation10">Pression sanguine</label>
+                            <select id="formValidation10" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Basse</option>
                                 <option>Normale</option>
@@ -206,34 +196,34 @@
                             </select>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label for="validationDefault08">Fumeur</label>
-                            <select id="smoke" class="form-control">
+                            <label for="formValidation11">Fumeur</label>
+                            <select id="formValidation11" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Oui</option>
                                 <option>Non</option>
                             </select>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="validationDefault09">Si Oui combien par jour</label>
-                            <input type="number" min="0" class="form-control" id="validationDefault09" required>
+                            <label for="formValidation12">Si Oui combien par jour</label>
+                            <input type="number" min="0" class="form-control" id="formValidation12" required>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="validationDefault10">Alcool (verres par session)</label>
-                            <input type="number" min="0" class="form-control" id="validationDefault10" required>
+                            <label for="formValidation13">Alcool (verres par session)</label>
+                            <input type="number" min="0" class="form-control" id="formValidation13" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-2 mb-3">
-                            <label for="validationDefault11">Type d'emplois</label>
-                            <select id="jobType" class="form-control">
+                            <label for="formValidation14">Type d'emplois</label>
+                            <select id="formValidation14" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Physique</option>
                                 <option>Passif</option>
                             </select>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label for="validationDefault12">Style de vie</label>
-                            <select id="lifestyle" class="form-control">
+                            <label for="formValidation15">Style de vie</label>
+                            <select id="formValidation15" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Sédentaire</option>
                                 <option>Actif</option>
@@ -242,26 +232,217 @@
                             </select>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="validationDefault13">Activité(s) physiques</label>
-                            <textarea type="textarea" min="0" class="form-control" id="validationDefault13"
+                            <label for="formValidation16">Activité(s) physiques</label>
+                            <textarea type="textarea" min="0" class="form-control" id="formValidation16"
                                 required></textarea>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="validationDefault14">Nbre de fois par session</label>
-                            <input type="number" min="0" class="form-control" id="validationDefault14" required>
+                            <label for="formValidation17">Nbre de fois par session</label>
+                            <input type="number" min="0" class="form-control" id="formValidation17" required>
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="col-md-3 mb-3">
-                            <label for="validationDefault15">Expériences antérieures</label>
-                            <select id="previousExperience" class="form-control">
+                        <div class="col-md-2 mb-3">
+                            <label for="formValidation18">Expérience antérieure</label>
+                            <select id="formValidation18" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Oui</option>
                                 <option>Non</option>
                             </select>
                         </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="formValidation19">Nbre d'années</label>
+                            <input type="number" min="0" class="form-control" id="formValidation19" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="formValidation20">Disponibilités pour entrainement X/sem</label>
+                            <input type="number" min="0" class="form-control" id="formValidation20" required>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="formValidation21">Nbre d'heures</label>
+                            <input type="number" min="0" class="form-control" id="formValidation21" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="formValidation22">Ce que vous aimez ou n'aimez pas faire (cardio, machines,
+                                poids libre...)</label>
+                            <textarea type="textarea" min="0" class="form-control" id="formValidation22"
+                                required></textarea>
+                        </div>
                     </div>
                 </form>
+                <br>
+
+                <!-- Objectifs présents -->
+                <h4 class="m-0 text-dark">Objectifs présents</h4>
+                <br>
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-2 mb-3">
+                            <label for="formValidation23">Objectif</label>
+                            <select id="formValidation23" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Perte de poids</option>
+                                <option>Remise en forme</option>
+                                <option>Préparation pour une compétition</option>
+                                <option>Prise de masse</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation24">Si perte de poids (lbs)</label>
+                            <input type="number" min="0" class="form-control" id="formValidation24" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation25">Si préparation pour une compétition</label>
+                            <input type="date" id="formValidation25" name="trip-start" value="2019-10-01"
+                                min="2019-10-01" max="2035-10-01">
+                        </div>
+                    </div>
+                </form>
+                <br>
+
+                <!-- Renseignements médicaux -->
+                <h4 class="m-0 text-dark">Renseignements médicaux</h4>
+                <br>
+                <form>
+                    <div class="form-row">
+                        <!-- Medical formValidation26 -->
+                        <label for="formValidation26">
+                            1) Votre médecin vous a-t-il déjà dit que vous souffriez d’un
+                            problème cardiaque et que vous
+                            ne devriez participer qu’aux activités prescrites et approuvées par un médecin?
+                        </label>
+                        <select id="formValidation26" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation27 -->
+                        <label for="formValidation27">
+                            2) Ressentez-vous une douleur à la poitrine lorsque vous faites de l’activité physique?
+                        </label>
+                        <select id="formValidation27" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation28 -->
+                        <label for="formValidation28">
+                            3) Au cours du dernier mois, avez-vous ressenti des douleurs à la poitrine lors de périodes
+                            autres que celles où vous participiez à une activité physique?
+                        </label>
+                        <select id="formValidation28" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation29 -->
+                        <label for="formValidation29">
+                            4) Éprouvez-vous des problèmes d’équilibre reliés à un étourdissement ou vous arrive-t-il de
+                            perdre connaissance?
+                        </label>
+                        <select id="formValidation29" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation30 -->
+                        <label for="formValidation30">
+                            5) Avez-vous des problèmes osseux ou articulaires (par exemple, au dos, au genoux ou à la
+                            hanche) qui pourraient s’aggraver par une modification de votre niveau de participation à
+                            une activité physique?
+                        </label>
+                        <select id="formValidation30" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation31 -->
+                        <label for="formValidation31">
+                            6) Des médicaments vous sont-ils actuellement prescrits pour contrôler votre tension
+                            artérielle ou un problème cardiaque (par exemple, des diurétiques)?
+                        </label>
+                        <select id="formValidation31" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation32 -->
+                        <label for="formValidation32">
+                            7) Connaissez-vous une autre raison pour laquelle vous ne devriez pas faire de l’activité
+                            physique?
+                        </label>
+                        <select id="formValidation32" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                    </div>
+                </form>
+                <br>
+                <h6>-Si vous avez répondu Oui à une ou plusieurs questions :</h6>
+                <p>
+                    Consulter votre médecin AVANT d’augmenter votre niveau de participation à une activité
+                    physique et AVANT de faire évaluer votre condition physique, dites à votre médecin que vous
+                    avez complété le questionnaire sur l’aptitude à l’activité physique et expliquez-lui précisément
+                    à quelles questions vous avez répondu « Oui » il se peut que vous n’avez aucune restrictions à
+                    y aller lentement et progressivement. Par ailleurs, il est possible que vous ne puissiez faire que
+                    certains types d’efforts adaptés à votre état de santé. Indiquez à votre médecin le
+                    type d’activité physique que vous comptiez faire et suivez ses recommandations.
+                    Informez-vous quant aux programmes d’activités spécialisés les mieux adaptés à
+                    vos besoins, offerts dans votre localité.
+                </p>
+                <h6>-Non à toutes ces questions :</h6>
+                <p>
+                    Si, en toute honnêteté, vous avez répondu « Non » à toutes les questions, vous êtes dans un
+                    certaines mesure, assuré (e) que:
+                    Vous pouvez augmenter votre pratique régulière d’activités physiques en commençant
+                    lentement et en augmentant progressivement l’intensité des activités pratiques c’est le moyen
+                    le plus simple et le plus sécuritaire d’y arriver. Vous pouvez faire évaluer votre condition
+                    physique. C’est le meilleur moyen de connaitre votre niveau de condition physique de base
+                    afin de mieux planifier votre participation à un programme d’activités physiques.
+                </p>
+                <br>
+                <label for="trainingFormSignature">
+                    « Je sous-signé (e) affirme avoir lu, compris et complété le questionnaire et avoir reçu une
+                    réponse satisfaisante à chacune de mes questions. »
+                </label>
+                <form id="trainingFormSignature">
+                    <div class="form-row">
+                        <div class="col-md-5 mb-3">
+                            <label for="formValidation33">Nom</label>
+                            <input type="text" class="form-control" id="formValidation33" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation34">Signature</label>
+                            <input type="text" class="form-control" id="formValidation34" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation35">Date de la signature</label>
+                            <input type="date" id="formValidation35" name="trip-start" value="2019-10-01"
+                                min="2019-10-01" max="2035-10-01">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation36">Témoin</label>
+                            <input type="text" class="form-control" id="formValidation36" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation37">Date de la signature</label>
+                            <input type="date" id="formValidation37" name="trip-start" value="2019-10-01"
+                                min="2019-10-01" max="2035-10-01">
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <a class="btn btn-large btn-primary col-md-2 text-center" href="createplanform.html">Poursuivre</a>
+                </div>
+                <br>
+                <br>
             </div>
 
             <!-- /.content -->
