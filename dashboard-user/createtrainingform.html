@@ -111,6 +111,9 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark">Renseigner ses informations 1</h1>
+                            <a href="createtrainingform.html">(lien temp)Fiche Client et évaluation</a>
+                            |||||||
+                            <a href="createplanform.html">(lien temp)Questionnaires plan alimentaire</a>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                     <hr>
@@ -124,38 +127,59 @@
                 <br>
                 <form>
                     <div class="form-row">
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-3 mb-3">
                             <label for="validationDefault01">Prénom</label>
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="First name"
-                                value="Mark" required>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Prénom"
+                                required>
                         </div>
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-3 mb-3">
                             <label for="validationDefault02">Nom</label>
-                            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"
-                                value="Otto" required>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Nom" required>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="age">Age</label>
-                            <select id="age" class="1-100 form-control"></select>
+                        <div class="col-md-2 mb-3">
+                            <label for="age">Âge</label>
+                            <!-- class="1-100" is called by jQuery and used by javascript in dist/js/trainingform.js -->
+                            <select id="age" class="1-100 form-control">
+                                <option selected>Sélectionner</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="validationDefault03">Sexe</label>
+                            <select id="age" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Masculin</option>
+                                <option>Féminin</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationDefault03">City</label>
-                            <input type="text" class="form-control" id="validationDefault03" placeholder="City"
+                            <label for="validationDefault04">Adresse</label>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="Adresse"
                                 required>
                         </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="validationDefault04">State</label>
-                            <input type="text" class="form-control" id="validationDefault04" placeholder="State"
-                                required>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault05">Adresse courriel (email)</label>
+                            <input type="text" class="form-control" id="validationDefault05"
+                                placeholder="example@mail.com" required>
                         </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="validationDefault05">Zip</label>
-                            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                        <div class="col-md-2 mb-3">
+                            <label for="validationDefault05">Téléphone</label>
+                            <input type="text" class="form-control" id="validationDefault05" placeholder="XXX-XXX-XXXX"
+                                required>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-2 mb-3">
+                            <label for="validationDefault05">Poids (lbs)</label>
+                            <input type="text" class="form-control" id="validationDefault06" required>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="validationDefault06">Grandeur (pieds)</label>
+                            <input type="text" class="form-control" id="validationDefault06" required>
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                             <label class="form-check-label" for="invalidCheck2">
@@ -163,11 +187,82 @@
                             </label>
                         </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <button class="btn btn-primary" type="submit">Submit form</button> -->
+                </form>
+                <br>
+
+                <!-- Habitudes de vie -->
+                <h4 class="m-0 text-dark">Habitudes de vie</h4>
+                <br>
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-2 mb-3">
+                            <label for="validationDefault07">Pression sanguine</label>
+                            <select id="bloodFlow" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Basse</option>
+                                <option>Normale</option>
+                                <option>Haute</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="validationDefault08">Fumeur</label>
+                            <select id="smoke" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault09">Si Oui combien par jour</label>
+                            <input type="number" min="0" class="form-control" id="validationDefault09" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault10">Alcool (verres par session)</label>
+                            <input type="number" min="0" class="form-control" id="validationDefault10" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-2 mb-3">
+                            <label for="validationDefault11">Type d'emplois</label>
+                            <select id="jobType" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Physique</option>
+                                <option>Passif</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="validationDefault12">Style de vie</label>
+                            <select id="lifestyle" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Sédentaire</option>
+                                <option>Actif</option>
+                                <option>Sportif</option>
+                                <option>Athlète</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault13">Activité(s) physiques</label>
+                            <textarea type="textarea" min="0" class="form-control" id="validationDefault13"
+                                required></textarea>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault14">Nbre de fois par session</label>
+                            <input type="number" min="0" class="form-control" id="validationDefault14" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault15">Expériences antérieures</label>
+                            <select id="previousExperience" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                        </div>
+                    </div>
                 </form>
             </div>
-
-
 
             <!-- /.content -->
         </div>
