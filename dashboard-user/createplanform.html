@@ -110,11 +110,10 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Renseigner ses informations 2</h1>
-                            <a href="createtrainingform.html">(lien temp)Fiche Client et
-                                évaluation</a>
-                            |||||||
-                            <a href="createplanform.html">(lien temp)Questionnaires plan alimentaire</a>
+                            <h1 class="m-0 text-dark">Questionnaire pour plan alimentaire (2/2)</h1>
+                            <a href="createtrainingform.html">(1/2)</a>
+                            -
+                            <a href="createplanform.html">(2/2)</a>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                     <hr>
@@ -124,56 +123,50 @@
 
             <!-- Main content -->
             <div class="container">
+                <!-- Questionnaire pour plan alimentaire -->
                 <h4 class="m-0 text-dark">Questionnaire pour plan alimentaire</h4>
                 <br>
                 <form>
                     <div class="form-row">
-                        <div class="col-md-4 mb-3">
-                            <label for="validationDefault01">First name</label>
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="First name"
-                                value="Mark" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationDefault02">Last name</label>
-                            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"
-                                value="Otto" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="validationDefaultUsername">Username</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                                </div>
-                                <input type="text" class="form-control" id="validationDefaultUsername"
-                                    placeholder="Username" aria-describedby="inputGroupPrepend2" required>
-                            </div>
-                        </div>
+                        <!--  -->
+                        <label for="formValidation38">
+                            1) Avez-vous des allergies ou intolérances alimentaires?
+                        </label>
+                        <select id="formValidation38" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <label for="formValidation39">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation39"
+                            required></textarea>
+                        <!--  -->
+                        <label for="formValidation40">
+                            2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
+                        </label>
+                        <select id="formValidation40" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <label for="formValidation41">
+                            Si Oui sélectionner l'intensité :
+                        </label>
+                        <select id="formValidation41" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Légère</option>
+                            <option>Moyenne</option>
+                            <option>Élevée (gym)</option>
+                        </select>
+                        <!--  -->
+                        
                     </div>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault03">City</label>
-                            <input type="text" class="form-control" id="validationDefault03" placeholder="City"
-                                required>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="validationDefault04">State</label>
-                            <input type="text" class="form-control" id="validationDefault04" placeholder="State"
-                                required>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="validationDefault05">Zip</label>
-                            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                            <label class="form-check-label" for="invalidCheck2">
-                                Agree to terms and conditions
-                            </label>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
                 </form>
             </div>
 

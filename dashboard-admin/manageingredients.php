@@ -42,7 +42,6 @@
         <li class="nav-item d-none d-sm-inline-block">
           <a href="#" class="nav-link">Home</a>
         </li>
-
       </ul>
 
 
@@ -146,8 +145,41 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
+      
+      <form action="<?php $SELF_PHP;?>?acao=setProduto" method="post">
+        <label for="Nome"> Aliments:
+          <br />
+          <input type="text" name="Nome" /></label>
+        <label for="Valor"> Calories:
+          <br />
+          <input type="text" name="Valor" /></label>
+        <label for="Quantidade">Glucides:
+          <br />
+          <input type="text" name="Quantidade" /></label>
+          <label for="Quantidade">Proteínes:
+            <br />
+            <input type="text" name="Quantidade" /></label>
+        <br />
+        <label for="Quantidade">Lipides:
+          <br />
+          <input type="text" name="Quantidade" /></label>
+          <label for="Quantidade">Fibres:
+            <br />
+            <input type="text" name="Quantidade" /></label>
+            <label for="Quantidade">Glycémique:
+              <br />
+              <input type="text" name="Quantidade" /></label>
+
+        <br />
+        <br />
+        <input type="submit" value="Envoyer" />
+      </form>
+      <form method="post" action="<?php $SELF_PHP;?>?acao=getProduto">
+      <br />
+
+        <input type="submit" value="Listar Produtos" />
       <!-- /.card-header -->
-      <div class="card-body">
+      <!-- <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
@@ -190,7 +222,7 @@
             </tr>
             </tfoot>
         </table>
-      </div>
+      </div> -->
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
