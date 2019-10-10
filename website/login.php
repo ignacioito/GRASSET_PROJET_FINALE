@@ -42,9 +42,9 @@
       <div class="card-body login-card-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
-        <form action="index.html" method="post">
+        <form action="index.html" method="POST" action="">
           <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email">
+            <input type="email" name="user" class="form-control" placeholder="Email">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -52,7 +52,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" class="form-control" placeholder="Password">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -70,10 +70,29 @@
             </div>
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" class="btn btn-block btn-flat btn-primary">Sign In</button>
+              <button type="submit" name="btnaccess" class="btn btn-block btn-flat btn-primary">Sign In</button>
             </div>
             <!-- /.col -->
           </div>
+          <?php
+  if(isset($_POST['btnaccess'])){
+   // Conexao com o banco
+ include 'connect.php';
+ $user=addslashes($_POST['user']);
+ $password=addslashes($_POST['password']);
+ $consult=$pdo->prepare("select * from usuarios where usuario='$user' and senha='$password'");
+ $consult->execute();
+ if($consult->rowCount()== 1){
+ $consult1=$consult->fetch(PDO::FETCH_ASSOC);
+ $_SESSION['userc'] = $user;
+ $_SESSION['passwordc'] = $password;
+ echo ("<script language="javascript" window.location="../dashboard-admin/dashboard.php"></script>
+<script type='text/javascript'> alert('Bienvenu');</script>");
+ }else {
+ echo '<center><br><p style="color:red">ACCESS DENYED! INVALID EMAIL/PASSWORD</p></center>';
+ }
+}
+                                                                            ?> 
         </form>
 
         <div class="social-auth-links text-center mb-3">
@@ -90,7 +109,7 @@
           <a href="#">I forgot my password</a>
         </p>
         <p class="mb-0">
-          <a href="register.html" class="text-center">Register a new membership</a>
+          <a href="register.php" class="text-center">Register a new membership</a>
         </p>
       </div>
     </div>
