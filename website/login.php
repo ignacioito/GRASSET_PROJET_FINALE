@@ -42,7 +42,7 @@
       <div class="card-body login-card-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
-        <form action="index.php" method="POST" action="">
+        <form action="../dashboard-admin/dashboard.php" method="POST" action="">
           <div class="input-group mb-3">
             <input type="text" name="user" class="form-control" placeholder="utilisateur">
             <div class="input-group-append">
