@@ -77,13 +77,13 @@
                         <div id="navbarCollapse" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link">Acceuil</a>
+                                    <a href="index.php" class="nav-link">Acceuil</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a href="faq.html" class="nav-link">FAQ</a>
+                                        <a href="faq.php" class="nav-link">FAQ</a>
                                     </li>
                                 <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
+                                    <a href="contact.php" class="nav-link">Contact</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a>
@@ -103,7 +103,7 @@
                                         <a href="#" class="dropdown-item">Reports</a>
                                         <a href="#" class="dropdown-item">Settings</a>
                                     <div class="dropdown-divider"></div>
-                                        <a href="login.html"class="dropdown-item">Login</a>
+                                        <a href="login.php"class="dropdown-item">Login</a>
                                     </div>
                                 </li>
                             </ul>
@@ -115,10 +115,10 @@
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;">
-            <a class="navbar-brand" href="index.html">Acceuil</a>
-            <a class="navbar-brand" href="faq.html">FAQ</a>
-            <a class="navbar-brand" href="contact.html">Contact</a>
-            <a class="navbar-brand" href="login.html">Identification</a>
+            <a class="navbar-brand" href="index.php">Acceuil</a>
+            <a class="navbar-brand" href="faq.php">FAQ</a>
+            <a class="navbar-brand" href="contact.php">Contact</a>
+            <a class="navbar-brand" href="login.php">Identification</a>
         </nav>
     </header>
 
