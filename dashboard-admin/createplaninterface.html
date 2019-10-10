@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Search Form and Autocomplete CSS -->
+    <link rel="stylesheet" href="dist/css/admininterface.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -157,17 +159,14 @@
                     <div id="day1" class="tab-pane container active">
                         <h2>Jour 1</h2>
                         <div class="form-group">
-                            <div id="ingTypeDiv">
-                                <label>Type de l'aliment:</label>
-                                <select>
-                                    <option value="meat">Viande</option>
-                                    <option value="vegetable">Legume</option>
-                                    <option value="fruit">Fruit</option>
-                                </select>
-                            </div>
                             <div id="ingDiv">
-                                <label for="ingName">Aliment:</label>
-                                <input type="text" name="ingName" id="ingName1">
+                                <!--Make sure the form has the autocomplete function switched off:-->
+                                <form autocomplete="off" action="/action_page.php">
+                                    <label for="ingNameDay1">Aliment:</label>
+                                    <div class="autocomplete">
+                                        <input id="ingNameDay1" type="text" name="ingNameDay1" placeholder="Aliment">
+                                    </div>
+                                </form>
                             </div>
                             <div id="qttDiv">
                                 <label for="foodQtt">Quantite:</label>
@@ -225,18 +224,13 @@
                     <div id="day2" class="tab-pane container">
                         <h2>Jour 2</h2>
                         <div class="form-group">
-                            <div id="ingTypeDiv">
-                                <label>Type de l'aliment:</label>
-                                <select>
-                                    <option value="meat">Viande</option>
-                                    <option value="vegetable">Legume</option>
-                                    <option value="fruit">Fruit</option>
-                                </select>
-                            </div>
-                            <div id="ingDiv">
-                                <label for="ingName">Aliment:</label>
-                                <input type="text" name="ingName" id="ingName2">
-                            </div>
+                            <!--Make sure the form has the autocomplete function switched off:-->
+                            <form autocomplete="off" action="/action_page.php">
+                                <label for="ingNameDay2">Aliment:</label>
+                                <div class="autocomplete">
+                                    <input id="ingNameDay2" type="text" name="ingNameDay2" placeholder="Aliment">
+                                </div>
+                            </form>
                             <div id="qttDiv">
                                 <label for="foodQtt">Quantite:</label>
                                 <input type="text" name="foodQtt" class="qttInp">
@@ -317,7 +311,6 @@
             </div>
         </div>
 
-
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
@@ -335,6 +328,8 @@
     </div>
     <!-- ./wrapper -->
 
+    <!-- Admin interface javascript -->
+    <script src="dist/js/admininterface.js"></script>
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
