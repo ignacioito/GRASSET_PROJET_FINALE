@@ -108,9 +108,9 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark">Fiche client et évaluation (1/2)</h1>
-                            <a href="createtrainingform.html">(1/2)</a>
+                            <a href="createtrainingform.php">(1/2)</a>
                             -
-                            <a href="createplanform.html">(2/2)</a>
+                            <a href="createplanform.php">(2/2)</a>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                     <hr>
