@@ -27,6 +27,10 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- css custom -->
+  <link rel="stylesheet" href="css/profileStyle.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -120,7 +124,67 @@
       <!-- Main content -->
 
 
+      <div class="content-panel">
+        <form class="form-horizontal">
+            <fieldset class="fieldset">
+                <div class="form-group avatar">
+                    <figure class="figure col-md-2 col-sm-3 col-xs-12">
+                        <img class="img-rounded img-responsive" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                    </figure>
+                    <div class="form-inline col-md-10 col-sm-9 col-xs-12">
+                        <input type="file" class="file-uploader pull-left">
+                        <button type="submit" class="btn btn-sm btn-default-alt pull-left">Update Image</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">User Name</label>
+                    <div class="col-md-10 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" value="Rebecca">
+                    </div>
+                </div>
 
+                <div class="form-group">
+                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">First Name</label>
+                    <div class="col-md-10 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" value="Rebecca">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Last Name</label>
+                    <div class="col-md-10 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" value="Sanders">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <h3 class="fieldset-title">Contact Info</h3>
+                <div class="form-group">
+                    <label class="col-md-2  col-sm-3 col-xs-12 control-label">Couriel</label>
+                    <div class="col-md-10 col-sm-9 col-xs-12">
+                        <input type="email" class="form-control" value="Rebecca@website.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2  col-sm-3 col-xs-12 control-label">Telephone</label>
+                    <div class="col-md-10 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" value="(514)3460031">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2  col-sm-3 col-xs-12 control-label">Adresse</label>
+                    <div class="col-md-10 col-sm-9 col-xs-12">
+                        <input type="url" class="form-control" value="50 rue Sherbrook">
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <div class="form-group">
+                <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                    <input class="btn btn-primary" type="submit" value="Update Profile">
+                </div>
+            </div>
+        </form>
+    </div>
 
 
       <!-- /.content -->
