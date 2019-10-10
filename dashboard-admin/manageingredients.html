@@ -145,39 +145,41 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
-      
-      <form action="<?php $SELF_PHP;?>?acao=setProduto" method="post">
-        <label for="Nome"> Aliments:
-          <br />
-          <input type="text" name="Nome" /></label>
-        <label for="Valor"> Calories:
-          <br />
-          <input type="text" name="Valor" /></label>
-        <label for="Quantidade">Glucides:
-          <br />
-          <input type="text" name="Quantidade" /></label>
+      <div class="container">
+        <form action="?php $SELF_PHP;?>?acao=setProduto" method="post">
+          <label for="Nome"> Aliments:
+            <br />
+            <input type="text" name="Nome" /></label>
+          <label for="Valor"> Calories:
+            <br />
+            <input type="text" name="Valor" /></label>
+          <label for="Quantidade">Glucides:
+            <br />
+            <input type="text" name="Quantidade" /></label>
           <label for="Quantidade">Proteínes:
             <br />
             <input type="text" name="Quantidade" /></label>
-        <br />
-        <label for="Quantidade">Lipides:
           <br />
-          <input type="text" name="Quantidade" /></label>
+          <label for="Quantidade">Lipides:
+            <br />
+            <input type="text" name="Quantidade" /></label>
           <label for="Quantidade">Fibres:
             <br />
             <input type="text" name="Quantidade" /></label>
-            <label for="Quantidade">Glycémique:
-              <br />
-              <input type="text" name="Quantidade" /></label>
+          <label for="Quantidade">Glycémique:
+            <br />
+            <input type="text" name="Quantidade" /></label>
 
-        <br />
-        <br />
-        <input type="submit" value="Envoyer" />
-      </form>
-      <form method="post" action="<?php $SELF_PHP;?>?acao=getProduto">
-      <br />
+          <br />
+          <br />
+          <input type="submit" value="Envoyer" />
+        </form>
+        <form method="post" action="?php $SELF_PHP;?>?acao=getProduto">
 
-        <input type="submit" value="Listar Produtos" />
+          <br>
+
+          <input type="submit" value="Listar Produtos" />
+      </div>
       <!-- /.card-header -->
       <!-- <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">
@@ -225,6 +227,8 @@
       </div> -->
       <!-- /.content -->
     </div>
+
+
     <!-- /.content-wrapper -->
     <footer class="main-footer">
       <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
