@@ -46,9 +46,8 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="dashboard.html" class="brand-link">
-                <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
-                    style="opacity: .8;">
+            <a href="dashboard.php" class="brand-link">
+                <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8;">
                 <span class="brand-text font-weight-light">User BF21</span>
             </a>
 
@@ -66,13 +65,12 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                               with font-awesome or any other icon font library -->
+                       with font-awesome or any other icon font library -->
                         <!-- Dashboard -->
                         <li class="nav-item">
-                            <a href="dashboard.html" class="nav-link">
+                            <a href="dashboard.php" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Dashboard
@@ -81,7 +79,7 @@
                         </li>
                         <!-- Sidebar Renseigner ses informations -->
                         <li class="nav-item">
-                            <a href="createtrainingform.html" class="nav-link">
+                            <a href="createtrainingform.php" class="nav-link">
                                 <i class="nav-icon fas fa-calendar-plus"></i>
                                 <p>
                                     Remplir informations
@@ -90,7 +88,7 @@
                         </li>
                         <!-- Sidebar Profil -->
                         <li class="nav-item">
-                            <a href="profile.html" class="nav-link">
+                            <a href="profile.php" class="nav-link">
                                 <i class="nav-icon fas fa-cog"></i>
                                 <p>
                                     Profil
@@ -100,7 +98,6 @@
                     </ul>
                 </nav>
             </div>
-
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
@@ -154,18 +151,15 @@
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="formValidation05">Adresse</label>
-                            <input type="text" class="form-control" id="formValidation05" placeholder="Adresse"
-                                required>
+                            <input type="text" class="form-control" id="formValidation05" placeholder="Adresse" required>
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="formValidation06">Adresse courriel (email)</label>
-                            <input type="text" class="form-control" id="formValidation06" placeholder="example@mail.com"
-                                required>
+                            <input type="text" class="form-control" id="formValidation06" placeholder="example@mail.com" required>
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="formValidation07">Téléphone</label>
-                            <input type="text" class="form-control" id="formValidation07" placeholder="XXX-XXX-XXXX"
-                                required>
+                            <input type="text" class="form-control" id="formValidation07" placeholder="XXX-XXX-XXXX" required>
                         </div>
                     </div>
                     <div class="form-row">
@@ -233,8 +227,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="formValidation16">Activité(s) physiques</label>
-                            <textarea type="textarea" min="0" class="form-control" id="formValidation16"
-                                required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="formValidation16" required></textarea>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="formValidation17">Nbre de fois par session</label>
@@ -267,8 +260,7 @@
                         <div class="col-md-12 mb-3">
                             <label for="formValidation22">Ce que vous aimez ou n'aimez pas faire (cardio, machines,
                                 poids libre...)</label>
-                            <textarea type="textarea" min="0" class="form-control" id="formValidation22"
-                                required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="formValidation22" required></textarea>
                         </div>
                     </div>
                 </form>
@@ -295,8 +287,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="formValidation25">Si préparation pour une compétition</label>
-                            <input type="date" id="formValidation25" name="trip-start" value="2019-10-01"
-                                min="2019-10-01" max="2035-10-01">
+                            <input type="date" id="formValidation25" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
                         </div>
                     </div>
                 </form>
@@ -422,8 +413,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="formValidation35">Date de la signature</label>
-                            <input type="date" id="formValidation35" name="trip-start" value="2019-10-01"
-                                min="2019-10-01" max="2035-10-01">
+                            <input type="date" id="formValidation35" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
                         </div>
                     </div>
                     <div class="form-row">
@@ -433,8 +423,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="formValidation37">Date de la signature</label>
-                            <input type="date" id="formValidation37" name="trip-start" value="2019-10-01"
-                                min="2019-10-01" max="2035-10-01">
+                            <input type="date" id="formValidation37" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
                         </div>
                     </div>
                 </form>

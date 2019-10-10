@@ -12,8 +12,7 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bbootstrap 4 -->
-  <link rel="stylesheet"
-    href="../dashboard-admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="../dashboard-admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
   <link rel="stylesheet" href="../dashboard-admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
@@ -78,9 +77,9 @@
         </form>
 
         <div class="social-auth-links text-center mb-3">
-          <a href="../dashboard-user/dashboard.html">User</a>
+          <a href="../dashboard-user/dashboard.php">User</a>
           ||||
-          <a href="../dashboard-admin/dashboard.html">Admin</a>
+          <a href="../dashboard-admin/dashboard.php">Admin</a>
 
         </div>
         <!-- /.social-auth-links -->

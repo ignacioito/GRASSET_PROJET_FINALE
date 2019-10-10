@@ -46,9 +46,8 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="dashboard.html" class="brand-link">
-                <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
-                    style="opacity: .8;">
+            <a href="dashboard.php" class="brand-link">
+                <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8;">
                 <span class="brand-text font-weight-light">User BF21</span>
             </a>
 
@@ -66,13 +65,12 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                               with font-awesome or any other icon font library -->
+                       with font-awesome or any other icon font library -->
                         <!-- Dashboard -->
                         <li class="nav-item">
-                            <a href="dashboard.html" class="nav-link">
+                            <a href="dashboard.php" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Dashboard
@@ -81,16 +79,16 @@
                         </li>
                         <!-- Sidebar Renseigner ses informations -->
                         <li class="nav-item">
-                            <a href="createtrainingform.html" class="nav-link">
+                            <a href="createtrainingform.php" class="nav-link">
                                 <i class="nav-icon fas fa-calendar-plus"></i>
                                 <p>
-                                    Renseigner ses informations
+                                    Remplir informations
                                 </p>
                             </a>
                         </li>
                         <!-- Sidebar Profil -->
                         <li class="nav-item">
-                            <a href="profile.html" class="nav-link">
+                            <a href="profile.php" class="nav-link">
                                 <i class="nav-icon fas fa-cog"></i>
                                 <p>
                                     Profil
@@ -100,7 +98,6 @@
                     </ul>
                 </nav>
             </div>
-
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
@@ -140,8 +137,7 @@
                         <label for="formValidation39">
                             Si Oui indiquez lesquels :
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation39"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation39" required></textarea>
                         <!--  -->
                         <label for="formValidation40">
                             2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
@@ -176,44 +172,37 @@
                         <label for="formValidation43">
                             Si Oui indiquez lesquels :
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation43"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation43" required></textarea>
                         <!--  -->
                         <label for="formValidation44">
                             4) Quels sont les légumes que vous consommez et que vous aimez?
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation44"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation44" required></textarea>
                         <!--  -->
                         <label for="formValidation45">
                             5) Quels sont les légumes que vous n’aimez pas?
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation45"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation45" required></textarea>
                         <!--  -->
                         <label for="formValidation46">
                             6) Quels sont les fruits que vous consommez et que vous aimez?
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation46"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation46" required></textarea>
                         <!--  -->
                         <label for="formValidation47">
                             7) Quels sont les fruits que vous n’aimez pas?
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation47"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation47" required></textarea>
                         <!--  -->
                         <label for="formValidation48">
                             8) Quels types de protéines consommez-vous? Et lesquels vous préférez?
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation48"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation48" required></textarea>
                         <!--  -->
                         <label for="formValidation49">
                             9) Quels sont les types de protéines que vous n’aimez pas?
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation49"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation49" required></textarea>
                         <!--  -->
                         <label for="formValidation50">
                             10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel
@@ -227,8 +216,7 @@
                         <label for="formValidation51">
                             Si Oui indiquez lesquels :
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation51"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation51" required></textarea>
                         <!--  -->
                         <label for="formValidation52">
                             11) Consommez-vous des suppléments alimentaires et si oui lesquels?
@@ -241,8 +229,7 @@
                         <label for="formValidation53">
                             Si Oui indiquez lesquels :
                         </label>
-                        <textarea type="textarea" min="0" class="form-control" id="formValidation53"
-                            required></textarea>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation53" required></textarea>
                     </div>
                 </form>
                 <br>
