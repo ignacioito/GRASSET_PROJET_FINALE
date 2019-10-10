@@ -42,9 +42,9 @@
       <div class="card-body login-card-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
-        <form action="index.html" method="POST" action="">
+        <form action="index.php" method="POST" action="">
           <div class="input-group mb-3">
-            <input type="email" name="user" class="form-control" placeholder="Email">
+            <input type="text" name="user" class="form-control" placeholder="utilisateur">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -86,7 +86,7 @@
  $consult1=$consult->fetch(PDO::FETCH_ASSOC);
  $_SESSION['userc'] = $user;
  $_SESSION['passwordc'] = $password;
- echo ("<script language="javascript">window.location='../dashboard-admin/dashboard.php';</script>
+ echo ("<script language='JavaScript'>window.location='../dashboard-admin/dashboard.php';</script>
  <script type='text/javascript'> alert('Bienvenu');</script>");
  }else {
  echo '<center><br><p style="color:red">ACCESS DENYED! INVALID EMAIL/PASSWORD</p></center>';
