@@ -86,8 +86,8 @@
  $consult1=$consult->fetch(PDO::FETCH_ASSOC);
  $_SESSION['userc'] = $user;
  $_SESSION['passwordc'] = $password;
- echo ("<script language="javascript" window.location="../dashboard-admin/dashboard.php"></script>
-<script type='text/javascript'> alert('Bienvenu');</script>");
+ echo ("<script language="javascript">window.location='../dashboard-admin/dashboard.php';</script>
+ <script type='text/javascript'> alert('Bienvenu');</script>");
  }else {
  echo '<center><br><p style="color:red">ACCESS DENYED! INVALID EMAIL/PASSWORD</p></center>';
  }
