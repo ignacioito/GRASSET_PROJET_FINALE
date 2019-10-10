@@ -12,8 +12,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet"
-        href="../dashboard-admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="../dashboard-admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="../dashboard-admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
@@ -34,84 +33,79 @@
 
 <body>
     <header>
-            <!--Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-light info-color">
-        <a href="#" class="navbar-brand"><img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-          aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <i class="fab fa-facebook-f"></i> Facebook
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fab fa-instagram"></i> Instagram</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user"></i> Profile </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                <a class="dropdown-item" href="#">My account</a>
-                <a class="dropdown-item" href="#">Log out</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!--/.Navbar -->
-
-
-            <div class="bs-example">
-                    <nav class="navbar navbar-expand-md navbar-light bg-light">
-                            <a href="#" class="navbar-brand"><img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;"></a>
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div id="navbarCollapse" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                    <a href="index.html" class="nav-link">Acceuil</a>
-                                </li>
-                                <li class="nav-item">
-                                        <a href="faq.html" class="nav-link">FAQ</a>
-                                    </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a>
-                                    <div class="dropdown-menu">
-                                        <a href="#" class="dropdown-item">Inbox</a>
-                                        <a href="#" class="dropdown-item">Drafts</a>
-                                        <a href="#" class="dropdown-item">Sent Items</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#"class="dropdown-item">Trash</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin</a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="#" class="dropdown-item">Reports</a>
-                                        <a href="#" class="dropdown-item">Settings</a>
-                                    <div class="dropdown-divider"></div>
-                                        <a href="login.html"class="dropdown-item">Login</a>
-                                    </div>
-                                </li>
-                            </ul>
+        <!--Navbar -->
+        <nav class="mb-1 navbar navbar-expand-lg navbar-light info-color">
+            <a href="#" class="navbar-brand"><img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> Profile </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                            <a class="dropdown-item" href="#">My account</a>
+                            <a class="dropdown-item" href="#">Log out</a>
                         </div>
-                    </nav>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--/.Navbar -->
+
+        <div class="bs-example">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a href="#" class="navbar-brand"><img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Inbox</a>
+                                <a href="#" class="dropdown-item">Drafts</a>
+                                <a href="#" class="dropdown-item">Sent Items</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">Trash</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#" class="dropdown-item">Reports</a>
+                                <a href="#" class="dropdown-item">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="login.html" class="dropdown-item">Login</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-
+            </nav>
+        </div>
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;">
@@ -140,8 +134,7 @@
                 <div class="testimonial">
                     <!--Avatar-->
                     <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                            class="rounded-circle z-depth-1 img-fluid">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
                     </div>
                     <!--Content-->
                     <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
@@ -155,8 +148,7 @@
                 <div class="testimonial">
                     <!--Avatar-->
                     <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg"
-                            class="rounded-circle z-depth-1 img-fluid">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
                     </div>
                     <!--Content-->
                     <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
@@ -171,8 +163,7 @@
                 <div class="testimonial">
                     <!--Avatar-->
                     <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
-                            class="rounded-circle z-depth-1 img-fluid">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
                     </div>
                     <!--Content-->
                     <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>

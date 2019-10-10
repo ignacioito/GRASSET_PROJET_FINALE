@@ -40,17 +40,13 @@
           <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
       </ul>
-
-
-
-
     </nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="dashboard.html" class="brand-link">
+      <a href="dashboard.php" class="brand-link">
         <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
           style="opacity: .8;">
         <span class="brand-text font-weight-light">Admin BF21</span>
@@ -75,7 +71,7 @@
                        with font-awesome or any other icon font library -->
             <!-- Dashboard -->
             <li class="nav-item">
-              <a href="dashboard.html" class="nav-link">
+              <a href="dashboard.php" class="nav-link">
                 <i class="nav-icon fas fa-home"></i>
                 <p>
                   Dashboard
@@ -84,7 +80,7 @@
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplan.html" class="nav-link">
+              <a href="createplan.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -93,7 +89,7 @@
             </li>
             <!-- Sidebar Gestion des Clients -->
             <li class="nav-item">
-              <a href="manageclient.html" class="nav-link">
+              <a href="manageclient.php" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
                   Gestion des Clients
@@ -103,7 +99,7 @@
 
             <!-- Sidebar Gestion des Aliments -->
             <li class="nav-item">
-              <a href="manageingredients.html" class="nav-link">
+              <a href="manageingredients.php" class="nav-link">
                 <i class="nav-icon fas fa-utensils"></i>
                 <p>
                   Gestion des Aliments
@@ -113,7 +109,7 @@
 
             <!-- Sidebar Paramètres -->
             <li class="nav-item">
-              <a href="parameters.html" class="nav-link">
+              <a href="parameters.php" class="nav-link">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
                   Paramètres
@@ -123,7 +119,6 @@
           </ul>
         </nav>
       </div>
-
     </aside>
 
     <!-- Content Wrapper. Contains page content -->

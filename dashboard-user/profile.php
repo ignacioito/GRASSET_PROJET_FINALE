@@ -50,9 +50,8 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="dashboard.html" class="brand-link">
-        <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
-          style="opacity: .8;">
+      <a href="dashboard.php" class="brand-link">
+        <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8;">
         <span class="brand-text font-weight-light">User BF21</span>
       </a>
 
@@ -72,10 +71,10 @@
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
-                               with font-awesome or any other icon font library -->
+                       with font-awesome or any other icon font library -->
             <!-- Dashboard -->
             <li class="nav-item">
-              <a href="dashboard.html" class="nav-link">
+              <a href="dashboard.php" class="nav-link">
                 <i class="nav-icon fas fa-home"></i>
                 <p>
                   Dashboard
@@ -84,16 +83,16 @@
             </li>
             <!-- Sidebar Renseigner ses informations -->
             <li class="nav-item">
-              <a href="createtrainingform.html" class="nav-link">
+              <a href="createtrainingform.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
-                  Renseigner ses informations
+                  Remplir informations
                 </p>
               </a>
             </li>
             <!-- Sidebar Profil -->
             <li class="nav-item">
-              <a href="profile.html" class="nav-link">
+              <a href="profile.php" class="nav-link">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
                   Profil
@@ -103,7 +102,6 @@
           </ul>
         </nav>
       </div>
-
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
@@ -129,8 +127,7 @@
             <fieldset class="fieldset">
               <div class="form-group avatar">
                 <figure class="figure col-md-2 col-sm-3 col-xs-12">
-                  <img class="img-rounded img-responsive" src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                    alt="">
+                  <img class="img-rounded img-responsive" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
                 </figure>
                 <div class="form-inline col-md-10 col-sm-9 col-xs-12">
                   <input type="file" class="file-uploader pull-left">
