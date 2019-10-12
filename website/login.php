@@ -74,25 +74,7 @@
             </div>
             <!-- /.col -->
           </div>
-          <?php
-  if(isset($_POST['btnaccess'])){
-   // Conexao com o banco
- include 'connect.php';
- $user=addslashes($_POST['user']);
- $password=addslashes($_POST['password']);
- $consult=$pdo->prepare("select * from usuarios where usuario='$user' and senha='$password'");
- $consult->execute();
- if($consult->rowCount()== 1){
- $consult1=$consult->fetch(PDO::FETCH_ASSOC);
- $_SESSION['userc'] = $user;
- $_SESSION['passwordc'] = $password;
- echo ("<script language='JavaScript'>window.location='../dashboard-admin/dashboard.php';</script>
- <script type='text/javascript'> alert('Bienvenu');</script>");
- }else {
- echo '<center><br><p style="color:red">ACCESS DENYED! INVALID EMAIL/PASSWORD</p></center>';
- }
-}
-                                                                            ?> 
+
         </form>
 
         <div class="social-auth-links text-center mb-3">
