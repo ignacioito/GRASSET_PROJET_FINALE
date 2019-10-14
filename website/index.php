@@ -77,67 +77,58 @@
 
     </header>
 
-    <div class="container text-center">
-        <h3>BF-21 Conditionnement physique et mental</h3>
-        <h6>Coach Particulier a Montreal</h6>
-        <button type="submit" class="btn btn-info">OBTENIR UN DEVIS</button>
-        <br>
-        <br>
-        <br>
-        <img id="healthy-img" alt="healthy food" src="../dashboard-admin/dist/img/banner.jpg" style="width:80%;">
-        <br>
-    </div>
-    <!-- Testimonials -->
-    <section class="team-section text-center">
-        <h2 class="h1-responsive font-weight-bold my-5">Temoignages</h2>
-        <div class="row text-center">
-            <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                    <!--Avatar-->
-                    <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
-                    </div>
-                    <!--Content-->
-                    <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                    <p class="font-weight-normal dark-grey-text">
-                        <i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quod
-                        eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                    <!--Avatar-->
-                    <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
-                    </div>
-                    <!--Content-->
-                    <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                    <p class="font-weight-normal dark-grey-text">
-                        <i class="fas fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem
-                        ullam
-                        corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
-                </div>
 
-            </div>
-            <div class="col-md-4 mb-md-0 mb-5">
-                <div class="testimonial">
-                    <!--Avatar-->
-                    <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
-                    </div>
-                    <!--Content-->
-                    <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-                    <p class="font-weight-normal dark-grey-text">
-                        <i class="fas fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos
-                        ducimus qui
-                        blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                </div>
-            </div>
+    <section>
+        <div class="container">
+            <div class="text-center my-5 ">
+                <h3>BF-21 Conditionnement physique et mental</h3>
+                <h5>Coach Particulier a Montreal</h5>
+                <h5>Ouvert aujourd'hui jusqu'à 20:00</h5>
+
+            </div>      
         </div>
-
     </section>
 
+
+    <section>
+        <div class="container">
+            <div class="text-center">    
+                <img alt="BF21" src="../dashboard-admin/dist/img/banner.jpg" class="img-fluid rounded" alt="Responsive image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials 2 -->
+    <section class="team-section text-center">
+        <hr class="my-4">
+        <h2 class="h1-responsive font-weight-bold my-5">Temoignages</h2>
+            <div class="row align-items-start">
+                <div class="col px-5">
+                
+                    <p class="font-weight-normal dark-grey-text">
+                        <i class="fas fa-quote-left pr-2"></i>J’ai eu la chance de rencontrer Pascal, qui m’as énormément aidé à retrouver une stabilité dans tout les aspects de ma vie. Grâce à l’hypnose, je me sens plus détendu, je prend plus le temps de réfléchir, j’ai une sensation de bien être et un soulagement intérieur. J’ai également essayé le plan alimentaire et j’ai été extrêmement satisfaite des résultats. 
+                        Services et écoute incroyable. Un grand Merci</p>
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Alexe A</h4>
+
+                </div>
+                <div class="col px-5">
+                
+                <p class="font-weight-normal dark-grey-text">
+                        <i class="fas fa-quote-left pr-2"></i>Depuis ma rencontre avec Pascal, je réussis à mieux planifier mes entraînements, mes menus, 
+                        dans ma vie occupée! Il prend le temps et vous suit dans votre processus. Je le recommande à tous!</p>
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Caroline G</h4>
+
+                </div>
+                <div class="col px-5">
+                
+                <p class="font-weight-normal dark-grey-text">
+                        <i class="fas fa-quote-left pr-2"></i>Pascal a une belle attitude positive! Il nous amène à nous dépasser :) lorsqu’on pense ne plus pouvoir il sait qu’on peut et nous amène l’énergie de faire une dernière répétition :) après une séance avec lui, on sent RÉELLEMENT qu’il est aussi content et fière de nous et ça fait du bien :) Aussi, on se sent compris et à l’écoute, car il prend le temps d’écouter nos besoins et fait un vrai suivi de nos objectifs :) il est très présent en textos ou en vrai selon nos besoins! 
+                        Ensuite, on peut voir une vraie recherche et un plan individualisé à chacun. Je le recommande fortement <i class="fas fa-thumbs-up"></i></p>
+                    <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
+
+                </div>
+            </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
