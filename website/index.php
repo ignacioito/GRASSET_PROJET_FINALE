@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="../dashboard-admin/plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <!-- css home -->
     <link rel="stylesheet" href="../dashboard-admin/css/homeStyle.css">
 </head>
@@ -79,14 +81,15 @@
 
 
     <section>
-        <div class="container">
-            <div class="text-center my-5 ">
-                <h3>BF-21 Conditionnement physique et mental</h3>
-                <h5>Coach Particulier a Montreal</h5>
-                <h5>Ouvert aujourd'hui jusqu'à 20:00</h5>
-
-            </div>      
-        </div>
+        <hr class="my-4">
+            <div class="container">
+                <div class="text-center my-5 ">
+                    <h3 id="titleSection">BF-21 Conditionnement physique et mental</h3>
+                    <h5>Coach Particulier a Montreal</h5>
+                    <h5>Ouvert aujourd'hui jusqu'à 20:00</h5>
+                </div>      
+            </div>
+        <hr class="my-4">
     </section>
 
 
@@ -128,7 +131,134 @@
 
                 </div>
             </div>
+        <hr class="my-4">
     </section>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small indigo">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">Very long link 1</a>
+                </li>
+                <li>
+                <a href="#!">Very long link 2</a>
+                </li>
+                <li>
+                <a href="#!">Very long link 3</a>
+                </li>
+                <li>
+                <a href="#!">Very long link 4</a>
+                </li>
+            </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">Link 1</a>
+                </li>
+                <li>
+                <a href="#!">Link 2</a>
+                </li>
+                <li>
+                <a href="#!">Link 3</a>
+                </li>
+                <li>
+                <a href="#!">Link 4</a>
+                </li>
+            </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">Link 1</a>
+                </li>
+                <li>
+                <a href="#!">Link 2</a>
+                </li>
+                <li>
+                <a href="#!">Link 3</a>
+                </li>
+                <li>
+                <a href="#!">Link 4</a>
+                </li>
+            </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">Link 1</a>
+                </li>
+                <li>
+                <a href="#!">Link 2</a>
+                </li>
+                <li>
+                <a href="#!">Link 3</a>
+                </li>
+                <li>
+                <a href="#!">Link 4</a>
+                </li>
+            </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2018 Copyright:
+  <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
