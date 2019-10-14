@@ -7,6 +7,8 @@
     <title>BF21 - Acceuil</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../dashboard-admin/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
@@ -34,7 +36,7 @@
 <body>
     <header>
         <!--Navbar -->
-        <nav class="mb-1 navbar navbar-expand-lg navbar-light info-color">
+        <nav class="mb-1 navbar navbar-expand-sm navbar-light info-color">
             <a href="#" class="navbar-brand"><img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,77 +45,36 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">
-                            <i class="fab fa-facebook-f"></i> Facebook
+                        <i class="fas fa-home"></i> Acceuil
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">
-                            <i class="fab fa-instagram"></i> Instagram</a>
+                        <i class="fas fa-question-circle"></i> FAQ
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                        <i class="fas fa-map-marker-alt"></i> Contact
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true">
                             <i class="fas fa-user"></i> Profile </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                            <a class="dropdown-item" href="#">My account</a>
-                            <a class="dropdown-item" href="#">Log out</a>
+                            <a class="dropdown-item" href="login.php">Me connecter</a>
+                            <a class="dropdown-item" href="#">Abonnement</a>
                         </div>
                     </li>
+                    
                 </ul>
             </div>
         </nav>
         <!--/.Navbar -->
 
-        <div class="bs-example">
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <a href="#" class="navbar-brand"><img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;"></a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navbarCollapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">Acceuil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="faq.html" class="nav-link">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Inbox</a>
-                                <a href="#" class="dropdown-item">Drafts</a>
-                                <a href="#" class="dropdown-item">Sent Items</a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">Trash</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin</a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#" class="dropdown-item">Reports</a>
-                                <a href="#" class="dropdown-item">Settings</a>
-                                <div class="dropdown-divider"></div>
-                                <a href="login.html" class="dropdown-item">Login</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;">
-            <a class="navbar-brand" href="index.php">Acceuil</a>
-            <a class="navbar-brand" href="faq.php">FAQ</a>
-            <a class="navbar-brand" href="contact.php">Contact</a>
-            <a class="navbar-brand" href="login.php">Identification</a>
-        </nav>
     </header>
 
     <div class="container text-center">
@@ -176,6 +137,13 @@
         </div>
 
     </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
