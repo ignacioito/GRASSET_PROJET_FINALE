@@ -8,7 +8,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../dashboard-admin/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
@@ -33,6 +33,10 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <!-- css home -->
     <link rel="stylesheet" href="../dashboard-admin/css/homeStyle.css">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -253,7 +257,7 @@
 
 <!-- Copyright -->
 <div class="footer-copyright text-center py-3">© 2018 Copyright:
-  <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  <a href="https://www.institut-grasset.qc.ca/" target="_blank"> InstitutGrasset.com</a>
 </div>
 <!-- Copyright -->
 
