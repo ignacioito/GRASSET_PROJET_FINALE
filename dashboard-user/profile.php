@@ -167,22 +167,24 @@
               </fieldset>
               <fieldset class="fieldset">
                 <h3 class="fieldset-title">Contact Info</h3>
+                
+                
                 <div class="form-group">
-                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Couriel</label>
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Adresse</label>
                   <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="email" class="form-control" value="Rebecca@website.com">
+                    <input type="text" class="form-control" placeholder="50 rue Sherbrook">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Code Postale</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" placeholder="H4N1M9">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-md-2  col-sm-3 col-xs-12 control-label">Telephone</label>
                   <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" value="(514)3460031">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Adresse</label>
-                  <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="url" class="form-control" value="50 rue Sherbrook">
+                    <input type="text" class="form-control" placeholder="(514)3460031">
                   </div>
                 </div>
               </fieldset>
