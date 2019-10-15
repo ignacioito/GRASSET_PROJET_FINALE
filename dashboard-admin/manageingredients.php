@@ -169,7 +169,7 @@
         $glycemique = $_POST['glycemique'];
 
         $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) Values ('".$nomAliment."', '".$uniteMesure."', '".$calorie."', '".$lipid."', '".$glucide."', '".$proteine."', '".$fibre."', '".$glycemique."')";
-        $q = mysql_query($query);
+        $q = mysqli_query($query);
 
         if($q){
           $msg = 'Aliment crée avec sucess';
