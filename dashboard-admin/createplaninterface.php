@@ -225,8 +225,17 @@
                                 <ul class="showBorders" id="day1meal6">
                                 </ul>
                             </div>
-                            <div class="showBorders">Calories restantes:
+                            <div>Calories restantes:
                                 <div id="day1Calories"></div>
+                            </div>
+                            <div>Protéines restants:
+                                <div id="day1Proteins"></div>
+                            </div>
+                            <div>Lipides restants:
+                                <div id="day1Lipids"></div>
+                            </div>
+                            <div>Glucides restants:
+                                <div id="day1Carbohydrates"></div>
                             </div>
                         </div>
                     </div>
