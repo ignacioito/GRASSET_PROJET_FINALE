@@ -185,7 +185,7 @@
           <br />
           <input type="submit" value="Envoyer" />
         </form>
-        <form method="post" action="?php $SELF_PHP;?>?acao=getProduto">
+        <form method="post" action="<?php $SELF_PHP;?>?acao=getProduto">
 
           <br>
 

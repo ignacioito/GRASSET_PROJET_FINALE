@@ -164,7 +164,7 @@
                 <div class="tab-content showBorders">
                     <!-- day1 -->
                     <div id="day1" class="tab-pane container active">
-                        <h2 id="newfont">Jour 1</h2>
+                        <h2>Jour 1</h2>
                         <div class="form-group">
                             <div id="ingDiv">
                                 <!--Make sure the form has the autocomplete function switched off:-->
