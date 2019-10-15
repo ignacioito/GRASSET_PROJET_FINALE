@@ -149,13 +149,14 @@
       <?php
       $msg = ' ';
       if($_POST){
-        $conection = mysqli_connect(HOST, USUARIO, SENHA, DB) or die('Ne Pas Conectée!');
-        mysql_select_db('', $conection) or die(mysql_error());
-        echo 'test de connection';
         define('HOST', '127.0.0.1');
         define('USUARIO', 'root');
-        define('SENHA', 'root');
+        define('SENHA', '');
         define('DB', 'BF21');
+        $conection = mysqli_connect(HOST, USUARIO, SENHA, DB) or die('Ne Pas Conectée!');
+        // mysql_select_db('', $conection) or die(mysql_error());
+        // echo 'test de connection';
+
 
         $nomAliment = $_POST['nomAliment'];
         $uniteMesure = $_POST['uniteMesure'];
