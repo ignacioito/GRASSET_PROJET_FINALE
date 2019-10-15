@@ -147,7 +147,35 @@
 
             <!-- Main content -->
             
-
+            <form class="container">
+          <form class="content-panel">
+            <form class="form-horizontal">
+              
+              <fieldset class="fieldset">
+                <h3 class="fieldset-title">New User</h3>
+                <div class="form-group">
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Couriel</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="email" class="form-control" placeholder="test@test.com">
+                  </div>
+                </div>
+               
+                <div class="form-group">
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Mot de Passe</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" placeholder="Mot de Passe">
+                  </div>
+                </div>
+              </fieldset>
+              <hr>
+              <div class="form-group">
+                <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                  <input class="btn btn-primary" name="submitCreateUser" type="submit" value="Update Profile">
+                </div>
+              </div>
+            </form>
+          </form>
+        </form>
 
             <!-- /.content -->
         </div>
