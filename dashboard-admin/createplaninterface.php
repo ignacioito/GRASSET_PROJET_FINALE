@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Searchfrom/Autocomplete CSS -->
+    <link href="dist/css/searchform.css" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -144,184 +146,179 @@
             </div>
             <!-- /.content-header -->
 
-
             <div class="container">
                 <h2>Plan alimentaire de John Doe</h2>
                 <!-- days nav-bar -->
-                <ul class="nav nav-pills" role="tablist">
-                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#day1">Jour 1</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day2">Jour 2</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day3">Jour 3</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day4">Jour 4</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day5">Jour 5</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day6">Jour 6</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day7">Jour 7</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#user">Info client</a></li>
+                <ul class="nav nav-pills mb-3" role="tablist">
+                    <li class="nav-item mx-4"><a class="nav-link active" data-toggle="pill" href="#day1">Jour 1</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" data-toggle="pill" href="#day2">Jour 2</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" data-toggle="pill" href="#day3">Jour 3</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" data-toggle="pill" href="#day4">Jour 4</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" data-toggle="pill" href="#day5">Jour 5</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" data-toggle="pill" href="#day6">Jour 6</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" data-toggle="pill" href="#day7">Jour 7</a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" data-toggle="pill" href="#user">Info client</a></li>
                 </ul>
                 <!-- days -->
-                <div class="tab-content showBorders">
+                <div class="tab-content" id="pills-tabContent">
                     <!-- day1 -->
-                    <div id="day1" class="tab-pane container active">
-                        <h2>Jour 1</h2>
+                    <div id="day1" class="tab-pane fade show active">
                         <div class="form-group">
-                            <div id="ingDiv">
-                                <!--Make sure the form has the autocomplete function switched off:-->
-                                <form autocomplete="off" action="/action_page.php">
-                                    <label for="ingNameDay1">Aliment:</label>
-                                    <div class="autocomplete">
-                                        <input id="ingNameDay1" type="text" name="ingNameDay1" placeholder="Aliment">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-3">
+                                            <div id="ingDiv">
+                                                <!--Make sure the form has the autocomplete function switched off:-->
+                                                <form autocomplete="on" action="/action_page.php">
+                                                    <div class="autocomplete" style="width:200px;">
+                                                        <label for="ingNameDay1">Aliment:</label>
+                                                        <input id="ingNameDay1" type="text" name="ingNameDay1" placeholder="Aliment">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div id="qttDiv">
+                                                <label for="foodQtt1">Quantite:</label>
+                                                <select id="foodQtt1">
+                                                    <option value="1">x1</option>
+                                                    <option value="2">x2</option>
+                                                    <option value="3">x3</option>
+                                                    <option value="4">x4</option>
+                                                    <option value="5">x5</option>
+                                                    <option value="6">x6</option>
+                                                    <option value="7">x7</option>
+                                                    <option value="8">x8</option>
+                                                    <option value="9">x9</option>
+                                                    <option value="10">x10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div id="mealNumberDiv">
+                                                <label for="mealNumbSelection1">Numéro du repas:</label>
+                                                <select id="mealNumbSelection1">
+                                                    <option value="meal1">1</option>
+                                                    <option value="meal2">2</option>
+                                                    <option value="meal3">3</option>
+                                                    <option value="meal4">4</option>
+                                                    <option value="meal5">5</option>
+                                                    <option value="meal6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn btn-success" onclick="addDay1()">Ajouter</button>
+                                        </div>
                                     </div>
-                                </form>
+                                    <div class="row">
+                                        <div class="col">
+                                            Calories restantes:
+                                            <div id="day1Calories"></div>
+                                        </div>
+                                        <div class="col">
+                                            Protéines restants:
+                                            <div id="day1Proteins"></div>
+                                        </div>
+                                        <div class="col">
+                                            Lipides restants:
+                                            <div id="day1Lipids"></div>
+                                        </div>
+                                        <div class="col">
+                                            Glucides restants:
+                                            <div id="day1Carbohydrates"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="qttDiv">
-                                <label for="foodQtt1">Quantite:</label>
-                                <select id="foodQtt1">
-                                    <option value="1">x1</option>
-                                    <option value="2">x2</option>
-                                    <option value="3">x3</option>
-                                    <option value="4">x4</option>
-                                    <option value="5">x5</option>
-                                    <option value="6">x6</option>
-                                    <option value="7">x7</option>
-                                    <option value="8">x8</option>
-                                    <option value="9">x9</option>
-                                    <option value="10">x10</option>
-                                </select>
-                            </div>
-                            <div id="mealNumberDiv">
-                                <label for="mealNumbSelection1">Numéro du repas:</label>
-                                <select id="mealNumbSelection1">
-                                    <option value="meal1">1</option>
-                                    <option value="meal2">2</option>
-                                    <option value="meal3">3</option>
-                                    <option value="meal4">4</option>
-                                    <option value="meal5">5</option>
-                                    <option value="meal6">6</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-success" onclick="addDay1()">Ajouter</button>
-                        </div>
-                        <div id="meals">
-                            <div class="showBorders">Repas 1:
-                                <ul class="showBorders" id="day1meal1">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 2:
-                                <ul class="showBorders" id="day1meal2">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 3:
-                                <ul class="showBorders" id="day1meal3">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 4:
-                                <ul class="showBorders" id="day1meal4">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 5:
-                                <ul class="showBorders" id="day1meal5">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 6:
-                                <ul class="showBorders" id="day1meal6">
-                                </ul>
-                            </div>
-                            <div>Calories restantes:
-                                <div id="day1Calories"></div>
-                            </div>
-                            <div>Protéines restants:
-                                <div id="day1Proteins"></div>
-                            </div>
-                            <div>Lipides restants:
-                                <div id="day1Lipids"></div>
-                            </div>
-                            <div>Glucides restants:
-                                <div id="day1Carbohydrates"></div>
+                            <div class="col">
+                                <div id="meals">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 1:
+                                                        <ul class="showBorders" id="day1meal1">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 2:
+                                                        <ul class="showBorders" id="day1meal2">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 3:
+                                                        <ul class="showBorders" id="day1meal3">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 4:
+                                                        <ul class="showBorders" id="day1meal4">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 5:
+                                                        <ul class="showBorders" id="day1meal5">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 6:
+                                                        <ul class="showBorders" id="day1meal6">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- day2 -->
-                    <div id="day2" class="tab-pane container">
-                        <h2>Jour 2</h2>
-                        <div class="form-group">
-                            <!--Make sure the form has the autocomplete function switched off:-->
-                            <form autocomplete="off" action="/action_page.php">
-                                <label for="ingNameDay2">Aliment:</label>
-                                <div class="autocomplete">
-                                    <input id="ingNameDay2" type="text" name="ingNameDay2" placeholder="Aliment">
-                                </div>
-                            </form>
-                            <div id="qttDiv">
-                                <label for="foodQtt">Quantite:</label>
-                                <input type="text" name="foodQtt" class="qttInp">
-                                <select>
-                                    <option value="g">g</option>
-                                    <option value="lb">lb</option>
-                                    <option value="L">L</option>
-                                    <option value="unit">Unité</option>
-                                </select>
-                            </div>
-                            <div id="mealNumberDiv">
-                                <label>Numéro du repas:</label>
-                                <select id="mealNumbSelection2">
-                                    <option value="meal1">1</option>
-                                    <option value="meal2">2</option>
-                                    <option value="meal3">3</option>
-                                    <option value="meal4">4</option>
-                                    <option value="meal5">5</option>
-                                    <option value="meal6">6</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-success" onclick="addDay2()">Ajouter</button>
-                        </div>
-                        <div id="meals">
-                            <div class="showBorders">Repas 1:
-                                <ul class="showBorders" id="day2meal1">
-                                    <li>Poulet 200g</li>
-                                    <li>Haricots 100g</li>
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 2:
-                                <ul class="showBorders" id="day2meal2">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 3:
-                                <ul class="showBorders" id="day2meal3">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 4:
-                                <ul class="showBorders" id="day2meal4">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 5:
-                                <ul class="showBorders" id="day2meal5">
-                                </ul>
-                            </div>
-                            <div class="showBorders">Repas 6:
-                                <ul class="showBorders" id="day2meal6">
-                                </ul>
-                            </div>
-                        </div>
+                    <div id="day2" class="tab-pane container fade">
                     </div>
                     <!-- day3 -->
                     <div id="day3" class="tab-pane fade">
-                        <h2>Jour 3</h2>
                     </div>
                     <!-- day4 -->
                     <div id="day4" class="tab-pane fade">
-                        <h2>Jour 4</h2>
                     </div>
                     <!-- day5 -->
                     <div id="day5" class="tab-pane fade">
-                        <h2>Jour 5</h2>
                     </div>
                     <!-- day6 -->
                     <div id="day6" class="tab-pane fade">
-                        <h2>Jour 6</h2>
                     </div>
                     <!-- day7 -->
                     <div id="day7" class="tab-pane fade">
-                        <h2>Jour 7</h2>
                     </div>
                     <!-- user -->
                     <div id="user" class="tab-pane fade container">
