@@ -148,20 +148,20 @@
                 <div class="form-group">
                   <label class="col-md-2 col-sm-3 col-xs-12 control-label">User Name</label>
                   <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" value="Rebecca">
+                    <input type="text" class="form-control" placeholder="Rebecca">
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label class="col-md-2 col-sm-3 col-xs-12 control-label">First Name</label>
                   <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" value="Rebecca">
+                    <input type="text" class="form-control" placeholder="Rebecca">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-md-2 col-sm-3 col-xs-12 control-label">Last Name</label>
                   <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" value="Sanders">
+                    <input type="text" class="form-control" placeholder="Sanders">
                   </div>
                 </div>
               </fieldset>
