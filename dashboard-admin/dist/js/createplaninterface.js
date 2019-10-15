@@ -124,7 +124,6 @@ if (gender == "M") {
 }
 
 document.getElementById("dayCalories").innerHTML = bmr;
-
 document.getElementById("day1Calories").innerHTML = bmr;
 
 // Day1
