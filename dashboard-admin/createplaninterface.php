@@ -170,7 +170,7 @@
                                         <div class="col-3">
                                             <div id="ingDiv">
                                                 <!--Make sure the form has the autocomplete function switched off:-->
-                                                <form autocomplete="on" action="/action_page.php">
+                                                <form autocomplete="off" action="/action_page.php">
                                                     <div class="autocomplete" style="width:200px;">
                                                         <label for="ingNameDay1">Aliment:</label>
                                                         <input id="ingNameDay1" type="text" name="ingNameDay1" placeholder="Aliment">
