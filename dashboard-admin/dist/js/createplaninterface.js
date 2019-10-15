@@ -160,19 +160,23 @@ function addDay1() {
   console.log("Is the ingredient existing : " + ingExists);
   if (ingExists) {
     // Find selected meal
-    let ddown = document.getElementById("mealNumbSelection1");
-    let mealNumber = ddown.options[ddown.selectedIndex].value;
+    let ddownMeal = document.getElementById("mealNumbSelection1");
+    let mealNumber = ddownMeal.options[ddownMeal.selectedIndex].value;
     console.log(mealNumber);
     // Assign selected day
     let dayNumber = "day1";
+    // Find selected quantity
+    let ddownQtt = document.getElementById("foodQtt1");
+    let qtt = ddownQtt.options[ddownQtt.selectedIndex].value;
     // Add the ingredient
     console.log(ingredient);
     let ingToAdd = document.createElement("li");
-    ingToAdd.textContent = ingredient;
+    ingToAdd.textContent = ingredient + " x" + qtt;
     let ulID = dayNumber + mealNumber;
     console.log(ulID);
     document.getElementById(ulID).appendChild(ingToAdd);
     document.getElementById("ingNameDay1").value = "";
+    ddownQtt.value = 1;
   } else if (ingredient == "") {
     alert("Veuillez insérer un ingrédient");
   } else {

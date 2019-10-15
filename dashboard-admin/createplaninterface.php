@@ -174,11 +174,22 @@
                                 </form>
                             </div>
                             <div id="qttDiv">
-                                <label for="foodQtt">Quantite:</label>
-                                <input type="text" name="foodQtt" class="qttInp">
+                                <label for="foodQtt1">Quantite:</label>
+                                <select id="foodQtt1">
+                                    <option value="1">x1</option>
+                                    <option value="2">x2</option>
+                                    <option value="3">x3</option>
+                                    <option value="4">x4</option>
+                                    <option value="5">x5</option>
+                                    <option value="6">x6</option>
+                                    <option value="7">x7</option>
+                                    <option value="8">x8</option>
+                                    <option value="9">x9</option>
+                                    <option value="10">x10</option>
+                                </select>
                             </div>
                             <div id="mealNumberDiv">
-                                <label>Numéro du repas:</label>
+                                <label for="mealNumbSelection1">Numéro du repas:</label>
                                 <select id="mealNumbSelection1">
                                     <option value="meal1">1</option>
                                     <option value="meal2">2</option>
@@ -193,8 +204,6 @@
                         <div id="meals">
                             <div class="showBorders">Repas 1:
                                 <ul class="showBorders" id="day1meal1">
-                                    <li>Poulet 200g</li>
-                                    <li>Haricots 100g</li>
                                 </ul>
                             </div>
                             <div class="showBorders">Repas 2:
