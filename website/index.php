@@ -256,7 +256,7 @@
         <!-- Footer Links -->
 
 <!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2019 Copyright:
+<div class="footer-copyright text-center py-3 bg-dark">© 2019 Copyright:
   <a href="https://www.institut-grasset.qc.ca/" target="_blank"> InstitutGrasset.com</a>
 </div>
 <!-- Copyright -->
