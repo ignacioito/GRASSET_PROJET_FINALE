@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dashboard BF21 - Conditionnement physique et mental</title>
+  <title>Dashboard Admin BF21 - Conditionnement physique et mental</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -46,10 +46,10 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="dashboard.html" class="brand-link">
+      <a href="dashboard.php" class="brand-link">
         <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
           style="opacity: .8;">
-        <span class="brand-text font-weight-light">User BF21</span>
+        <span class="brand-text font-weight-light">Admin BF21</span>
       </a>
 
       <!-- Sidebar -->
@@ -57,10 +57,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
-            <img src="dist/img/user160.png" class="img-circle elevation-2" alt="User Image">
+            <img src="dist/img/user2-160x160.jpeg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <p class="d-block text-white">John Doe</p>
+            <p class="d-block text-white">Ignacio Ito</p>
           </div>
         </div>
 
@@ -71,35 +71,63 @@
                        with font-awesome or any other icon font library -->
             <!-- Dashboard -->
             <li class="nav-item">
-              <a href="dashboard.html" class="nav-link">
+              <a href="dashboard.php" class="nav-link">
                 <i class="nav-icon fas fa-home"></i>
                 <p>
                   Dashboard
                 </p>
               </a>
             </li>
-            <!-- Sidebar Renseigner ses informations -->
+            <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createtrainingform.html" class="nav-link">
+              <a href="createplan.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
-                  Renseigner ses informations
+                  Créer un Plan
                 </p>
               </a>
             </li>
-            <!-- Sidebar Profil -->
+            <!-- Sidebar Gestion des Clients -->
             <li class="nav-item">
-              <a href="profile.html" class="nav-link">
+              <a href="manageclient.php" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                  Gestion des Clients
+                </p>
+              </a>
+            </li>
+
+            <!-- Sidebar Gestion des Aliments -->
+            <li class="nav-item">
+              <a href="manageingredients.php" class="nav-link">
+                <i class="nav-icon fas fa-utensils"></i>
+                <p>
+                  Gestion des Aliments
+                </p>
+              </a>
+            </li>
+
+            <!-- Sidebar Paramètres -->
+            <li class="nav-item">
+              <a href="parameters.php" class="nav-link">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
-                  Profil
+                  Paramètres
+                </p>
+              </a>
+            </li>
+            <!-- Logout -->
+            <li class="nav-item">
+              <a href="logout.php" class="nav-link">
+                <i class="nav-icon fas fa-sign-out-alt"></i>
+                <p>
+                  Logout
                 </p>
               </a>
             </li>
           </ul>
         </nav>
       </div>
-
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
@@ -120,11 +148,11 @@
       <!-- Main content -->
 
       <!-- Content Wrapper. Contains page content -->
-      <div class="container bg-dark">
+      <div class="container">
         <div class="align-content: center">
           <iframe
             src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=YmYyMWNvbmRpdEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cHQtYnIuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1&amp;showTz=1&amp;hl=fr_CA"
-            style="border-width:0" width="900" height="600" frameborder="0" scrolling="no">
+            style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no">
           </iframe>
         </div>
       </div>

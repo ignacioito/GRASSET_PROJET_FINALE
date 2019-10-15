@@ -12,8 +12,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet"
-        href="../dashboard-admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="../dashboard-admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="../dashboard-admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
@@ -34,10 +33,10 @@
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;">
-            <a class="navbar-brand" href="index.html">Acceuil</a>
-            <a class="navbar-brand" href="faq.html">FAQ</a>
-            <a class="navbar-brand" href="contact.html">Contact</a>
-            <a class="navbar-brand" href="login.html">Identification</a>
+            <a class="navbar-brand" href="index.php">Acceuil</a>
+            <a class="navbar-brand" href="faq.php">FAQ</a>
+            <a class="navbar-brand" href="contact.php">Contact</a>
+            <a class="navbar-brand" href="login.php">Identification</a>
         </nav>
     </header>
 
@@ -47,9 +46,7 @@
         <table align="center">
             <tr>
                 <td>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.370243886231!2d-73.79739278424987!3d45.482488540243544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93cee48cf1a59%3A0xe4df49b16c578bb2!2s3143+Boulevard+des+Sources%2C+Dollard-des-Ormeaux%2C+QC+H9B+3L7!5e0!3m2!1sen!2sca!4v1559510706021!5m2!1sen!2sca"
-                        width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.370243886231!2d-73.79739278424987!3d45.482488540243544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93cee48cf1a59%3A0xe4df49b16c578bb2!2s3143+Boulevard+des+Sources%2C+Dollard-des-Ormeaux%2C+QC+H9B+3L7!5e0!3m2!1sen!2sca!4v1559510706021!5m2!1sen!2sca" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </td>
                 <td>
                     <h2>BF21 - Conditionnement physique et mental</h2>

@@ -12,8 +12,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet"
-        href="../dashboard-admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="../dashboard-admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="../dashboard-admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
@@ -34,10 +33,10 @@
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;">
-            <a class="navbar-brand" href="index.html">Acceuil</a>
-            <a class="navbar-brand" href="faq.html">FAQ</a>
-            <a class="navbar-brand" href="contact.html">Contact</a>
-            <a class="navbar-brand" href="login.html">Identification</a>
+            <a class="navbar-brand" href="index.php">Acceuil</a>
+            <a class="navbar-brand" href="faq.php">FAQ</a>
+            <a class="navbar-brand" href="contact.php">Contact</a>
+            <a class="navbar-brand" href="login.php">Identification</a>
         </nav>
     </header>
     <br>

@@ -177,6 +177,20 @@
       <form method="post" action="<?php $SELF_PHP;?>?acao=getProduto">
       <br />
         <input type="submit" value="List des Aliments " />
+          <label for="Quantidade">Glycémique:
+            <br />
+            <input type="text" name="Quantidade" /></label>
+
+          <br />
+          <br />
+          <input type="submit" value="Envoyer" />
+        </form>
+        <form method="post" action="?php $SELF_PHP;?>?acao=getProduto">
+
+          <br>
+
+          <input type="submit" value="Listar Produtos" />
+      </div>
       <!-- /.card-header -->
       <!-- <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">

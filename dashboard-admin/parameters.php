@@ -40,17 +40,13 @@
           <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
       </ul>
-
-
-
-
     </nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="dashboard.html" class="brand-link">
+      <a href="dashboard.php" class="brand-link">
         <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
           style="opacity: .8;">
         <span class="brand-text font-weight-light">Admin BF21</span>
@@ -75,7 +71,7 @@
                        with font-awesome or any other icon font library -->
             <!-- Dashboard -->
             <li class="nav-item">
-              <a href="dashboard.html" class="nav-link">
+              <a href="dashboard.php" class="nav-link">
                 <i class="nav-icon fas fa-home"></i>
                 <p>
                   Dashboard
@@ -84,7 +80,7 @@
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplan.html" class="nav-link">
+              <a href="createplan.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -93,7 +89,7 @@
             </li>
             <!-- Sidebar Gestion des Clients -->
             <li class="nav-item">
-              <a href="manageclient.html" class="nav-link">
+              <a href="manageclient.php" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
                   Gestion des Clients
@@ -103,7 +99,7 @@
 
             <!-- Sidebar Gestion des Aliments -->
             <li class="nav-item">
-              <a href="manageingredients.html" class="nav-link">
+              <a href="manageingredients.php" class="nav-link">
                 <i class="nav-icon fas fa-utensils"></i>
                 <p>
                   Gestion des Aliments
@@ -113,17 +109,26 @@
 
             <!-- Sidebar Paramètres -->
             <li class="nav-item">
-              <a href="parameters.html" class="nav-link">
+              <a href="parameters.php" class="nav-link">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
                   Paramètres
                 </p>
               </a>
             </li>
+
+            <!-- Logout -->
+            <li class="nav-item">
+              <a href="logout.php" class="nav-link">
+                <i class="nav-icon fas fa-sign-out-alt"></i>
+                <p>
+                  Logout
+                </p>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
-
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
@@ -142,6 +147,75 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
+
+        <form class="container">
+          <form class="content-panel">
+            <form class="form-horizontal">
+              <fieldset class="fieldset">
+                <div class="form-group avatar">
+                  <figure class="figure col-md-2 col-sm-3 col-xs-12">
+                    <img class="img-rounded img-responsive" src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                      alt="">
+                  </figure>
+                  <div class="form-inline col-md-10 col-sm-9 col-xs-12">
+                    <input type="file" class="file-uploader pull-left">
+                    <button type="submit" class="btn btn-sm btn-default-alt pull-left">Update Image</button>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2 col-sm-3 col-xs-12 control-label">User Name</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" value="Rebecca">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-md-2 col-sm-3 col-xs-12 control-label">First Name</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" value="Rebecca">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2 col-sm-3 col-xs-12 control-label">Last Name</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" value="Sanders">
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset">
+                <h3 class="fieldset-title">Contact Info</h3>
+                <div class="form-group">
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Couriel</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="email" class="form-control" value="Rebecca@website.com">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Telephone</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" value="(514)3460031">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Adresse</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="url" class="form-control" value="50 rue Sherbrook">
+                  </div>
+                </div>
+              </fieldset>
+              <hr>
+              <div class="form-group">
+                <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                  <input class="btn btn-primary" type="submit" value="Update Profile">
+                </div>
+              </div>
+            </form>
+          </form>
+        </form>
+
+
+    <!-- /.content -->
+  </div>
 
       <!-- /.content -->
     </div>
