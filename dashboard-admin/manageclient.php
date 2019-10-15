@@ -264,11 +264,11 @@
                                 </tbody>
                             </table>
                             <div class="text-center">
-                              <div class="btn-group-toggle" data-toggle="buttons">
+                              
 
                               <a href="createclient.php" class="nav-link"><button type="button" class="btn btn-primary btn-lg">Nouveau Client</button></a>
                                 
-                              </div>
+                              
                             </div>
                         </div>
                         <!-- /.card-body -->
