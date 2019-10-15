@@ -49,25 +49,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item active mx-5">
                         <a class="nav-link" href="#">
                         <i class="fas fa-home"></i> Acceuil
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item active mx-5">
                         <a class="nav-link" href="#">
                         <i class="fas fa-question-circle"></i> FAQ
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item active mx-5">
                         <a class="nav-link" href="#">
                         <i class="fas fa-map-marker-alt"></i> Contact
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item active dropdown">
+                    <li class="nav-item active dropdown mx-5">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true">
                             <i class="fas fa-user"></i> Profile </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
