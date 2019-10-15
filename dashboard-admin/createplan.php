@@ -40,10 +40,6 @@
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                 </li>
             </ul>
-
-
-
-
         </nav>
         <!-- /.navbar -->
 
@@ -122,10 +118,10 @@
                         <!-- Logout -->
                         <li class="nav-item">
                             <a href="logout.php" class="nav-link">
-                            <i class="nav-icon fas fa-sign-out-alt"></i>
-                            <p>
-                                Logout
-                            </p>
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>
+                                    Logout
+                                </p>
                             </a>
                         </li>
                     </ul>
@@ -185,166 +181,6 @@
                                         <td><span class="tag tag-success">Non traité</span></td>
                                         <td>Gagne de poids</td>
                                     </tr>
-                                    <tr>
-                                        <!-- <td>219</td> -->
-                                        <td>Alexander Pierce</td>
-                                        <td>31/05/2019</td>
-                                        <td><span class="tag tag-warning">Terminé</span></td>
-                                        <td>Competition</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>657</td> -->
-                                        <td>Bob Doe</td>
-                                        <td>17/07/2019</td>
-                                        <td><span class="tag tag-primary">En cours</span></td>
-                                        <td>Perdre du poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>175</td> -->
-                                        <td>Mike Doe</td>
-                                        <td>10/05/2018</td>
-                                        <td><span class="tag tag-danger">Terminé</span></td>
-                                        <td>Gagne de poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>134</td> -->
-                                        <td>Jim Doe</td>
-                                        <td>11/07/2014</td>
-                                        <td><span class="tag tag-success">Terminé</span></td>
-                                        <td>Competition</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>494</td> -->
-                                        <td>Victoria Doe</td>
-                                        <td>19/09/2019</td>
-                                        <td><span class="tag tag-warning">En cours</span></td>
-                                        <td>Perdre du poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>832</td> -->
-                                        <td>Michael Doe</td>
-                                        <td>29/09/2019</td>
-                                        <td><span class="tag tag-primary">Non traité</span></td>
-                                        <td>Competition.</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>982</td> -->
-                                        <td>Rocky Doe</td>
-                                        <td>10/08/2019</td>
-                                        <td><span class="tag tag-danger">En cours</span></td>
-                                        <td>Competition.</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>183</td> -->
-                                        <td>John Doe</td>
-                                        <td>10/01/2019</td>
-                                        <td><span class="tag tag-success">Non traité</span></td>
-                                        <td>Gagne de poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>219</td> -->
-                                        <td>Alexander Pierce</td>
-                                        <td>05/01/2019</td>
-                                        <td><span class="tag tag-warning">Terminé</span></td>
-                                        <td>Competition</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>657</td> -->
-                                        <td>Bob Doe</td>
-                                        <td>09/07/2019</td>
-                                        <td><span class="tag tag-primary">En cours</span></td>
-                                        <td>Perdre du poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>175</td> -->
-                                        <td>Mike Doe</td>
-                                        <td>11/07/2014</td>
-                                        <td><span class="tag tag-danger">Terminé</span></td>
-                                        <td>Gagne de poids</td>
-                                    </tr>
-                                    <!-- <tr>
-                                            <td>134</td>
-                                            <td>Jim Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-success">Terminé</span></td>
-                                            <td>Competition</td>
-                                        </tr>
-                                        <tr>
-                                            <td>494</td>
-                                            <td>Victoria Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-warning">En cours</span></td>
-                                            <td>Perdre du poids</td>
-                                        </tr>
-                                        <tr>
-                                            <td>832</td>
-                                            <td>Michael Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-primary">Non traité</span></td>
-                                            <td>Competition.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>982</td>
-                                            <td>Rocky Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-danger">En cours</span></td>
-                                            <td>Competition.</td>
-                                        <tr>
-                                            <td>183</td>
-                                            <td>John Doe</td>
-                                            <td>10/01/2019</td>
-                                            <td><span class="tag tag-success">Non traité</span></td>
-                                            <td>Gagne de poids</td>
-                                        </tr>
-                                        <tr>
-                                            <td>219</td>
-                                            <td>Alexander Pierce</td>
-                                            <td>05/01/2019</td>
-                                            <td><span class="tag tag-warning">Terminé</span></td>
-                                            <td>Competition</td>
-                                        </tr>
-                                        <tr>
-                                            <td>657</td>
-                                            <td>Bob Doe</td>
-                                            <td>09/07/2019</td>
-                                            <td><span class="tag tag-primary">En cours</span></td>
-                                            <td>Perdre du poids</td>
-                                        </tr>
-                                        <tr>
-                                            <td>175</td>
-                                            <td>Mike Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-danger">Terminé</span></td>
-                                            <td>Gagne de poids</td>
-                                        </tr>
-                                        <tr>
-                                            <td>134</td>
-                                            <td>Jim Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-success">Terminé</span></td>
-                                            <td>Competition</td>
-                                        </tr>
-                                        <tr>
-                                            <td>494</td>
-                                            <td>Victoria Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-warning">En cours</span></td>
-                                            <td>Perdre du poids</td>
-                                        </tr>
-                                        <tr>
-                                            <td>832</td>
-                                            <td>Michael Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-primary">Non traité</span></td>
-                                            <td>Competition.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>982</td>
-                                            <td>Rocky Doe</td>
-                                            <td>11/07/2014</td>
-                                            <td><span class="tag tag-danger">En cours</span></td>
-                                            <td>Competition.</td>
-                                        </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -371,6 +207,45 @@
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
+
+    <!-- PHP CODE - Loading and showing all users -->
+    <?php
+
+    // function function_alert($msg)
+    // {
+    //     echo "<script type='text/javascript'>alert('$msg');</script>";
+    // }
+
+    // for ($x = 0; $x < 1; $x++) {
+    //     function_alert("hello");
+    // }
+
+    $servername = "localhost";
+    $dbname = "BF21";
+
+    // Create connection
+    $conn = new mysqli($servername, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT eMail, nom FROM `utilisateurs` WHERE 1";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo "eMail: " . $row["eMail"] . " - Name: " . $row["nom"] . "<br>";
+        }
+    } else {
+        echo "0 results";
+    }
+    $conn->close();
+
+    ?>
+
+
 
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>

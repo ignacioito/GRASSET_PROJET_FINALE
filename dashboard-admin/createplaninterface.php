@@ -45,92 +45,91 @@
         </nav>
         <!-- /.navbar -->
 
-    <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-      <!-- Brand Logo -->
-      <a href="dashboard.php" class="brand-link">
-        <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
-          style="opacity: .8;">
-        <span class="brand-text font-weight-light">Admin BF21</span>
-      </a>
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="dashboard.php" class="brand-link">
+                <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8;">
+                <span class="brand-text font-weight-light">Admin BF21</span>
+            </a>
 
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img src="dist/img/user2-160x160.jpeg" class="img-circle elevation-2" alt="User Image">
-          </div>
-          <div class="info">
-            <p class="d-block text-white">Ignacio Ito</p>
-          </div>
-        </div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpeg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <p class="d-block text-white">Ignacio Ito</p>
+                    </div>
+                </div>
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
                        with font-awesome or any other icon font library -->
-            <!-- Dashboard -->
-            <li class="nav-item">
-              <a href="dashboard.php" class="nav-link">
-                <i class="nav-icon fas fa-home"></i>
-                <p>
-                  Dashboard
-                </p>
-              </a>
-            </li>
-            <!-- Sidebar create plan -->
-            <li class="nav-item">
-              <a href="createplan.php" class="nav-link">
-                <i class="nav-icon fas fa-calendar-plus"></i>
-                <p>
-                  Créer un Plan
-                </p>
-              </a>
-            </li>
-            <!-- Sidebar Gestion des Clients -->
-            <li class="nav-item">
-              <a href="manageclient.php" class="nav-link">
-                <i class="nav-icon fas fa-users"></i>
-                <p>
-                  Gestion des Clients
-                </p>
-              </a>
-            </li>
+                        <!-- Dashboard -->
+                        <li class="nav-item">
+                            <a href="dashboard.php" class="nav-link">
+                                <i class="nav-icon fas fa-home"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <!-- Sidebar create plan -->
+                        <li class="nav-item">
+                            <a href="createplan.php" class="nav-link">
+                                <i class="nav-icon fas fa-calendar-plus"></i>
+                                <p>
+                                    Créer un Plan
+                                </p>
+                            </a>
+                        </li>
+                        <!-- Sidebar Gestion des Clients -->
+                        <li class="nav-item">
+                            <a href="manageclient.php" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Gestion des Clients
+                                </p>
+                            </a>
+                        </li>
 
-            <!-- Sidebar Gestion des Aliments -->
-            <li class="nav-item">
-              <a href="manageingredients.php" class="nav-link">
-                <i class="nav-icon fas fa-utensils"></i>
-                <p>
-                  Gestion des Aliments
-                </p>
-              </a>
-            </li>
+                        <!-- Sidebar Gestion des Aliments -->
+                        <li class="nav-item">
+                            <a href="manageingredients.php" class="nav-link">
+                                <i class="nav-icon fas fa-utensils"></i>
+                                <p>
+                                    Gestion des Aliments
+                                </p>
+                            </a>
+                        </li>
 
-            <!-- Sidebar Paramètres -->
-            <li class="nav-item">
-              <a href="parameters.php" class="nav-link">
-                <i class="nav-icon fas fa-cog"></i>
-                <p>
-                  Paramètres
-                </p>
-              </a>
-            </li>
-            <!-- Logout -->
-            <li class="nav-item">
-              <a href="logout.php" class="nav-link">
-                <i class="nav-icon fas fa-sign-out-alt"></i>
-                <p>
-                  Logout
-                </p>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </aside>
+                        <!-- Sidebar Paramètres -->
+                        <li class="nav-item">
+                            <a href="parameters.php" class="nav-link">
+                                <i class="nav-icon fas fa-cog"></i>
+                                <p>
+                                    Paramètres
+                                </p>
+                            </a>
+                        </li>
+                        <!-- Logout -->
+                        <li class="nav-item">
+                            <a href="logout.php" class="nav-link">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>
+                                    Logout
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -159,12 +158,13 @@
                     <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day5">Jour 5</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day6">Jour 6</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#day7">Jour 7</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#user">Info client</a></li>
                 </ul>
                 <!-- days -->
                 <div class="tab-content showBorders">
                     <!-- day1 -->
                     <div id="day1" class="tab-pane container active">
-                        <h2>Jour 1</h2>
+                        <h2 id="newfont">Jour 1</h2>
                         <div class="form-group">
                             <div id="ingDiv">
                                 <!--Make sure the form has the autocomplete function switched off:-->
@@ -224,6 +224,9 @@
                             <div class="showBorders">Repas 6:
                                 <ul class="showBorders" id="day1meal6">
                                 </ul>
+                            </div>
+                            <div class="showBorders">Calories restantes:
+                                <div id="day1Calories"></div>
                             </div>
                         </div>
                     </div>
@@ -310,9 +313,20 @@
                     <div id="day7" class="tab-pane fade">
                         <h2>Jour 7</h2>
                     </div>
-                    <!-- day7 -->
-                    <div id="day7" class="tab-pane fade">
+                    <!-- user -->
+                    <div id="user" class="tab-pane fade container">
                         <h2>Info du client</h2>
+                        <div>
+                            Sexe : <p id="gender">M</p>
+                            <br>
+                            Âge : <p id="age">40</p>
+                            <br>
+                            Taille en cm : <p id="height">180</p>
+                            <br>
+                            Poids en kg : <p id="weight">75</p>
+                            <br>
+                            Calories par jour : <p id="dayCalories">0</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -335,8 +349,9 @@
     </div>
     <!-- ./wrapper -->
 
+
     <!-- Admin interface javascript -->
-    <script src="dist/js/admininterface.js"></script>
+    <script src="dist/js/createplaninterface.js"></script>
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
