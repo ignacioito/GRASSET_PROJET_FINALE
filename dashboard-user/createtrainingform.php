@@ -116,7 +116,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Fiche client et évaluation (1/2)</h1>
+                            <h1 class="m-0 text-dark">Fiche client et évaluation</h1>
                             
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -140,7 +140,7 @@
                             <input type="text" class="form-control" id="formValidation02" placeholder="Nom" required>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label for="formValidation03">Âge</label>
+                            <label for="formValidation03">Date Naissance</label>
                             <!-- class="1-100" is called by jQuery and used by javascript in dist/js/trainingform.js -->
                             <select id="formValidation03" class="1-100 form-control">
                                 <option selected>Sélectionner</option>
@@ -552,7 +552,7 @@
                 </div>
 
                 </form>
-                <div class="text-center">
+                <div class="text-center my-5">
                     <a class="btn btn-large btn-primary col-md-2 text-center" href="createplanform.html">Poursuivre</a>
                 </div>
                 <br>
