@@ -168,8 +168,7 @@
         $fibre = $_POST['fibre'];
         $glycemique = $_POST['glycemique'];
 
-        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) ".
-        "Values ('".$nomAliment."', '".$uniteMesure."', '".$calorie."', '".$lipid."', '".$glucide."', '".$proteine."', '".$fibre."', '".$glycemique."')";
+        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) Values ('".$nomAliment."', '".$uniteMesure."', '".$calorie."', '".$lipid."', '".$glucide."', '".$proteine."', '".$fibre."', '".$glycemique."')";
         $q = mysql_query($query);
 
         if($q){
