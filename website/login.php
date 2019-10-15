@@ -44,7 +44,7 @@
 
         <form action="../dashboard-admin/dashboard.php" method="POST" action="">
           <div class="input-group mb-3">
-            <input type="text" name="user" class="form-control" placeholder="utilisateur">
+            <input type="text" name="user" class="form-control" placeholder="Email">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -52,7 +52,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" name="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" class="form-control" placeholder="Mot de passe">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -60,17 +60,11 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-8">
-              <div class="icheck-primary">
-                <input type="checkbox" id="remember">
-                <label for="remember">
-                  Remember Me
-                </label>
-              </div>
+            <div class="col-6">
             </div>
             <!-- /.col -->
-            <div class="col-4">
-              <button type="submit" name="btnaccess" class="btn btn-block btn-flat btn-primary">Sign In</button>
+            <div class="col-5">
+              <button type="submit" name="btnaccess" class="btn btn-block btn-flat btn-primary">Se connecter</button>
             </div>
             <!-- /.col -->
           </div>
@@ -87,11 +81,8 @@
 
         <!-- /.social-auth-links -->
 
-        <p class="mb-1">
-          <a href="#">I forgot my password</a>
-        </p>
         <p class="mb-0">
-          <a href="register.php" class="text-center">Register a new membership</a>
+          <a href="register.php" class="text-center">Créer un nouveau compte</a>
         </p>
       </div>
     </div>

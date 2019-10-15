@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Tempo de geração: 10/10/2019 às 18:31
--- Versão do servidor: 10.1.37-MariaDB
--- Versão do PHP: 7.3.0
+-- Hôte : localhost
+-- Généré le :  mar. 15 oct. 2019 à 16:57
+-- Version du serveur :  10.4.8-MariaDB
+-- Version de PHP :  7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,15 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `BF21`
+-- Base de données :  `BF21`
 --
-CREATE DATABASE IF NOT EXISTS `BF21` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `BF21`;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `aliment`
+-- Structure de la table `aliment`
 --
 
 CREATE TABLE `aliment` (
@@ -44,7 +42,7 @@ CREATE TABLE `aliment` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `habitudesDeVie`
+-- Structure de la table `habitudesDeVie`
 --
 
 CREATE TABLE `habitudesDeVie` (
@@ -82,7 +80,7 @@ CREATE TABLE `habitudesDeVie` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `questionairePlanAlimentaire`
+-- Structure de la table `questionairePlanAlimentaire`
 --
 
 CREATE TABLE `questionairePlanAlimentaire` (
@@ -109,7 +107,7 @@ CREATE TABLE `questionairePlanAlimentaire` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `reseignementsMedicaux`
+-- Structure de la table `reseignementsMedicaux`
 --
 
 CREATE TABLE `reseignementsMedicaux` (
@@ -129,7 +127,7 @@ CREATE TABLE `reseignementsMedicaux` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tableRepas`
+-- Structure de la table `tableRepas`
 --
 
 CREATE TABLE `tableRepas` (
@@ -146,7 +144,7 @@ CREATE TABLE `tableRepas` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `typeAliment`
+-- Structure de la table `typeAliment`
 --
 
 CREATE TABLE `typeAliment` (
@@ -157,7 +155,7 @@ CREATE TABLE `typeAliment` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `typeUtlilisateur`
+-- Structure de la table `typeUtlilisateur`
 --
 
 CREATE TABLE `typeUtlilisateur` (
@@ -169,7 +167,7 @@ CREATE TABLE `typeUtlilisateur` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Despejando dados para a tabela `typeUtlilisateur`
+-- Déchargement des données de la table `typeUtlilisateur`
 --
 
 INSERT INTO `typeUtlilisateur` (`codtypeUtlilisateur`, `nomType`, `estAdm`, `estActif`, `motDePass`) VALUES
@@ -178,7 +176,7 @@ INSERT INTO `typeUtlilisateur` (`codtypeUtlilisateur`, `nomType`, `estAdm`, `est
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `utilisateurs`
+-- Structure de la table `utilisateurs`
 --
 
 CREATE TABLE `utilisateurs` (
@@ -196,24 +194,25 @@ CREATE TABLE `utilisateurs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Despejando dados para a tabela `utilisateurs`
+-- Déchargement des données de la table `utilisateurs`
 --
 
 INSERT INTO `utilisateurs` (`codUtilisateur`, `type`, `eMail`, `nom`, `poid`, `taille`, `dateNaissance`, `genre`, `codePostal`, `adresse`, `telephone`) VALUES
-(1, 1, 'admin@bf21.qc.ca', 'Administrateur', NULL, NULL, NULL, 'F', NULL, NULL, NULL);
+(1, 1, 'admin@bf21.qc.ca', 'Administrateur', NULL, NULL, NULL, 'F', NULL, NULL, NULL),
+(1234, 1, 'totoro@gmail.com', 'totoro', 44, 12, '2019-10-08', 'M', 'H3N2E4', '7253 Avenue des Pins', '4362538463');
 
 --
--- Índices de tabelas apagadas
+-- Index pour les tables déchargées
 --
 
 --
--- Índices de tabela `aliment`
+-- Index pour la table `aliment`
 --
 ALTER TABLE `aliment`
   ADD PRIMARY KEY (`codAliment`);
 
 --
--- Índices de tabela `habitudesDeVie`
+-- Index pour la table `habitudesDeVie`
 --
 ALTER TABLE `habitudesDeVie`
   ADD PRIMARY KEY (`codHabitudesDeVie`),
@@ -221,7 +220,7 @@ ALTER TABLE `habitudesDeVie`
   ADD KEY `codAdministrateur` (`codAdministrateur`);
 
 --
--- Índices de tabela `questionairePlanAlimentaire`
+-- Index pour la table `questionairePlanAlimentaire`
 --
 ALTER TABLE `questionairePlanAlimentaire`
   ADD PRIMARY KEY (`codPlanAlimentaire`),
@@ -229,7 +228,7 @@ ALTER TABLE `questionairePlanAlimentaire`
   ADD KEY `codAdministrateur` (`codAdministrateur`);
 
 --
--- Índices de tabela `reseignementsMedicaux`
+-- Index pour la table `reseignementsMedicaux`
 --
 ALTER TABLE `reseignementsMedicaux`
   ADD PRIMARY KEY (`codResMedicaux`),
@@ -237,7 +236,7 @@ ALTER TABLE `reseignementsMedicaux`
   ADD KEY `codUtilisateur` (`codUtilisateur`);
 
 --
--- Índices de tabela `tableRepas`
+-- Index pour la table `tableRepas`
 --
 ALTER TABLE `tableRepas`
   ADD PRIMARY KEY (`codTable`),
@@ -245,110 +244,110 @@ ALTER TABLE `tableRepas`
   ADD KEY `codAdministrateur` (`codAdministrateur`);
 
 --
--- Índices de tabela `typeAliment`
+-- Index pour la table `typeAliment`
 --
 ALTER TABLE `typeAliment`
   ADD PRIMARY KEY (`codTypeAliment`);
 
 --
--- Índices de tabela `typeUtlilisateur`
+-- Index pour la table `typeUtlilisateur`
 --
 ALTER TABLE `typeUtlilisateur`
   ADD PRIMARY KEY (`codtypeUtlilisateur`);
 
 --
--- Índices de tabela `utilisateurs`
+-- Index pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
   ADD PRIMARY KEY (`codUtilisateur`),
   ADD KEY `type` (`type`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT de tabela `aliment`
+-- AUTO_INCREMENT pour la table `aliment`
 --
 ALTER TABLE `aliment`
   MODIFY `codAliment` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `habitudesDeVie`
+-- AUTO_INCREMENT pour la table `habitudesDeVie`
 --
 ALTER TABLE `habitudesDeVie`
   MODIFY `codHabitudesDeVie` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `questionairePlanAlimentaire`
+-- AUTO_INCREMENT pour la table `questionairePlanAlimentaire`
 --
 ALTER TABLE `questionairePlanAlimentaire`
   MODIFY `codPlanAlimentaire` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `reseignementsMedicaux`
+-- AUTO_INCREMENT pour la table `reseignementsMedicaux`
 --
 ALTER TABLE `reseignementsMedicaux`
   MODIFY `codResMedicaux` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `tableRepas`
+-- AUTO_INCREMENT pour la table `tableRepas`
 --
 ALTER TABLE `tableRepas`
   MODIFY `codTable` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `typeAliment`
+-- AUTO_INCREMENT pour la table `typeAliment`
 --
 ALTER TABLE `typeAliment`
   MODIFY `codTypeAliment` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `typeUtlilisateur`
+-- AUTO_INCREMENT pour la table `typeUtlilisateur`
 --
 ALTER TABLE `typeUtlilisateur`
   MODIFY `codtypeUtlilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de tabela `utilisateurs`
+-- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `codUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `codUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1235;
 
 --
--- Restrições para dumps de tabelas
+-- Contraintes pour les tables déchargées
 --
 
 --
--- Restrições para tabelas `habitudesDeVie`
+-- Contraintes pour la table `habitudesDeVie`
 --
 ALTER TABLE `habitudesDeVie`
   ADD CONSTRAINT `habitudesdevie_ibfk_1` FOREIGN KEY (`codUtilisateur`) REFERENCES `utilisateurs` (`codUtilisateur`),
   ADD CONSTRAINT `habitudesdevie_ibfk_2` FOREIGN KEY (`codAdministrateur`) REFERENCES `utilisateurs` (`codUtilisateur`);
 
 --
--- Restrições para tabelas `questionairePlanAlimentaire`
+-- Contraintes pour la table `questionairePlanAlimentaire`
 --
 ALTER TABLE `questionairePlanAlimentaire`
   ADD CONSTRAINT `questionaireplanalimentaire_ibfk_1` FOREIGN KEY (`codUtilisateur`) REFERENCES `utilisateurs` (`codUtilisateur`),
   ADD CONSTRAINT `questionaireplanalimentaire_ibfk_2` FOREIGN KEY (`codAdministrateur`) REFERENCES `utilisateurs` (`codUtilisateur`);
 
 --
--- Restrições para tabelas `reseignementsMedicaux`
+-- Contraintes pour la table `reseignementsMedicaux`
 --
 ALTER TABLE `reseignementsMedicaux`
   ADD CONSTRAINT `reseignementsmedicaux_ibfk_1` FOREIGN KEY (`codAdministrateur`) REFERENCES `utilisateurs` (`codUtilisateur`),
   ADD CONSTRAINT `reseignementsmedicaux_ibfk_2` FOREIGN KEY (`codUtilisateur`) REFERENCES `utilisateurs` (`codUtilisateur`);
 
 --
--- Restrições para tabelas `tableRepas`
+-- Contraintes pour la table `tableRepas`
 --
 ALTER TABLE `tableRepas`
   ADD CONSTRAINT `tablerepas_ibfk_1` FOREIGN KEY (`codUtilisateur`) REFERENCES `utilisateurs` (`codUtilisateur`),
   ADD CONSTRAINT `tablerepas_ibfk_2` FOREIGN KEY (`codAdministrateur`) REFERENCES `utilisateurs` (`codUtilisateur`);
 
 --
--- Restrições para tabelas `utilisateurs`
+-- Contraintes pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
   ADD CONSTRAINT `utilisateurs_ibfk_1` FOREIGN KEY (`type`) REFERENCES `typeUtlilisateur` (`codtypeUtlilisateur`);

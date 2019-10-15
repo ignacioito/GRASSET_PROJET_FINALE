@@ -137,7 +137,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Gestion des Clients</h1>
+                            <h1 class="m-0 text-dark">Nouveau Client</h1>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                     <hr>
@@ -146,140 +146,36 @@
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Tableau des Clients</h3>
-
-                            <div class="card-tools">
-                                <div class="input-group input-group-sm" style="width: 150px;">
-                                    <input type="text" name="table_search" class="form-control float-right"
-                                        placeholder="Search">
-
-                                    <div class="input-group-append">
-                                        <button type="submit" class="btn btn-default"><i
-                                                class="fas fa-search"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="card-body table-responsive p-0" style="height: 900px;">
-                            <table class="table table-head-fixed">
-                                <thead>
-                                    <tr>
-                                        <!-- <th>ID</th> -->
-                                        <th>User</th>
-                                        <th>Date</th>
-                                        <th>Status</th>
-                                        <th>Reason</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <!-- <td>183</td> -->
-                                        <td>John Doe</td>
-                                        <td>10/01/2019</td>
-                                        <td><span class="tag tag-success">Non traité</span></td>
-                                        <td>Gagne de poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>219</td> -->
-                                        <td>Alexander Pierce</td>
-                                        <td>31/05/2019</td>
-                                        <td><span class="tag tag-warning">Terminé</span></td>
-                                        <td>Competition</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>657</td> -->
-                                        <td>Bob Doe</td>
-                                        <td>17/07/2019</td>
-                                        <td><span class="tag tag-primary">En cours</span></td>
-                                        <td>Perdre du poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>175</td> -->
-                                        <td>Mike Doe</td>
-                                        <td>10/05/2018</td>
-                                        <td><span class="tag tag-danger">Terminé</span></td>
-                                        <td>Gagne de poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>134</td> -->
-                                        <td>Jim Doe</td>
-                                        <td>11/07/2014</td>
-                                        <td><span class="tag tag-success">Terminé</span></td>
-                                        <td>Competition</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>494</td> -->
-                                        <td>Victoria Doe</td>
-                                        <td>19/09/2019</td>
-                                        <td><span class="tag tag-warning">En cours</span></td>
-                                        <td>Perdre du poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>832</td> -->
-                                        <td>Michael Doe</td>
-                                        <td>29/09/2019</td>
-                                        <td><span class="tag tag-primary">Non traité</span></td>
-                                        <td>Competition.</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>982</td> -->
-                                        <td>Rocky Doe</td>
-                                        <td>10/08/2019</td>
-                                        <td><span class="tag tag-danger">En cours</span></td>
-                                        <td>Competition.</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>183</td> -->
-                                        <td>John Doe</td>
-                                        <td>10/01/2019</td>
-                                        <td><span class="tag tag-success">Non traité</span></td>
-                                        <td>Gagne de poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>219</td> -->
-                                        <td>Alexander Pierce</td>
-                                        <td>05/01/2019</td>
-                                        <td><span class="tag tag-warning">Terminé</span></td>
-                                        <td>Competition</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>657</td> -->
-                                        <td>Bob Doe</td>
-                                        <td>09/07/2019</td>
-                                        <td><span class="tag tag-primary">En cours</span></td>
-                                        <td>Perdre du poids</td>
-                                    </tr>
-                                    <tr>
-                                        <!-- <td>175</td> -->
-                                        <td>Mike Doe</td>
-                                        <td>11/07/2014</td>
-                                        <td><span class="tag tag-danger">Terminé</span></td>
-                                        <td>Gagne de poids</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="text-center">
-                              
-
-                              <a href="createclient.php" class="nav-link"><button type="button" class="btn btn-primary btn-lg">Nouveau Client</button></a>
-                                
-                              
-                            </div>
-                        </div>
-                        <!-- /.card-body -->
-                    </div>
-                    <!-- /.card -->
+            
+            <form class="container">
+          <form class="content-panel">
+            <form class="form-horizontal">
+              
+              <fieldset class="fieldset">
+                <h3 class="fieldset-title">New User</h3>
+                <div class="form-group">
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Couriel</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="email" class="form-control" placeholder="test@test.com">
+                  </div>
                 </div>
-                
-            </div>
-
-            <!-- Creer un nouveau client -->
-
+               
+                <div class="form-group">
+                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Mot de Passe</label>
+                  <div class="col-md-10 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" placeholder="Mot de Passe">
+                  </div>
+                </div>
+              </fieldset>
+              <hr>
+              <div class="form-group">
+                <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                  <input class="btn btn-primary" name="submitCreateUser" type="submit" value="Update Profile">
+                </div>
+              </div>
+            </form>
+          </form>
+        </form>
 
             <!-- /.content -->
         </div>

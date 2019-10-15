@@ -36,7 +36,7 @@
 
     <!-- bootstrap cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,19 +51,19 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mx-5">
                         <a class="nav-link" href="#">
-                        <i class="fas fa-home"></i> Acceuil
+                            <i class="fas fa-home"></i> Acceuil
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item active mx-5">
                         <a class="nav-link" href="#">
-                        <i class="fas fa-question-circle"></i> FAQ
+                            <i class="fas fa-question-circle"></i> FAQ
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item active mx-5">
                         <a class="nav-link" href="#">
-                        <i class="fas fa-map-marker-alt"></i> Contact
+                            <i class="fas fa-map-marker-alt"></i> Contact
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -75,7 +75,6 @@
                             <a class="dropdown-item" href="#">Abonnement</a>
                         </div>
                     </li>
-                    
                 </ul>
             </div>
         </nav>
@@ -86,20 +85,20 @@
 
     <section>
         <hr class="my-4">
-            <div class="container">
-                <div class="text-center my-5 ">
-                    <h3 id="titleSection">BF-21 Conditionnement physique et mental</h3>
-                    <h5>Coach Particulier a Montreal</h5>
-                    <h5>Ouvert aujourd'hui jusqu'à 20:00</h5>
-                </div>      
+        <div class="container">
+            <div class="text-center my-5 ">
+                <h3 id="titleSection">BF-21 Conditionnement physique et mental</h3>
+                <h5>Coach Particulier a Montreal</h5>
+                <h5>Ouvert aujourd'hui jusqu'à 20:00</h5>
             </div>
+        </div>
         <hr class="my-4">
     </section>
 
 
     <section>
         <div class="container">
-            <div class="text-center">    
+            <div class="text-center">
                 <img alt="BF21" src="../dashboard-admin/dist/img/banner.jpg" class="img-fluid rounded" alt="Responsive image">
             </div>
         </div>
@@ -109,160 +108,167 @@
     <section class="team-section text-center">
         <hr class="my-4">
         <h2 class="h1-responsive font-weight-bold my-5">Temoignages</h2>
-            <div class="row align-items-start">
-                <div class="col px-5">
-                
-                    <p class="font-weight-normal dark-grey-text">
-                        <i class="fas fa-quote-left pr-2"></i>J’ai eu la chance de rencontrer Pascal, qui m’as énormément aidé à retrouver une stabilité dans tout les aspects de ma vie. Grâce à l’hypnose, je me sens plus détendu, je prend plus le temps de réfléchir, j’ai une sensation de bien être et un soulagement intérieur. J’ai également essayé le plan alimentaire et j’ai été extrêmement satisfaite des résultats. 
-                        Services et écoute incroyable. Un grand Merci</p>
-                    <h4 class="font-weight-bold dark-grey-text mt-4">Alexe A</h4>
+        <div class="row align-items-start">
+            <div class="col px-5">
 
-                </div>
-                <div class="col px-5">
-                
                 <p class="font-weight-normal dark-grey-text">
-                        <i class="fas fa-quote-left pr-2"></i>Depuis ma rencontre avec Pascal, je réussis à mieux planifier mes entraînements, mes menus, 
-                        dans ma vie occupée! Il prend le temps et vous suit dans votre processus. Je le recommande à tous!</p>
-                    <h4 class="font-weight-bold dark-grey-text mt-4">Caroline G</h4>
+                    <i class="fas fa-quote-left pr-2"></i>J’ai eu la chance de rencontrer Pascal, qui m’as énormément aidé à retrouver une stabilité dans tout les aspects de ma vie. Grâce à l’hypnose, je me sens plus détendu, je prend plus le temps de réfléchir, j’ai une sensation de bien être et un soulagement intérieur. J’ai également essayé le plan alimentaire et j’ai été extrêmement satisfaite des résultats.
+                    Services et écoute incroyable. Un grand Merci</p>
+                <h4 class="font-weight-bold dark-grey-text mt-4">Alexe A</h4>
 
-                </div>
-                <div class="col px-5">
-                
-                <p class="font-weight-normal dark-grey-text">
-                        <i class="fas fa-quote-left pr-2"></i>Pascal a une belle attitude positive! Il nous amène à nous dépasser :) lorsqu’on pense ne plus pouvoir il sait qu’on peut et nous amène l’énergie de faire une dernière répétition :) après une séance avec lui, on sent RÉELLEMENT qu’il est aussi content et fière de nous et ça fait du bien :) Aussi, on se sent compris et à l’écoute, car il prend le temps d’écouter nos besoins et fait un vrai suivi de nos objectifs :) il est très présent en textos ou en vrai selon nos besoins! 
-                        Ensuite, on peut voir une vraie recherche et un plan individualisé à chacun. Je le recommande fortement <i class="fas fa-thumbs-up"></i></p>
-                    <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-
-                </div>
             </div>
+            <div class="col px-5">
+
+                <p class="font-weight-normal dark-grey-text">
+                    <i class="fas fa-quote-left pr-2"></i>Depuis ma rencontre avec Pascal, je réussis à mieux planifier mes entraînements, mes menus,
+                    dans ma vie occupée! Il prend le temps et vous suit dans votre processus. Je le recommande à tous!</p>
+                <h4 class="font-weight-bold dark-grey-text mt-4">Caroline G</h4>
+
+            </div>
+            <div class="col px-5">
+
+                <p class="font-weight-normal dark-grey-text">
+                    <i class="fas fa-quote-left pr-2"></i>Pascal a une belle attitude positive! Il nous amène à nous dépasser :) lorsqu’on pense ne plus pouvoir il sait qu’on peut et nous amène l’énergie de faire une dernière répétition :) après une séance avec lui, on sent RÉELLEMENT qu’il est aussi content et fière de nous et ça fait du bien :) Aussi, on se sent compris et à l’écoute, car il prend le temps d’écouter nos besoins et fait un vrai suivi de nos objectifs :) il est très présent en textos ou en vrai selon nos besoins!
+                    Ensuite, on peut voir une vraie recherche et un plan individualisé à chacun. Je le recommande fortement <i class="fas fa-thumbs-up"></i></p>
+                <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
+
+            </div>
+        </div>
         <hr class="my-4">
     </section>
 
-        <!-- Footer -->
-        <footer class="page-footer font-small indigo">
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
 
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
 
-        <!-- Grid row -->
-        <div class="row">
+            <!-- Grid row -->
+            <div class="row">
 
-            <!-- Grid column -->
-            <div class="col-md-3 mx-auto">
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
 
-            <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-            <ul class="list-unstyled">
-                <li>
-                <a href="#!">Very long link 1</a>
-                </li>
-                <li>
-                <a href="#!">Very long link 2</a>
-                </li>
-                <li>
-                <a href="#!">Very long link 3</a>
-                </li>
-                <li>
-                <a href="#!">Very long link 4</a>
-                </li>
-            </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Very long link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
 
             </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mx-auto">
-
-            <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-            <ul class="list-unstyled">
-                <li>
-                <a href="#!">Link 1</a>
-                </li>
-                <li>
-                <a href="#!">Link 2</a>
-                </li>
-                <li>
-                <a href="#!">Link 3</a>
-                </li>
-                <li>
-                <a href="#!">Link 4</a>
-                </li>
-            </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mx-auto">
-
-            <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-            <ul class="list-unstyled">
-                <li>
-                <a href="#!">Link 1</a>
-                </li>
-                <li>
-                <a href="#!">Link 2</a>
-                </li>
-                <li>
-                <a href="#!">Link 3</a>
-                </li>
-                <li>
-                <a href="#!">Link 4</a>
-                </li>
-            </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mx-auto">
-
-            <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-            <ul class="list-unstyled">
-                <li>
-                <a href="#!">Link 1</a>
-                </li>
-                <li>
-                <a href="#!">Link 2</a>
-                </li>
-                <li>
-                <a href="#!">Link 3</a>
-                </li>
-                <li>
-                <a href="#!">Link 4</a>
-                </li>
-            </ul>
-
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
+            <!-- Grid row -->
 
         </div>
         <!-- Footer Links -->
 
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2018 Copyright:
-  <a href="https://www.institut-grasset.qc.ca/" target="_blank"> InstitutGrasset.com</a>
-</div>
-<!-- Copyright -->
+        <<<<<<< HEAD <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://www.institut-grasset.qc.ca/" target="_blank"> InstitutGrasset.com</a>
+            </div>
+            <!-- Copyright -->
+            =======
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 bg-dark">© 2019 Copyright:
+                <a href="https://www.institut-grasset.qc.ca/" target="_blank"> InstitutGrasset.com</a>
+            </div>
+            <!-- Copyright -->
+            >>>>>>> 466fe6bf0a432e832a3b1925c2733aba9832f556
 
-</footer>
-<!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

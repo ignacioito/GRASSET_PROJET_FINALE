@@ -1,5 +1,13 @@
-// Jour 1
-var ingredients = ["banane", "poulet", "boeuf"];
+// Searchform
+var ingredients = [
+  "Banane (Moyenne)",
+  "Boeuf 100g",
+  "Boeuf 300g",
+  "haricots 100g",
+  "haricots 200g",
+  "Poulet 200g",
+  "Poulet 400g"
+];
 
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
@@ -109,34 +117,80 @@ autocomplete(document.getElementById("ingNameDay1"), ingredients);
 autocomplete(document.getElementById("ingNameDay2"), ingredients);
 
 //
-//
-//
-//
-//
 
-function addDay1() {
-  // Find selected meal
-  let ddown = document.getElementById("mealNumbSelection1");
-  let mealNumber = ddown.options[ddown.selectedIndex].value;
-  console.log(mealNumber);
+//Calculate Basal Metabolism Rate with Harris–Benedict equation and macronutrients
+let bmr;
+let gender = document.getElementById("gender").innerHTML;
+let age = document.getElementById("age").innerHTML;
+let height = document.getElementById("height").innerHTML;
+let weight = document.getElementById("weight").innerHTML;
 
-  // // Find selected tab ID / day
-  // let activeTab = $(".tab-content").find(".active");
-  // let dayNumber = activeTab.attr('id');
-  // console.log(dayNumber);
-
-  // Assign selected day
-  let dayNumber = "day1";
-  // Add the ingredient
-  let ingredient = document.getElementById("ingNameDay1").value;
-  console.log(ingredient);
-  let ingToAdd = document.createElement("li");
-  ingToAdd.textContent = ingredient;
-  let ulID = dayNumber + mealNumber;
-  console.log(ulID);
-  document.getElementById(ulID).appendChild(ingToAdd);
+if (gender == "M") {
+  bmr = Math.round(66.5 + 13.75 * weight + 5.003 * height - 6.755 * age);
+} else {
+  bmr = Math.round(655.1 + 9.563 * weight + 1.85 * height - 4.676 * age);
 }
 
+let dayProteins = Math.round((bmr * 20) / 100);
+let dayLipids = Math.round((bmr * 20) / 100);
+let dayCarbohydrates = Math.round((bmr * 60) / 100);
+// Show in Info client
+document.getElementById("dayCalories").innerHTML = bmr;
+// Show in Day1
+document.getElementById("day1Calories").innerHTML = bmr;
+document.getElementById("day1Proteins").innerHTML = dayProteins;
+document.getElementById("day1Lipids").innerHTML = dayLipids;
+document.getElementById("day1Carbohydrates").innerHTML = dayCarbohydrates;
+
+// Day1
+function addDay1() {
+  // Check if ingredient exists
+  let ingredient = document.getElementById("ingNameDay1").value;
+  console.log("Ingredient : " + ingredient);
+  let ingExists = false;
+  function isIngExisting() {
+    for (var i = 0; i < ingredients.length; i++) {
+      if (ingredient.toUpperCase() == ingredients[i].toUpperCase()) {
+        ingExists = true;
+        break;
+      }
+    }
+  }
+  isIngExisting();
+  console.log("Is the ingredient existing : " + ingExists);
+  if (ingExists) {
+    // Find selected meal
+    let ddownMeal = document.getElementById("mealNumbSelection1");
+    let mealNumber = ddownMeal.options[ddownMeal.selectedIndex].value;
+    console.log(mealNumber);
+    // Assign selected day
+    let dayNumber = "day1";
+    // Find selected quantity
+    let ddownQtt = document.getElementById("foodQtt1");
+    let qtt = ddownQtt.options[ddownQtt.selectedIndex].value;
+    // Add the ingredient
+    console.log(ingredient);
+    let ingToAdd = document.createElement("li");
+    ingToAdd.textContent = ingredient + " x" + qtt;
+    let ulID = dayNumber + mealNumber;
+    console.log(ulID);
+    document.getElementById(ulID).appendChild(ingToAdd);
+    document.getElementById("ingNameDay1").value = "";
+    ddownQtt.value = 1;
+  } else if (ingredient == "") {
+    alert("Veuillez insérer un ingrédient");
+  } else {
+    alert(
+      "L'ingrédient \"" +
+        ingredient +
+        "\" n'existe pas. Merci de choisir un des aliments proposés"
+    );
+    document.getElementById("ingNameDay1").value = "";
+  }
+  //
+}
+
+// Day2
 function addDay2() {
   // Find selected meal
   let ddown = document.getElementById("mealNumbSelection2");

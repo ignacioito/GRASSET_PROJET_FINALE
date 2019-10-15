@@ -117,9 +117,7 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark">Fiche client et évaluation (1/2)</h1>
-                            <a href="createtrainingform.php">(1/2)</a>
-                            -
-                            <a href="createplanform.php">(2/2)</a>
+                            
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                     <hr>
@@ -435,6 +433,124 @@
                             <input type="date" id="formValidation37" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
                         </div>
                     </div>
+
+                    <!-- part 2 -->
+
+                <div class="container">
+                    <div class="form-row my-5">
+                    <!-- Questionnaire pour plan alimentaire -->
+                    <h4 class="m-0 text-dark font-weight-bold"><span>Questionnaire pour plan alimentaire</span></h4>
+                    </div>    
+
+                    <div class="form-row">
+                        <!--  -->
+                        <label for="formValidation38">
+                            1) Avez-vous des allergies ou intolérances alimentaires?
+                        </label>
+                        <select id="formValidation38" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <label for="formValidation39">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation39" required></textarea>
+                        <!--  -->
+                        <label for="formValidation40">
+                            2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
+                        </label>
+                        <select id="formValidation40" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <label for="formValidation41">
+                            Si Oui sélectionner l'intensité :
+                        </label>
+                        <select id="formValidation41" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Légère</option>
+                            <option>Moyenne</option>
+                            <option>Élevée (gym)</option>
+                        </select>
+                        <!--  -->
+                        <label for="formValidation42">
+                            3) Consommez-vous des produits laitiers?
+                        </label>
+                        <select id="formValidation42" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <label for="formValidation43">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation43" required></textarea>
+                        <!--  -->
+                        <label for="formValidation44">
+                            4) Quels sont les légumes que vous consommez et que vous aimez?
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation44" required></textarea>
+                        <!--  -->
+                        <label for="formValidation45">
+                            5) Quels sont les légumes que vous n’aimez pas?
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation45" required></textarea>
+                        <!--  -->
+                        <label for="formValidation46">
+                            6) Quels sont les fruits que vous consommez et que vous aimez?
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation46" required></textarea>
+                        <!--  -->
+                        <label for="formValidation47">
+                            7) Quels sont les fruits que vous n’aimez pas?
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation47" required></textarea>
+                        <!--  -->
+                        <label for="formValidation48">
+                            8) Quels types de protéines consommez-vous? Et lesquels vous préférez?
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation48" required></textarea>
+                        <!--  -->
+                        <label for="formValidation49">
+                            9) Quels sont les types de protéines que vous n’aimez pas?
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation49" required></textarea>
+                        <!--  -->
+                        <label for="formValidation50">
+                            10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel
+                            moment?
+                        </label>
+                        <select id="formValidation50" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <label for="formValidation51">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation51" required></textarea>
+                        <!--  -->
+                        <label for="formValidation52">
+                            11) Consommez-vous des suppléments alimentaires et si oui lesquels?
+                        </label>
+                        <select id="formValidation52" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <label for="formValidation53">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <textarea type="textarea" min="0" class="form-control" id="formValidation53" required></textarea>
+                    </div>
+                </div>
+
                 </form>
                 <div class="text-center">
                     <a class="btn btn-large btn-primary col-md-2 text-center" href="createplanform.html">Poursuivre</a>
