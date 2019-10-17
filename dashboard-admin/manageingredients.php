@@ -237,49 +237,6 @@
       <br>
       <input type="submit" value="Ajouter Aliments">      
 
-      <?php
-      $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
-
-      if ($mysqli === false) {
-        die("---ERROR 1: Could not connect. "
-          . $mysqli->connect_error);
-      }
-
-      $sql = "SELECT * FROM `aliment`";
-      // $res = $mysqli->query($sql);
-
-      if ($res = $mysqli->query($sql)) {
-        if ($res->num_rows > 0) {
-          echo "<table>";
-          echo "<tr>";
-          echo "<th>codtypeutilisateur</th>";
-          echo "<th>nomType</th>";
-          echo "<th>estAdm</th>";
-          echo "<th>estActif</th>";
-          echo "<th>motDePass</th>";
-          echo "</tr>";
-          while ($row = $res->fetch_assoc()) {
-            echo "<tr>";
-            echo "<td>" . $row['codtypeutilisateur'] . "</td>";
-            echo "<td>" . $row['nomType'] . "</td>";
-            echo "<td>" . $row['estAdm'] . "</td>";
-            echo "<td>" . $row['estActif'] . "</td>";
-            echo "<td>" . $row['motDePass'] . "</td>";
-            echo "</tr>";
-          }
-          echo "</table>";
-          $res->free();
-        } else {
-          echo "------------------------------------------------------ERROR 3: No matching records are found. ";
-        }
-      } else {
-        echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
-          . $mysqli->error;
-      }
-      $mysqli->close();
-      ?>
-       </div>
-
     <!-- Content Wrapper. Contains page content -->
 
     <div class="content-wrapper">
