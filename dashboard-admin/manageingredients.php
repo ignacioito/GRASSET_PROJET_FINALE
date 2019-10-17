@@ -236,113 +236,52 @@
       <br>
       <br>
       <input type="submit" value="Ajouter Aliments">      
+
+      <?php
+      $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
+
+      if ($mysqli === false) {
+        die("---ERROR 1: Could not connect. "
+          . $mysqli->connect_error);
+      }
+
+      $sql = "SELECT * FROM `aliment`";
+      // $res = $mysqli->query($sql);
+
+      if ($res = $mysqli->query($sql)) {
+        if ($res->num_rows > 0) {
+          echo "<table>";
+          echo "<tr>";
+          echo "<th>codtypeutilisateur</th>";
+          echo "<th>nomType</th>";
+          echo "<th>estAdm</th>";
+          echo "<th>estActif</th>";
+          echo "<th>motDePass</th>";
+          echo "</tr>";
+          while ($row = $res->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row['codtypeutilisateur'] . "</td>";
+            echo "<td>" . $row['nomType'] . "</td>";
+            echo "<td>" . $row['estAdm'] . "</td>";
+            echo "<td>" . $row['estActif'] . "</td>";
+            echo "<td>" . $row['motDePass'] . "</td>";
+            echo "</tr>";
+          }
+          echo "</table>";
+          $res->free();
+        } else {
+          echo "------------------------------------------------------ERROR 3: No matching records are found. ";
+        }
+      } else {
+        echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
+          . $mysqli->error;
+      }
+      $mysqli->close();
+      ?>
        </div>
 
-<!-- Content Wrapper. Contains page content -->
-
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>DataTables</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">DataTables</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-        <label> Aliments
-          <br>
-          <input type="text" name="nomAliment" />
-        </label>
-
-        <label> Unite de Mesure
-          <br>
-          <input type="text" name="uniteMesure" />
-        </label>
-
-        <label> Type d'Aliment
-          <br>
-          <input type="text" name="typeAliment" />
-        </label>
-
-        <label> Calories
-          <br>
-          <input type="text" name="calorie" />
-        </label>
-
-        <label> Lipides
-          <br>
-          <input type="text" name="lipid" />
-        </label>
-
-        <label> Glucides
-          <br>
-          <input type="text" name="glucide" />
-        </label>
-
-        <label> Proteines
-          <br>
-          <input type="text" name="proteine" />
-        </label>
-
-        <label> Fibres
-          <br>
-          <input type="text" name="fibre" />
-        </label>
-
-        <label> Glycemique
-          <br>
-          <input type="text" name="glycemique" />
-        </label>
-        <br>
-        <br>
-
-        <input type="submit" value="Ajouter Aliments">
-        <br>
-        <br>
-
-        <?php
-        include("/Applications/XAMPP/xamppfiles/htdocs/GRASSET_PROJET_FINALE/dashboard-admin/connexion.php");
-        $consulta = "SELECT * FROM aliment";
-        $con = $msqli->query($consulta) or die($msqli->error);
-        ?>
-        <table>
-          <tr>
-            <td>Code Aliment</td>
-            <td>Nom Aliment</td>
-            <td>Unité de Mesure</td>
-            <td>Tyde d'Aliment</td>
-            <td>Calories</td>
-            <td>Lipides</td>
-            <td>Glucides</td>
-            <td>Proteínes</td>
-          </tr>
-          <?php while ($dado = $conection->fetch_array()) { ?>
-            <tr>
-              <td><?php echo $dado["codAliment"]; ?></td>
-              <td><?php echo $dado["nomAliment"]; ?></td>
-              <td><?php echo $dado["uniteMesure"]; ?></td>
-              <td><?php echo $dado["typeAliment"]; ?></td>
-              <td><?php echo $dado["calorie"]; ?></td>
-              <td><?php echo $dado["lipid"]; ?></td>
-              <td><?php echo $dado["glucide"]; ?></td>
-              <td><?php echo $dado["proteine"]; ?></td>
-            </tr>
-          <?php } ?>
-        </table>
-    </div>
-
-
-
-
     <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <section class="content-header">
