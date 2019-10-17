@@ -3,8 +3,8 @@ var ingredients = [
   "Banane (Moyenne)",
   "Boeuf 100g",
   "Boeuf 300g",
-  "haricots 100g",
-  "haricots 200g",
+  "Haricots 100g",
+  "Haricots 200g",
   "Poulet 200g",
   "Poulet 400g"
 ];

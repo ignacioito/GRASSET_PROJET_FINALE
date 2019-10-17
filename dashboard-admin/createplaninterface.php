@@ -343,118 +343,118 @@
 
                     <div class="container">
                         <!--  -->
-                        <label for="formValidation38">
+                        <label for="clientInfo1">
                             1) Avez-vous des allergies ou intolérances alimentaires?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo1">0</p>
                         <br>
-                        <label for="formValidation39">
+                        <label for="clientInfo2">
                             Si Oui indiquez lesquels :
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo2">0</p>
                         <br>
                         <!--  -->
-                        <label for="formValidation40">
+                        <label for="clientInfo3">
                             2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo3">0</p>
                         <br>
 
-                        <label for="formValidation41">
+                        <label for="clientInfo4">
                             Si Oui sélectionner l'intensité :
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo4">0</p>
                         <br>
 
                         <!--  -->
-                        <label for="formValidation42">
+                        <label for="clientInfo5">
                             3) Consommez-vous des produits laitiers?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo5">0</p>
                         <br>
 
-                        <label for="formValidation43">
+                        <label for="clientInfo6">
                             Si Oui indiquez lesquels :
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo6">0</p>
                         <br>
 
                         <!--  -->
-                        <label for="formValidation44">
+                        <label for="clientInfo7">
                             4) Quels sont les légumes que vous consommez et que vous aimez?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo7">0</p>
                         <br>
                         <!--  -->
-                        <label for="formValidation45">
+                        <label for="clientInfo8">
                             5) Quels sont les légumes que vous n’aimez pas?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo8">0</p>
                         <br>
                         <!--  -->
-                        <label for="formValidation46">
+                        <label for="clientInfo9">
                             6) Quels sont les fruits que vous consommez et que vous aimez?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo9">0</p>
                         <br>
                         <!--  -->
-                        <label for="formValidation47">
+                        <label for="clientInfo10">
                             7) Quels sont les fruits que vous n’aimez pas?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo10">0</p>
                         <br>
                         <!--  -->
-                        <label for="formValidation48">
+                        <label for="clientInfo11">
                             8) Quels types de protéines consommez-vous? Et lesquels vous préférez?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo11">0</p>
                         <br>
                         <!--  -->
-                        <label for="formValidation49">
+                        <label for="clientInfo12">
                             9) Quels sont les types de protéines que vous n’aimez pas?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo12">0</p>
                         <br>
                         <!--  -->
-                        <label for="formValidation50">
+                        <label for="clientInfo13">
                             10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel
                             moment?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo13">0</p>
                         <br>
 
-                        <label for="formValidation51">
+                        <label for="clientInfo14">
                             Si Oui indiquez lesquels :
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo14">0</p>
                         <br>
                         <!--  -->
-                        <label for="formValidation52">
+                        <label for="clientInfo15">
                             11) Consommez-vous des suppléments alimentaires et si oui lesquels?
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo15">0</p>
                         <br>
 
-                        <label for="formValidation53">
+                        <label for="clientInfo16">
                             Si Oui indiquez lesquels :
                         </label>
                         <br>
-                        <p id="dayCalories">0</p>
+                        <p id="clientInfo16">0</p>
                         <br>
                     </div>
                 </div>
