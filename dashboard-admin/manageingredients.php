@@ -168,11 +168,9 @@
         $proteine = $_POST['proteine'];
         $fibre = $_POST['fibre'];
         $glycemique = $_POST['glycemique'];
-        //, fibre, glycemique
-        //"', '".$fibre."', '".$glycemique.
 
-        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine) Values " .
-          "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "')";
+        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) Values " .
+          "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "', '".$fibre."', '".$glycemique."')";
 
         if ($conection->query($query) === TRUE) {
           $msg = 'Aliment crée avec sucess';
