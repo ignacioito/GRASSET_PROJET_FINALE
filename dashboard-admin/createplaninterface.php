@@ -323,7 +323,8 @@
                     <!-- user -->
                     <div id="user" class="tab-pane fade container">
                         <h2>Info du client</h2>
-                        <div>
+
+                    <div class="container">
                             Sexe : <p id="gender">M</p>
                             <br>
                             Âge : <p id="age">40</p>
@@ -333,7 +334,131 @@
                             Poids en kg : <p id="weight">75</p>
                             <br>
                             Calories par jour : <p id="dayCalories">0</p>
-                        </div>
+                            
+                            
+                    <div class="form-row my-5">
+                    <!-- Questionnaire pour plan alimentaire -->
+                    <h4 class="m-0 text-dark font-weight-bold"><span>Questionnaire pour plan alimentaire</span></h4>
+                    </div>    
+
+                    <div class="container">
+                        <!--  -->
+                        <label for="formValidation38">
+                            1) Avez-vous des allergies ou intolérances alimentaires?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <label for="formValidation39">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <!--  -->
+                        <label for="formValidation40">
+                            2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+
+                        <label for="formValidation41">
+                            Si Oui sélectionner l'intensité :
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+
+                        <!--  -->
+                        <label for="formValidation42">
+                            3) Consommez-vous des produits laitiers?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+
+                        <label for="formValidation43">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+
+                        <!--  -->
+                        <label for="formValidation44">
+                            4) Quels sont les légumes que vous consommez et que vous aimez?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <!--  -->
+                        <label for="formValidation45">
+                            5) Quels sont les légumes que vous n’aimez pas?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <!--  -->
+                        <label for="formValidation46">
+                            6) Quels sont les fruits que vous consommez et que vous aimez?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <!--  -->
+                        <label for="formValidation47">
+                            7) Quels sont les fruits que vous n’aimez pas?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <!--  -->
+                        <label for="formValidation48">
+                            8) Quels types de protéines consommez-vous? Et lesquels vous préférez?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <!--  -->
+                        <label for="formValidation49">
+                            9) Quels sont les types de protéines que vous n’aimez pas?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <!--  -->
+                        <label for="formValidation50">
+                            10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel
+                            moment?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+
+                        <label for="formValidation51">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                        <!--  -->
+                        <label for="formValidation52">
+                            11) Consommez-vous des suppléments alimentaires et si oui lesquels?
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+
+                        <label for="formValidation53">
+                            Si Oui indiquez lesquels :
+                        </label>
+                        <br>
+                        <p id="dayCalories">0</p>
+                        <br>
+                    </div>
+                </div>
+
                     </div>
                 </div>
             </div>

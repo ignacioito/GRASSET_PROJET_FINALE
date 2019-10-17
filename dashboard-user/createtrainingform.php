@@ -552,7 +552,7 @@
 
                 </form>
                 <div class="text-center my-5">
-                    <a class="btn btn-large btn-primary col-md-2 text-center" href="createplanform.html">Poursuivre</a>
+                    <a class="btn btn-large btn-primary col-md-2 text-center" href="createplanform.html">Soumettre</a>
                 </div>
                 <br>
                 <br>
