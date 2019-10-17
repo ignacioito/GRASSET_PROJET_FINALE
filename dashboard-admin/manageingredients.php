@@ -167,7 +167,7 @@
         $glucide = $_POST['glucide'];
         $proteine = $_POST['proteine'];
         $fibre = $_POST['fibre'];
-        //$glycemique = $_POST['glycemique'];
+        $glycemique = $_POST['glycemique'];
         //, fibre, glycemique
         //"', '".$fibre."', '".$glycemique.
 
