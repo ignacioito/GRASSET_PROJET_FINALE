@@ -187,7 +187,7 @@
 
       <?php if($msg) : ?>
       <p><?php echo $msg; ?></p>
-    <?php endif; ?>
+      <?php endif; ?>
 
       <form method="post" action="manageingredients.php">
       <label> Aliments
@@ -238,9 +238,38 @@
       <br>
 
       <input type="submit" value="Ajouter Aliments">
+      <br>
+      <br>
       
-
-
+      <?php
+      include("/Applications/XAMPP/xamppfiles/htdocs/GRASSET_PROJET_FINALE/dashboard-admin/connexion.php");
+      $consulta = "SELECT * FROM aliment";
+      $con = $msqli->query($consulta) or die ($msqli->error);
+       ?>
+        <table>
+       <tr>
+            <td>Code Aliment</td>
+            <td>Nom Aliment</td>
+            <td>Unité de Mesure</td>
+            <td>Tyde d'Aliment</td>
+            <td>Calories</td>
+            <td>Lipides</td>
+            <td>Glucides</td>
+            <td>Proteínes</td>
+      </tr>
+      <?php while ($dado = $conection->fetch_array()){ ?>
+        <tr>
+        <td><?php echo $dado["codAliment"]; ?></td>
+        <td><?php echo $dado["nomAliment"]; ?></td>
+        <td><?php echo $dado["uniteMesure"]; ?></td>
+        <td><?php echo $dado["typeAliment"]; ?></td>
+        <td><?php echo $dado["calorie"]; ?></td>
+        <td><?php echo $dado["lipid"]; ?></td>
+        <td><?php echo $dado["glucide"]; ?></td>
+        <td><?php echo $dado["proteine"]; ?></td>
+        </tr>
+      <?php } ?>
+      </table> 
        </div>
 
 
