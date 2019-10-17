@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  mar. 15 oct. 2019 à 16:57
+-- Généré le :  jeu. 17 oct. 2019 à 19:39
 -- Version du serveur :  10.4.8-MariaDB
 -- Version de PHP :  7.1.32
 
@@ -36,8 +36,18 @@ CREATE TABLE `aliment` (
   `calorie` float DEFAULT NULL,
   `lipid` float DEFAULT NULL,
   `glucide` float DEFAULT NULL,
-  `proteine` float DEFAULT NULL
+  `proteine` float DEFAULT NULL,
+  `fibre` float DEFAULT NULL,
+  `glycemique` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Déchargement des données de la table `aliment`
+--
+
+INSERT INTO `aliment` (`codAliment`, `nomAliment`, `uniteMesure`, `typeAliment`, `calorie`, `lipid`, `glucide`, `proteine`, `fibre`, `glycemique`) VALUES
+(1, 'Banana', 'GRM', NULL, 10, 10, 10, 10, NULL, NULL),
+(2, 'ananas', 'gr', NULL, 10, 10, 10, 10, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -155,6 +165,48 @@ CREATE TABLE `typeAliment` (
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `typeu`
+--
+
+CREATE TABLE `typeu` (
+  `nomType` varchar(20) NOT NULL DEFAULT 'Admin',
+  `estAdm` tinyint(1) NOT NULL DEFAULT 0,
+  `estActif` tinyint(1) DEFAULT NULL,
+  `motDePass` varchar(20) NOT NULL DEFAULT 'Admin'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `typeu`
+--
+
+INSERT INTO `typeu` (`nomType`, `estAdm`, `estActif`, `motDePass`) VALUES
+('ignacio', 0, 1, 'ignacio');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `typeUtilisateurs`
+--
+
+CREATE TABLE `typeUtilisateurs` (
+  `codtypeutilisateur` int(11) NOT NULL DEFAULT 1,
+  `nomType` varchar(20) NOT NULL DEFAULT 'Admin',
+  `estAdm` tinyint(1) NOT NULL DEFAULT 0,
+  `estActif` tinyint(1) NOT NULL,
+  `motDePass` varchar(20) NOT NULL DEFAULT 'Admin'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `typeUtilisateurs`
+--
+
+INSERT INTO `typeUtilisateurs` (`codtypeutilisateur`, `nomType`, `estAdm`, `estActif`, `motDePass`) VALUES
+(1, 'ignacio', 1, 1, 'ignacio'),
+(2, 'vatea', 0, 0, 'vatea');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `typeUtlilisateur`
 --
 
@@ -198,8 +250,7 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`codUtilisateur`, `type`, `eMail`, `nom`, `poid`, `taille`, `dateNaissance`, `genre`, `codePostal`, `adresse`, `telephone`) VALUES
-(1, 1, 'admin@bf21.qc.ca', 'Administrateur', NULL, NULL, NULL, 'F', NULL, NULL, NULL),
-(1234, 1, 'totoro@gmail.com', 'totoro', 44, 12, '2019-10-08', 'M', 'H3N2E4', '7253 Avenue des Pins', '4362538463');
+(1, 1, 'admin@bf21.qc.ca', 'Administrateur', NULL, NULL, NULL, 'F', NULL, NULL, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -270,7 +321,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `aliment`
 --
 ALTER TABLE `aliment`
-  MODIFY `codAliment` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `codAliment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `habitudesDeVie`
@@ -312,7 +363,7 @@ ALTER TABLE `typeUtlilisateur`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `codUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1235;
+  MODIFY `codUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Contraintes pour les tables déchargées
