@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gestion des Clients BF21 - Conditionnement physique et mental</title>
+    <title>Créer un plan BF21 - Conditionnement physique et mental</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -27,8 +27,6 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <!-- Searchfrom/Autocomplete CSS -->
-    <link href="dist/css/searchform.css" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -147,29 +145,6 @@
             <!-- /.content-header -->
 
             <div class="container">
-                <?php
-                $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
-                if ($mysqli === false) {
-                    die("ERROR 1: Could not connect. "
-                        . $mysqli->connect_error);
-                }
-                $sql = "SELECT * FROM `utilisateurs` WHERE codUtilisateur = ";
-                if ($res = $mysqli->query($sql)) {
-                    if ($res->num_rows > 0) {
-                        while ($row = $res->fetch_assoc()) {
-                            echo "<h2>" . $row['nom'] . "</h2>";
-                        }
-                        $res->free();
-                    } else {
-                        echo "ERROR 3: No matching records are found. ";
-                    }
-                } else {
-                    echo "ERROR 2: Could not able to execute $sql. "
-                        . $mysqli->error;
-                }
-                $mysqli->close();
-                ?>
-
                 <!-- days nav-bar -->
                 <ul class="nav nav-pills mb-3" role="tablist">
                     <li class="nav-item mx-4"><a class="nav-link active" data-toggle="pill" href="#day1">Jour 1</a></li>
