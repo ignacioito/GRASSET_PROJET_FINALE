@@ -153,7 +153,7 @@
         define('USUARIO', 'root');
         define('SENHA', '');
         define('DB', 'BF21');
-        $conection = mysqli_connect(HOST, USUARIO, SENHA, DB) or die('Ne Pas Conectée!');
+        $conection = new mysqli(HOST, USUARIO, SENHA, DB) or die('Ne Pas Conectée!');
         // mysql_select_db('', $conection) or die(mysql_error());
         // echo 'test de connection';
 
@@ -166,17 +166,22 @@
         $glucide = $_POST['glucide'];
         $proteine = $_POST['proteine'];
         $fibre = $_POST['fibre'];
-        $glycemique = $_POST['glycemique'];
+        //$glycemique = $_POST['glycemique'];
+        //, fibre, glycemique
+        //"', '".$fibre."', '".$glycemique.
+        
+        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine) Values ".
+                  "('".$nomAliment."', '".$uniteMesure."', '".$calorie."', '".$lipid."', '".$glucide."', '".$proteine."')";
 
-        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) Values ('".$nomAliment."', '".$uniteMesure."', '".$calorie."', '".$lipid."', '".$glucide."', '".$proteine."', '".$fibre."', '".$glycemique."')";
-        $q = mysqli_query($query);
-
-        if($q){
+        if($conection->query($query) === TRUE){
           $msg = 'Aliment crée avec sucess';
         }
         else{
-          $msg = 'Error';
+          $msg = 'Error'. $conection->error;
+
         }
+
+        $conection->close();
       }
       ?>
 
