@@ -1,28 +1,6 @@
-<div class="form-row">
-    <div class="col-md-2 mb-3">
-        <label for="formValidation08">Poids (lbs)</label>
-        <input type="text" class="form-control" id="formValidation08" required>
-    </div>
-    <div class="col-md-2 mb-3">
-        <label for="formValidation09">Grandeur (pieds)</label>
-        <input type="text" class="form-control" id="formValidation09" required>
-    </div>
-</div>
-<br>
 
-<!-- Habitudes de vie -->
-<h4 class="m-0 text-dark">Habitudes de vie</h4>
-<br>
-<div class="form-row">
-    <div class="col-md-2 mb-3">
-        <label for="formValidation10">Pression sanguine</label>
-        <select id="formValidation10" class="form-control">
-            <option selected>Sélectionner</option>
-            <option>Basse</option>
-            <option>Normale</option>
-            <option>Haute</option>
-        </select>
-    </div>
+
+
     <div class="col-md-2 mb-3">
         <label for="formValidation11">Fumeur</label>
         <select id="formValidation11" class="form-control">
