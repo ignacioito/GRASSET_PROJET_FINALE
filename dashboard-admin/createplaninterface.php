@@ -81,7 +81,7 @@
                         </li>
                         <!-- Sidebar create plan -->
                         <li class="nav-item">
-                            <a href="createplan.php" class="nav-link">
+                            <a href="createplaninterface.php" class="nav-link">
                                 <i class="nav-icon fas fa-calendar-plus"></i>
                                 <p>
                                     Créer un Plan
@@ -147,7 +147,29 @@
             <!-- /.content-header -->
 
             <div class="container">
-                <h2>Plan alimentaire de John Doe</h2>
+                <?php
+                $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
+                if ($mysqli === false) {
+                    die("ERROR 1: Could not connect. "
+                        . $mysqli->connect_error);
+                }
+                $sql = "SELECT * FROM `utilisateurs` WHERE codUtilisateur = ";
+                if ($res = $mysqli->query($sql)) {
+                    if ($res->num_rows > 0) {
+                        while ($row = $res->fetch_assoc()) {
+                            echo "<h2>" . $row['nom'] . "</h2>";
+                        }
+                        $res->free();
+                    } else {
+                        echo "ERROR 3: No matching records are found. ";
+                    }
+                } else {
+                    echo "ERROR 2: Could not able to execute $sql. "
+                        . $mysqli->error;
+                }
+                $mysqli->close();
+                ?>
+
                 <!-- days nav-bar -->
                 <ul class="nav nav-pills mb-3" role="tablist">
                     <li class="nav-item mx-4"><a class="nav-link active" data-toggle="pill" href="#day1">Jour 1</a></li>
@@ -324,7 +346,7 @@
                     <div id="user" class="tab-pane fade container">
                         <h2>Info du client</h2>
 
-                    <div class="container">
+                        <div class="container">
                             Sexe : <p id="gender">M</p>
                             <br>
                             Âge : <p id="age">40</p>
@@ -334,130 +356,130 @@
                             Poids en kg : <p id="weight">75</p>
                             <br>
                             Calories par jour : <p id="dayCalories">0</p>
-                            
-                            
-                    <div class="form-row my-5">
-                    <!-- Questionnaire pour plan alimentaire -->
-                    <h4 class="m-0 text-dark font-weight-bold"><span>Questionnaire pour plan alimentaire</span></h4>
-                    </div>    
 
-                    <div class="container">
-                        <!--  -->
-                        <label for="clientInfo1">
-                            1) Avez-vous des allergies ou intolérances alimentaires?
-                        </label>
-                        <br>
-                        <p id="clientInfo1">0</p>
-                        <br>
-                        <label for="clientInfo2">
-                            Si Oui indiquez lesquels :
-                        </label>
-                        <br>
-                        <p id="clientInfo2">0</p>
-                        <br>
-                        <!--  -->
-                        <label for="clientInfo3">
-                            2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
-                        </label>
-                        <br>
-                        <p id="clientInfo3">0</p>
-                        <br>
 
-                        <label for="clientInfo4">
-                            Si Oui sélectionner l'intensité :
-                        </label>
-                        <br>
-                        <p id="clientInfo4">0</p>
-                        <br>
+                            <div class="form-row my-5">
+                                <!-- Questionnaire pour plan alimentaire -->
+                                <h4 class="m-0 text-dark font-weight-bold"><span>Questionnaire pour plan alimentaire</span></h4>
+                            </div>
 
-                        <!--  -->
-                        <label for="clientInfo5">
-                            3) Consommez-vous des produits laitiers?
-                        </label>
-                        <br>
-                        <p id="clientInfo5">0</p>
-                        <br>
+                            <div class="container">
+                                <!--  -->
+                                <label for="clientInfo1">
+                                    1) Avez-vous des allergies ou intolérances alimentaires?
+                                </label>
+                                <br>
+                                <p id="clientInfo1">0</p>
+                                <br>
+                                <label for="clientInfo2">
+                                    Si Oui indiquez lesquels :
+                                </label>
+                                <br>
+                                <p id="clientInfo2">0</p>
+                                <br>
+                                <!--  -->
+                                <label for="clientInfo3">
+                                    2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
+                                </label>
+                                <br>
+                                <p id="clientInfo3">0</p>
+                                <br>
 
-                        <label for="clientInfo6">
-                            Si Oui indiquez lesquels :
-                        </label>
-                        <br>
-                        <p id="clientInfo6">0</p>
-                        <br>
+                                <label for="clientInfo4">
+                                    Si Oui sélectionner l'intensité :
+                                </label>
+                                <br>
+                                <p id="clientInfo4">0</p>
+                                <br>
 
-                        <!--  -->
-                        <label for="clientInfo7">
-                            4) Quels sont les légumes que vous consommez et que vous aimez?
-                        </label>
-                        <br>
-                        <p id="clientInfo7">0</p>
-                        <br>
-                        <!--  -->
-                        <label for="clientInfo8">
-                            5) Quels sont les légumes que vous n’aimez pas?
-                        </label>
-                        <br>
-                        <p id="clientInfo8">0</p>
-                        <br>
-                        <!--  -->
-                        <label for="clientInfo9">
-                            6) Quels sont les fruits que vous consommez et que vous aimez?
-                        </label>
-                        <br>
-                        <p id="clientInfo9">0</p>
-                        <br>
-                        <!--  -->
-                        <label for="clientInfo10">
-                            7) Quels sont les fruits que vous n’aimez pas?
-                        </label>
-                        <br>
-                        <p id="clientInfo10">0</p>
-                        <br>
-                        <!--  -->
-                        <label for="clientInfo11">
-                            8) Quels types de protéines consommez-vous? Et lesquels vous préférez?
-                        </label>
-                        <br>
-                        <p id="clientInfo11">0</p>
-                        <br>
-                        <!--  -->
-                        <label for="clientInfo12">
-                            9) Quels sont les types de protéines que vous n’aimez pas?
-                        </label>
-                        <br>
-                        <p id="clientInfo12">0</p>
-                        <br>
-                        <!--  -->
-                        <label for="clientInfo13">
-                            10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel
-                            moment?
-                        </label>
-                        <br>
-                        <p id="clientInfo13">0</p>
-                        <br>
+                                <!--  -->
+                                <label for="clientInfo5">
+                                    3) Consommez-vous des produits laitiers?
+                                </label>
+                                <br>
+                                <p id="clientInfo5">0</p>
+                                <br>
 
-                        <label for="clientInfo14">
-                            Si Oui indiquez lesquels :
-                        </label>
-                        <br>
-                        <p id="clientInfo14">0</p>
-                        <br>
-                        <!--  -->
-                        <label for="clientInfo15">
-                            11) Consommez-vous des suppléments alimentaires et si oui lesquels?
-                        </label>
-                        <br>
-                        <p id="clientInfo15">0</p>
-                        <br>
+                                <label for="clientInfo6">
+                                    Si Oui indiquez lesquels :
+                                </label>
+                                <br>
+                                <p id="clientInfo6">0</p>
+                                <br>
 
-                        <label for="clientInfo16">
-                            Si Oui indiquez lesquels :
-                        </label>
-                        <br>
-                        <p id="clientInfo16">0</p>
-                        <br>
-                    </div>
-                </div>
+                                <!--  -->
+                                <label for="clientInfo7">
+                                    4) Quels sont les légumes que vous consommez et que vous aimez?
+                                </label>
+                                <br>
+                                <p id="clientInfo7">0</p>
+                                <br>
+                                <!--  -->
+                                <label for="clientInfo8">
+                                    5) Quels sont les légumes que vous n’aimez pas?
+                                </label>
+                                <br>
+                                <p id="clientInfo8">0</p>
+                                <br>
+                                <!--  -->
+                                <label for="clientInfo9">
+                                    6) Quels sont les fruits que vous consommez et que vous aimez?
+                                </label>
+                                <br>
+                                <p id="clientInfo9">0</p>
+                                <br>
+                                <!--  -->
+                                <label for="clientInfo10">
+                                    7) Quels sont les fruits que vous n’aimez pas?
+                                </label>
+                                <br>
+                                <p id="clientInfo10">0</p>
+                                <br>
+                                <!--  -->
+                                <label for="clientInfo11">
+                                    8) Quels types de protéines consommez-vous? Et lesquels vous préférez?
+                                </label>
+                                <br>
+                                <p id="clientInfo11">0</p>
+                                <br>
+                                <!--  -->
+                                <label for="clientInfo12">
+                                    9) Quels sont les types de protéines que vous n’aimez pas?
+                                </label>
+                                <br>
+                                <p id="clientInfo12">0</p>
+                                <br>
+                                <!--  -->
+                                <label for="clientInfo13">
+                                    10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel
+                                    moment?
+                                </label>
+                                <br>
+                                <p id="clientInfo13">0</p>
+                                <br>
+
+                                <label for="clientInfo14">
+                                    Si Oui indiquez lesquels :
+                                </label>
+                                <br>
+                                <p id="clientInfo14">0</p>
+                                <br>
+                                <!--  -->
+                                <label for="clientInfo15">
+                                    11) Consommez-vous des suppléments alimentaires et si oui lesquels?
+                                </label>
+                                <br>
+                                <p id="clientInfo15">0</p>
+                                <br>
+
+                                <label for="clientInfo16">
+                                    Si Oui indiquez lesquels :
+                                </label>
+                                <br>
+                                <p id="clientInfo16">0</p>
+                                <br>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -481,7 +503,8 @@
     </div>
     <!-- ./wrapper -->
 
-
+    <!-- Require.js -->
+    <script src="dist/js/require.js"></script>
     <!-- Admin interface javascript -->
     <script src="dist/js/createplaninterface.js"></script>
     <!-- jQuery -->

@@ -79,7 +79,7 @@
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplan.php" class="nav-link">
+              <a href="createplaninterface.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -218,87 +218,46 @@
       </div>
 
       <?php
-  // $msg = ' ';
-  // if ($_POST) {
-  //   define('HOST', '127.0.0.1');
-  //   define('USUARIO', 'root');
-  //   define('SENHA', '');
-  //   define('DB', 'BF21');
-  //   $conection = new mysqli(HOST, USUARIO, SENHA, DB) or die('Ne Pas Conectée!');
-  //   // if ($conection->query($query) === TRUE) {
-  //   //   $msg = 'Aliment crée avec sucess';
-  //   // } else { 
-  //   //   $msg = 'Error' . $conection->error;
-  //   // }
-  //   $conection->close();
-  // }
+      $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
 
-  // $servername = "127.0.0.1";
-  // $username = "root";
-  // $password = "";
-  // $db = "BF21";
-  // // Create connection
-  // $conn = mysqli_connect($servername, $username, $password, $db);
-  // // Check connection
-  // if (!$conn) {
-  //   die("Connection failed: " . mysqli_connect_error());
-  // }
-  // echo "yh878yygyugugttugutgutyguygiuguyguyuyguiygyugyuuyguyytf7tft7gf7tg7tg7tg7tg7gyg7ty  Connected successfully";
-
-  // $sql = "SELECT codtypeUtlilisateur, nomType, estAdm, estActif, motDePass FROM typeUtilisateur";
-  // $result = $conn->query($sql);
-
-  // if ($result->num_rows > 0) {
-  //   // output data of each row
-  //   while ($row = $result->fetch_assoc()) {
-  //     echo "<br> codtypeUtlilisateur: " . $row["codtypeUtlilisateur"] . " - nomType: " . $row["nomType"] . " - estAdm: " . $row["estAdm"] . " - estActif: " . $row["estActif"] . " - motDePass: " . $row["motDePass"] . "<br>";
-  //   }
-  // } else {
-  //   echo "0 results";
-  // }
-
-  // $conn->close();
-
-  $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
-
-  if ($mysqli === false) {
-    die("------------------------------------------------------ERROR 1: Could not connect. "
-      . $mysqli->connect_error);
-  }
-
-  $sql = "SELECT * FROM `typeUtilisateurs`";
-  // $res = $mysqli->query($sql);
-
-  if ($res = $mysqli->query($sql)) {
-    if ($res->num_rows > 0) {
-      echo "<table>";
-      echo "<tr>";
-      echo "<th>codtypeutilisateur</th>";
-      echo "<th>nomType</th>";
-      echo "<th>estAdm</th>";
-      echo "<th>estActif</th>";
-      echo "<th>motDePass</th>";
-      echo "</tr>";
-      while ($row = $res->fetch_assoc()) {
-        echo "<tr>";
-        echo "<td>" . $row['codtypeutilisateur'] . "</td>";
-        echo "<td>" . $row['nomType'] . "</td>";
-        echo "<td>" . $row['estAdm'] . "</td>";
-        echo "<td>" . $row['estActif'] . "</td>";
-        echo "<td>" . $row['motDePass'] . "</td>";
-        echo "</tr>";
+      if ($mysqli === false) {
+        die("------------------------------------------------------ERROR 1: Could not connect. "
+          . $mysqli->connect_error);
       }
-      echo "</table>";
-      $res->free();
-    } else {
-      echo "------------------------------------------------------ERROR 3: No matching records are found. ";
-    }
-  } else {
-    echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
-      . $mysqli->error;
-  }
-  $mysqli->close();
-  ?>
+
+      $sql = "SELECT * FROM `typeUtilisateurs`";
+      // $res = $mysqli->query($sql);
+
+      if ($res = $mysqli->query($sql)) {
+        if ($res->num_rows > 0) {
+          echo "<table>";
+          echo "<tr>";
+          echo "<th>codtypeutilisateur</th>";
+          echo "<th>nomType</th>";
+          echo "<th>estAdm</th>";
+          echo "<th>estActif</th>";
+          echo "<th>motDePass</th>";
+          echo "</tr>";
+          while ($row = $res->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row['codtypeutilisateur'] . "</td>";
+            echo "<td>" . $row['nomType'] . "</td>";
+            echo "<td>" . $row['estAdm'] . "</td>";
+            echo "<td>" . $row['estActif'] . "</td>";
+            echo "<td>" . $row['motDePass'] . "</td>";
+            echo "</tr>";
+          }
+          echo "</table>";
+          $res->free();
+        } else {
+          echo "------------------------------------------------------ERROR 3: No matching records are found. ";
+        }
+      } else {
+        echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
+          . $mysqli->error;
+      }
+      $mysqli->close();
+      ?>
 
       <!-- Creer un nouveau client -->
 
@@ -322,7 +281,7 @@
   </div>
   <!-- ./wrapper -->
 
-  
+
 
 
 
