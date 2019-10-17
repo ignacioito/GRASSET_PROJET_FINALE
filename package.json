@@ -1,0 +1,23 @@
+{
+  "name": "grasset_projet_finale",
+  "version": "1.0.0",
+  "description": "GRASSET_PROJET_FINALE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignacioito/GRASSET_PROJET_FINALE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ignacioito/GRASSET_PROJET_FINALE/issues"
+  },
+  "homepage": "https://github.com/ignacioito/GRASSET_PROJET_FINALE#readme",
+  "dependencies": {
+    "mysql": "^2.17.1",
+    "tedious": "^6.4.0"
+  }
+}

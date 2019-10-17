@@ -79,7 +79,7 @@
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplan.php" class="nav-link">
+              <a href="createplaninterface.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -161,21 +161,20 @@
                 </div>
               </div>
             </div>
-            <!-- /.card-header -->
-            <div class="card-body table-responsive p-0" style="height: 900px;">
+
+            <!-- <div class="card-body table-responsive p-0" style="height: 900px;">
               <table class="table table-head-fixed">
                 <thead>
                   <tr>
-                    <!-- <th>ID</th> -->
                     <th>User</th>
                     <th>Date</th>
                     <th>Status</th>
                     <th>Reason</th>
                   </tr>
                 </thead>
+
                 <tbody>
                   <tr>
-                    <!-- <td>183</td> -->
                     <td><a href="createplaninterface.php">John Doe</a></td>
                     <td>10/01/2019</td>
                     <td><span class="tag tag-success">Non traité</span></td>
@@ -183,7 +182,48 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> -->
+
+            <?php
+            // $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
+            // if ($mysqli === false) {
+            //   die("------------------------------------------------------ERROR 1: Could not connect. "
+            //     . $mysqli->connect_error);
+            // }
+            // $sql = "SELECT * FROM `utilisateurs`";
+            // if ($res = $mysqli->query($sql)) {
+            //   if ($res->num_rows > 0) {
+            //     echo "<div class='card-body table-responsive p-0' style='height: 900px;'>";
+            //     echo "<table class='table table-head-fixed'>";
+            //     echo "<thead>";
+            //     echo "<tr>";
+            //     echo "<th>Nom</th>";
+            //     echo "<th>Email</th>";
+            //     echo "<th>Téléphone</th>";
+            //     echo "</tr>";
+            //     echo "</thead>";
+            //     while ($row = $res->fetch_assoc()) {
+            //       echo "<tbody>";
+            //       echo "<tr>";
+            //       echo "<td>" . "<a href='createplaninterface.php'>" . $row['nom'] . "</a>" . "</td>";
+            //       echo "<td>" . $row['eMail'] . "</td>";
+            //       echo "<td>" . $row['telephone'] . "</td>";
+            //       echo "</tr>";
+            //     }
+            //     echo "</tbody>";
+            //     echo "</table>";
+            //     echo "</div";
+            //     $res->free();
+            //   } else {
+            //     echo "------------------------------------------------------ERROR 3: No matching records are found. ";
+            //   }
+            // } else {
+            //   echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
+            //     . $mysqli->error;
+            // }
+            // $mysqli->close();
+            ?>
+
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
@@ -209,19 +249,6 @@
   <!-- ./wrapper -->
 
   <!-- PHP CODE - Loading and showing all users -->
-  <?php
-
-  define('Host', '127.0.0.1');
-  define('User', 'root');
-  define('Password', 'root');
-  define('Database', 'BF21');
-  $conn = mysqli_connect(Host, User, Password, Database);
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-  echo "Connected successfully";
-  
-  ?>
 
 
 

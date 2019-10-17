@@ -47,8 +47,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="dashboard.php" class="brand-link">
-        <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
-          style="opacity: .8;">
+        <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8;">
         <span class="brand-text font-weight-light">Admin BF21</span>
       </a>
 
@@ -80,7 +79,7 @@
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplan.php" class="nav-link">
+              <a href="createplaninterface.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -148,7 +147,7 @@
       <!-- Main content -->
       <?php
       $msg = ' ';
-      if($_POST){
+      if ($_POST) {
         define('HOST', '127.0.0.1');
         define('USUARIO', 'root');
         define('SENHA', '');
@@ -169,85 +168,83 @@
         //$glycemique = $_POST['glycemique'];
         //, fibre, glycemique
         //"', '".$fibre."', '".$glycemique.
-        
-        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine) Values ".
-                  "('".$nomAliment."', '".$uniteMesure."', '".$calorie."', '".$lipid."', '".$glucide."', '".$proteine."')";
 
-        if($conection->query($query) === TRUE){
+        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine) Values " .
+          "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "')";
+
+        if ($conection->query($query) === TRUE) {
           $msg = 'Aliment crée avec sucess';
-        }
-        else{
-          $msg = 'Error'. $conection->error;
-
+        } else {
+          $msg = 'Error' . $conection->error;
         }
 
         $conection->close();
       }
       ?>
 
-      <?php if($msg) : ?>
-      <p><?php echo $msg; ?></p>
+      <?php if ($msg) : ?>
+        <p><?php echo $msg; ?></p>
       <?php endif; ?>
 
       <form method="post" action="manageingredients.php">
-      <label> Aliments
-      <br>
-      <input type="text" name="nomAliment" />
-      </label>
+        <label> Aliments
+          <br>
+          <input type="text" name="nomAliment" />
+        </label>
 
-      <label> Unite de Mesure
-      <br>
-      <input type="text" name="uniteMesure" />
-      </label>
+        <label> Unite de Mesure
+          <br>
+          <input type="text" name="uniteMesure" />
+        </label>
 
-      <label> Type d'Aliment
-      <br>
-      <input type="text" name="typeAliment" />
-      </label>
+        <label> Type d'Aliment
+          <br>
+          <input type="text" name="typeAliment" />
+        </label>
 
-      <label> Calories
-      <br>
-      <input type="text" name="calorie" />
-      </label>
+        <label> Calories
+          <br>
+          <input type="text" name="calorie" />
+        </label>
 
-      <label> Lipides
-      <br>
-      <input type="text" name="lipid" />
-      </label>
+        <label> Lipides
+          <br>
+          <input type="text" name="lipid" />
+        </label>
 
-      <label> Glucides
-      <br>
-      <input type="text" name="glucide" />
-      </label>
+        <label> Glucides
+          <br>
+          <input type="text" name="glucide" />
+        </label>
 
-      <label> Proteines
-      <br>
-      <input type="text" name="proteine" />
-      </label>
+        <label> Proteines
+          <br>
+          <input type="text" name="proteine" />
+        </label>
 
-      <label> Fibres
-      <br>
-      <input type="text" name="fibre" />
-      </label>
+        <label> Fibres
+          <br>
+          <input type="text" name="fibre" />
+        </label>
 
-      <label> Glycemique
-      <br>
-      <input type="text" name="glycemique" />
-      </label>
-      <br>
-      <br>
+        <label> Glycemique
+          <br>
+          <input type="text" name="glycemique" />
+        </label>
+        <br>
+        <br>
 
-      <input type="submit" value="Ajouter Aliments">
-      <br>
-      <br>
-      
-      <?php
-      include("/Applications/XAMPP/xamppfiles/htdocs/GRASSET_PROJET_FINALE/dashboard-admin/connexion.php");
-      $consulta = "SELECT * FROM aliment";
-      $con = $msqli->query($consulta) or die ($msqli->error);
-       ?>
+        <input type="submit" value="Ajouter Aliments">
+        <br>
+        <br>
+
+        <?php
+        include("/Applications/XAMPP/xamppfiles/htdocs/GRASSET_PROJET_FINALE/dashboard-admin/connexion.php");
+        $consulta = "SELECT * FROM aliment";
+        $con = $msqli->query($consulta) or die($msqli->error);
+        ?>
         <table>
-       <tr>
+          <tr>
             <td>Code Aliment</td>
             <td>Nom Aliment</td>
             <td>Unité de Mesure</td>
@@ -256,21 +253,21 @@
             <td>Lipides</td>
             <td>Glucides</td>
             <td>Proteínes</td>
-      </tr>
-      <?php while ($dado = $conection->fetch_array()){ ?>
-        <tr>
-        <td><?php echo $dado["codAliment"]; ?></td>
-        <td><?php echo $dado["nomAliment"]; ?></td>
-        <td><?php echo $dado["uniteMesure"]; ?></td>
-        <td><?php echo $dado["typeAliment"]; ?></td>
-        <td><?php echo $dado["calorie"]; ?></td>
-        <td><?php echo $dado["lipid"]; ?></td>
-        <td><?php echo $dado["glucide"]; ?></td>
-        <td><?php echo $dado["proteine"]; ?></td>
-        </tr>
-      <?php } ?>
-      </table> 
-       </div>
+          </tr>
+          <?php while ($dado = $conection->fetch_array()) { ?>
+            <tr>
+              <td><?php echo $dado["codAliment"]; ?></td>
+              <td><?php echo $dado["nomAliment"]; ?></td>
+              <td><?php echo $dado["uniteMesure"]; ?></td>
+              <td><?php echo $dado["typeAliment"]; ?></td>
+              <td><?php echo $dado["calorie"]; ?></td>
+              <td><?php echo $dado["lipid"]; ?></td>
+              <td><?php echo $dado["glucide"]; ?></td>
+              <td><?php echo $dado["proteine"]; ?></td>
+            </tr>
+          <?php } ?>
+        </table>
+    </div>
 
 
     <!-- /.content-wrapper -->

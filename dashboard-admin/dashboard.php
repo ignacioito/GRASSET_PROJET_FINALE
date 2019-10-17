@@ -47,8 +47,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="dashboard.php" class="brand-link">
-        <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4"
-          style="opacity: .8;">
+        <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8;">
         <span class="brand-text font-weight-light">Admin BF21</span>
       </a>
 
@@ -80,7 +79,7 @@
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplan.php" class="nav-link">
+              <a href="createplaninterface.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -150,9 +149,7 @@
       <!-- Content Wrapper. Contains page content -->
       <div class="container">
         <div class="align-content: center">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=YmYyMWNvbmRpdEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cHQtYnIuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1&amp;showTz=1&amp;hl=fr_CA"
-            style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=YmYyMWNvbmRpdEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cHQtYnIuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1&amp;showTz=1&amp;hl=fr_CA" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no">
           </iframe>
         </div>
       </div>
