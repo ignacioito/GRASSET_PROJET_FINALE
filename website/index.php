@@ -138,7 +138,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="page-footer font-small indigo">
+    <footer class="page-footer font-small indigo bg-light">
 
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
@@ -254,18 +254,11 @@
         </div>
         <!-- Footer Links -->
 
-        <<<<<<< HEAD <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://www.institut-grasset.qc.ca/" target="_blank"> InstitutGrasset.com</a>
-            </div>
-            <!-- Copyright -->
-            =======
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3 bg-dark">© 2019 Copyright:
                 <a href="https://www.institut-grasset.qc.ca/" target="_blank"> InstitutGrasset.com</a>
             </div>
             <!-- Copyright -->
-            >>>>>>> 466fe6bf0a432e832a3b1925c2733aba9832f556
 
     </footer>
     <!-- Footer -->

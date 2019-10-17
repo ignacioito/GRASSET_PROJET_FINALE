@@ -139,13 +139,12 @@
                             <label for="formValidation02">Nom</label>
                             <input type="text" class="form-control" id="formValidation02" placeholder="Nom" required>
                         </div>
+                        
                         <div class="col-md-2 mb-3">
-                            <label for="formValidation03">Date Naissance</label>
-                            <!-- class="1-100" is called by jQuery and used by javascript in dist/js/trainingform.js -->
-                            <select id="formValidation03" class="1-100 form-control">
-                                <option selected>Sélectionner</option>
-                            </select>
+                            <label for="formValidation35">Date Naissance</label>
+                            <input type="date" id="formValidation35" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
                         </div>
+                        
                         <div class="col-md-2 mb-3">
                             <label for="formValidation04">Sexe</label>
                             <select id="formValidation04" class="form-control">
