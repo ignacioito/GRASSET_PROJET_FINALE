@@ -198,22 +198,22 @@
                             <input type="number" min="0" class="form-control" name="smokePerDay" id="smokePerDay" required>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="formValidation13">Alcool (verres par session)</label>
-                            <input type="number" min="0" class="form-control" id="formValidation13" required>
+                            <label for="alcoolHabitude">Alcool (verres par session)</label>
+                            <input type="number" min="0" class="form-control" id="alcoolHabitude" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-2 mb-3">
-                            <label for="formValidation14">Type d'emplois</label>
-                            <select id="formValidation14" class="form-control">
+                            <label for="typeEmploi">Type d'emplois</label>
+                            <select id="typeEmploi" class="form-control">
                                 <option value="" selected>Sélectionner</option>
                                 <option>Physique</option>
                                 <option>Passif</option>
                             </select>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label for="formValidation15">Style de vie</label>
-                            <select id="formValidation15" class="form-control">
+                            <label for="styleDeVie">Style de vie</label>
+                            <select id="styleDeVie" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Sédentaire</option>
                                 <option>Actif</option>
@@ -222,41 +222,310 @@
                             </select>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="formValidation16">Activité(s) physiques</label>
-                            <textarea type="textarea" min="0" class="form-control" id="formValidation16" required></textarea>
+                            <label for="activitePhysique">Activité(s) physiques</label>
+                            <textarea type="textarea" min="0" class="form-control" id="activitePhysique" required></textarea>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="formValidation17">Nbre de fois par session</label>
-                            <input type="number" min="0" class="form-control" id="formValidation17" required>
+                            <label for="foisParSession">Nombre de fois par session</label>
+                            <input type="number" min="0" class="form-control" id="foisParSession" required>
                         </div>
                     </div>
+                    <div class="form-row">
+                        <div class="col-md-2 mb-3">
+                            <label for="experAnterieure">Expérience antérieure</label>
+                            <select id="experAnterieure" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="nbrAnnées">Nombre d'années</label>
+                            <input type="number" min="0" class="form-control" id="nbrAnnées" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="dispEntrainement">Disponibilités pour entrainement X/sem</label>
+                            <input type="number" min="0" class="form-control" id="dispEntrainement" required>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="nbrHeures">Nombre d'heures</label>
+                            <input type="number" min="0" class="form-control" id="nbrHeures" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="excercAime">Ce que vous aimez ou n'aimez pas faire (cardio, machines,
+                                poids libre...)</label>
+                            <textarea type="textarea" min="0" class="form-control" id="excercAime" required></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="m-0 text-dark">Objectifs présents</h4>
+                    <br>
+                    <div class="form-row">
+                        <div class="col-md-2 mb-3">
+                            <label for="objectif">Objectif</label>
+                            <select id="objectif" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Perte de poids</option>
+                                <option>Remise en forme</option>
+                                <option>Préparation pour une compétition</option>
+                                <option>Prise de masse</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="perdrePoids">Si perte de poids (lbs)</label>
+                            <input type="number" min="0" class="form-control" id="perdrePoids" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="competition">Si préparation pour une compétition</label>
+                            <input type="date" id="competition" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Renseignements médicaux -->
+                    <h4 class="m-0 text-dark">Renseignements médicaux</h4>
+                    <br>
+                    <div class="form-row">
+                        <!-- Medical formValidation26 -->
+                        <label for="question01">
+                            1) Votre médecin vous a-t-il déjà dit que vous souffriez d’un
+                            problème cardiaque et que vous
+                            ne devriez participer qu’aux activités prescrites et approuvées par un médecin?
+                        </label>
+                        <select id="question01" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation27 -->
+                        <label for="question02">
+                            2) Ressentez-vous une douleur à la poitrine lorsque vous faites de l’activité physique?
+                        </label>
+                        <select id="question02" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation28 -->
+                        <label for="question03">
+                            3) Au cours du dernier mois, avez-vous ressenti des douleurs à la poitrine lors de périodes
+                            autres que celles où vous participiez à une activité physique?
+                        </label>
+                        <select id="question03" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation29 -->
+                        <label for="question04">
+                            4) Éprouvez-vous des problèmes d’équilibre reliés à un étourdissement ou vous arrive-t-il de
+                            perdre connaissance?
+                        </label>
+                        <select id="question04" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation30 -->
+                        <label for="question05">
+                            5) Avez-vous des problèmes osseux ou articulaires (par exemple, au dos, au genoux ou à la
+                            hanche) qui pourraient s’aggraver par une modification de votre niveau de participation à
+                            une activité physique?
+                        </label>
+                        <select id="question05" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation31 -->
+                        <label for="question06">
+                            6) Des médicaments vous sont-ils actuellement prescrits pour contrôler votre tension
+                            artérielle ou un problème cardiaque (par exemple, des diurétiques)?
+                        </label>
+                        <select id="question06" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                        <!-- Medical formValidation32 -->
+                        <label for="question07">
+                            7) Connaissez-vous une autre raison pour laquelle vous ne devriez pas faire de l’activité
+                            physique?
+                        </label>
+                        <select id="question07" class="form-control">
+                            <option selected>Sélectionner</option>
+                            <option>Oui</option>
+                            <option>Non</option>
+                        </select>
+                    </div>
+                    <br>
+                    <h3> Si vous avez répondu Oui à une ou plusieurs questions :</h3>
+                    <h5>
+                        Consulter votre médecin AVANT d’augmenter votre niveau de participation à une activité
+                        physique et AVANT de faire évaluer votre condition physique, dites à votre médecin que vous
+                        avez complété le questionnaire sur l’aptitude à l’activité physique et expliquez-lui précisément
+                        à quelles questions vous avez répondu « Oui » il se peut que vous n’avez aucune restrictions à
+                        y aller lentement et progressivement. Par ailleurs, il est possible que vous ne puissiez faire que
+                        certains types d’efforts adaptés à votre état de santé. Indiquez à votre médecin le
+                        type d’activité physique que vous comptiez faire et suivez ses recommandations.
+                        Informez-vous quant aux programmes d’activités spécialisés les mieux adaptés à
+                        vos besoins, offerts dans votre localité.
+                    </h5>
+                    <h3> Non à toutes ces questions :</h3>
+                    <h5>
+                        Si, en toute honnêteté, vous avez répondu « Non » à toutes les questions, vous êtes dans un
+                        certaines mesure, assuré (e) que:
+                        Vous pouvez augmenter votre pratique régulière d’activités physiques en commençant
+                        lentement et en augmentant progressivement l’intensité des activités pratiques c’est le moyen
+                        le plus simple et le plus sécuritaire d’y arriver. Vous pouvez faire évaluer votre condition
+                        physique. C’est le meilleur moyen de connaitre votre niveau de condition physique de base
+                        afin de mieux planifier votre participation à un programme d’activités physiques.
+                    </h5>
+                    <div class="container">
+                        <div class="form-row my-5">
+                            <!-- Questionnaire pour plan alimentaire -->
+                            <h4 class="m-0 text-dark font-weight-bold"><span>Questionnaire pour plan alimentaire</span></h4>
+                        </div>
 
-
-
-
-
-                    <input class="btn btn-large btn-primary col-md-2 text-center" type="submit" value="Soumettre">
-                </form>
-                <br>
-                <br>
+                        <div class="form-row">
+                            <!--  -->
+                            <label for="questAlim01">
+                                1) Avez-vous des allergies ou intolérances alimentaires?
+                            </label>
+                            <select id="questAlim01" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                            <label for="indiq01">
+                                Si Oui indiquez lesquels :
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="indiq01" required></textarea>
+                            <!--  -->
+                            <label for="questAlim02">
+                                2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
+                            </label>
+                            <select id="questAlim02" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <label for="indiq02">
+                                Si Oui sélectionner l'intensité :
+                            </label>
+                            <select id="indiq02" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Légère</option>
+                                <option>Moyenne</option>
+                                <option>Élevée (gym)</option>
+                            </select>
+                            <!--  -->
+                            <label for="questAlim03">
+                                3) Consommez-vous des produits laitiers?
+                            </label>
+                            <select id="questAlim03" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                            <label for="indiq03">
+                                Si Oui indiquez lesquels :
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="indiq03" required></textarea>
+                            <!--  -->
+                            <label for="questAlim04">
+                                4) Quels sont les légumes que vous consommez et que vous aimez?
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim04" required></textarea>
+                            <!--  -->
+                            <label for="questAlim05">
+                                5) Quels sont les légumes que vous n’aimez pas?
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim05" required></textarea>
+                            <!--  -->
+                            <label for="questAlim06">
+                                6) Quels sont les fruits que vous consommez et que vous aimez?
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim06" required></textarea>
+                            <!--  -->
+                            <label for="questAlim07">
+                                7) Quels sont les fruits que vous n’aimez pas?
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim07" required></textarea>
+                            <!--  -->
+                            <label for="questAlim08">
+                                8) Quels types de protéines consommez-vous? Et lesquels vous préférez?
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim08" required></textarea>
+                            <!--  -->
+                            <label for="questAlim09">
+                                9) Quels sont les types de protéines que vous n’aimez pas?
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim09" required></textarea>
+                            <!--  -->
+                            <label for="questAlim10">
+                                10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel
+                                moment?
+                            </label>
+                            <select id="questAlim10" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                            <label for="indiq10">
+                                Si Oui indiquez lesquels :
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="indiq10" required></textarea>
+                            <!--  -->
+                            <label for="questAlim11">
+                                11) Consommez-vous des suppléments alimentaires et si oui lesquels?
+                            </label>
+                            <select id="questAlim11" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                            <label for="indiq11">
+                                Si Oui indiquez lesquels :
+                            </label>
+                            <textarea type="textarea" min="0" class="form-control" id="indiq11" required></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <label for="trainingFormSignature">
+                        « J'affirme avoir lu, compris et complété le questionnaire et avoir reçu une
+                        réponse satisfaisante à chacune de mes questions. »
+                    </label>
             </div>
+            <br>
 
-            <!-- /.content -->
+            <input class="btn btn-large btn-primary col-md-2 text-center" type="submit" value="Soumettre">
+            </form>
+            <br>
+            <br>
         </div>
-        <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-            All rights reserved.
-            <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 3.0.0-rc.1
-            </div>
-        </footer>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 3.0.0-rc.1
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 
