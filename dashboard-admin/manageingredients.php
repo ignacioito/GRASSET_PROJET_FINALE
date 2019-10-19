@@ -173,7 +173,7 @@
           "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "', '".$fibre."', '".$glycemique."')";
 
         if ($conection->query($query) === TRUE) {
-          $msg = 'Aliment crée avec sucess';
+          $msg = '<h1>Aliment crée avec sucess</h1>';
         } else {
           $msg = 'Error' . $conection->error;
         }
@@ -253,20 +253,27 @@
         </div><!-- /.container-fluid -->
       </section>
 
-      <!-- Main content -->
-      <section class="content">
-        <div class="row">
-        <!--   -->
-          <div class="col-12 w-auto">
 
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">DataTable avec des Aliments</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                <?php
+
+
+
+      <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <nav class="navbar navbar-light bg-light justify-content-right">
+                <form class="form-inline">
+                  <input class="form-control col" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 col col-lg-2" type="submit">Search</button>
+                </form>
+              </nav>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example" class="table table-bordered table-hover">
+              <?php
       $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
 
       if ($mysqli === false) {
@@ -317,25 +324,21 @@
       }
       $mysqli->close();
       ?>
-                  <tfoot>
-                    <tr>
-                      <th>Aliments</th>
-                      <th>Unite de Mesure</th>
-                      <th>Type d'Aliment</th>
-                      <th>Calories</th>
-                      <th>Lipides</th>
-                      <th>Glucides</th>
-                      <th>Proteins</th>
-                      <th>Fibres</th>
-                      <th>Glycemique</th>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- /.card-body -->
+                <tfoot>
+                <tr>
+                  <th>Rendering engine</th>
+                  <th>Browser</th>
+                  <th>Platform(s)</th>
+                  <th>Engine version</th>
+                  <th>CSS grade</th>
+                </tr>
+                </tfoot>
+              </table>
             </div>
-            <!-- /.card -->
+            <!-- /.card-body -->
           </div>
+          <!-- /.card -->
+            </div>
           <!-- /.col -->
         </div>
         <!-- /.row -->
