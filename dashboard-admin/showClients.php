@@ -18,11 +18,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
-                        if ($mysqli === false) {
-                            die("------------------------------------------------------ERROR 1: Could not connect. "
-                                . $mysqli->connect_error);
-                        }
+                        include('../website/connexion.php');
                         $sql = "SELECT * FROM `utilisateurs`";
                         if ($res = $mysqli->query($sql)) {
                             if ($res->num_rows > 0) {
