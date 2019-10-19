@@ -1,51 +1,3 @@
-
-
-
-    <div class="col-md-2 mb-3">
-        <label for="formValidation11">Fumeur</label>
-        <select id="formValidation11" class="form-control">
-            <option selected>Sélectionner</option>
-            <option>Oui</option>
-            <option>Non</option>
-        </select>
-    </div>
-    <div class="col-md-3 mb-3">
-        <label for="formValidation12">Si Oui combien par jour</label>
-        <input type="number" min="0" class="form-control" id="formValidation12" required>
-    </div>
-    <div class="col-md-3 mb-3">
-        <label for="formValidation13">Alcool (verres par session)</label>
-        <input type="number" min="0" class="form-control" id="formValidation13" required>
-    </div>
-</div>
-<div class="form-row">
-    <div class="col-md-2 mb-3">
-        <label for="formValidation14">Type d'emplois</label>
-        <select id="formValidation14" class="form-control">
-            <option selected>Sélectionner</option>
-            <option>Physique</option>
-            <option>Passif</option>
-        </select>
-    </div>
-    <div class="col-md-2 mb-3">
-        <label for="formValidation15">Style de vie</label>
-        <select id="formValidation15" class="form-control">
-            <option selected>Sélectionner</option>
-            <option>Sédentaire</option>
-            <option>Actif</option>
-            <option>Sportif</option>
-            <option>Athlète</option>
-        </select>
-    </div>
-    <div class="col-md-3 mb-3">
-        <label for="formValidation16">Activité(s) physiques</label>
-        <textarea type="textarea" min="0" class="form-control" id="formValidation16" required></textarea>
-    </div>
-    <div class="col-md-3 mb-3">
-        <label for="formValidation17">Nbre de fois par session</label>
-        <input type="number" min="0" class="form-control" id="formValidation17" required>
-    </div>
-</div>
 <div class="form-row">
     <div class="col-md-2 mb-3">
         <label for="formValidation18">Expérience antérieure</label>
@@ -232,6 +184,8 @@
         <input type="date" id="formValidation37" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
     </div>
 </div>
+
+
 
 <!-- part 2 -->
 
