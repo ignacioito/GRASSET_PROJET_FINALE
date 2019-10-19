@@ -4,7 +4,6 @@
         <div class="card">
             <div class="card-header">
                 <h2 class="card-title">Tableau des Clients</h2>
-
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive p-0" style="height: 900px;">
