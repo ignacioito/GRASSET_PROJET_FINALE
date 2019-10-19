@@ -23,6 +23,7 @@ if (mysqli_query($link, $sqlUser)) {
 } else {
     echo "ERROR: Could not able to execute $sqlUser. " . mysqli_error($link);
 }
+
 // $sqlHabits = "INSERT INTO habitudesDeVie (pressionSanguine) VALUES 
 // ('$bloodpressure')";
 // if (mysqli_query($link, $sqlHabits)) {
