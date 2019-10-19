@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-
+<!-- Versao de Gabriel. Ta tudo COMMITADO!! Eh noiz na fita e os preiboi no dvd -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
