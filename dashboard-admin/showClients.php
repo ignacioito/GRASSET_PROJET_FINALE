@@ -18,9 +18,8 @@
                     </thead>
                     <tbody>
                         <?php
-                        include('../website/connexion.php');
                         $sql = "SELECT * FROM `utilisateurs`";
-                        if ($res = $mysqli->query($sql)) {
+                        if ($res = $connexion->query($sql)) {
                             if ($res->num_rows > 0) {
                                 while ($row = $res->fetch_assoc()) {
                                     echo "<tr>";
@@ -35,9 +34,9 @@
                             }
                         } else {
                             echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
-                                . $mysqli->error;
+                                . $connexion->error;
                         }
-                        $mysqli->close();
+                        $connexion->close();
                         ?>
                     </tbody>
                 </table>

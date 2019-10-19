@@ -325,6 +325,7 @@ $current = $_SESSION['utilisateur'];
                     <!-- user -->
                     <div id="user" class="tab-pane fade container">
                         <?php
+                        include('../website/connexion.php');
                         include('showClients.php');
                         ?>
 
