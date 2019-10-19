@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+  <!-- cdn datatables -->
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
@@ -326,11 +329,15 @@
       ?>
                 <tfoot>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
+                  <th>Aliments</th>
+                  <th>Unite de Mesure</th>
+                  <th>Type d'Aliment</th>
+                  <th>Calories</th>
+                  <th>Lipides</th>
+                  <th>Glucides</th>
+                  <th>Proteins</th>
+                  <th>Fibres</th>
+                  <th>Glycemique</th>
                 </tr>
                 </tfoot>
               </table>
