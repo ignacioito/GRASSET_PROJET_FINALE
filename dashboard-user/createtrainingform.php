@@ -185,7 +185,55 @@
                                 <option>Haute</option>
                             </select>
                         </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="smoke">Fumeur</label>
+                            <select name="smoke" id="smoke" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Oui</option>
+                                <option>Non</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="smokePerDay">Si Oui combien par jour</label>
+                            <input type="number" min="0" class="form-control" name="smokePerDay" id="smokePerDay" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation13">Alcool (verres par session)</label>
+                            <input type="number" min="0" class="form-control" id="formValidation13" required>
+                        </div>
                     </div>
+                    <div class="form-row">
+                        <div class="col-md-2 mb-3">
+                            <label for="formValidation14">Type d'emplois</label>
+                            <select id="formValidation14" class="form-control">
+                                <option value="" selected>Sélectionner</option>
+                                <option>Physique</option>
+                                <option>Passif</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="formValidation15">Style de vie</label>
+                            <select id="formValidation15" class="form-control">
+                                <option selected>Sélectionner</option>
+                                <option>Sédentaire</option>
+                                <option>Actif</option>
+                                <option>Sportif</option>
+                                <option>Athlète</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation16">Activité(s) physiques</label>
+                            <textarea type="textarea" min="0" class="form-control" id="formValidation16" required></textarea>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="formValidation17">Nbre de fois par session</label>
+                            <input type="number" min="0" class="form-control" id="formValidation17" required>
+                        </div>
+                    </div>
+
+
+
+
 
                     <input class="btn btn-large btn-primary col-md-2 text-center" type="submit" value="Soumettre">
                 </form>
