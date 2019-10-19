@@ -266,43 +266,57 @@
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Aliments</th>
-                      <th>Unite de Mesure</th>
-                      <th>Type d'Aliment</th>
-                      <th>Calories</th>
-                      <th>Lipides</th>
-                      <th>Glucides</th>
-                      <th>Proteins</th>
-                      <th>Fibres</th>
-                      <th>Glycemique</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Banane</td>
-                      <td>gr</td>
-                      <td>fruit</td>
-                      <td>70</td>
-                      <td>20</td>
-                      <td>10</td>
-                      <td>4</td>
-                      <td>20</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <td>Boeuf</td>
-                      <td>gr</td>
-                      <td>viande</td>
-                      <td>100</td>
-                      <td>20</td>
-                      <td>10</td>
-                      <td>20</td>
-                      <td>30</td>
-                      <td>10</td>
-                    </tr>
-                  </tbody>
+                <?php
+      $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
+
+      if ($mysqli === false) {
+        die("------------------------------------------------------ERROR 1: Could not connect. "
+          . $mysqli->connect_error);
+      }
+
+      $sql = "SELECT * FROM `aliment`";
+      // $res = $mysqli->query($sql);
+
+      if ($res = $mysqli->query($sql)) {
+        if ($res->num_rows > 0) {
+          echo "<thead>";
+          echo "<tr>";
+          echo "<th>Aliments</th>";
+          echo "<th>Unite de Mesure</th>";
+          echo "<th>Type d'Aliment</th>";
+          echo "<th>Calories</th>";
+          echo "<th>Lipides</th>";
+          echo "<th>Glucides</th>";
+          echo "<th>Proteins</th>";
+          echo "<th>Fibres</th>";
+          echo "<th>Glycemique</th>";
+          echo "</tr>";
+          echo "</thead>";
+          while ($row = $res->fetch_assoc()){
+            echo "<tbody>";
+            echo "<tr>";
+            echo "<td>" . $row['nomAliment'] . "</td>";
+            echo "<td>" . $row['uniteMesure'] . "</td>";
+            echo "<td>" . $row['typeAliment'] . "</td>";
+            echo "<td>" . $row['calorie'] . "</td>";
+            echo "<td>" . $row['lipid'] . "</td>";
+            echo "<td>" . $row['glucide'] . "</td>";
+            echo "<td>" . $row['proteine'] . "</td>";
+            echo "<td>" . $row['fibre'] . "</td>";
+            echo "<td>" . $row['glycemique'] . "</td>";
+            echo "</tr>";
+            echo "</tbody>";
+          }
+          $res->free();
+        } else {
+          echo "------------------------------------------------------ERROR 3: No matching records are found. ";
+        }
+      } else {
+        echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
+          . $mysqli->error;
+      }
+      $mysqli->close();
+      ?>
                   <tfoot>
                     <tr>
                       <th>Aliments</th>
