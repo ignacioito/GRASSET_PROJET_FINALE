@@ -125,7 +125,7 @@
 		 *      // Filter to rows with 'Webkit' in them, add a background colour and then
 		 *      // remove the filter, thus highlighting the 'Webkit' rows only.
 		 *      oTable.fnFilter('Webkit');
-		 *      oTable.$('tr', {"search": "applied"}).css('backgroundColor', 'blue');
+		 *      oTable.$('tr', {"search": "applied"}).css('backgroundColor', 'green');
 		 *      oTable.fnFilter('');
 		 *    } );
 		 */
@@ -804,7 +804,7 @@
 		 *    $(document).ready(function() {
 		 *      var oTable = $('#example').dataTable();
 		 *      oTable.fnUpdate( 'Example update', 0, 0 ); // Single cell
-		 *      oTable.fnUpdate( ['a', 'b', 'c', 'd', 'e'], $('tbody tr')[0] ); // Row
+		 *      oTable.fnUpdate( ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'], $('tbody tr')[0] ); // Row
 		 *    } );
 		 */
 		this.fnUpdate = function( mData, mRow, iColumn, bRedraw, bAction )

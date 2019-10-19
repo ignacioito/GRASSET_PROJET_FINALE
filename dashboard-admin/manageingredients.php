@@ -240,13 +240,13 @@
     </div>
     <!-- Content Wrapper. Contains page content -->
 
-    <div class="content-wrapper">
+    <div class="container">
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>DataTables</h1>
+              <h1>Aliments</h1>
             </div>
            
           </div>
@@ -256,11 +256,12 @@
       <!-- Main content -->
       <section class="content">
         <div class="row">
-          <div class="col-lg-10">
+        <!--   -->
+          <div class="col-12 w-auto">
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable with default features</h3>
+                <h3 class="card-title">DataTable avec des Aliments</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -272,167 +273,47 @@
                       <th>Type d'Aliment</th>
                       <th>Calories</th>
                       <th>Lipides</th>
-                      
+                      <th>Glucides</th>
+                      <th>Proteins</th>
+                      <th>Fibres</th>
+                      <th>Glycemique</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 4.0
-                      </td>
-                      <td>Win 95+</td>
-                      <td> 4</td>
-                      <td>X</td>
+                      <td>Banane</td>
+                      <td>gr</td>
+                      <td>fruit</td>
+                      <td>70</td>
+                      <td>20</td>
+                      <td>10</td>
+                      <td>4</td>
+                      <td>20</td>
+                      <td>10</td>
                     </tr>
                     <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.0</td>
-                      <td>Win 95+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.2</td>
-                      <td>Win 88+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera 9.5</td>
-                      <td>Win 88+ / OSX.3+</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Opera for Wii</td>
-                      <td>Wii</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Nokia N800</td>
-                      <td>N800</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Presto</td>
-                      <td>Nintendo DS browser</td>
-                      <td>Nintendo DS</td>
-                      <td>8.5</td>
-                      <td>C/A<sup>1</sup></td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.1</td>
-                      <td>KDE 3.1</td>
-                      <td>3.1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.3</td>
-                      <td>KDE 3.3</td>
-                      <td>3.3</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>KHTML</td>
-                      <td>Konqureror 3.5</td>
-                      <td>KDE 3.5</td>
-                      <td>3.5</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 4.5</td>
-                      <td>Mac OS 8-9</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 5.1</td>
-                      <td>Mac OS 7.6-9</td>
-                      <td>1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Tasman</td>
-                      <td>Internet Explorer 5.2</td>
-                      <td>Mac OS 8-X</td>
-                      <td>1</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>NetFront 3.1</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>NetFront 3.4</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Dillo 0.8</td>
-                      <td>Embedded devices</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Links</td>
-                      <td>Text only</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>Lynx</td>
-                      <td>Text only</td>
-                      <td>-</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>IE Mobile</td>
-                      <td>Windows Mobile 6</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Misc</td>
-                      <td>PSP browser</td>
-                      <td>PSP</td>
-                      <td>-</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Other browsers</td>
-                      <td>All others</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>U</td>
+                      <td>Boeuf</td>
+                      <td>gr</td>
+                      <td>viande</td>
+                      <td>100</td>
+                      <td>20</td>
+                      <td>10</td>
+                      <td>20</td>
+                      <td>30</td>
+                      <td>10</td>
                     </tr>
                   </tbody>
                   <tfoot>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform(s)</th>
-                      <th>Engine version</th>
-                      <th>CSS grade</th>
+                      <th>Aliments</th>
+                      <th>Unite de Mesure</th>
+                      <th>Type d'Aliment</th>
+                      <th>Calories</th>
+                      <th>Lipides</th>
+                      <th>Glucides</th>
+                      <th>Proteins</th>
+                      <th>Fibres</th>
+                      <th>Glycemique</th>
                     </tr>
                   </tfoot>
                 </table>
@@ -511,10 +392,10 @@
       $('#example2').DataTable({
         "paging": true,
         "lengthChange": false,
-        "searching": false,
+        "searching": true,
         "ordering": true,
         "info": true,
-        "autoWidth": false,
+        "autoWidth": true,
       });
     });
   </script>
