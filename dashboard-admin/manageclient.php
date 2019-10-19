@@ -64,7 +64,7 @@ $current = $_SESSION['utilisateur'];
             <img src="dist/img/user2-160x160.jpeg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <p class="d-block text-white"><?php echo $_SESSION['utilisateur'];?></p>
+            <p class="d-block text-white"><?php echo $_SESSION['utilisateur']; ?></p>
           </div>
         </div>
 
@@ -150,122 +150,10 @@ $current = $_SESSION['utilisateur'];
       <!-- /.content-header -->
 
       <!-- Main content -->
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <a href="createclient.php" class="nav-link"><button type="button" class="btn btn-primary btn-sm">Nouveau Client</button></a>
-            <div class="card-header">
-              <h3 class="card-title">Tableau des Clients</h3>
-              <div class="card-tools">
-
-                <div class="input-group input-group-sm" style="width: 150px;">
-
-                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                  <div class="input-group-append">
-                    <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body table-responsive p-0" style="height: 900px;">
-              <table class="table table-head-fixed">
-                <thead>
-                  <tr>
-                    <!-- <th>ID</th> -->
-                    <th>User</th>
-                    <th>Couriel</th>
-                    <th>Telephone</th>
-                  </tr>
-                </thead>
-                <tbody id="tableBodyClient">
-                  <!-- <tr>
-                                        
-                                        <td>John Doe</td>
-                                        <td>joedoe@gmail.com</td>
-                                        <td><span class="tag tag-success">15143462333</span></td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>Alexander Pierce</td>
-                                        <td>joedoe@gmail.com</td>
-                                        <td><span class="tag tag-warning">15143462333</span></td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>Bob Doe</td>
-                                        <td>joedoe@gmail.com</td>
-                                        <td><span class="tag tag-primary">15143462333</span></td>
-                                    </tr>
-                                    <tr>
-                                       
-                                        <td>Mike Doe</td>
-                                        <td>joedoe@gmail.com</td>
-                                        <td><span class="tag tag-danger">15143462333</span></td>
-                                    </tr> -->
-
-                </tbody>
-              </table>
-              <div class="text-center">
-
-
-
-
-
-              </div>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
-        </div>
-
-      </div>
-
+      <a href="createclient.php" class="btn btn-primary col-2">Nouveau Client</a>
       <?php
-      $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
-
-      if ($mysqli === false) {
-        die("------------------------------------------------------ERROR 1: Could not connect. "
-          . $mysqli->connect_error);
-      }
-
-      $sql = "SELECT * FROM `typeUtilisateurs`";
-      // $res = $mysqli->query($sql);
-
-      if ($res = $mysqli->query($sql)) {
-        if ($res->num_rows > 0) {
-          echo "<table>";
-          echo "<tr>";
-          echo "<th>codtypeutilisateur</th>";
-          echo "<th>nomType</th>";
-          echo "<th>estAdm</th>";
-          echo "<th>estActif</th>";
-          echo "<th>motDePass</th>";
-          echo "</tr>";
-          while ($row = $res->fetch_assoc()) {
-            echo "<tr>";
-            echo "<td>" . $row['codtypeutilisateur'] . "</td>";
-            echo "<td>" . $row['nomType'] . "</td>";
-            echo "<td>" . $row['estAdm'] . "</td>";
-            echo "<td>" . $row['estActif'] . "</td>";
-            echo "<td>" . $row['motDePass'] . "</td>";
-            echo "</tr>";
-          }
-          echo "</table>";
-          $res->free();
-        } else {
-          echo "------------------------------------------------------ERROR 3: No matching records are found. ";
-        }
-      } else {
-        echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
-          . $mysqli->error;
-      }
-      $mysqli->close();
+      include('showClients.php');
       ?>
-
-      <!-- Creer un nouveau client -->
-
 
       <!-- /.content -->
     </div>
