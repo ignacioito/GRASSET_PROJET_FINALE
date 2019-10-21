@@ -1,3 +1,8 @@
+<?php
+session_start();
+include('../website/verifierLogin.php');
+$current = $_SESSION['utilisateur'];
+?>
 <!DOCTYPE html>
 <html>
 
@@ -19,6 +24,10 @@
   <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+  <!-- cdn datatables -->
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/js/datatables.">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
@@ -61,7 +70,7 @@
             <img src="dist/img/user2-160x160.jpeg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <p class="d-block text-white">Ignacio Ito</p>
+            <p class="d-block text-white"><?php echo $_SESSION['utilisateur'];?></p>
           </div>
         </div>
 

@@ -42,7 +42,7 @@
       <div class="card-body login-card-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
-        <form action="../dashboard-admin/dashboard.php" method="POST" action="">
+        <form action="validerLogin.php" method="POST">
           <div class="input-group mb-3">
             <input type="text" name="user" class="form-control" placeholder="Email">
             <div class="input-group-append">
@@ -71,19 +71,6 @@
 
         </form>
 
-        <div class="social-auth-links text-center mb-3">
-          <a href="../dashboard-user/dashboard.php">User</a>
-          ||||
-          <a href="../dashboard-admin/dashboard.php">Admin</a>
-
-        </div>
-        <!-- /.social-auth-links -->
-
-        <!-- /.social-auth-links -->
-
-        <p class="mb-0">
-          <a href="register.php" class="text-center">Créer un nouveau compte</a>
-        </p>
       </div>
     </div>
     <!-- /.login-box -->
