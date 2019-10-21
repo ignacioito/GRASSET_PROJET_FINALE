@@ -326,11 +326,15 @@
       ?>
                 <tfoot>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
+                  <th>Aliments</th>
+                  <th>Unite de Mesure</th>
+                  <th>Type d'Aliment</th>
+                  <th>Calories</th>
+                  <th>Lipides</th>
+                  <th>Glucides</th>
+                  <th>Proteins</th>
+                  <th>Fibres</th>
+                  <th>Glycemique</th>
                 </tr>
                 </tfoot>
               </table>
