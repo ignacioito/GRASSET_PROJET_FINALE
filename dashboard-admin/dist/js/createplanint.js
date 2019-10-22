@@ -113,36 +113,36 @@ function autocomplete(inp, arr) {
 }
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+
 autocomplete(document.getElementById("ingNameDay1"), ingredients);
 
-//
-//
-//
+//Calculate Basal Metabolism Rate with Harris–Benedict equation and macronutrients
+let bmr;
+let gender = document.getElementById("gender").innerHTML;
+let age = document.getElementById("age").innerHTML;
+let height = document.getElementById("height").innerHTML;
+let weight = document.getElementById("weight").innerHTML;
 
-// //Calculate Basal Metabolism Rate with Harris–Benedict equation and macronutrients
-// let bmr;
-// let gender = document.getElementById("gender").innerHTML;
-// let age = document.getElementById("age").innerHTML;
-// let height = document.getElementById("height").innerHTML;
-// let weight = document.getElementById("weight").innerHTML;
+if (gender == "M") {
+  bmr = Math.round(66.5 + 13.75 * weight + 5.003 * height - 6.755 * age);
+} else {
+  bmr = Math.round(655.1 + 9.563 * weight + 1.85 * height - 4.676 * age);
+}
 
-// if (gender == "M") {
-//   bmr = Math.round(66.5 + 13.75 * weight + 5.003 * height - 6.755 * age);
-// } else {
-//   bmr = Math.round(655.1 + 9.563 * weight + 1.85 * height - 4.676 * age);
-// }
+let dayProteins = Math.round((bmr * 20) / 100);
+let dayLipids = Math.round((bmr * 20) / 100);
+let dayCarbohydrates = Math.round((bmr * 60) / 100);
+// Show in Info client
+document.getElementById("dayCalories").innerHTML = bmr;
+// Show in Day1
+document.getElementById("day1Calories").innerHTML = bmr;
+document.getElementById("day1Proteins").innerHTML = dayProteins;
+document.getElementById("day1Lipids").innerHTML = dayLipids;
+document.getElementById("day1Carbohydrates").innerHTML = dayCarbohydrates;
+// Show in Day2
 
-// let dayProteins = Math.round((bmr * 20) / 100);
-// let dayLipids = Math.round((bmr * 20) / 100);
-// let dayCarbohydrates = Math.round((bmr * 60) / 100);
-// // Show in Info client
-// document.getElementById("dayCalories").innerHTML = bmr;
-// // Show in Day1
-// document.getElementById("day1Calories").innerHTML = bmr;
-// document.getElementById("day1Proteins").innerHTML = dayProteins;
-// document.getElementById("day1Lipids").innerHTML = dayLipids;
-// document.getElementById("day1Carbohydrates").innerHTML = dayCarbohydrates;
-// // Show in Day2
+// Update to Client
+function update() {}
 
 // // Day1
 // function addDay1() {

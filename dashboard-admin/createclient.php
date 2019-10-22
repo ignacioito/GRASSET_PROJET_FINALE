@@ -64,7 +64,7 @@ $current = $_SESSION['utilisateur'];
             <img src="dist/img/user2-160x160.jpeg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <p class="d-block text-white"><?php echo $_SESSION['utilisateur'];?></p>
+            <p class="d-block text-white"><?php echo $_SESSION['utilisateur']; ?></p>
           </div>
         </div>
 
@@ -111,15 +111,6 @@ $current = $_SESSION['utilisateur'];
               </a>
             </li>
 
-            <!-- Sidebar Paramètres -->
-            <li class="nav-item">
-              <a href="parameters.php" class="nav-link">
-                <i class="nav-icon fas fa-cog"></i>
-                <p>
-                  Paramètres
-                </p>
-              </a>
-            </li>
             <!-- Logout -->
             <li class="nav-item">
               <a href="logout.php" class="nav-link">

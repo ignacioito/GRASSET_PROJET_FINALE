@@ -111,15 +111,6 @@ $current = $_SESSION['utilisateur'];
                             </a>
                         </li>
 
-                        <!-- Sidebar Paramètres -->
-                        <li class="nav-item">
-                            <a href="parameters.php" class="nav-link">
-                                <i class="nav-icon fas fa-cog"></i>
-                                <p>
-                                    Paramètres
-                                </p>
-                            </a>
-                        </li>
                         <!-- Logout -->
                         <li class="nav-item">
                             <a href="logout.php" class="nav-link">
@@ -140,11 +131,20 @@ $current = $_SESSION['utilisateur'];
             <div class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <h1 class="m-0 text-dark">Créer un Plan Interface</h1>
                         </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <label for="clientName">Nom du Client:</label>
+                            <input id="clientName" type="text" name="clientName" placeholder="">
+                            <button type="submit" class="btn btn-success" onclick="()">Mettre à jour</button>
+                        </div>
                     </div><!-- /.row -->
                     <hr>
+                    <h4>Création d'un plan pour : </h4>
+                    <?php
+
+                    ?>
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
@@ -351,10 +351,8 @@ $current = $_SESSION['utilisateur'];
     </div>
     <!-- ./wrapper -->
 
-    <!-- Require.js -->
-    <script src="dist/js/require.js"></script>
     <!-- Admin interface javascript -->
-    <script src="dist/js/createplaninterface.js"></script>
+    <script src="dist/js/createplanint.js"></script>
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->

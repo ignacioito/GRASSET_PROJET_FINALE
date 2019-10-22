@@ -9,7 +9,7 @@ $current = $_SESSION['utilisateur'];
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Gestion des Clients BF21 - Conditionnement physique et mental</title>
+  <title>Gréer un plan BF21 - Conditionnement physique et mental</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -111,15 +111,6 @@ $current = $_SESSION['utilisateur'];
               </a>
             </li>
 
-            <!-- Sidebar Paramètres -->
-            <li class="nav-item">
-              <a href="parameters.php" class="nav-link">
-                <i class="nav-icon fas fa-cog"></i>
-                <p>
-                  Paramètres
-                </p>
-              </a>
-            </li>
             <!-- Logout -->
             <li class="nav-item">
               <a href="logout.php" class="nav-link">
@@ -147,109 +138,89 @@ $current = $_SESSION['utilisateur'];
           <hr>
         </div><!-- /.container-fluid -->
       </div>
-      <!-- /.content-header -->
+
+      <?php
+      include('../website/connexion.php');
+      ?>
 
       <!-- Main content -->
+
+      <div class="row">
+        <div class="col-12">
+          <form action="" method="GET">
+            <input type="text" placeholder="Type the name here" name="search">&nbsp;
+            <input type="submit" value="Search" name="btn" class="btn btn-sm btn-primary">
+          </form>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Tableau des Clients</h3>
-
-              <div class="card-tools">
-                <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                  <div class="input-group-append">
-                    <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                  </div>
-                </div>
-              </div>
+              <h2 class="card-title">Tableau des Clients</h2>
             </div>
-
-            <!-- <div class="card-body table-responsive p-0" style="height: 900px;">
+            <!-- /.card-header -->
+            <div class="card-body table-responsive p-0" style="height: 900px;">
               <table class="table table-head-fixed">
                 <thead>
                   <tr>
-                    <th>User</th>
-                    <th>Date</th>
-                    <th>Status</th>
-                    <th>Reason</th>
+                    <th>Nom</th>
+                    <th>Couriel</th>
+                    <th>Telephone</th>
                   </tr>
                 </thead>
-
                 <tbody>
-                  <tr>
-                    <td><a href="createplaninterface.php">John Doe</a></td>
-                    <td>10/01/2019</td>
-                    <td><span class="tag tag-success">Non traité</span></td>
-                    <td>Gagne de poids</td>
-                  </tr>
+                  <?php
+                  $sql = "SELECT * FROM `utilisateurs`";
+                  if ($res = $connexion->query($sql)) {
+                    if ($res->num_rows > 0) {
+                      while ($row = $res->fetch_assoc()) {
+                        echo "<tr>";
+                        echo "<td>" . $row['nom'] . "</td>";
+                        echo "<td>" . $row['eMail'] . "</td>";
+                        echo "<td>" . $row['telephone'] . "</td>";
+                        echo "</tr>";
+                      }
+                      $res->free();
+                    } else {
+                      echo "------------------------------------------------------ERROR 3: No matching records are found. ";
+                    }
+                  } else {
+                    echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
+                      . $connexion->error;
+                  }
+                  $connexion->close();
+                  ?>
                 </tbody>
               </table>
-            </div> -->
-
-            <?php
-            // $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
-            // if ($mysqli === false) {
-            //   die("------------------------------------------------------ERROR 1: Could not connect. "
-            //     . $mysqli->connect_error);
-            // }
-            // $sql = "SELECT * FROM `utilisateurs`";
-            // if ($res = $mysqli->query($sql)) {
-            //   if ($res->num_rows > 0) {
-            //     echo "<div class='card-body table-responsive p-0' style='height: 900px;'>";
-            //     echo "<table class='table table-head-fixed'>";
-            //     echo "<thead>";
-            //     echo "<tr>";
-            //     echo "<th>Nom</th>";
-            //     echo "<th>Email</th>";
-            //     echo "<th>Téléphone</th>";
-            //     echo "</tr>";
-            //     echo "</thead>";
-            //     while ($row = $res->fetch_assoc()) {
-            //       echo "<tbody>";
-            //       echo "<tr>";
-            //       echo "<td>" . "<a href='createplaninterface.php'>" . $row['nom'] . "</a>" . "</td>";
-            //       echo "<td>" . $row['eMail'] . "</td>";
-            //       echo "<td>" . $row['telephone'] . "</td>";
-            //       echo "</tr>";
-            //     }
-            //     echo "</tbody>";
-            //     echo "</table>";
-            //     echo "</div";
-            //     $res->free();
-            //   } else {
-            //     echo "------------------------------------------------------ERROR 3: No matching records are found. ";
-            //   }
-            // } else {
-            //   echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
-            //     . $mysqli->error;
-            // }
-            // $mysqli->close();
-            ?>
-
+            </div>
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
         </div>
       </div>
-      <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
-    <footer class="main-footer">
-      <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-      All rights reserved.
-      <div class="float-right d-none d-sm-inline-block">
-        <b>Version</b> 3.0.0-rc.1
-      </div>
-    </footer>
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
+
+
+      <!-- /.card-body -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.0-rc.1
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
   </div>
   <!-- ./wrapper -->
 

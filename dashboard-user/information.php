@@ -57,7 +57,7 @@ $current = $_SESSION['utilisateur'];
       <!-- Brand Logo -->
       <a href="dashboard.php" class="brand-link">
         <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8;">
-        <span class="brand-text font-weight-light">User BF21</span>
+        <span class="brand-text font-weight-light">Utilisateur BF21</span>
       </a>
 
       <!-- Sidebar -->
@@ -68,7 +68,7 @@ $current = $_SESSION['utilisateur'];
             <img src="dist/img/user160.png" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <p class="d-block text-white">John Doe</p>
+            <p class="d-block text-white"><?php echo $_SESSION['utilisateur']; ?></p>
           </div>
         </div>
 
@@ -95,12 +95,12 @@ $current = $_SESSION['utilisateur'];
                 </p>
               </a>
             </li>
-            <!-- Sidebar Profil -->
+            <!-- Sidebar Consulter informations -->
             <li class="nav-item">
-              <a href="profile.php" class="nav-link">
+              <a href="information.php" class="nav-link">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
-                  Profil
+                  Consulter informations
                 </p>
               </a>
             </li>
@@ -120,88 +120,27 @@ $current = $_SESSION['utilisateur'];
 
     <!-- Content Wrapper. Contains page content -->
 
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
-          <div class="container-fluid">
-            <div class="row mb-2">
-              <div class="col-sm-6">
-                <h1 class="m-0 text-dark"><?php echo $_SESSION['utilisateur'];?></h1>
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-            <hr>
-          </div><!-- /.container-fluid -->
-        </div>
-        <!-- /.content-header -->
-
-        <!-- Main content -->
-
-        <form class="container">
-          <form class="content-panel">
-            <form class="form-horizontal">
-              <fieldset class="fieldset">
-                <div class="form-group avatar">
-                  <figure class="figure col-md-2 col-sm-3 col-xs-12">
-                    <img class="img-rounded img-responsive" src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                      alt="">
-                  </figure>
-                  <div class="form-inline col-md-10 col-sm-9 col-xs-12">
-                    <input type="file" class="file-uploader pull-left">
-                    <button type="submit" class="btn btn-sm btn-default-alt pull-left">Update Image</button>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-2 col-sm-3 col-xs-12 control-label">User Name</label>
-                  <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" placeholder="Rebecca">
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="col-md-2 col-sm-3 col-xs-12 control-label">First Name</label>
-                  <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" placeholder="Rebecca">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-2 col-sm-3 col-xs-12 control-label">Last Name</label>
-                  <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" placeholder="Sanders">
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset class="fieldset">
-                <h3 class="fieldset-title">Contact Info</h3>
-                
-                
-                <div class="form-group">
-                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Adresse</label>
-                  <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" placeholder="50 rue Sherbrook">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Code Postale</label>
-                  <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" placeholder="H4N1M9">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-2  col-sm-3 col-xs-12 control-label">Telephone</label>
-                  <div class="col-md-10 col-sm-9 col-xs-12">
-                    <input type="text" class="form-control" placeholder="(514)3460031">
-                  </div>
-                </div>
-              </fieldset>
-              <hr>
-              <div class="form-group">
-                <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
-                  <input class="btn btn-primary" type="submit" value="Update Profile">
-                </div>
-              </div>
-            </form>
-          </form>
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Mes informations</h1>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+          <hr>
+        </div><!-- /.container-fluid -->
       </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+
+
+
+
+
+    </div>
 
 
     <!-- /.content -->
