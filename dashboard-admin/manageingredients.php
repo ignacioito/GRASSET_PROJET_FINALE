@@ -234,7 +234,7 @@ $current = $_SESSION['utilisateur'];
           </label>
           <br>
           <br>
-          <input type="submit" value="Ajouter Aliments">
+          <input type="submit" class="btn btn-success" value="Ajouter aliment">
           <br>
           <br>
       </div>

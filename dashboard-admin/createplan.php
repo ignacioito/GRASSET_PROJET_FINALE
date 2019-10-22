@@ -144,22 +144,22 @@ $current = $_SESSION['utilisateur'];
       <!-- Create a plan -->
       <div class="row">
         <div class="col-6">
-          <form method="GET" action="createplaninterface.php">
+          <form method="GET" action="clientInfo.php" target="_blank">
             <div class="container-fluid">
-              <label for="clientCreatePlan">Créer un plan pour : </label>
-              <input id="clientCreatePlan" type="text" name="clientCreatePlan" placeholder="Insérer le nom">
-              <button type="submit" class="btn btn-danger">Créer</button>
+              <label for="clientInfo">Afficher les info de : </label>
+              <input id="clientInfo" type="text" name="clientInfo" placeholder="Insérer le nom">
+              <button type="submit" class="btn btn-success">Afficher</button>
             </div>
           </form>
         </div>
 
         <!-- Show infos -->
         <div class="col-6">
-          <form method="GET" action="clientInfo.php" target="_blank">
+          <form method="GET" action="createplaninterface.php">
             <div class="container-fluid">
-              <label for="clientInfo">Afficher les info de : </label>
-              <input id="clientInfo" type="text" name="clientInfo" placeholder="Insérer le nom">
-              <button type="submit" class="btn btn-success">Afficher</button>
+              <label for="clientCreatePlan">Créer un plan pour : </label>
+              <input id="clientCreatePlan" type="text" name="clientCreatePlan" placeholder="Insérer le nom">
+              <button type="submit" class="btn btn-danger">Créer</button>
             </div>
           </form>
         </div>
