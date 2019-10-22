@@ -84,7 +84,7 @@ $current = $_SESSION['utilisateur'];
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplaninterface.php" class="nav-link">
+              <a href="createplan.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -139,67 +139,38 @@ $current = $_SESSION['utilisateur'];
         </div><!-- /.container-fluid -->
       </div>
 
-      <?php
-      include('../website/connexion.php');
-      ?>
-
       <!-- Main content -->
 
+      <!-- Create a plan -->
       <div class="row">
-        <div class="col-12">
-          <form action="" method="GET">
-            <input type="text" placeholder="Type the name here" name="search">&nbsp;
-            <input type="submit" value="Search" name="btn" class="btn btn-sm btn-primary">
+        <div class="col-6">
+          <form method="GET" action="createplaninterface.php">
+            <div class="container-fluid">
+              <label for="clientCreatePlan">Créer un plan pour : </label>
+              <input id="clientCreatePlan" type="text" name="clientCreatePlan" placeholder="Insérer le nom">
+              <button type="submit" class="btn btn-danger">Créer</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Show infos -->
+        <div class="col-6">
+          <form method="GET" action="clientInfo.php" target="_blank">
+            <div class="container-fluid">
+              <label for="clientInfo">Afficher les info de : </label>
+              <input id="clientInfo" type="text" name="clientInfo" placeholder="Insérer le nom">
+              <button type="submit" class="btn btn-success">Afficher</button>
+            </div>
           </form>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <div class="card-header">
-              <h2 class="card-title">Tableau des Clients</h2>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body table-responsive p-0" style="height: 900px;">
-              <table class="table table-head-fixed">
-                <thead>
-                  <tr>
-                    <th>Nom</th>
-                    <th>Couriel</th>
-                    <th>Telephone</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <?php
-                  $sql = "SELECT * FROM `utilisateurs`";
-                  if ($res = $connexion->query($sql)) {
-                    if ($res->num_rows > 0) {
-                      while ($row = $res->fetch_assoc()) {
-                        echo "<tr>";
-                        echo "<td>" . $row['nom'] . "</td>";
-                        echo "<td>" . $row['eMail'] . "</td>";
-                        echo "<td>" . $row['telephone'] . "</td>";
-                        echo "</tr>";
-                      }
-                      $res->free();
-                    } else {
-                      echo "------------------------------------------------------ERROR 3: No matching records are found. ";
-                    }
-                  } else {
-                    echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
-                      . $connexion->error;
-                  }
-                  $connexion->close();
-                  ?>
-                </tbody>
-              </table>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
-        </div>
-      </div>
+
+
+      <?php
+      include('../website/connexion.php');
+      include('showClients.php');
+      ?>
 
 
 

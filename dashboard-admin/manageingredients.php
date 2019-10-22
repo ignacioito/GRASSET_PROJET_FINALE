@@ -90,7 +90,7 @@ $current = $_SESSION['utilisateur'];
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplaninterface.php" class="nav-link">
+              <a href="createplan.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan

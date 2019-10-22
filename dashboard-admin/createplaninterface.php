@@ -84,7 +84,7 @@ $current = $_SESSION['utilisateur'];
                         </li>
                         <!-- Sidebar create plan -->
                         <li class="nav-item">
-                            <a href="createplaninterface.php" class="nav-link">
+                            <a href="createplan.php" class="nav-link">
                                 <i class="nav-icon fas fa-calendar-plus"></i>
                                 <p>
                                     Créer un Plan
@@ -131,20 +131,41 @@ $current = $_SESSION['utilisateur'];
             <div class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
-                        <div class="col-sm-3">
-                            <h1 class="m-0 text-dark">Créer un Plan Interface</h1>
+                        <div class="col-sm-12">
+                            <h1 class="m-0 text-dark">Créer un Plan pour : </h1>
+                            <?php
+                            include('../website/connexion.php');
+                            $userCreatePlan = $_GET['clientCreatePlan'];
+                            $sql = "SELECT * FROM `utilisateurs` WHERE nom = '$userCreatePlan'";
+                            if ($res = $connexion->query($sql)) {
+                                if ($res->num_rows > 0) {
+                                    while ($row = $res->fetch_assoc()) { }
+                                    $res->free();
+                                } else {
+                                    echo "<br>";
+                                    echo "<h4 class='text-red'>";
+                                    echo "ERREUR 3: Utilisateur non trouvé : ";
+                                    echo "</h4>";
+                                }
+                            } else {
+                                echo "ERREUR 2: Ne peut pas éxécuter $sql. "
+                                    . $connexion->error;
+                            }
+                            $connexion->close();
+                            echo "<br>";
+                            echo "<h4>";
+                            echo $userCreatePlan;
+                            echo "</h4>";
+
+                            ?>
                         </div><!-- /.col -->
-                        <div class="col-sm-6">
+                        <!-- <div class="col-sm-6">
                             <label for="clientName">Nom du Client:</label>
                             <input id="clientName" type="text" name="clientName" placeholder="">
                             <button type="submit" class="btn btn-success" onclick="()">Mettre à jour</button>
-                        </div>
+                        </div> -->
                     </div><!-- /.row -->
                     <hr>
-                    <h4>Création d'un plan pour : </h4>
-                    <?php
-
-                    ?>
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
@@ -324,11 +345,17 @@ $current = $_SESSION['utilisateur'];
                     </div>
                     <!-- user -->
                     <div id="user" class="tab-pane fade container">
+                        <form method="GET" action="clientInfo.php" target="_blank">
+                            <div class="container-fluid">
+                                <label for="clientInfo">Afficher les informations de : </label>
+                                <input id="clientInfo" type="text" name="clientInfo" placeholder="Insérer le nom">
+                                <button type="submit" class="btn btn-success">Afficher</button>
+                            </div>
+                        </form>
                         <?php
                         include('../website/connexion.php');
                         include('showClients.php');
                         ?>
-
                     </div>
                 </div>
             </div>
