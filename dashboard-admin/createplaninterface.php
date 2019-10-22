@@ -151,7 +151,6 @@ $current = $_SESSION['utilisateur'];
                                 echo "ERREUR 2: Ne peut pas éxécuter $sql. "
                                     . $connexion->error;
                             }
-                            $connexion->close();
                             echo "<br>";
                             echo "<h4>";
                             echo $userCreatePlan;
@@ -411,7 +410,6 @@ $current = $_SESSION['utilisateur'];
 
 
     <?php
-    include('../website/connexion.php');
     $sqlIngName = "SELECT nomAliment, calorie, proteine, lipid, glucide, fibre, glycemique FROM `aliment`";
     $ingNames = array();
     if ($res = $connexion->query($sqlIngName)) {
@@ -427,7 +425,6 @@ $current = $_SESSION['utilisateur'];
         echo "ERROR 2: Impossible d'exécuter $sqlIngName. " . $connexion->error;
     }
 
-    $connexion->close();
     ?>
 
     <script>
@@ -743,6 +740,10 @@ $current = $_SESSION['utilisateur'];
     </script>
 
 
+
+    <?php
+    $connexion->close();
+    ?>
 
 </body>
 
