@@ -784,12 +784,453 @@ $current = $_SESSION['utilisateur'];
                     </div>
                     <!-- day5 -->
                     <div id="day5" class="tab-pane fade">
+                        <div class="form-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-3">
+                                            <div id="ingDiv">
+                                                <!--Make sure the form has the autocomplete function switched off:-->
+                                                <form autocomplete="off" action="/action_page.php">
+                                                    <div class="autocomplete" style="width:200px;">
+                                                        <label for="ingNameDay5">Aliment:</label>
+                                                        <input id="ingNameDay5" type="text" name="ingNameDay5" placeholder="Aliment">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div id="qttDiv">
+                                                <label for="foodQtt5">Quantite:</label>
+                                                <select id="foodQtt5">
+                                                    <option value="1">x1</option>
+                                                    <option value="2">x2</option>
+                                                    <option value="3">x3</option>
+                                                    <option value="4">x4</option>
+                                                    <option value="5">x5</option>
+                                                    <option value="6">x6</option>
+                                                    <option value="7">x7</option>
+                                                    <option value="8">x8</option>
+                                                    <option value="9">x9</option>
+                                                    <option value="10">x10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div id="mealNumberDiv">
+                                                <label for="mealNumbSelection5">Numéro du repas:</label>
+                                                <select id="mealNumbSelection5">
+                                                    <option value="meal1">1</option>
+                                                    <option value="meal2">2</option>
+                                                    <option value="meal3">3</option>
+                                                    <option value="meal4">4</option>
+                                                    <option value="meal5">5</option>
+                                                    <option value="meal6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn btn-success" onclick="addDay5()">Ajouter</button>
+                                            <!-- <button class="btn btn-danger" onclick="removeLI()">Remove</button> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Calories :
+                                            <input id="day5Calories" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Protéines :
+                                            <input id="day5Proteins" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Lipides :
+                                            <input id="day5Lipids" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glucides :
+                                            <input id="day5Carbohydrates" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Fibres :
+                                            <input id="day5Fibers" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glycémique :
+                                            <input id="day5Glycemik" value=0 disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="meals">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 1:
+                                                        <ul class="showBorders" id="day5meal1">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 2:
+                                                        <ul class="showBorders" id="day5meal2">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 3:
+                                                        <ul class="showBorders" id="day5meal3">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 4:
+                                                        <ul class="showBorders" id="day5meal4">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 5:
+                                                        <ul class="showBorders" id="day5meal5">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 6:
+                                                        <ul class="showBorders" id="day5meal6">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- day6 -->
                     <div id="day6" class="tab-pane fade">
+                        <div class="form-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-3">
+                                            <div id="ingDiv">
+                                                <!--Make sure the form has the autocomplete function switched off:-->
+                                                <form autocomplete="off" action="/action_page.php">
+                                                    <div class="autocomplete" style="width:200px;">
+                                                        <label for="ingNameDay6">Aliment:</label>
+                                                        <input id="ingNameDay6" type="text" name="ingNameDay6" placeholder="Aliment">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div id="qttDiv">
+                                                <label for="foodQtt6">Quantite:</label>
+                                                <select id="foodQtt6">
+                                                    <option value="1">x1</option>
+                                                    <option value="2">x2</option>
+                                                    <option value="3">x3</option>
+                                                    <option value="4">x4</option>
+                                                    <option value="5">x5</option>
+                                                    <option value="6">x6</option>
+                                                    <option value="7">x7</option>
+                                                    <option value="8">x8</option>
+                                                    <option value="9">x9</option>
+                                                    <option value="10">x10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div id="mealNumberDiv">
+                                                <label for="mealNumbSelection6">Numéro du repas:</label>
+                                                <select id="mealNumbSelection6">
+                                                    <option value="meal1">1</option>
+                                                    <option value="meal2">2</option>
+                                                    <option value="meal3">3</option>
+                                                    <option value="meal4">4</option>
+                                                    <option value="meal5">5</option>
+                                                    <option value="meal6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn btn-success" onclick="addDay6()">Ajouter</button>
+                                            <!-- <button class="btn btn-danger" onclick="removeLI()">Remove</button> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Calories :
+                                            <input id="day6Calories" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Protéines :
+                                            <input id="day6Proteins" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Lipides :
+                                            <input id="day6Lipids" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glucides :
+                                            <input id="day6Carbohydrates" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Fibres :
+                                            <input id="day6Fibers" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glycémique :
+                                            <input id="day6Glycemik" value=0 disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="meals">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 1:
+                                                        <ul class="showBorders" id="day6meal1">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 2:
+                                                        <ul class="showBorders" id="day6meal2">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 3:
+                                                        <ul class="showBorders" id="day6meal3">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 4:
+                                                        <ul class="showBorders" id="day6meal4">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 5:
+                                                        <ul class="showBorders" id="day6meal5">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 6:
+                                                        <ul class="showBorders" id="day6meal6">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- day7 -->
                     <div id="day7" class="tab-pane fade">
+                        <div class="form-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-3">
+                                            <div id="ingDiv">
+                                                <!--Make sure the form has the autocomplete function switched off:-->
+                                                <form autocomplete="off" action="/action_page.php">
+                                                    <div class="autocomplete" style="width:200px;">
+                                                        <label for="ingNameDay7">Aliment:</label>
+                                                        <input id="ingNameDay7" type="text" name="ingNameDay7" placeholder="Aliment">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div id="qttDiv">
+                                                <label for="foodQtt7">Quantite:</label>
+                                                <select id="foodQtt7">
+                                                    <option value="1">x1</option>
+                                                    <option value="2">x2</option>
+                                                    <option value="3">x3</option>
+                                                    <option value="4">x4</option>
+                                                    <option value="5">x5</option>
+                                                    <option value="6">x6</option>
+                                                    <option value="7">x7</option>
+                                                    <option value="8">x8</option>
+                                                    <option value="9">x9</option>
+                                                    <option value="10">x10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div id="mealNumberDiv">
+                                                <label for="mealNumbSelection7">Numéro du repas:</label>
+                                                <select id="mealNumbSelection7">
+                                                    <option value="meal1">1</option>
+                                                    <option value="meal2">2</option>
+                                                    <option value="meal3">3</option>
+                                                    <option value="meal4">4</option>
+                                                    <option value="meal5">5</option>
+                                                    <option value="meal6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn btn-success" onclick="addDay7()">Ajouter</button>
+                                            <!-- <button class="btn btn-danger" onclick="removeLI()">Remove</button> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Calories :
+                                            <input id="day7Calories" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Protéines :
+                                            <input id="day7Proteins" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Lipides :
+                                            <input id="day7Lipids" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glucides :
+                                            <input id="day7Carbohydrates" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Fibres :
+                                            <input id="day7Fibers" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glycémique :
+                                            <input id="day7Glycemik" value=0 disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="meals">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 1:
+                                                        <ul class="showBorders" id="day7meal1">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 2:
+                                                        <ul class="showBorders" id="day7meal2">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 3:
+                                                        <ul class="showBorders" id="day7meal3">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 4:
+                                                        <ul class="showBorders" id="day7meal4">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 5:
+                                                        <ul class="showBorders" id="day7meal5">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 6:
+                                                        <ul class="showBorders" id="day7meal6">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1019,9 +1460,9 @@ $current = $_SESSION['utilisateur'];
         autocomplete(document.getElementById("ingNameDay2"), arrIng);
         autocomplete(document.getElementById("ingNameDay3"), arrIng);
         autocomplete(document.getElementById("ingNameDay4"), arrIng);
-        // autocomplete(document.getElementById("ingNameDay5"), arrIng);
-        // autocomplete(document.getElementById("ingNameDay6"), arrIng);
-        // autocomplete(document.getElementById("ingNameDay7"), arrIng);
+        autocomplete(document.getElementById("ingNameDay5"), arrIng);
+        autocomplete(document.getElementById("ingNameDay6"), arrIng);
+        autocomplete(document.getElementById("ingNameDay7"), arrIng);
 
 
         // //Calculate Basal Metabolism Rate with Harris–Benedict equation and macronutrients
@@ -1543,13 +1984,6 @@ $current = $_SESSION['utilisateur'];
 
 
 
-
-
-
-
-
-
-
         // Day4
         // Variables for Day4
         let day4Calories = 0;
@@ -1698,6 +2132,487 @@ $current = $_SESSION['utilisateur'];
             //     };
             // }
         }
+
+
+
+
+
+
+
+
+
+
+        // Day5
+        // Variables for Day5
+        let day5Calories = 0;
+        let day5Proteins = 0;
+        let day5Lipids = 0;
+        let day5Carbohydrates = 0;
+        let day5Fibers = 0;
+        let day5Glycemik = 0;
+        // Variables for Day5
+        let day5CaloriesNum;
+        let day5CarbohydratesNum;
+        let day5LipidsNum;
+        let day5ProteinsNum;
+        let day5FibersNum;
+        let day5GlycemikNum;
+        // Variables for Day5
+        let ingCaloriesDay5 = 0;
+        let ingCarbohydratesDay5 = 0;
+        let ingLipidsDay5 = 0;
+        let ingProteinsDay5 = 0;
+        let ingFibersDay5 = 0;
+        let ingGlycemikDay5 = 0;
+
+        // // Variables for delete for Day5
+        // var items, tab, liIndex;
+
+
+        function addDay5() {
+            // Check if ingredient exists
+            let ingredient = document.getElementById("ingNameDay5").value;
+            console.log("Ingredient : " + ingredient);
+            let ingExists = false;
+
+            function isIngExisting() {
+                for (var i = 0; i < arrIng.length; i++) {
+                    if (ingredient.toUpperCase() == arrIng[i].toUpperCase()) {
+                        ingExists = true;
+                        break;
+                    }
+                }
+            }
+            isIngExisting();
+            console.log("Is the ingredient existing : " + ingExists);
+            if (ingExists) {
+                // Find selected meal
+                let ddownMeal = document.getElementById(
+                    "mealNumbSelection5"
+                );
+                let mealNumber =
+                    ddownMeal.options[ddownMeal.selectedIndex].value;
+                console.log(mealNumber);
+                // Assign selected day
+                let dayNumber = "day5";
+                // Find selected quantity
+                let ddownQtt = document.getElementById("foodQtt5");
+                let qtt = ddownQtt.options[ddownQtt.selectedIndex].value;
+                // Add the ingredient
+                console.log(ingredient);
+                let ingToAdd = document.createElement("li");
+                ingToAdd.textContent = ingredient + " x" + qtt;
+                let ulID = dayNumber + mealNumber;
+                console.log(ulID);
+                document.getElementById(ulID).appendChild(ingToAdd);
+                document.getElementById("ingNameDay5").value = "";
+                ddownQtt.value = 1;
+                // Compute left calories, Carbohydrates, Lipids and Proteins
+                for (let i = 0; i < tempIng.length; i++) {
+                    if (ingredient === tempIng[i].nomAliment) {
+                        ingCaloriesDay5 = parseInt(tempIng[i].calorie, 10) * qtt;
+                        ingCarbohydratesDay5 = parseInt(tempIng[i].glucide, 10) * qtt;
+                        ingLipidsDay5 = parseInt(tempIng[i].lipid, 10) * qtt;
+                        ingProteinsDay5 = parseInt(tempIng[i].proteine, 10) * qtt;
+                        ingFibersDay5 = parseInt(tempIng[i].fibre, 10) * qtt;
+                        ingGlycemikDay5 = parseInt(tempIng[i].glycemique, 10) * qtt;
+                    }
+                }
+
+                //
+                day5CaloriesNum = parseInt(
+                    document.getElementById("day5Calories").value,
+                    10
+                );
+                day5CarbohydratesNum = parseInt(
+                    document.getElementById("day5Carbohydrates").value,
+                    10
+                );
+                day5LipidsNum = parseInt(
+                    document.getElementById("day5Lipids").value,
+                    10
+                );
+                day5ProteinsNum = parseInt(
+                    document.getElementById("day5Proteins").value,
+                    10
+                );
+                day5FibersNum = parseInt(
+                    document.getElementById("day5Fibers").value,
+                    10
+                );
+                day5GlycemikNum = parseInt(
+                    document.getElementById("day5Glycemik").value,
+                    10
+                );
+
+                day5CaloriesNum += ingCaloriesDay5;
+                day5CarbohydratesNum += ingCarbohydratesDay5;
+                day5LipidsNum += ingLipidsDay5;
+                day5ProteinsNum += ingProteinsDay5;
+                day5FibersNum += ingFibersDay5;
+                day5GlycemikNum += ingGlycemikDay5;
+                document.getElementById(ulID).appendChild(ingToAdd);
+
+                document.getElementById("day5Calories").value = day5CaloriesNum;
+                document.getElementById(
+                    "day5Carbohydrates"
+                ).value = day5CarbohydratesNum;
+                document.getElementById("day5Lipids").value = day5LipidsNum;
+                document.getElementById("day5Proteins").value = day5ProteinsNum;
+                document.getElementById("day5Fibers").value = day5FibersNum;
+                document.getElementById(
+                    "day5Glycemik"
+                ).value = day5GlycemikNum;
+            } else if (ingredient == "") {
+                alert("Veuillez insérer un ingrédient");
+            } else {
+                alert(
+                    "L'ingrédient \"" +
+                    ingredient +
+                    "\" n'existe pas. Merci de choisir un des aliments proposés"
+                );
+                document.getElementById("ingNameDay5").value = "";
+            }
+
+            // //Delete for Day5Meal2
+            // items = document.querySelectorAll("#day5meal2 li");
+            // tab = [];
+            // liIndex;
+            // // populate tab with li data
+            // for (var i = 0; i < items.length; i++) {
+            //     tab.push(items[i].innerHTML);
+            // }
+            // // get li index using tab array on li click event
+            // for (var i = 0; i < items.length; i++) {
+            //     items[i].onclick = function() {
+            //         liIndex = tab.indexOf(this.innerHTML);
+            //         console.log(this.innerHTML + " INDEX = " + liIndex);
+            //     };
+            // }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Day 6
+        // Variables for Day6
+        let day6Calories = 0;
+        let day6Proteins = 0;
+        let day6Lipids = 0;
+        let day6Carbohydrates = 0;
+        let day6Fibers = 0;
+        let day6Glycemik = 0;
+        // Variables for Day6
+        let day6CaloriesNum;
+        let day6CarbohydratesNum;
+        let day6LipidsNum;
+        let day6ProteinsNum;
+        let day6FibersNum;
+        let day6GlycemikNum;
+        // Variables for Day6
+        let ingCaloriesDay6 = 0;
+        let ingCarbohydratesDay6 = 0;
+        let ingLipidsDay6 = 0;
+        let ingProteinsDay6 = 0;
+        let ingFibersDay6 = 0;
+        let ingGlycemikDay6 = 0;
+
+        // // Variables for delete for Day6
+        // var items, tab, liIndex;
+
+
+        function addDay6() {
+            // Check if ingredient exists
+            let ingredient = document.getElementById("ingNameDay6").value;
+            console.log("Ingredient : " + ingredient);
+            let ingExists = false;
+
+            function isIngExisting() {
+                for (var i = 0; i < arrIng.length; i++) {
+                    if (ingredient.toUpperCase() == arrIng[i].toUpperCase()) {
+                        ingExists = true;
+                        break;
+                    }
+                }
+            }
+            isIngExisting();
+            console.log("Is the ingredient existing : " + ingExists);
+            if (ingExists) {
+                // Find selected meal
+                let ddownMeal = document.getElementById(
+                    "mealNumbSelection6"
+                );
+                let mealNumber =
+                    ddownMeal.options[ddownMeal.selectedIndex].value;
+                console.log(mealNumber);
+                // Assign selected day
+                let dayNumber = "day6";
+                // Find selected quantity
+                let ddownQtt = document.getElementById("foodQtt6");
+                let qtt = ddownQtt.options[ddownQtt.selectedIndex].value;
+                // Add the ingredient
+                console.log(ingredient);
+                let ingToAdd = document.createElement("li");
+                ingToAdd.textContent = ingredient + " x" + qtt;
+                let ulID = dayNumber + mealNumber;
+                console.log(ulID);
+                document.getElementById(ulID).appendChild(ingToAdd);
+                document.getElementById("ingNameDay6").value = "";
+                ddownQtt.value = 1;
+                // Compute left calories, Carbohydrates, Lipids and Proteins
+                for (let i = 0; i < tempIng.length; i++) {
+                    if (ingredient === tempIng[i].nomAliment) {
+                        ingCaloriesDay6 = parseInt(tempIng[i].calorie, 10) * qtt;
+                        ingCarbohydratesDay6 = parseInt(tempIng[i].glucide, 10) * qtt;
+                        ingLipidsDay6 = parseInt(tempIng[i].lipid, 10) * qtt;
+                        ingProteinsDay6 = parseInt(tempIng[i].proteine, 10) * qtt;
+                        ingFibersDay6 = parseInt(tempIng[i].fibre, 10) * qtt;
+                        ingGlycemikDay6 = parseInt(tempIng[i].glycemique, 10) * qtt;
+                    }
+                }
+
+                //
+                day6CaloriesNum = parseInt(
+                    document.getElementById("day6Calories").value,
+                    10
+                );
+                day6CarbohydratesNum = parseInt(
+                    document.getElementById("day6Carbohydrates").value,
+                    10
+                );
+                day6LipidsNum = parseInt(
+                    document.getElementById("day6Lipids").value,
+                    10
+                );
+                day6ProteinsNum = parseInt(
+                    document.getElementById("day6Proteins").value,
+                    10
+                );
+                day6FibersNum = parseInt(
+                    document.getElementById("day6Fibers").value,
+                    10
+                );
+                day6GlycemikNum = parseInt(
+                    document.getElementById("day6Glycemik").value,
+                    10
+                );
+
+                day6CaloriesNum += ingCaloriesDay6;
+                day6CarbohydratesNum += ingCarbohydratesDay6;
+                day6LipidsNum += ingLipidsDay6;
+                day6ProteinsNum += ingProteinsDay6;
+                day6FibersNum += ingFibersDay6;
+                day6GlycemikNum += ingGlycemikDay6;
+                document.getElementById(ulID).appendChild(ingToAdd);
+
+                document.getElementById("day6Calories").value = day6CaloriesNum;
+                document.getElementById(
+                    "day6Carbohydrates"
+                ).value = day6CarbohydratesNum;
+                document.getElementById("day6Lipids").value = day6LipidsNum;
+                document.getElementById("day6Proteins").value = day6ProteinsNum;
+                document.getElementById("day6Fibers").value = day6FibersNum;
+                document.getElementById(
+                    "day6Glycemik"
+                ).value = day6GlycemikNum;
+            } else if (ingredient == "") {
+                alert("Veuillez insérer un ingrédient");
+            } else {
+                alert(
+                    "L'ingrédient \"" +
+                    ingredient +
+                    "\" n'existe pas. Merci de choisir un des aliments proposés"
+                );
+                document.getElementById("ingNameDay6").value = "";
+            }
+
+            // //Delete for Day6Meal2
+            // items = document.querySelectorAll("#day6meal2 li");
+            // tab = [];
+            // liIndex;
+            // // populate tab with li data
+            // for (var i = 0; i < items.length; i++) {
+            //     tab.push(items[i].innerHTML);
+            // }
+            // // get li index using tab array on li click event
+            // for (var i = 0; i < items.length; i++) {
+            //     items[i].onclick = function() {
+            //         liIndex = tab.indexOf(this.innerHTML);
+            //         console.log(this.innerHTML + " INDEX = " + liIndex);
+            //     };
+            // }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        // Day 7
+        // Variables for Day7
+        let day7Calories = 0;
+        let day7Proteins = 0;
+        let day7Lipids = 0;
+        let day7Carbohydrates = 0;
+        let day7Fibers = 0;
+        let day7Glycemik = 0;
+        // Variables for Day7
+        let day7CaloriesNum;
+        let day7CarbohydratesNum;
+        let day7LipidsNum;
+        let day7ProteinsNum;
+        let day7FibersNum;
+        let day7GlycemikNum;
+        // Variables for Day7
+        let ingCaloriesDay7 = 0;
+        let ingCarbohydratesDay7 = 0;
+        let ingLipidsDay7 = 0;
+        let ingProteinsDay7 = 0;
+        let ingFibersDay7 = 0;
+        let ingGlycemikDay7 = 0;
+
+        // // Variables for delete for Day7
+        // var items, tab, liIndex;
+
+
+        function addDay7() {
+            // Check if ingredient exists
+            let ingredient = document.getElementById("ingNameDay7").value;
+            console.log("Ingredient : " + ingredient);
+            let ingExists = false;
+
+            function isIngExisting() {
+                for (var i = 0; i < arrIng.length; i++) {
+                    if (ingredient.toUpperCase() == arrIng[i].toUpperCase()) {
+                        ingExists = true;
+                        break;
+                    }
+                }
+            }
+            isIngExisting();
+            console.log("Is the ingredient existing : " + ingExists);
+            if (ingExists) {
+                // Find selected meal
+                let ddownMeal = document.getElementById(
+                    "mealNumbSelection7"
+                );
+                let mealNumber =
+                    ddownMeal.options[ddownMeal.selectedIndex].value;
+                console.log(mealNumber);
+                // Assign selected day
+                let dayNumber = "day7";
+                // Find selected quantity
+                let ddownQtt = document.getElementById("foodQtt7");
+                let qtt = ddownQtt.options[ddownQtt.selectedIndex].value;
+                // Add the ingredient
+                console.log(ingredient);
+                let ingToAdd = document.createElement("li");
+                ingToAdd.textContent = ingredient + " x" + qtt;
+                let ulID = dayNumber + mealNumber;
+                console.log(ulID);
+                document.getElementById(ulID).appendChild(ingToAdd);
+                document.getElementById("ingNameDay7").value = "";
+                ddownQtt.value = 1;
+                // Compute left calories, Carbohydrates, Lipids and Proteins
+                for (let i = 0; i < tempIng.length; i++) {
+                    if (ingredient === tempIng[i].nomAliment) {
+                        ingCaloriesDay7 = parseInt(tempIng[i].calorie, 10) * qtt;
+                        ingCarbohydratesDay7 = parseInt(tempIng[i].glucide, 10) * qtt;
+                        ingLipidsDay7 = parseInt(tempIng[i].lipid, 10) * qtt;
+                        ingProteinsDay7 = parseInt(tempIng[i].proteine, 10) * qtt;
+                        ingFibersDay7 = parseInt(tempIng[i].fibre, 10) * qtt;
+                        ingGlycemikDay7 = parseInt(tempIng[i].glycemique, 10) * qtt;
+                    }
+                }
+
+                //
+                day7CaloriesNum = parseInt(
+                    document.getElementById("day7Calories").value,
+                    10
+                );
+                day7CarbohydratesNum = parseInt(
+                    document.getElementById("day7Carbohydrates").value,
+                    10
+                );
+                day7LipidsNum = parseInt(
+                    document.getElementById("day7Lipids").value,
+                    10
+                );
+                day7ProteinsNum = parseInt(
+                    document.getElementById("day7Proteins").value,
+                    10
+                );
+                day7FibersNum = parseInt(
+                    document.getElementById("day7Fibers").value,
+                    10
+                );
+                day7GlycemikNum = parseInt(
+                    document.getElementById("day7Glycemik").value,
+                    10
+                );
+
+                day7CaloriesNum += ingCaloriesDay7;
+                day7CarbohydratesNum += ingCarbohydratesDay7;
+                day7LipidsNum += ingLipidsDay7;
+                day7ProteinsNum += ingProteinsDay7;
+                day7FibersNum += ingFibersDay7;
+                day7GlycemikNum += ingGlycemikDay7;
+                document.getElementById(ulID).appendChild(ingToAdd);
+
+                document.getElementById("day7Calories").value = day7CaloriesNum;
+                document.getElementById(
+                    "day7Carbohydrates"
+                ).value = day7CarbohydratesNum;
+                document.getElementById("day7Lipids").value = day7LipidsNum;
+                document.getElementById("day7Proteins").value = day7ProteinsNum;
+                document.getElementById("day7Fibers").value = day7FibersNum;
+                document.getElementById(
+                    "day7Glycemik"
+                ).value = day7GlycemikNum;
+            } else if (ingredient == "") {
+                alert("Veuillez insérer un ingrédient");
+            } else {
+                alert(
+                    "L'ingrédient \"" +
+                    ingredient +
+                    "\" n'existe pas. Merci de choisir un des aliments proposés"
+                );
+                document.getElementById("ingNameDay7").value = "";
+            }
+
+            // //Delete for Day7Meal2
+            // items = document.querySelectorAll("#day7meal2 li");
+            // tab = [];
+            // liIndex;
+            // // populate tab with li data
+            // for (var i = 0; i < items.length; i++) {
+            //     tab.push(items[i].innerHTML);
+            // }
+            // // get li index using tab array on li click event
+            // for (var i = 0; i < items.length; i++) {
+            //     items[i].onclick = function() {
+            //         liIndex = tab.indexOf(this.innerHTML);
+            //         console.log(this.innerHTML + " INDEX = " + liIndex);
+            //     };
+            // }
+        }
+
 
 
 
