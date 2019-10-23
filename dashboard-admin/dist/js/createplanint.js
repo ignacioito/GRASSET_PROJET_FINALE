@@ -129,23 +129,23 @@ autocomplete(document.getElementById("ingNameDay1"), ingredients);
 //   bmr = Math.round(655.1 + 9.563 * weight + 1.85 * height - 4.676 * age);
 // }
 
-// let dayProteins = Math.round((bmr * 20) / 100);
-// let dayLipids = Math.round((bmr * 20) / 100);
-// let dayCarbohydrates = Math.round((bmr * 60) / 100);
+// let day1Proteins = Math.round((bmr * 20) / 100);
+// let day1Lipids = Math.round((bmr * 20) / 100);
+// let day1Carbohydrates = Math.round((bmr * 60) / 100);
 // // Show in Info client
-// document.getElementById("dayCalories").innerHTML = bmr;
+// document.getElementById("day1Calories").innerHTML = bmr;
 // // Show in Day1
 // document.getElementById("day1Calories").innerHTML = bmr;
-// document.getElementById("day1Proteins").innerHTML = dayProteins;
-// document.getElementById("day1Lipids").innerHTML = dayLipids;
-// document.getElementById("day1Carbohydrates").innerHTML = dayCarbohydrates;
+// document.getElementById("day1Proteins").innerHTML = day1Proteins;
+// document.getElementById("day1Lipids").innerHTML = day1Lipids;
+// document.getElementById("day1Carbohydrates").innerHTML = day1Carbohydrates;
 
-let dayCalories = 0;
-let dayProteins = 0;
-let dayLipids = 0;
-let dayCarbohydrates = 0;
-let dayFibers = 0;
-let dayGlycemik = 0;
+let day1Calories = 0;
+let day1Proteins = 0;
+let day1Lipids = 0;
+let day1Carbohydrates = 0;
+let day1Fibers = 0;
+let day1Glycemik = 0;
 
 // Day1
 function addDay1() {
@@ -186,10 +186,10 @@ function addDay1() {
     // Exemple pour un poulet à 50 grammes
     let ingCalories = 150;
     let ingCarbohydrates = 40;
-    let ingLipids = 20;
-    let ingProteins = 100;
-    let ingFibers = 1;
-    let ingGlycemik = 2;
+    let ingLipidsDay1 = 20;
+    let ingProteinsDay1 = 100;
+    let ingFibersDay1 = 1;
+    let ingGlycemikDay1 = 2;
     //
     let day1CaloriesNum = parseInt(
       document.getElementById("day1Calories").value,
@@ -218,10 +218,10 @@ function addDay1() {
 
     day1CaloriesNum += ingCalories;
     day1CarbohydratesNum += ingCarbohydrates;
-    day1LipidsNum += ingLipids;
-    day1ProteinsNum += ingProteins;
-    day1FibersNum += ingFibers;
-    day1GlycemikNum += ingGlycemik;
+    day1LipidsNum += ingLipidsDay1;
+    day1ProteinsNum += ingProteinsDay1;
+    day1FibersNum += ingFibersDay1;
+    day1GlycemikNum += ingGlycemikDay1;
     document.getElementById(ulID).appendChild(ingToAdd);
 
     document.getElementById("day1Calories").value = day1CaloriesNum;

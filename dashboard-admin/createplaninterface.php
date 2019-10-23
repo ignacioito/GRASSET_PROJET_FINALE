@@ -231,6 +231,7 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                         <div class="col-2">
                                             <button type="submit" class="btn btn-success" onclick="addDay1()">Ajouter</button>
+                                            <!-- <button class="btn btn-danger" onclick="removeLI()">Remove</button> -->
                                         </div>
                                     </div>
                                     <div class="row">
@@ -332,13 +333,454 @@ $current = $_SESSION['utilisateur'];
                         </div>
                     </div>
                     <!-- day2 -->
-                    <div id="day2" class="tab-pane container fade">
+                    <div id="day2" class="tab-pane fade">
+                        <div class="form-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-3">
+                                            <div id="ingDiv">
+                                                <!--Make sure the form has the autocomplete function switched off:-->
+                                                <form autocomplete="off" action="/action_page.php">
+                                                    <div class="autocomplete" style="width:200px;">
+                                                        <label for="ingNameDay2">Aliment:</label>
+                                                        <input id="ingNameDay2" type="text" name="ingNameDay2" placeholder="Aliment">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div id="qttDiv">
+                                                <label for="foodQtt2">Quantite:</label>
+                                                <select id="foodQtt2">
+                                                    <option value="1">x1</option>
+                                                    <option value="2">x2</option>
+                                                    <option value="3">x3</option>
+                                                    <option value="4">x4</option>
+                                                    <option value="5">x5</option>
+                                                    <option value="6">x6</option>
+                                                    <option value="7">x7</option>
+                                                    <option value="8">x8</option>
+                                                    <option value="9">x9</option>
+                                                    <option value="10">x10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div id="mealNumberDiv">
+                                                <label for="mealNumbSelection2">Numéro du repas:</label>
+                                                <select id="mealNumbSelection2">
+                                                    <option value="meal1">1</option>
+                                                    <option value="meal2">2</option>
+                                                    <option value="meal3">3</option>
+                                                    <option value="meal4">4</option>
+                                                    <option value="meal5">5</option>
+                                                    <option value="meal6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn btn-success" onclick="addDay2()">Ajouter</button>
+                                            <!-- <button class="btn btn-danger" onclick="removeLI()">Remove</button> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Calories :
+                                            <input id="day2Calories" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Protéines :
+                                            <input id="day2Proteins" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Lipides :
+                                            <input id="day2Lipids" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glucides :
+                                            <input id="day2Carbohydrates" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Fibres :
+                                            <input id="day2Fibers" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glycémique :
+                                            <input id="day2Glycemik" value=0 disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="meals">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 1:
+                                                        <ul class="showBorders" id="day2meal1">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 2:
+                                                        <ul class="showBorders" id="day2meal2">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 3:
+                                                        <ul class="showBorders" id="day2meal3">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 4:
+                                                        <ul class="showBorders" id="day2meal4">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 5:
+                                                        <ul class="showBorders" id="day2meal5">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 6:
+                                                        <ul class="showBorders" id="day2meal6">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- day3 -->
                     <div id="day3" class="tab-pane fade">
+                        <div class="form-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-3">
+                                            <div id="ingDiv">
+                                                <!--Make sure the form has the autocomplete function switched off:-->
+                                                <form autocomplete="off" action="/action_page.php">
+                                                    <div class="autocomplete" style="width:200px;">
+                                                        <label for="ingNameDay3">Aliment:</label>
+                                                        <input id="ingNameDay3" type="text" name="ingNameDay3" placeholder="Aliment">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div id="qttDiv">
+                                                <label for="foodQtt3">Quantite:</label>
+                                                <select id="foodQtt3">
+                                                    <option value="1">x1</option>
+                                                    <option value="2">x2</option>
+                                                    <option value="3">x3</option>
+                                                    <option value="4">x4</option>
+                                                    <option value="5">x5</option>
+                                                    <option value="6">x6</option>
+                                                    <option value="7">x7</option>
+                                                    <option value="8">x8</option>
+                                                    <option value="9">x9</option>
+                                                    <option value="10">x10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div id="mealNumberDiv">
+                                                <label for="mealNumbSelection3">Numéro du repas:</label>
+                                                <select id="mealNumbSelection3">
+                                                    <option value="meal1">1</option>
+                                                    <option value="meal2">2</option>
+                                                    <option value="meal3">3</option>
+                                                    <option value="meal4">4</option>
+                                                    <option value="meal5">5</option>
+                                                    <option value="meal6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn btn-success" onclick="addDay3()">Ajouter</button>
+                                            <!-- <button class="btn btn-danger" onclick="removeLI()">Remove</button> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Calories :
+                                            <input id="day3Calories" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Protéines :
+                                            <input id="day3Proteins" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Lipides :
+                                            <input id="day3Lipids" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glucides :
+                                            <input id="day3Carbohydrates" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Fibres :
+                                            <input id="day3Fibers" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glycémique :
+                                            <input id="day3Glycemik" value=0 disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="meals">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 1:
+                                                        <ul class="showBorders" id="day3meal1">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 2:
+                                                        <ul class="showBorders" id="day3meal2">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 3:
+                                                        <ul class="showBorders" id="day3meal3">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 4:
+                                                        <ul class="showBorders" id="day3meal4">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 5:
+                                                        <ul class="showBorders" id="day3meal5">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 6:
+                                                        <ul class="showBorders" id="day3meal6">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- day4 -->
                     <div id="day4" class="tab-pane fade">
+                        <div class="form-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-3">
+                                            <div id="ingDiv">
+                                                <!--Make sure the form has the autocomplete function switched off:-->
+                                                <form autocomplete="off" action="/action_page.php">
+                                                    <div class="autocomplete" style="width:200px;">
+                                                        <label for="ingNameDay4">Aliment:</label>
+                                                        <input id="ingNameDay4" type="text" name="ingNameDay4" placeholder="Aliment">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div id="qttDiv">
+                                                <label for="foodQtt4">Quantite:</label>
+                                                <select id="foodQtt4">
+                                                    <option value="1">x1</option>
+                                                    <option value="2">x2</option>
+                                                    <option value="3">x3</option>
+                                                    <option value="4">x4</option>
+                                                    <option value="5">x5</option>
+                                                    <option value="6">x6</option>
+                                                    <option value="7">x7</option>
+                                                    <option value="8">x8</option>
+                                                    <option value="9">x9</option>
+                                                    <option value="10">x10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div id="mealNumberDiv">
+                                                <label for="mealNumbSelection4">Numéro du repas:</label>
+                                                <select id="mealNumbSelection4">
+                                                    <option value="meal1">1</option>
+                                                    <option value="meal2">2</option>
+                                                    <option value="meal3">3</option>
+                                                    <option value="meal4">4</option>
+                                                    <option value="meal5">5</option>
+                                                    <option value="meal6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn btn-success" onclick="addDay4()">Ajouter</button>
+                                            <!-- <button class="btn btn-danger" onclick="removeLI()">Remove</button> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Calories :
+                                            <input id="day4Calories" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Protéines :
+                                            <input id="day4Proteins" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Lipides :
+                                            <input id="day4Lipids" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glucides :
+                                            <input id="day4Carbohydrates" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Fibres :
+                                            <input id="day4Fibers" value=0 disabled>
+                                        </div>
+                                        <div class="col">
+                                            Glycémique :
+                                            <input id="day4Glycemik" value=0 disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="meals">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 1:
+                                                        <ul class="showBorders" id="day4meal1">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 2:
+                                                        <ul class="showBorders" id="day4meal2">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 3:
+                                                        <ul class="showBorders" id="day4meal3">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 4:
+                                                        <ul class="showBorders" id="day4meal4">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 5:
+                                                        <ul class="showBorders" id="day4meal5">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="showBorders">Repas 6:
+                                                        <ul class="showBorders" id="day4meal6">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- day5 -->
                     <div id="day5" class="tab-pane fade">
@@ -438,29 +880,29 @@ $current = $_SESSION['utilisateur'];
 
 
         // var ingNames = new Array();
-        // var ingCalories = new Array();
-        // var ingProteins = new Array();
-        // var ingLipids = new Array();
-        // var ingCarbohydrates = new Array();
-        // var ingFibers = new Array();
-        // var ingGlycemiks = new Array();
+        // var ingCaloriesDay1 = new Array();
+        // var ingProteinsDay1 = new Array();
+        // var ingLipidsDay1 = new Array();
+        // var ingCarbohydratesDay1 = new Array();
+        // var ingFibersDay1 = new Array();
+        // var ingGlycemikDay1s = new Array();
         // for (var i = 0; i < tempNameIng.length; i++) {
         //     ingNames[i] = tempNameIng[i].nomAliment;
-        // ingCalories[i] = tempNameIng[i].calorie;
-        // ingProteins[i] = tempNameIng[i].proteine;
-        // ingLipids[i] = tempNameIng[i].lipid;
-        // ingCarbohydrates[i] = tempNameIng[i].glucide;
-        // ingFibers[i] = tempNameIng[i].fibre;
-        // ingGlycemiks[i] = tempNameIng[i].glycemique;
+        // ingCaloriesDay1[i] = tempNameIng[i].calorie;
+        // ingProteinsDay1[i] = tempNameIng[i].proteine;
+        // ingLipidsDay1[i] = tempNameIng[i].lipid;
+        // ingCarbohydratesDay1[i] = tempNameIng[i].glucide;
+        // ingFibersDay1[i] = tempNameIng[i].fibre;
+        // ingGlycemikDay1s[i] = tempNameIng[i].glycemique;
         // }
         // console.log(tempNameIng);
         // console.log(ingNames);
-        // console.log(ingCalories);
-        // console.log(ingProteins);
-        // console.log(ingLipids);
-        // console.log(ingCarbohydrates);
-        // console.log(ingFibers);
-        // console.log(ingGlycemiks);
+        // console.log(ingCaloriesDay1);
+        // console.log(ingProteinsDay1);
+        // console.log(ingLipidsDay1);
+        // console.log(ingCarbohydratesDay1);
+        // console.log(ingFibersDay1);
+        // console.log(ingGlycemikDay1s);
 
 
 
@@ -574,6 +1016,13 @@ $current = $_SESSION['utilisateur'];
         /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 
         autocomplete(document.getElementById("ingNameDay1"), arrIng);
+        autocomplete(document.getElementById("ingNameDay2"), arrIng);
+        autocomplete(document.getElementById("ingNameDay3"), arrIng);
+        autocomplete(document.getElementById("ingNameDay4"), arrIng);
+        // autocomplete(document.getElementById("ingNameDay5"), arrIng);
+        // autocomplete(document.getElementById("ingNameDay6"), arrIng);
+        // autocomplete(document.getElementById("ingNameDay7"), arrIng);
+
 
         // //Calculate Basal Metabolism Rate with Harris–Benedict equation and macronutrients
         // let bmr;
@@ -588,25 +1037,44 @@ $current = $_SESSION['utilisateur'];
         //   bmr = Math.round(655.1 + 9.563 * weight + 1.85 * height - 4.676 * age);
         // }
 
-        // let dayProteins = Math.round((bmr * 20) / 100);
-        // let dayLipids = Math.round((bmr * 20) / 100);
-        // let dayCarbohydrates = Math.round((bmr * 60) / 100);
+        // let day1Proteins = Math.round((bmr * 20) / 100);
+        // let day1Lipids = Math.round((bmr * 20) / 100);
+        // let day1Carbohydrates = Math.round((bmr * 60) / 100);
         // // Show in Info client
-        // document.getElementById("dayCalories").innerHTML = bmr;
+        // document.getElementById("day1Calories").innerHTML = bmr;
         // // Show in Day1
         // document.getElementById("day1Calories").innerHTML = bmr;
-        // document.getElementById("day1Proteins").innerHTML = dayProteins;
-        // document.getElementById("day1Lipids").innerHTML = dayLipids;
-        // document.getElementById("day1Carbohydrates").innerHTML = dayCarbohydrates;
-
-        let dayCalories = 0;
-        let dayProteins = 0;
-        let dayLipids = 0;
-        let dayCarbohydrates = 0;
-        let dayFibers = 0;
-        let dayGlycemik = 0;
+        // document.getElementById("day1Proteins").innerHTML = day1Proteins;
+        // document.getElementById("day1Lipids").innerHTML = day1Lipids;
+        // document.getElementById("day1Carbohydrates").innerHTML = day1Carbohydrates;
 
         // Day1
+        // Variables for Day1
+        let day1Calories = 0;
+        let day1Proteins = 0;
+        let day1Lipids = 0;
+        let day1Carbohydrates = 0;
+        let day1Fibers = 0;
+        let day1Glycemik = 0;
+        // Variables for Day1
+        let day1CaloriesNum;
+        let day1CarbohydratesNum;
+        let day1LipidsNum;
+        let day1ProteinsNum;
+        let day1FibersNum;
+        let day1GlycemikNum;
+        // Variables for Day1
+        let ingCaloriesDay1 = 0;
+        let ingCarbohydratesDay1 = 0;
+        let ingLipidsDay1 = 0;
+        let ingProteinsDay1 = 0;
+        let ingFibersDay1 = 0;
+        let ingGlycemikDay1 = 0;
+
+        // // Variables for delete for Day1Meal1
+        // var items, tab, liIndex;
+
+
         function addDay1() {
             // Check if ingredient exists
             let ingredient = document.getElementById("ingNameDay1").value;
@@ -646,56 +1114,49 @@ $current = $_SESSION['utilisateur'];
                 document.getElementById("ingNameDay1").value = "";
                 ddownQtt.value = 1;
                 // Compute left calories, Carbohydrates, Lipids and Proteins
-                let ingCalories = 0;
-                let ingCarbohydrates = 0;
-                let ingLipids = 0;
-                let ingProteins = 0;
-                let ingFibers = 0;
-                let ingGlycemik = 0;
                 for (let i = 0; i < tempIng.length; i++) {
                     if (ingredient === tempIng[i].nomAliment) {
-                        ingCalories = parseInt(tempIng[i].calorie, 10) * qtt;
-                        ingCarbohydrates = parseInt(tempIng[i].glucide, 10) * qtt;
-                        ingLipids = parseInt(tempIng[i].lipid, 10) * qtt;
-                        ingProteins = parseInt(tempIng[i].proteine, 10) * qtt;
-                        ingFibers = parseInt(tempIng[i].fibre, 10) * qtt;
-                        ingGlycemik = parseInt(tempIng[i].glycemique, 10) * qtt;
+                        ingCaloriesDay1 = parseInt(tempIng[i].calorie, 10) * qtt;
+                        ingCarbohydratesDay1 = parseInt(tempIng[i].glucide, 10) * qtt;
+                        ingLipidsDay1 = parseInt(tempIng[i].lipid, 10) * qtt;
+                        ingProteinsDay1 = parseInt(tempIng[i].proteine, 10) * qtt;
+                        ingFibersDay1 = parseInt(tempIng[i].fibre, 10) * qtt;
+                        ingGlycemikDay1 = parseInt(tempIng[i].glycemique, 10) * qtt;
                     }
                 }
 
-
                 //
-                let day1CaloriesNum = parseInt(
+                day1CaloriesNum = parseInt(
                     document.getElementById("day1Calories").value,
                     10
                 );
-                let day1CarbohydratesNum = parseInt(
+                day1CarbohydratesNum = parseInt(
                     document.getElementById("day1Carbohydrates").value,
                     10
                 );
-                let day1LipidsNum = parseInt(
+                day1LipidsNum = parseInt(
                     document.getElementById("day1Lipids").value,
                     10
                 );
-                let day1ProteinsNum = parseInt(
+                day1ProteinsNum = parseInt(
                     document.getElementById("day1Proteins").value,
                     10
                 );
-                let day1FibersNum = parseInt(
+                day1FibersNum = parseInt(
                     document.getElementById("day1Fibers").value,
                     10
                 );
-                let day1GlycemikNum = parseInt(
+                day1GlycemikNum = parseInt(
                     document.getElementById("day1Glycemik").value,
                     10
                 );
 
-                day1CaloriesNum += ingCalories;
-                day1CarbohydratesNum += ingCarbohydrates;
-                day1LipidsNum += ingLipids;
-                day1ProteinsNum += ingProteins;
-                day1FibersNum += ingFibers;
-                day1GlycemikNum += ingGlycemik;
+                day1CaloriesNum += ingCaloriesDay1;
+                day1CarbohydratesNum += ingCarbohydratesDay1;
+                day1LipidsNum += ingLipidsDay1;
+                day1ProteinsNum += ingProteinsDay1;
+                day1FibersNum += ingFibersDay1;
+                day1GlycemikNum += ingGlycemikDay1;
                 document.getElementById(ulID).appendChild(ingToAdd);
 
                 document.getElementById("day1Calories").value = day1CaloriesNum;
@@ -718,24 +1179,541 @@ $current = $_SESSION['utilisateur'];
                 );
                 document.getElementById("ingNameDay1").value = "";
             }
+
+            // //Delete for Day1Meal1
+            // items = document.querySelectorAll("#day1meal1 li");
+            // tab = [];
+            // liIndex;
+            // // populate tab with li data
+            // for (var i = 0; i < items.length; i++) {
+            //     tab.push(items[i].innerHTML);
+            // }
+            // // get li index using tab array on li click event
+            // for (var i = 0; i < items.length; i++) {
+            //     items[i].onclick = function() {
+            //         liIndex = tab.indexOf(this.innerHTML);
+            //         console.log(this.innerHTML + " INDEX = " + liIndex);
+            //     };
+            // }
         }
 
-        // // Day2
-        // function addDay2() {
-        //   // Find selected meal
-        //   let ddown = document.getElementById("mealNumbSelection2");
-        //   let mealNumber = ddown.options[ddown.selectedIndex].value;
-        //   console.log(mealNumber);
-        //   // Assign selected day
-        //   let dayNumber = "day2";
-        //   // Add the ingredient
-        //   let ingredient = document.getElementById("ingNameDay2").value;
-        //   console.log(ingredient);
-        //   let ingToAdd = document.createElement("li");
-        //   ingToAdd.textContent = ingredient;
-        //   let ulID = dayNumber + mealNumber;
-        //   console.log(ulID);
-        //   document.getElementById(ulID).appendChild(ingToAdd);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Day2
+        // Variables for Day2
+        let day2Calories = 0;
+        let day2Proteins = 0;
+        let day2Lipids = 0;
+        let day2Carbohydrates = 0;
+        let day2Fibers = 0;
+        let day2Glycemik = 0;
+        // Variables for Day2
+        let day2CaloriesNum;
+        let day2CarbohydratesNum;
+        let day2LipidsNum;
+        let day2ProteinsNum;
+        let day2FibersNum;
+        let day2GlycemikNum;
+        // Variables for Day2
+        let ingCaloriesDay2 = 0;
+        let ingCarbohydratesDay2 = 0;
+        let ingLipidsDay2 = 0;
+        let ingProteinsDay2 = 0;
+        let ingFibersDay2 = 0;
+        let ingGlycemikDay2 = 0;
+
+        // // Variables for delete for Day2
+        // var items, tab, liIndex;
+
+
+        function addDay2() {
+            // Check if ingredient exists
+            let ingredient = document.getElementById("ingNameDay2").value;
+            console.log("Ingredient : " + ingredient);
+            let ingExists = false;
+
+            function isIngExisting() {
+                for (var i = 0; i < arrIng.length; i++) {
+                    if (ingredient.toUpperCase() == arrIng[i].toUpperCase()) {
+                        ingExists = true;
+                        break;
+                    }
+                }
+            }
+            isIngExisting();
+            console.log("Is the ingredient existing : " + ingExists);
+            if (ingExists) {
+                // Find selected meal
+                let ddownMeal = document.getElementById(
+                    "mealNumbSelection2"
+                );
+                let mealNumber =
+                    ddownMeal.options[ddownMeal.selectedIndex].value;
+                console.log(mealNumber);
+                // Assign selected day
+                let dayNumber = "day2";
+                // Find selected quantity
+                let ddownQtt = document.getElementById("foodQtt2");
+                let qtt = ddownQtt.options[ddownQtt.selectedIndex].value;
+                // Add the ingredient
+                console.log(ingredient);
+                let ingToAdd = document.createElement("li");
+                ingToAdd.textContent = ingredient + " x" + qtt;
+                let ulID = dayNumber + mealNumber;
+                console.log(ulID);
+                document.getElementById(ulID).appendChild(ingToAdd);
+                document.getElementById("ingNameDay2").value = "";
+                ddownQtt.value = 1;
+                // Compute left calories, Carbohydrates, Lipids and Proteins
+                for (let i = 0; i < tempIng.length; i++) {
+                    if (ingredient === tempIng[i].nomAliment) {
+                        ingCaloriesDay2 = parseInt(tempIng[i].calorie, 10) * qtt;
+                        ingCarbohydratesDay2 = parseInt(tempIng[i].glucide, 10) * qtt;
+                        ingLipidsDay2 = parseInt(tempIng[i].lipid, 10) * qtt;
+                        ingProteinsDay2 = parseInt(tempIng[i].proteine, 10) * qtt;
+                        ingFibersDay2 = parseInt(tempIng[i].fibre, 10) * qtt;
+                        ingGlycemikDay2 = parseInt(tempIng[i].glycemique, 10) * qtt;
+                    }
+                }
+
+                //
+                day2CaloriesNum = parseInt(
+                    document.getElementById("day2Calories").value,
+                    10
+                );
+                day2CarbohydratesNum = parseInt(
+                    document.getElementById("day2Carbohydrates").value,
+                    10
+                );
+                day2LipidsNum = parseInt(
+                    document.getElementById("day2Lipids").value,
+                    10
+                );
+                day2ProteinsNum = parseInt(
+                    document.getElementById("day2Proteins").value,
+                    10
+                );
+                day2FibersNum = parseInt(
+                    document.getElementById("day2Fibers").value,
+                    10
+                );
+                day2GlycemikNum = parseInt(
+                    document.getElementById("day2Glycemik").value,
+                    10
+                );
+
+                day2CaloriesNum += ingCaloriesDay2;
+                day2CarbohydratesNum += ingCarbohydratesDay2;
+                day2LipidsNum += ingLipidsDay2;
+                day2ProteinsNum += ingProteinsDay2;
+                day2FibersNum += ingFibersDay2;
+                day2GlycemikNum += ingGlycemikDay2;
+                document.getElementById(ulID).appendChild(ingToAdd);
+
+                document.getElementById("day2Calories").value = day2CaloriesNum;
+                document.getElementById(
+                    "day2Carbohydrates"
+                ).value = day2CarbohydratesNum;
+                document.getElementById("day2Lipids").value = day2LipidsNum;
+                document.getElementById("day2Proteins").value = day2ProteinsNum;
+                document.getElementById("day2Fibers").value = day2FibersNum;
+                document.getElementById(
+                    "day2Glycemik"
+                ).value = day2GlycemikNum;
+            } else if (ingredient == "") {
+                alert("Veuillez insérer un ingrédient");
+            } else {
+                alert(
+                    "L'ingrédient \"" +
+                    ingredient +
+                    "\" n'existe pas. Merci de choisir un des aliments proposés"
+                );
+                document.getElementById("ingNameDay2").value = "";
+            }
+
+            // //Delete for Day2Meal2
+            // items = document.querySelectorAll("#day2meal2 li");
+            // tab = [];
+            // liIndex;
+            // // populate tab with li data
+            // for (var i = 0; i < items.length; i++) {
+            //     tab.push(items[i].innerHTML);
+            // }
+            // // get li index using tab array on li click event
+            // for (var i = 0; i < items.length; i++) {
+            //     items[i].onclick = function() {
+            //         liIndex = tab.indexOf(this.innerHTML);
+            //         console.log(this.innerHTML + " INDEX = " + liIndex);
+            //     };
+            // }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Day3
+        // Variables for Day3
+        let day3Calories = 0;
+        let day3Proteins = 0;
+        let day3Lipids = 0;
+        let day3Carbohydrates = 0;
+        let day3Fibers = 0;
+        let day3Glycemik = 0;
+        // Variables for Day3
+        let day3CaloriesNum;
+        let day3CarbohydratesNum;
+        let day3LipidsNum;
+        let day3ProteinsNum;
+        let day3FibersNum;
+        let day3GlycemikNum;
+        // Variables for Day3
+        let ingCaloriesDay3 = 0;
+        let ingCarbohydratesDay3 = 0;
+        let ingLipidsDay3 = 0;
+        let ingProteinsDay3 = 0;
+        let ingFibersDay3 = 0;
+        let ingGlycemikDay3 = 0;
+
+        // // Variables for delete for Day3
+        // var items, tab, liIndex;
+
+
+        function addDay3() {
+            // Check if ingredient exists
+            let ingredient = document.getElementById("ingNameDay3").value;
+            console.log("Ingredient : " + ingredient);
+            let ingExists = false;
+
+            function isIngExisting() {
+                for (var i = 0; i < arrIng.length; i++) {
+                    if (ingredient.toUpperCase() == arrIng[i].toUpperCase()) {
+                        ingExists = true;
+                        break;
+                    }
+                }
+            }
+            isIngExisting();
+            console.log("Is the ingredient existing : " + ingExists);
+            if (ingExists) {
+                // Find selected meal
+                let ddownMeal = document.getElementById(
+                    "mealNumbSelection3"
+                );
+                let mealNumber =
+                    ddownMeal.options[ddownMeal.selectedIndex].value;
+                console.log(mealNumber);
+                // Assign selected day
+                let dayNumber = "day3";
+                // Find selected quantity
+                let ddownQtt = document.getElementById("foodQtt3");
+                let qtt = ddownQtt.options[ddownQtt.selectedIndex].value;
+                // Add the ingredient
+                console.log(ingredient);
+                let ingToAdd = document.createElement("li");
+                ingToAdd.textContent = ingredient + " x" + qtt;
+                let ulID = dayNumber + mealNumber;
+                console.log(ulID);
+                document.getElementById(ulID).appendChild(ingToAdd);
+                document.getElementById("ingNameDay3").value = "";
+                ddownQtt.value = 1;
+                // Compute left calories, Carbohydrates, Lipids and Proteins
+                for (let i = 0; i < tempIng.length; i++) {
+                    if (ingredient === tempIng[i].nomAliment) {
+                        ingCaloriesDay3 = parseInt(tempIng[i].calorie, 10) * qtt;
+                        ingCarbohydratesDay3 = parseInt(tempIng[i].glucide, 10) * qtt;
+                        ingLipidsDay3 = parseInt(tempIng[i].lipid, 10) * qtt;
+                        ingProteinsDay3 = parseInt(tempIng[i].proteine, 10) * qtt;
+                        ingFibersDay3 = parseInt(tempIng[i].fibre, 10) * qtt;
+                        ingGlycemikDay3 = parseInt(tempIng[i].glycemique, 10) * qtt;
+                    }
+                }
+
+                //
+                day3CaloriesNum = parseInt(
+                    document.getElementById("day3Calories").value,
+                    10
+                );
+                day3CarbohydratesNum = parseInt(
+                    document.getElementById("day3Carbohydrates").value,
+                    10
+                );
+                day3LipidsNum = parseInt(
+                    document.getElementById("day3Lipids").value,
+                    10
+                );
+                day3ProteinsNum = parseInt(
+                    document.getElementById("day3Proteins").value,
+                    10
+                );
+                day3FibersNum = parseInt(
+                    document.getElementById("day3Fibers").value,
+                    10
+                );
+                day3GlycemikNum = parseInt(
+                    document.getElementById("day3Glycemik").value,
+                    10
+                );
+
+                day3CaloriesNum += ingCaloriesDay3;
+                day3CarbohydratesNum += ingCarbohydratesDay3;
+                day3LipidsNum += ingLipidsDay3;
+                day3ProteinsNum += ingProteinsDay3;
+                day3FibersNum += ingFibersDay3;
+                day3GlycemikNum += ingGlycemikDay3;
+                document.getElementById(ulID).appendChild(ingToAdd);
+
+                document.getElementById("day3Calories").value = day3CaloriesNum;
+                document.getElementById(
+                    "day3Carbohydrates"
+                ).value = day3CarbohydratesNum;
+                document.getElementById("day3Lipids").value = day3LipidsNum;
+                document.getElementById("day3Proteins").value = day3ProteinsNum;
+                document.getElementById("day3Fibers").value = day3FibersNum;
+                document.getElementById(
+                    "day3Glycemik"
+                ).value = day3GlycemikNum;
+            } else if (ingredient == "") {
+                alert("Veuillez insérer un ingrédient");
+            } else {
+                alert(
+                    "L'ingrédient \"" +
+                    ingredient +
+                    "\" n'existe pas. Merci de choisir un des aliments proposés"
+                );
+                document.getElementById("ingNameDay3").value = "";
+            }
+
+            // //Delete for Day3Meal2
+            // items = document.querySelectorAll("#day3meal2 li");
+            // tab = [];
+            // liIndex;
+            // // populate tab with li data
+            // for (var i = 0; i < items.length; i++) {
+            //     tab.push(items[i].innerHTML);
+            // }
+            // // get li index using tab array on li click event
+            // for (var i = 0; i < items.length; i++) {
+            //     items[i].onclick = function() {
+            //         liIndex = tab.indexOf(this.innerHTML);
+            //         console.log(this.innerHTML + " INDEX = " + liIndex);
+            //     };
+            // }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Day4
+        // Variables for Day4
+        let day4Calories = 0;
+        let day4Proteins = 0;
+        let day4Lipids = 0;
+        let day4Carbohydrates = 0;
+        let day4Fibers = 0;
+        let day4Glycemik = 0;
+        // Variables for Day4
+        let day4CaloriesNum;
+        let day4CarbohydratesNum;
+        let day4LipidsNum;
+        let day4ProteinsNum;
+        let day4FibersNum;
+        let day4GlycemikNum;
+        // Variables for Day4
+        let ingCaloriesDay4 = 0;
+        let ingCarbohydratesDay4 = 0;
+        let ingLipidsDay4 = 0;
+        let ingProteinsDay4 = 0;
+        let ingFibersDay4 = 0;
+        let ingGlycemikDay4 = 0;
+
+        // // Variables for delete for Day4
+        // var items, tab, liIndex;
+
+
+        function addDay4() {
+            // Check if ingredient exists
+            let ingredient = document.getElementById("ingNameDay4").value;
+            console.log("Ingredient : " + ingredient);
+            let ingExists = false;
+
+            function isIngExisting() {
+                for (var i = 0; i < arrIng.length; i++) {
+                    if (ingredient.toUpperCase() == arrIng[i].toUpperCase()) {
+                        ingExists = true;
+                        break;
+                    }
+                }
+            }
+            isIngExisting();
+            console.log("Is the ingredient existing : " + ingExists);
+            if (ingExists) {
+                // Find selected meal
+                let ddownMeal = document.getElementById(
+                    "mealNumbSelection4"
+                );
+                let mealNumber =
+                    ddownMeal.options[ddownMeal.selectedIndex].value;
+                console.log(mealNumber);
+                // Assign selected day
+                let dayNumber = "day4";
+                // Find selected quantity
+                let ddownQtt = document.getElementById("foodQtt4");
+                let qtt = ddownQtt.options[ddownQtt.selectedIndex].value;
+                // Add the ingredient
+                console.log(ingredient);
+                let ingToAdd = document.createElement("li");
+                ingToAdd.textContent = ingredient + " x" + qtt;
+                let ulID = dayNumber + mealNumber;
+                console.log(ulID);
+                document.getElementById(ulID).appendChild(ingToAdd);
+                document.getElementById("ingNameDay4").value = "";
+                ddownQtt.value = 1;
+                // Compute left calories, Carbohydrates, Lipids and Proteins
+                for (let i = 0; i < tempIng.length; i++) {
+                    if (ingredient === tempIng[i].nomAliment) {
+                        ingCaloriesDay4 = parseInt(tempIng[i].calorie, 10) * qtt;
+                        ingCarbohydratesDay4 = parseInt(tempIng[i].glucide, 10) * qtt;
+                        ingLipidsDay4 = parseInt(tempIng[i].lipid, 10) * qtt;
+                        ingProteinsDay4 = parseInt(tempIng[i].proteine, 10) * qtt;
+                        ingFibersDay4 = parseInt(tempIng[i].fibre, 10) * qtt;
+                        ingGlycemikDay4 = parseInt(tempIng[i].glycemique, 10) * qtt;
+                    }
+                }
+
+                //
+                day4CaloriesNum = parseInt(
+                    document.getElementById("day4Calories").value,
+                    10
+                );
+                day4CarbohydratesNum = parseInt(
+                    document.getElementById("day4Carbohydrates").value,
+                    10
+                );
+                day4LipidsNum = parseInt(
+                    document.getElementById("day4Lipids").value,
+                    10
+                );
+                day4ProteinsNum = parseInt(
+                    document.getElementById("day4Proteins").value,
+                    10
+                );
+                day4FibersNum = parseInt(
+                    document.getElementById("day4Fibers").value,
+                    10
+                );
+                day4GlycemikNum = parseInt(
+                    document.getElementById("day4Glycemik").value,
+                    10
+                );
+
+                day4CaloriesNum += ingCaloriesDay4;
+                day4CarbohydratesNum += ingCarbohydratesDay4;
+                day4LipidsNum += ingLipidsDay4;
+                day4ProteinsNum += ingProteinsDay4;
+                day4FibersNum += ingFibersDay4;
+                day4GlycemikNum += ingGlycemikDay4;
+                document.getElementById(ulID).appendChild(ingToAdd);
+
+                document.getElementById("day4Calories").value = day4CaloriesNum;
+                document.getElementById(
+                    "day4Carbohydrates"
+                ).value = day4CarbohydratesNum;
+                document.getElementById("day4Lipids").value = day4LipidsNum;
+                document.getElementById("day4Proteins").value = day4ProteinsNum;
+                document.getElementById("day4Fibers").value = day4FibersNum;
+                document.getElementById(
+                    "day4Glycemik"
+                ).value = day4GlycemikNum;
+            } else if (ingredient == "") {
+                alert("Veuillez insérer un ingrédient");
+            } else {
+                alert(
+                    "L'ingrédient \"" +
+                    ingredient +
+                    "\" n'existe pas. Merci de choisir un des aliments proposés"
+                );
+                document.getElementById("ingNameDay4").value = "";
+            }
+
+            // //Delete for Day4Meal2
+            // items = document.querySelectorAll("#day4meal2 li");
+            // tab = [];
+            // liIndex;
+            // // populate tab with li data
+            // for (var i = 0; i < items.length; i++) {
+            //     tab.push(items[i].innerHTML);
+            // }
+            // // get li index using tab array on li click event
+            // for (var i = 0; i < items.length; i++) {
+            //     items[i].onclick = function() {
+            //         liIndex = tab.indexOf(this.innerHTML);
+            //         console.log(this.innerHTML + " INDEX = " + liIndex);
+            //     };
+            // }
+        }
+
+
+
+
+
+
+
+
+
+
+        // function removeLI() {
+        //     items[liIndex].parentNode.removeChild(items[liIndex]);
+        //     day1CaloriesNum -= ingCaloriesDay1;
+        //     day1CarbohydratesNum -= ingCarbohydratesDay1;
+        //     document.getElementById("day1Calories").value = day1CaloriesNum;
+        //     document.getElementById("day1Carbohydrates").value = day1CarbohydratesNum;
         // }
     </script>
 
