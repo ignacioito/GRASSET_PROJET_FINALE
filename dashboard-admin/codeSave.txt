@@ -1,0 +1,34 @@
+    <?php
+    include('../website/connexion.php');
+    $sqlIngName = "SELECT nomAliment FROM `aliment`";
+    $ingNames = array();
+    if ($res = $connexion->query($sqlIngName)) {
+        if ($res->num_rows > 0) {
+            while ($row = $res->fetch_assoc()) {
+                $ingNames[] = $row;
+            }
+            $res->free();
+        } else {
+            echo "ERROR 3: ";
+        }
+    } else {
+        echo "ERROR 2: Impossible d'exécuter $sqlIngName. " . $connexion->error;
+    }
+
+
+
+    $connexion->close();
+    ?>
+
+    <script>
+        // Searchform
+        var tempNameIng = <?php echo json_encode($ingNames); ?>;
+        var ingNames = new Array();
+        for (var i = 0; i < tempNameIng.length; i++) {
+            ingNames[i] = tempNameIng[i].nomAliment;
+        }
+        var tempIngCalories = <?php echo json_encode($ingNames); ?>;
+        var ingNames = new Array();
+        for (var i = 0; i < tempNameIng.length; i++) {
+            ingNames[i] = tempNameIng[i].nomAliment;
+        }

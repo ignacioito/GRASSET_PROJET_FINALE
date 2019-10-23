@@ -70,7 +70,7 @@ $current = $_SESSION['utilisateur'];
             <img src="dist/img/user2-160x160.jpeg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <p class="d-block text-white"><?php echo $_SESSION['utilisateur'];?></p>
+            <p class="d-block text-white"><?php echo $_SESSION['utilisateur']; ?></p>
           </div>
         </div>
 
@@ -90,7 +90,7 @@ $current = $_SESSION['utilisateur'];
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplaninterface.php" class="nav-link">
+              <a href="createplan.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -117,15 +117,6 @@ $current = $_SESSION['utilisateur'];
               </a>
             </li>
 
-            <!-- Sidebar Paramètres -->
-            <li class="nav-item">
-              <a href="parameters.php" class="nav-link">
-                <i class="nav-icon fas fa-cog"></i>
-                <p>
-                  Paramètres
-                </p>
-              </a>
-            </li>
             <!-- Logout -->
             <li class="nav-item">
               <a href="logout.php" class="nav-link">
@@ -179,7 +170,7 @@ $current = $_SESSION['utilisateur'];
         $glycemique = $_POST['glycemique'];
 
         $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) Values " .
-          "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "', '".$fibre."', '".$glycemique."')";
+          "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "', '" . $fibre . "', '" . $glycemique . "')";
 
         if ($conection->query($query) === TRUE) {
           $msg = '<h1>Aliment crée avec sucess</h1>';
@@ -195,170 +186,170 @@ $current = $_SESSION['utilisateur'];
         <p><?php echo $msg; ?></p>
       <?php endif; ?>
 
-    <div class="container">
-      <form method="post" action="manageingredients.php">
-      <label> Aliments
-      <br>
-      <input type="text" name="nomAliment" />
-      </label>
+      <div class="container">
+        <form method="post" action="manageingredients.php">
+          <label> Aliments
+            <br>
+            <input type="text" name="nomAliment" />
+          </label>
 
-      <label> Unite de Mesure
-      <br>
-      <input type="text" name="uniteMesure" />
-      </label>
+          <label> Unite de Mesure
+            <br>
+            <input type="text" name="uniteMesure" />
+          </label>
 
-      <label> Type d'Aliment
-      <br>
-      <input type="text" name="typeAliment" />
-      </label>
+          <label> Type d'Aliment
+            <br>
+            <input type="text" name="typeAliment" />
+          </label>
 
-      <label> Calories
-      <br>
-      <input type="text" name="calorie" />
-      </label>
+          <label> Calories
+            <br>
+            <input type="text" name="calorie" />
+          </label>
 
-      <label> Lipides
-      <br>
-      <input type="text" name="lipid" />
-      </label>
+          <label> Lipides
+            <br>
+            <input type="text" name="lipid" />
+          </label>
 
-      <label> Glucides
-      <br>
-      <input type="text" name="glucide" />
-      </label>
+          <label> Glucides
+            <br>
+            <input type="text" name="glucide" />
+          </label>
 
-      <label> Proteines
-      <br>
-      <input type="text" name="proteine" />
-      </label>
+          <label> Proteines
+            <br>
+            <input type="text" name="proteine" />
+          </label>
 
-      <label> Fibres
-      <br>
-      <input type="text" name="fibre" />
-      </label>
+          <label> Fibres
+            <br>
+            <input type="text" name="fibre" />
+          </label>
 
-      <label> Glycemique
-      <br>
-      <input type="text" name="glycemique" />
-      </label>
-      <br>
-      <br>
-      <input type="submit" value="Ajouter Aliments"> 
-      <br>
-      <br>
-    </div>
-    <!-- Content Wrapper. Contains page content -->
+          <label> Glycemique
+            <br>
+            <input type="text" name="glycemique" />
+          </label>
+          <br>
+          <br>
+          <input type="submit" class="btn btn-success" value="Ajouter aliment">
+          <br>
+          <br>
+      </div>
+      <!-- Content Wrapper. Contains page content -->
 
-    <div class="container">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>Aliments</h1>
+      <div class="container">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1>Aliments</h1>
+              </div>
+
             </div>
-           
+          </div><!-- /.container-fluid -->
+        </section>
+
+
+
+
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <nav class="navbar navbar-light bg-light justify-content-right">
+                    <form class="form-inline">
+                      <input class="form-control col" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 col col-lg-2" type="submit">Search</button>
+                    </form>
+                  </nav>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="example" class="table table-bordered table-hover">
+                    <?php
+                    $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
+
+                    if ($mysqli === false) {
+                      die("------------------------------------------------------ERROR 1: Could not connect. "
+                        . $mysqli->connect_error);
+                    }
+
+                    $sql = "SELECT * FROM `aliment`";
+                    // $res = $mysqli->query($sql);
+
+                    if ($res = $mysqli->query($sql)) {
+                      if ($res->num_rows > 0) {
+                        echo "<thead>";
+                        echo "<tr>";
+                        echo "<th>Aliments</th>";
+                        echo "<th>Unite de Mesure</th>";
+                        echo "<th>Type d'Aliment</th>";
+                        echo "<th>Calories</th>";
+                        echo "<th>Lipides</th>";
+                        echo "<th>Glucides</th>";
+                        echo "<th>Proteins</th>";
+                        echo "<th>Fibres</th>";
+                        echo "<th>Glycemique</th>";
+                        echo "</tr>";
+                        echo "</thead>";
+                        while ($row = $res->fetch_assoc()) {
+                          echo "<tbody>";
+                          echo "<tr>";
+                          echo "<td>" . $row['nomAliment'] . "</td>";
+                          echo "<td>" . $row['uniteMesure'] . "</td>";
+                          echo "<td>" . $row['typeAliment'] . "</td>";
+                          echo "<td>" . $row['calorie'] . "</td>";
+                          echo "<td>" . $row['lipid'] . "</td>";
+                          echo "<td>" . $row['glucide'] . "</td>";
+                          echo "<td>" . $row['proteine'] . "</td>";
+                          echo "<td>" . $row['fibre'] . "</td>";
+                          echo "<td>" . $row['glycemique'] . "</td>";
+                          echo "</tr>";
+                          echo "</tbody>";
+                        }
+                        $res->free();
+                      } else {
+                        echo "------------------------------------------------------ERROR 3: No matching records are found. ";
+                      }
+                    } else {
+                      echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
+                        . $mysqli->error;
+                    }
+                    $mysqli->close();
+                    ?>
+                    <tfoot>
+                      <tr>
+                        <th>Aliments</th>
+                        <th>Unite de Mesure</th>
+                        <th>Type d'Aliment</th>
+                        <th>Calories</th>
+                        <th>Lipides</th>
+                        <th>Glucides</th>
+                        <th>Proteins</th>
+                        <th>Fibres</th>
+                        <th>Glycemique</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
           </div>
-        </div><!-- /.container-fluid -->
-      </section>
-
-
-
-
-
-      <!-- Main content -->
-    <section class="content">
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <div class="card-header">
-              <nav class="navbar navbar-light bg-light justify-content-right">
-                <form class="form-inline">
-                  <input class="form-control col" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 col col-lg-2" type="submit">Search</button>
-                </form>
-              </nav>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body">
-              <table id="example" class="table table-bordered table-hover">
-              <?php
-      $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
-
-      if ($mysqli === false) {
-        die("------------------------------------------------------ERROR 1: Could not connect. "
-          . $mysqli->connect_error);
-      }
-
-      $sql = "SELECT * FROM `aliment`";
-      // $res = $mysqli->query($sql);
-
-      if ($res = $mysqli->query($sql)) {
-        if ($res->num_rows > 0) {
-          echo "<thead>";
-          echo "<tr>";
-          echo "<th>Aliments</th>";
-          echo "<th>Unite de Mesure</th>";
-          echo "<th>Type d'Aliment</th>";
-          echo "<th>Calories</th>";
-          echo "<th>Lipides</th>";
-          echo "<th>Glucides</th>";
-          echo "<th>Proteins</th>";
-          echo "<th>Fibres</th>";
-          echo "<th>Glycemique</th>";
-          echo "</tr>";
-          echo "</thead>";
-          while ($row = $res->fetch_assoc()){
-            echo "<tbody>";
-            echo "<tr>";
-            echo "<td>" . $row['nomAliment'] . "</td>";
-            echo "<td>" . $row['uniteMesure'] . "</td>";
-            echo "<td>" . $row['typeAliment'] . "</td>";
-            echo "<td>" . $row['calorie'] . "</td>";
-            echo "<td>" . $row['lipid'] . "</td>";
-            echo "<td>" . $row['glucide'] . "</td>";
-            echo "<td>" . $row['proteine'] . "</td>";
-            echo "<td>" . $row['fibre'] . "</td>";
-            echo "<td>" . $row['glycemique'] . "</td>";
-            echo "</tr>";
-            echo "</tbody>";
-          }
-          $res->free();
-        } else {
-          echo "------------------------------------------------------ERROR 3: No matching records are found. ";
-        }
-      } else {
-        echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
-          . $mysqli->error;
-      }
-      $mysqli->close();
-      ?>
-                <tfoot>
-                <tr>
-                  <th>Aliments</th>
-                  <th>Unite de Mesure</th>
-                  <th>Type d'Aliment</th>
-                  <th>Calories</th>
-                  <th>Lipides</th>
-                  <th>Glucides</th>
-                  <th>Proteins</th>
-                  <th>Fibres</th>
-                  <th>Glycemique</th>
-                </tr>
-                </tfoot>
-              </table>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
-            </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-      </section>
-      <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+          <!-- /.row -->
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
     </div>
 
     <!-- /.content-wrapper -->

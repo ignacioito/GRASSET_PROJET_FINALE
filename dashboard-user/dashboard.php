@@ -53,7 +53,7 @@ $current = $_SESSION['utilisateur'];
       <!-- Brand Logo -->
       <a href="dashboard.php" class="brand-link">
         <img src="dist/img/bf21.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-4" style="opacity: .8;">
-        <span class="brand-text font-weight-light">User BF21</span>
+        <span class="brand-text font-weight-light">Utilisateur BF21</span>
       </a>
 
       <!-- Sidebar -->
@@ -64,7 +64,7 @@ $current = $_SESSION['utilisateur'];
             <img src="dist/img/user160.png" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <p class="d-block text-white"><?php echo $_SESSION['utilisateur'];?></p>
+            <p class="d-block text-white"><?php echo $_SESSION['utilisateur']; ?></p>
           </div>
         </div>
 
@@ -91,12 +91,12 @@ $current = $_SESSION['utilisateur'];
                 </p>
               </a>
             </li>
-            <!-- Sidebar Profil -->
+            <!-- Sidebar Consulter informations -->
             <li class="nav-item">
-              <a href="profile.php" class="nav-link">
+              <a href="information.php" class="nav-link">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
-                  Profil
+                  Consulter informations
                 </p>
               </a>
             </li>

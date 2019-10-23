@@ -3,8 +3,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h2 class="card-title">Tableau des Clients</h2>
-
+                <h2 class="card-title">Tableau des Clients pour référence</h2>
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive p-0" style="height: 900px;">
@@ -30,10 +29,10 @@
                                 }
                                 $res->free();
                             } else {
-                                echo "------------------------------------------------------ERROR 3: No matching records are found. ";
+                                echo "ERROR 3: No matching records are found. ";
                             }
                         } else {
-                            echo "------------------------------------------------------ERROR 2: Could not able to execute $sql. "
+                            echo "ERROR 2: Could not able to execute $sql. "
                                 . $connexion->error;
                         }
                         $connexion->close();

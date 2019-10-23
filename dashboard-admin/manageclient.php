@@ -84,7 +84,7 @@ $current = $_SESSION['utilisateur'];
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplaninterface.php" class="nav-link">
+              <a href="createplan.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -111,15 +111,6 @@ $current = $_SESSION['utilisateur'];
               </a>
             </li>
 
-            <!-- Sidebar Paramètres -->
-            <li class="nav-item">
-              <a href="parameters.php" class="nav-link">
-                <i class="nav-icon fas fa-cog"></i>
-                <p>
-                  Paramètres
-                </p>
-              </a>
-            </li>
             <!-- Logout -->
             <li class="nav-item">
               <a href="logout.php" class="nav-link">

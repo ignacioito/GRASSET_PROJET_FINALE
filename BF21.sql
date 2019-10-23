@@ -3,6 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
+
 -- Généré le :  mar. 22 oct. 2019 à 18:30
 -- Version du serveur :  10.4.8-MariaDB
 -- Version de PHP :  7.1.32
@@ -290,7 +291,11 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `aliment`
 --
 ALTER TABLE `aliment`
+<<<<<<< HEAD
   MODIFY `codAliment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+=======
+  MODIFY `codAliment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+>>>>>>> 19062f9466363a79cbf39bfd485954784d655e43
 
 --
 -- AUTO_INCREMENT pour la table `habitudesdevie`
