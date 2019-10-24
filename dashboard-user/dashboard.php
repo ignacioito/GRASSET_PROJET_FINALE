@@ -64,7 +64,7 @@ $current = $_SESSION['utilisateur'];
             <img src="dist/img/user160.png" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <p class="d-block text-white"><?php echo($nomeUsrLogado); ?></p>
+            <p class="d-block text-white"><?php echo $_SESSION['utilisateur']; ?></p>
           </div>
         </div>
 
