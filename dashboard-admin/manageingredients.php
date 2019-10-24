@@ -90,7 +90,7 @@ $current = $_SESSION['utilisateur'];
             </li>
             <!-- Sidebar create plan -->
             <li class="nav-item">
-              <a href="createplaninterface.php" class="nav-link">
+              <a href="createplan.php" class="nav-link">
                 <i class="nav-icon fas fa-calendar-plus"></i>
                 <p>
                   Créer un Plan
@@ -234,7 +234,7 @@ $current = $_SESSION['utilisateur'];
           </label>
           <br>
           <br>
-          <input type="submit" value="Ajouter Aliments">
+          <input type="submit" class="btn btn-success" value="Ajouter aliment">
           <br>
           <br>
       </div>

@@ -290,6 +290,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `aliment`
 --
 ALTER TABLE `aliment`
+
   MODIFY `codAliment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
