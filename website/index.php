@@ -90,7 +90,7 @@
     <section>
         <div class="container">
             <div class="text-center">
-                <img alt="BF21" src="../dashboard-admin/dist/img/banner.jpg" class="img-fluid rounded" alt="Responsive image">
+                <img alt="BF21" src="../dashboard-admin/dist/img/banner.jpg" class="img-fluid rounded" style="width: 100%; height: auto;" alt="Responsive image">
             </div>
         </div>
     </section>
@@ -127,6 +127,44 @@
         </div>
         <hr class="my-4">
     </section>
+
+
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small bg-dark pt-4">
+
+<!-- Footer Elements -->
+<div class="container">
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+</div>
+<!-- Footer Elements -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2019 Copyright:
+  <a href="https://institut-grasset.qc.ca">Institut Grasset</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
 
     <!-- Footer -->
     <footer class="page-footer font-small indigo bg-light">
