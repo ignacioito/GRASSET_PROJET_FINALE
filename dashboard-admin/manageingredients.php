@@ -324,7 +324,7 @@ $current = $_SESSION['utilisateur'];
                     }
                     $mysqli->close();
                     ?>
-                    <tfoot>
+                    <!-- <tfoot>
                       <tr>
                         <th>Aliments</th>
                         <th>Unite de Mesure</th>
@@ -336,7 +336,7 @@ $current = $_SESSION['utilisateur'];
                         <th>Fibres</th>
                         <th>Glycemique</th>
                       </tr>
-                    </tfoot>
+                    </tfoot> -->
                   </table>
                 </div>
                 <!-- /.card-body -->
