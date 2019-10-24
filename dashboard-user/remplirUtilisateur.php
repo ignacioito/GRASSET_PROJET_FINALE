@@ -135,10 +135,10 @@ if ($_POST) {
         
     }
     
-//    
-//    $connexion->close();
-//    
-//    header('Location: ../website/index.php');
-//    $var = "<script>javascript:history.back(-1)</script>";
-//    echo $var;
+    
+    $connexion->close();
+    
+    header('Location: ../website/index.php');
+    $var = "<script>javascript:history.back(-1)</script>";
+    echo $var;
 ?>
