@@ -41,8 +41,14 @@
     if ($res = $connexion->query($sql)) {
         if ($res->num_rows > 0) {
             while ($row = $res->fetch_assoc()) {
+                echo "<p>" . "Email : " . $row['eMail'] . "</p>";
                 echo "<p>" . "Poids : " . $row['poid'] . "</p>";
                 echo "<p>" . "Taille : " . $row['taille'] . "</p>";
+                echo "<p>" . "Date de Naissance : " . $row['dateNaissance'] . "</p>";
+                echo "<p>" . "Genre : " . $row['genre'] . "</p>";
+                echo "<p>" . "Code Postal : " . $row['codePostal'] . "</p>";
+                echo "<p>" . "Adresse : " . $row['adresse'] . "</p>";
+                echo "<p>" . "Telephone : " . $row['telephone'] . "</p>";
             }
             $res->free();
         } else {
