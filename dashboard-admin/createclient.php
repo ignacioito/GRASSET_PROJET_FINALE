@@ -166,7 +166,7 @@ $current = $_SESSION['utilisateur'];
             <hr>
             <div class="form-group">
               <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
-                <input class="btn btn-primary" name="submitCreateUser" type="submit" value="Update Profile">
+                <input class="btn btn-primary" name="submitCreateUser" type="submit" value="Créer un client">
               </div>
             </div>
           </form>

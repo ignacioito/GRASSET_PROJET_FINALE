@@ -1234,7 +1234,9 @@ $current = $_SESSION['utilisateur'];
                     </div>
                 </div>
             </div>
-            <center> <button type="submit" class="btn btn-success" onclick="envoyerPlan()">Envoyer Plan</button> </center>
+            <form method="POST">
+                <center> <button type="submit" class="btn btn-success" onclick="envoyerPlan()">Envoyer Plan</button> </center>
+            </form>
         </div>
 
         <!-- /.content-wrapper -->
@@ -1292,7 +1294,7 @@ $current = $_SESSION['utilisateur'];
     <script src="plugins/datatables/jquery.dataTables.js"></script>
     <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 
-
+    <!-- Retrieving ingredients form DB -->
     <?php
     $sqlIngName = "SELECT nomAliment, calorie, proteine, lipid, glucide, fibre, glycemique FROM `aliment`";
     $ingNames = array();
@@ -2614,9 +2616,19 @@ $current = $_SESSION['utilisateur'];
             // }
         }
 
-
-
-
+        function envoyerPlan() {
+            <?php
+            if ($_POST) {
+                $codUtilisateur = 2;
+                $repasNro = 4;
+                $sql1 =  "INSERT INTO `tablerepas` (`codUtilisateur`, `repasNro`) VALUES ($codUtilisateur, $repasNro)";
+                $result = mysqli_query($connexion, $sql1);
+                //echo ("------------------------------------------------------------------------------------------" . $result);
+            }
+            // $var = "<script>javascript:history.back(-1)</script>";
+            // echo $var;
+            ?>
+        }
 
 
 
