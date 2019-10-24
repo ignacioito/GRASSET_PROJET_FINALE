@@ -93,7 +93,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="page-footer font-small indigo bg-light">
+    <footer class="page-footer font-small indigo bg-dark">
 
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
@@ -101,24 +101,41 @@
             <!-- Grid row -->
             <div class="row">
 
+
+                <hr class="clearfix w-100 d-md-none">
+
                 <!-- Grid column -->
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Coordonées</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Very long link 1</a>
+                        <a href="tel:514-581-9849"><button type="button" class="btn btn-outline-light btn-lg">Appeler Maintenant</button></a>
                         </li>
                         <li>
-                            <a href="#!">Very long link 2</a>
+                            <p>(514) 581-9849</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Adresse</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.google.com/maps/dir//BF21-Conditionnement+physique+et+mental/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cc91d6736d5a30d:0x8fab8755ba9a16e6!2m2!1d-73.5449733!2d45.5564466" target="_blank"><button type="button" class="btn btn-outline-light btn-lg">Itinéraire</button></a>
                         </li>
                         <li>
-                            <a href="#!">Very long link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Very long link 4</a>
+                            <p>4500 rue Hochelaga<br>Montreal, QC H1V 3N8<br>Canada</p>
                         </li>
                     </ul>
 
@@ -131,72 +148,17 @@
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Horaires d'ouverture</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
+                            <p>lun.:	08:00 – 20:00<br>
+                                mar.:	08:00 – 20:00<br>
+                                mer.:	08:00 – 20:00<br>
+                                jeu.:	08:00 – 20:00<br>
+                                ven.:	08:00 – 20:00<br>
+                                sam.:	08:00 – 20:00<br>
+                                dim.:	08:00 – 20:00</p>
                         </li>
                     </ul>
 
