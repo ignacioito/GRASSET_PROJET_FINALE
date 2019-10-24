@@ -67,13 +67,11 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item active dropdown mx-5">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true">
-                            <i class="fas fa-user"></i> Profile </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                            <a class="dropdown-item" href="login.php">Me connecter</a>
-                            <a class="dropdown-item" href="#">Abonnement</a>
-                        </div>
+                    <li class="nav-item active mx-5">
+                        <a class="nav-link" href="login.php">
+                            <i class="fas fa-user"></i> Me connecter
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                 </ul>
             </div>
