@@ -50,19 +50,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="index.php">
                             <i class="fas fa-home"></i> Acceuil
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-question-circle"></i> FAQ
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item active mx-5">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="contact.php">
                             <i class="fas fa-map-marker-alt"></i> Contact
                             <span class="sr-only">(current)</span>
                         </a>
@@ -82,7 +76,6 @@
 
 
     <section>
-        <hr class="my-4">
         <div class="container">
             <div class="text-center my-5 ">
                 <h3 id="titleSection">BF-21 Conditionnement physique et mental</h3>

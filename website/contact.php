@@ -1,12 +1,14 @@
 <!doctype html>
 <html>
-Versao de Gabriel. Ta tudo COMMITADO!! Eh noiz na fita e os preiboi no dvd
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BF21 - Contact</title>
+    <title>BF21 - Acceuil</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../dashboard-admin/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
@@ -27,48 +29,200 @@ Versao de Gabriel. Ta tudo COMMITADO!! Eh noiz na fita e os preiboi no dvd
     <link rel="stylesheet" href="../dashboard-admin/plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <!-- css home -->
+    <link rel="stylesheet" href="../dashboard-admin/css/homeStyle.css">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;">
-            <a class="navbar-brand" href="index.php">Acceuil</a>
-            <a class="navbar-brand" href="faq.php">FAQ</a>
-            <a class="navbar-brand" href="contact.php">Contact</a>
-            <a class="navbar-brand" href="login.php">Identification</a>
+        <!--Navbar -->
+        <nav class="mb-1 navbar navbar-expand-sm navbar-light info-color">
+            <a href="#" class="navbar-brand"><img src="../dashboard-admin/dist/img/bf21.png" alt="Logo" style="width:100px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mx-5">
+                        <a class="nav-link" href="index.php">
+                            <i class="fas fa-home"></i> Acceuil
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active mx-5">
+                        <a class="nav-link" href="contact.php">
+                            <i class="fas fa-map-marker-alt"></i> Contact
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active mx-5">
+                        <a class="nav-link" href="login.php">
+                            <i class="fas fa-user"></i> Me connecter
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!--/.Navbar -->
+
     </header>
 
-    <br>
 
     <section>
-        <table align="center">
-            <tr>
-                <td>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.370243886231!2d-73.79739278424987!3d45.482488540243544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93cee48cf1a59%3A0xe4df49b16c578bb2!2s3143+Boulevard+des+Sources%2C+Dollard-des-Ormeaux%2C+QC+H9B+3L7!5e0!3m2!1sen!2sca!4v1559510706021!5m2!1sen!2sca" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </td>
-                <td>
-                    <h2>BF21 - Conditionnement physique et mental</h2>
-                    <p>3143, Blvd des sources, Montreal (Quebec), H6R 2L2</p>
-                    <p>Telephone: 1 877 759 0101</p>
-                </td>
-                <td>
-                    <h2>Heures d'ouverture</h2>
-                    <p>Mardi: 11h à 22h<br>Mercredi: 11h à 22h<br>Jeudi: 11h à 22h<br>Vendredi: 11h à 23h<br>Samedi: 11h
-                        à 23h<br>Dimanche: 11h à 23h</p>
-                </td>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <br>
+    <div class="row my-5">
+        <div class="col-md px-5"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.370243886231!2d-73.79739278424987!3d45.482488540243544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93cee48cf1a59%3A0xe4df49b16c578bb2!2s3143+Boulevard+des+Sources%2C+Dollard-des-Ormeaux%2C+QC+H9B+3L7!5e0!3m2!1sen!2sca!4v1559510706021!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <div class="col-md px-5">
+            <h2>BF21 - Conditionnement physique et mental</h2>
+            <p>3143, Blvd des sources, Montreal (Quebec), H6R 2L2</p>
+            <p>Telephone: 1 877 759 0101</p>
+        </div>
+        <div class="col-md px-5">
+            <h2>Heures d'ouverture</h2>
+            <p>Mardi: 11h à 22h<br>Mercredi: 11h à 22h<br>Jeudi: 11h à 22h<br>Vendredi: 11h à 23h<br>Samedi: 11h
+            à 23h<br>Dimanche: 11h à 23h</p>
+        </div>
+    </div>
+        
     </section>
 
-    <footer>
-        <div id="footer">Bloum Voyages détient un permis du Québec. <a href="agence_voyage_contact.html">Nous contacter
-                !</a></div>
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo bg-light">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Very long link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 bg-dark">© 2019 Copyright:
+                <a href="https://www.institut-grasset.qc.ca/" target="_blank"> InstitutGrasset.com</a>
+            </div>
+            <!-- Copyright -->
+
     </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
