@@ -148,16 +148,10 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <button type="button" class="btn btn-outline-light btn-lg">Appeler Maintenant</button>
                         </li>
                         <li>
-                            <a href="#!">(514) 581-9849</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
+                            <p>(514) 581-9849</p>
                         </li>
                     </ul>
 
@@ -170,20 +164,14 @@
                 <div class="col-md-6 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Adresse</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <button type="button" class="btn btn-outline-light btn-lg">Itinéraire</button>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
+                            <p>4500 rue Hochelaga<br>Montreal, QC H1V 3N8<br>Canada</p>
                         </li>
                     </ul>
 
@@ -196,20 +184,17 @@
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Horaires d'ouverture</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
+                            <p>lun.:	08:00 – 20:00<br>
+                                mar.:	08:00 – 20:00<br>
+                                mer.:	08:00 – 20:00<br>
+                                jeu.:	08:00 – 20:00<br>
+                                ven.:	08:00 – 20:00<br>
+                                sam.:	08:00 – 20:00<br>
+                                dim.:	08:00 – 20:00</p>
                         </li>
                     </ul>
 
