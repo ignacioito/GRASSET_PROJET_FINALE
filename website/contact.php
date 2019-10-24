@@ -85,8 +85,17 @@
         </div>
         <div class="col-md px-5">
             <h2>Heures d'ouverture</h2>
-            <p>Mardi: 11h à 22h<br>Mercredi: 11h à 22h<br>Jeudi: 11h à 22h<br>Vendredi: 11h à 23h<br>Samedi: 11h
-            à 23h<br>Dimanche: 11h à 23h</p>
+            <ul class="list-unstyled">
+                        <li>
+                            <p>lun.: 08:00 – 20:00<br>
+                                mar.: 08:00 – 20:00<br>
+                                mer.: 08:00 – 20:00<br>
+                                jeu.: 08:00 – 20:00<br>
+                                ven.: 08:00 – 20:00<br>
+                                sam.: 08:00 – 20:00<br>
+                                dim.: 08:00 – 20:00</p>
+                        </li>
+                    </ul>
         </div>
     </div>
         
@@ -152,13 +161,13 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <p>lun.:	08:00 – 20:00<br>
-                                mar.:	08:00 – 20:00<br>
-                                mer.:	08:00 – 20:00<br>
-                                jeu.:	08:00 – 20:00<br>
-                                ven.:	08:00 – 20:00<br>
-                                sam.:	08:00 – 20:00<br>
-                                dim.:	08:00 – 20:00</p>
+                            <p>lun.: 08:00 – 20:00<br>
+                                mar.: 08:00 – 20:00<br>
+                                mer.: 08:00 – 20:00<br>
+                                jeu.: 08:00 – 20:00<br>
+                                ven.: 08:00 – 20:00<br>
+                                sam.: 08:00 – 20:00<br>
+                                dim.: 08:00 – 20:00</p>
                         </li>
                     </ul>
 

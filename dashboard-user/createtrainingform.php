@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('../website/verifierLogin.php');
+#include('../dashboard-user/remplirUtilisateur.php');
 $current = $_SESSION['utilisateur'];
 ?>
 <!DOCTYPE html>
@@ -130,7 +131,7 @@ $current = $_SESSION['utilisateur'];
             </div>
             <!-- Main content -->
             <div class="container">
-                <form action="formsubmit.php" method="post">
+                <form action="remplirUtilisateur.php" method="post">
 
                     <h4 class="m-0 text-dark">Renseignements personnels</h4>
                     <br>
@@ -200,17 +201,17 @@ $current = $_SESSION['utilisateur'];
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="smokePerDay">Si Oui combien par jour</label>
-                            <input type="number" min="0" class="form-control" name="smokePerDay" id="smokePerDay" required>
+                            <input type="number" min="0" class="form-control" name="smokePerDay" id="smokePerDay" >
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="alcoolHabitude">Alcool (verres par session)</label>
-                            <input type="number" min="0" class="form-control" id="alcoolHabitude" required>
+                            <input type="number" min="0" class="form-control" id="alcoolHabitude" name="alcoolHabitude" >
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-2 mb-3">
                             <label for="typeEmploi">Type d'emplois</label>
-                            <select id="typeEmploi" class="form-control">
+                            <select id="typeEmploi" name="typeEmploi" class="form-control">
                                 <option value="" selected>Sélectionner</option>
                                 <option>Physique</option>
                                 <option>Passif</option>
@@ -218,7 +219,7 @@ $current = $_SESSION['utilisateur'];
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="styleDeVie">Style de vie</label>
-                            <select id="styleDeVie" class="form-control">
+                            <select id="styleDeVie" name="styleDeVie" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Sédentaire</option>
                                 <option>Actif</option>
@@ -228,17 +229,17 @@ $current = $_SESSION['utilisateur'];
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="activitePhysique">Activité(s) physiques</label>
-                            <textarea type="textarea" min="0" class="form-control" id="activitePhysique" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="activitePhysique" name="activitePhysique" ></textarea>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="foisParSession">Nombre de fois par session</label>
-                            <input type="number" min="0" class="form-control" id="foisParSession" required>
+                            <input type="number" min="0" class="form-control" id="foisParSession" name="foisParSession" >
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-2 mb-3">
                             <label for="experAnterieure">Expérience antérieure</label>
-                            <select id="experAnterieure" class="form-control">
+                            <select id="experAnterieure" name="experAnterieure" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Oui</option>
                                 <option>Non</option>
@@ -246,22 +247,22 @@ $current = $_SESSION['utilisateur'];
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="nbrAnnées">Nombre d'années</label>
-                            <input type="number" min="0" class="form-control" id="nbrAnnées" required>
+                            <input type="number" min="0" class="form-control" id="nbrAnnées" name ="nbrAnnées" >
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="dispEntrainement">Disponibilités pour entrainement X/sem</label>
-                            <input type="number" min="0" class="form-control" id="dispEntrainement" required>
+                            <input type="number" min="0" class="form-control" id="dispEntrainement" name ="dispEntrainement" >
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="nbrHeures">Nombre d'heures</label>
-                            <input type="number" min="0" class="form-control" id="nbrHeures" required>
+                            <input type="number" min="0" class="form-control" id="nbrHeures" name ="nbrHeures" >
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-12 mb-3">
                             <label for="excercAime">Ce que vous aimez ou n'aimez pas faire (cardio, machines,
                                 poids libre...)</label>
-                            <textarea type="textarea" min="0" class="form-control" id="excercAime" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="excercAime" name ="excercAime" ></textarea>
                         </div>
                     </div>
                     <br>
@@ -270,7 +271,7 @@ $current = $_SESSION['utilisateur'];
                     <div class="form-row">
                         <div class="col-md-2 mb-3">
                             <label for="objectif">Objectif</label>
-                            <select id="objectif" class="form-control">
+                            <select id="objectif" name ="objectif" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Perte de poids</option>
                                 <option>Remise en forme</option>
@@ -280,11 +281,11 @@ $current = $_SESSION['utilisateur'];
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="perdrePoids">Si perte de poids (lbs)</label>
-                            <input type="number" min="0" class="form-control" id="perdrePoids" required>
+                            <input type="number" min="0" class="form-control" id="perdrePoids" name="perdrePoids" >
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="competition">Si préparation pour une compétition</label>
-                            <input type="date" id="competition" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
+                            <label for="trip-start">Si préparation pour une compétition</label>
+                            <input type="date" id="trip-start" name="trip-start" value="2019-10-01" min="2019-10-01" max="2035-10-01">
                         </div>
                     </div>
                     <br>
@@ -298,7 +299,7 @@ $current = $_SESSION['utilisateur'];
                             problème cardiaque et que vous
                             ne devriez participer qu’aux activités prescrites et approuvées par un médecin?
                         </label>
-                        <select id="question01" class="form-control">
+                        <select id="question01" name="question01" class="form-control">
                             <option selected>Sélectionner</option>
                             <option>Oui</option>
                             <option>Non</option>
@@ -307,7 +308,7 @@ $current = $_SESSION['utilisateur'];
                         <label for="question02">
                             2) Ressentez-vous une douleur à la poitrine lorsque vous faites de l’activité physique?
                         </label>
-                        <select id="question02" class="form-control">
+                        <select id="question02" name ="question02" class="form-control">
                             <option selected>Sélectionner</option>
                             <option>Oui</option>
                             <option>Non</option>
@@ -317,7 +318,7 @@ $current = $_SESSION['utilisateur'];
                             3) Au cours du dernier mois, avez-vous ressenti des douleurs à la poitrine lors de périodes
                             autres que celles où vous participiez à une activité physique?
                         </label>
-                        <select id="question03" class="form-control">
+                        <select id="question03" name="question03" class="form-control">
                             <option selected>Sélectionner</option>
                             <option>Oui</option>
                             <option>Non</option>
@@ -327,7 +328,7 @@ $current = $_SESSION['utilisateur'];
                             4) Éprouvez-vous des problèmes d’équilibre reliés à un étourdissement ou vous arrive-t-il de
                             perdre connaissance?
                         </label>
-                        <select id="question04" class="form-control">
+                        <select id="question04" name="question04" class="form-control">
                             <option selected>Sélectionner</option>
                             <option>Oui</option>
                             <option>Non</option>
@@ -338,7 +339,7 @@ $current = $_SESSION['utilisateur'];
                             hanche) qui pourraient s’aggraver par une modification de votre niveau de participation à
                             une activité physique?
                         </label>
-                        <select id="question05" class="form-control">
+                        <select id="question05" name="question05" class="form-control">
                             <option selected>Sélectionner</option>
                             <option>Oui</option>
                             <option>Non</option>
@@ -348,7 +349,7 @@ $current = $_SESSION['utilisateur'];
                             6) Des médicaments vous sont-ils actuellement prescrits pour contrôler votre tension
                             artérielle ou un problème cardiaque (par exemple, des diurétiques)?
                         </label>
-                        <select id="question06" class="form-control">
+                        <select id="question06" name="question06" class="form-control">
                             <option selected>Sélectionner</option>
                             <option>Oui</option>
                             <option>Non</option>
@@ -358,7 +359,7 @@ $current = $_SESSION['utilisateur'];
                             7) Connaissez-vous une autre raison pour laquelle vous ne devriez pas faire de l’activité
                             physique?
                         </label>
-                        <select id="question07" class="form-control">
+                        <select id="question07" name="question07" class="form-control">
                             <option selected>Sélectionner</option>
                             <option>Oui</option>
                             <option>Non</option>
@@ -398,7 +399,7 @@ $current = $_SESSION['utilisateur'];
                             <label for="questAlim01">
                                 1) Avez-vous des allergies ou intolérances alimentaires?
                             </label>
-                            <select id="questAlim01" class="form-control">
+                            <select id="questAlim01" name="questAlim01" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Oui</option>
                                 <option>Non</option>
@@ -406,12 +407,12 @@ $current = $_SESSION['utilisateur'];
                             <label for="indiq01">
                                 Si Oui indiquez lesquels :
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="indiq01" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="indiq01" name="indiq01" ></textarea>
                             <!--  -->
                             <label for="questAlim02">
                                 2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité?
                             </label>
-                            <select id="questAlim02" class="form-control">
+                            <select id="questAlim02" name="questAlim02" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>0</option>
                                 <option>1</option>
@@ -423,7 +424,7 @@ $current = $_SESSION['utilisateur'];
                             <label for="indiq02">
                                 Si Oui sélectionner l'intensité :
                             </label>
-                            <select id="indiq02" class="form-control">
+                            <select id="indiq02" name="indiq02" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Légère</option>
                                 <option>Moyenne</option>
@@ -433,7 +434,7 @@ $current = $_SESSION['utilisateur'];
                             <label for="questAlim03">
                                 3) Consommez-vous des produits laitiers?
                             </label>
-                            <select id="questAlim03" class="form-control">
+                            <select id="questAlim03" name="questAlim03" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Oui</option>
                                 <option>Non</option>
@@ -441,43 +442,43 @@ $current = $_SESSION['utilisateur'];
                             <label for="indiq03">
                                 Si Oui indiquez lesquels :
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="indiq03" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="indiq03" name="indiq03" ></textarea>
                             <!--  -->
                             <label for="questAlim04">
                                 4) Quels sont les légumes que vous consommez et que vous aimez?
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="questAlim04" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim04" name="questAlim04" ></textarea>
                             <!--  -->
                             <label for="questAlim05">
                                 5) Quels sont les légumes que vous n’aimez pas?
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="questAlim05" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim05" name ="questAlim05" ></textarea>
                             <!--  -->
                             <label for="questAlim06">
                                 6) Quels sont les fruits que vous consommez et que vous aimez?
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="questAlim06" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim06" name ="questAlim06" ></textarea>
                             <!--  -->
                             <label for="questAlim07">
                                 7) Quels sont les fruits que vous n’aimez pas?
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="questAlim07" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim07" name="questAlim07" ></textarea>
                             <!--  -->
                             <label for="questAlim08">
                                 8) Quels types de protéines consommez-vous? Et lesquels vous préférez?
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="questAlim08" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim08" name="questAlim08" ></textarea>
                             <!--  -->
                             <label for="questAlim09">
                                 9) Quels sont les types de protéines que vous n’aimez pas?
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="questAlim09" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="questAlim09" name="questAlim09" ></textarea>
                             <!--  -->
                             <label for="questAlim10">
                                 10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel
                                 moment?
                             </label>
-                            <select id="questAlim10" class="form-control">
+                            <select id="questAlim10" name="questAlim10" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Oui</option>
                                 <option>Non</option>
@@ -485,12 +486,12 @@ $current = $_SESSION['utilisateur'];
                             <label for="indiq10">
                                 Si Oui indiquez lesquels :
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="indiq10" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="indiq10" name="indiq10" ></textarea>
                             <!--  -->
                             <label for="questAlim11">
                                 11) Consommez-vous des suppléments alimentaires et si oui lesquels?
                             </label>
-                            <select id="questAlim11" class="form-control">
+                            <select id="questAlim11" name="questAlim11" class="form-control">
                                 <option selected>Sélectionner</option>
                                 <option>Oui</option>
                                 <option>Non</option>
@@ -498,7 +499,7 @@ $current = $_SESSION['utilisateur'];
                             <label for="indiq11">
                                 Si Oui indiquez lesquels :
                             </label>
-                            <textarea type="textarea" min="0" class="form-control" id="indiq11" required></textarea>
+                            <textarea type="textarea" min="0" class="form-control" id="indiq11" name="indiq11" ></textarea>
                         </div>
                     </div>
                     <br>
@@ -573,5 +574,6 @@ $current = $_SESSION['utilisateur'];
     <!-- JS for the form -->
     <script src="dist/js/createtrainingform.js"></script>
 </body>
+
 
 </html>
