@@ -190,47 +190,42 @@ $current = $_SESSION['utilisateur'];
         <form method="post" action="manageingredients.php">
           <label> Aliments
             <br>
-            <input type="text" name="nomAliment" />
+            <input type="text" name="nomAliment" required/>
           </label>
 
           <label> Unite de Mesure
             <br>
-            <input type="text" name="uniteMesure" />
-          </label>
-
-          <label> Type d'Aliment
-            <br>
-            <input type="text" name="typeAliment" />
+            <input type="text" name="uniteMesure" required/>
           </label>
 
           <label> Calories
             <br>
-            <input type="text" name="calorie" />
+            <input type="text" name="calorie" required/>
           </label>
 
           <label> Lipides
             <br>
-            <input type="text" name="lipid" />
+            <input type="text" name="lipid" required/>
           </label>
 
           <label> Glucides
             <br>
-            <input type="text" name="glucide" />
+            <input type="text" name="glucide" required/>
           </label>
 
           <label> Proteines
             <br>
-            <input type="text" name="proteine" />
+            <input type="text" name="proteine" required/>
           </label>
 
           <label> Fibres
             <br>
-            <input type="text" name="fibre" />
+            <input type="text" name="fibre" required/>
           </label>
 
           <label> Glycemique
             <br>
-            <input type="text" name="glycemique" />
+            <input type="text" name="glycemique" required/>
           </label>
           <br>
           <br>
@@ -290,7 +285,7 @@ $current = $_SESSION['utilisateur'];
                         echo "<tr>";
                         echo "<th>Aliments</th>";
                         echo "<th>Unite de Mesure</th>";
-                        echo "<th>Type d'Aliment</th>";
+                        #echo "<th>Type d'Aliment</th>";
                         echo "<th>Calories</th>";
                         echo "<th>Lipides</th>";
                         echo "<th>Glucides</th>";
@@ -304,7 +299,7 @@ $current = $_SESSION['utilisateur'];
                           echo "<tr>";
                           echo "<td>" . $row['nomAliment'] . "</td>";
                           echo "<td>" . $row['uniteMesure'] . "</td>";
-                          echo "<td>" . $row['typeAliment'] . "</td>";
+                          #echo "<td>" . $row['typeAliment'] . "</td>";
                           echo "<td>" . $row['calorie'] . "</td>";
                           echo "<td>" . $row['lipid'] . "</td>";
                           echo "<td>" . $row['glucide'] . "</td>";
