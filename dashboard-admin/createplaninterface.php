@@ -1234,6 +1234,7 @@ $current = $_SESSION['utilisateur'];
                     </div>
                 </div>
             </div>
+            <center> <button type="submit" class="btn btn-success" onclick="envoyerPlan()">Envoyer Plan</button> </center>
         </div>
 
         <!-- /.content-wrapper -->
