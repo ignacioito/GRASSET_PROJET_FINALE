@@ -8,8 +8,8 @@ if ($_POST) {
         $motDePass = $_POST['motDePass'];
         
         
-        $sql =  "INSERT INTO `utilisateurs` (`type`, `eMail`, `motDePasse`) "
-          .  "VALUES (2, '$email', '$motDePass')";
+        $sql =  "INSERT INTO `utilisateurs` (`type`, `eMail`, `nom`, `motDePasse`) "
+          .  "VALUES (2, '$email', '$email', '$motDePass')";
 
         $resultado = mysqli_query($connexion, $sql);
         
