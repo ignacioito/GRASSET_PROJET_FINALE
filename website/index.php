@@ -77,7 +77,7 @@
 
     <section>
         <div class="container">
-            <div class="text-center my-5 ">
+            <div class="text-center my-5">
                 <h3 id="titleSection">BF-21 Conditionnement physique et mental</h3>
                 <h5>Coach Particulier a Montreal</h5>
                 <h5>Ouvert aujourd'hui jusqu'à 20:00</h5>
@@ -96,9 +96,9 @@
     </section>
 
     <!-- Testimonials 2 -->
-    <section class="team-section text-center">
+    <section class="team-section text-center my-5">
         <hr class="my-4">
-        <h2 class="h1-responsive font-weight-bold my-5">Temoignages</h2>
+        <h2 class="h1-responsive font-weight-bold">Temoignages</h2>
         <div class="row align-items-start">
             <div class="col px-5">
 
@@ -144,14 +144,14 @@
                 <div class="col-md-2 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Coordonées</h5>
 
                     <ul class="list-unstyled">
                         <li>
                             <a href="#!">Link 1</a>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
+                            <a href="#!">(514) 581-9849</a>
                         </li>
                         <li>
                             <a href="#!">Link 3</a>
