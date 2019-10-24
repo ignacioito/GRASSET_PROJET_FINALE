@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('../website/verifierLogin.php');
+
 $current = $_SESSION['utilisateur'];
 ?>
 <!DOCTYPE html>
@@ -142,7 +143,7 @@ $current = $_SESSION['utilisateur'];
 
       <!-- Main content -->
 
-      <form class="container">
+      <form class="container" action="../dashboard-user/creerUtilisateur.php" method="post">
         <form class="content-panel">
           <form class="form-horizontal">
 
@@ -151,14 +152,14 @@ $current = $_SESSION['utilisateur'];
               <div class="form-group">
                 <label class="col-md-2  col-sm-3 col-xs-12 control-label">Couriel</label>
                 <div class="col-md-10 col-sm-9 col-xs-12">
-                  <input type="email" class="form-control" placeholder="test@test.com">
+                  <input type="email" name="email" id = "email" class="form-control" placeholder="test@test.com">
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="col-md-2  col-sm-3 col-xs-12 control-label">Mot de Passe</label>
                 <div class="col-md-10 col-sm-9 col-xs-12">
-                  <input type="text" class="form-control" placeholder="Mot de Passe">
+                  <input type="text" name="motDePass" class="form-control" placeholder="Mot de Passe">
                 </div>
               </div>
             </fieldset>

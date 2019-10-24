@@ -1,6 +1,9 @@
 <?php
-#session_start();
-if(!$_SESSION['utilisateur']) {
-	header('Location: login.php');
-	exit();
+
+session_start();
+include('validerLogin.php');
+if (!$jaExiste) {
+        echo('Erro segue aqui!');
+#	header('Location: login.php');
+#	exit();
 }
