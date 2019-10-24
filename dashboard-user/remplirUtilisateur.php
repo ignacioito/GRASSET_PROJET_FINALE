@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include ('../website/connexion.php');
 
 if ($_POST) {
@@ -52,11 +54,80 @@ if ($_POST) {
         $questAlim11 = $_POST['questAlim11'];
         $indiq11 = $_POST['indiq11'];
         
-#        echo $name;
         
+        $idUtilisateur = $_SESSION['idUtilisateur'];
+
+        $sql = "delete from questionaireplanalimentaire where codUtilisateur = '{$idUtilisateur}';";
+        $resultado = mysqli_query($connexion, $sql);
         
-        $sql =  "INSERT INTO `utilisateurs` (`type`, `eMail`, `nom`, `poid`, `taille`, `dateNaissance`, `genre`, `adresse`, `telephone`) "
-          .  "VALUES (2, '$email', '$name', '$weight', '$height', '$birthdate', '$gender', '$address', '$telephone')";
+         echo($resultado);
+        
+        $sql = "delete from reseignementsmedicaux where codUtilisateur = '{$idUtilisateur}';";
+        $resultado = mysqli_query($connexion, $sql);
+        
+         echo($resultado);
+        
+        $sql = "delete from habitudesdevie where codUtilisateur = '{$idUtilisateur}';";
+        $resultado = mysqli_query($connexion, $sql);
+        
+         echo($resultado);
+        
+        $sql = "UPDATE utilisateurs
+                SET nom = '$name', type = '2', eMail = '$email', poid = '$weight', taille = '$height', dateNaissance = '$birthdate', "
+              . "genre = '$gender', adresse = '$address', telephone = '$telephone' "                     
+              . "WHERE codUtilisateur = '{$idUtilisateur}';";
+              
+        $resultado = mysqli_query($connexion, $sql);
+
+        echo($resultado);
+
+        
+        $sql = "INSERT INTO habitudesdevie (codUtilisateur, codAdministrateur)
+                VALUES ('$idUtilisateur', '1');";
+        $resultado = mysqli_query($connexion, $sql);
+        echo($resultado);
+        
+        $sql = "UPDATE habitudesdevie
+                SET codUtilisateur = '$idUtilisateur', codAdministrateur = '1', date = curdate(), poidsActuel = '$weight', "
+                    . "poidsObjectif = '$perdrePoids', pressionSanguine = '$bloodpressure', fume = '$smoke', fumeurParJour = '$smokePerDay', "
+                    . "alcoolVerParSemaine = '$alcoolHabitude', employPhisPass = '$typeEmploi', styleVie = '$styleDeVie', "  
+                    . "descriptionSport = '$activitePhysique', sportParSemaine = '$foisParSession', nombreAneesExpAnterieur = '$experAnterieure', "  
+                  . "disponEntreinemenSemaine = '$dispEntrainement', nombreHeures = '$nbrHeures', preferences = '$excercAime', " 
+                   . "pertePoids = '$objectif', priseDeMasse = '$perdrePoids', competition = '$tripStart' "                 
+                    . "WHERE codUtilisateur = '{$idUtilisateur}';";
+        
+
+        $resultado = mysqli_query($connexion, $sql);
+        
+        $sql = "INSERT INTO reseignementsmedicaux (codUtilisateur, codAdministrateur)
+                VALUES ('$idUtilisateur', '1');";
+        $resultado = mysqli_query($connexion, $sql);
+        echo($resultado);
+        
+        $sql = "UPDATE reseignementsmedicaux
+                SET codUtilisateur = '$idUtilisateur', codAdministrateur = '1', date = curdate(), q01 = '$question01', "
+                    . "q02 = '$question02', q03 = '$question03', q04 = '$question04', q05 = '$question05', "
+                    . "q06 = '$question06', q07 = '$question07' "                 
+                    . "WHERE codUtilisateur = '{$idUtilisateur}';";
+        
+
+        $resultado = mysqli_query($connexion, $sql);
+        
+       echo($resultado);
+       
+        $sql = "INSERT INTO questionaireplanalimentaire (codUtilisateur, codAdministrateur)
+                VALUES ('$idUtilisateur', '1');";
+        $resultado = mysqli_query($connexion, $sql);
+        echo($resultado);
+        
+        $sql = "UPDATE questionaireplanalimentaire
+                SET codUtilisateur = '$idUtilisateur', codAdministrateur = '1', date = curdate(), q01 = '$questAlim01', "
+                    . "q01R = '$indiq01', q02 = '$questAlim02', q02R = '$indiq02', q03 = '$questAlim03', "
+                    . "q03R = '$indiq03', q04 = '$questAlim04', q05 = '$questAlim05',q06 = '$questAlim06', " 
+                    . "q07 = '$questAlim07', q08 = '$questAlim08', q09 = '$questAlim09',q10 = '$questAlim10', "  
+                    . "q10R = '$indiq10', q11 = '$questAlim11', q11R = '$indiq11' "                
+                    . "WHERE codUtilisateur = '{$idUtilisateur}';";
+        
 
         $resultado = mysqli_query($connexion, $sql);
         
@@ -64,10 +135,10 @@ if ($_POST) {
         
     }
     
-    
-    $connexion->close();
-    
-#    header('Location: ../website/index.php');
-    $var = "<script>javascript:history.back(-1)</script>";
-    echo $var;
+//    
+//    $connexion->close();
+//    
+//    header('Location: ../website/index.php');
+//    $var = "<script>javascript:history.back(-1)</script>";
+//    echo $var;
 ?>
