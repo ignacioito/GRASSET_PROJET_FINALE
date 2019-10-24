@@ -141,14 +141,14 @@
                 <hr class="clearfix w-100 d-md-none">
 
                 <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
+                <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Coordonées</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <button type="button" class="btn btn-outline-light btn-lg">Appeler Maintenant</button>
+                        <a href="tel:514-581-9849"><button type="button" class="btn btn-outline-light btn-lg">Appeler Maintenant</button></a>
                         </li>
                         <li>
                             <p>(514) 581-9849</p>
@@ -161,14 +161,14 @@
                 <hr class="clearfix w-100 d-md-none">
 
                 <!-- Grid column -->
-                <div class="col-md-6 mx-auto">
+                <div class="col-md-2 mx-auto">
 
                     <!-- Links -->
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Adresse</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <button type="button" class="btn btn-outline-light btn-lg">Itinéraire</button>
+                            <a href="https://www.google.com/maps/dir//BF21-Conditionnement+physique+et+mental/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cc91d6736d5a30d:0x8fab8755ba9a16e6!2m2!1d-73.5449733!2d45.5564466" target="_blank"><button type="button" class="btn btn-outline-light btn-lg">Itinéraire</button></a>
                         </li>
                         <li>
                             <p>4500 rue Hochelaga<br>Montreal, QC H1V 3N8<br>Canada</p>
