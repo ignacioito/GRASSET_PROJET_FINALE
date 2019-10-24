@@ -34,21 +34,23 @@
     $name = $_GET['clientInfo'];
     echo "<br>";
     echo "<div class='container text-center'>";
-    echo "<h3>Informations de : "  . $name . "</h3>";
+    echo "<h2>Informations de : "  . $name . "</h2></br>";
+    
 
     include('../website/connexion.php');
     $sql = "SELECT * FROM `utilisateurs` WHERE nom = '$name'";
+
     if ($res = $connexion->query($sql)) {
         if ($res->num_rows > 0) {
             while ($row = $res->fetch_assoc()) {
-                echo "<p>" . "Email : " . $row['eMail'] . "</p>";
-                echo "<p>" . "Poids : " . $row['poid'] . "</p>";
-                echo "<p>" . "Taille : " . $row['taille'] . "</p>";
-                echo "<p>" . "Date de Naissance : " . $row['dateNaissance'] . "</p>";
-                echo "<p>" . "Genre : " . $row['genre'] . "</p>";
-                echo "<p>" . "Code Postal : " . $row['codePostal'] . "</p>";
-                echo "<p>" . "Adresse : " . $row['adresse'] . "</p>";
-                echo "<p>" . "Telephone : " . $row['telephone'] . "</p>";
+                $locCodUtil = $row['codUtilisateur'];
+                echo "<b><p>" . "Email : </b>" . $row['eMail'] . "</p>";
+                echo "<b><p>" . "Poids : </b>" . $row['poid'] . "</p>";
+                echo "<b><p>" . "Taille : </b>" . $row['taille'] . "</p>";
+                echo "<b><p>" . "Date de Naissance : </b>" . $row['dateNaissance'] . "</p>";
+                echo "<b><p>" . "Genre : </b>" . $row['genre'] . "</p>";
+                echo "<b><p>" . "Adresse : </b>" . $row['adresse'] . "</p>";
+                echo "<b><p>" . "Telephone : </b>" . $row['telephone'] . "</p>";
             }
             $res->free();
         } else {
@@ -57,6 +59,94 @@
     } else {
         echo "ERROR 2: Impossible d'exécuter $sql. " . $connexion->error;
     }
+
+        $sql = "SELECT * FROM `habitudesdevie` WHERE codUtilisateur = '$locCodUtil'";
+   
+    if ($res = $connexion->query($sql)) {
+        if ($res->num_rows > 0) {
+            echo ("<h2>Habitudes de Vie</h2></br>");
+            while ($row = $res->fetch_assoc()) {
+                echo "<b><p>" . "Pression sanguine : </b>" . $row['pressionSanguine'] . "</p>";
+                echo "<b><p>" . "Fumeur : </b>" . $row['fume'] . "</p>";
+                echo "<b><p>" . "Si Oui combien par jour : </b>" . $row['fumeurParJour'] . "</p>";
+                echo "<b><p>" . "Alcool (verres par session) : </b>" . $row['alcoolVerParSemaine'] . "</p>";
+                echo "<b><p>" . "Type d'emplois : </b>" . $row['employPhisPass'] . "</p>";
+                echo "<b><p>" . "Style de vie : </b>" . $row['styleVie'] . "</p>";
+                echo "<b><p>" . "Activité(s) physiques : </b>" . $row['descriptionSport'] . "</p>";
+                echo "<b><p>" . "Nombre de fois par session : </b>" . $row['sportParSemaine'] . "</p>";
+                echo "<b><p>" . "Expérience antérieure : </b>" . $row['nombreAneesExpAnterieur'] . "</p>";
+                echo "<b><p>" . "Nombre d'années : </b>" . $row['nombreAneesExpAnterieur'] . "</p>";
+                echo "<b><p>" . "Disponibilités pour entrainement X/sem : </b>" . $row['disponEntreinemenSemaine'] . "</p>";
+                echo "<b><p>" . "Nombre d'heures : </b>" . $row['nombreHeures'] . "</p>";
+                echo "<b><p>" . "Ce que vous aimez ou n'aimez pas faire (cardio, machines, poids libre...) : </b>" . $row['preferences'] . "</p>";
+                echo ("<h2>Objectifs présents</h2></br>");
+                echo "<b><p>" . "Objectif : </b>" . $row['pertePoids'] . "</p>";
+                echo "<b><p>" . "Si perte de poids (lbs) : </b>" . $row['priseDeMasse'] . "</p>";
+                echo "<b><p>" . "Si préparation pour une compétition : </b>" . $row['competition'] . "</p>";
+            }
+            $res->free();
+        } else {
+            echo "ERROR 3: Nom non trouvé";
+        }
+    } else {
+        echo "ERROR 2: Impossible d'exécuter $sql. " . $connexion->error;
+    }
+
+    
+        $sql = "SELECT * FROM `reseignementsmedicaux` WHERE codUtilisateur = '$locCodUtil'";
+   
+    if ($res = $connexion->query($sql)) {
+        if ($res->num_rows > 0) {
+            echo ("<h2>Renseignements médicaux</h2></br>");
+            while ($row = $res->fetch_assoc()) {
+                echo "<b><p>" . "1) Votre médecin vous a-t-il déjà dit que vous souffriez d’un problème cardiaque et que vous ne devriez participer qu’aux activités prescrites et approuvées par un médecin? : </b>" . $row['q01'] . "</p>";
+                echo "<b><p>" . "2) Ressentez-vous une douleur à la poitrine lorsque vous faites de l’activité physique? : </b>" . $row['q02'] . "</p>";
+                echo "<b><p>" . "3) Au cours du dernier mois, avez-vous ressenti des douleurs à la poitrine lors de périodes autres que celles où vous participiez à une activité physique? : </b>" . $row['q03'] . "</p>";
+                echo "<b><p>" . "4) Éprouvez-vous des problèmes d’équilibre reliés à un étourdissement ou vous arrive-t-il de perdre connaissance? : </b>" . $row['q04'] . "</p>";
+                echo "<b><p>" . "5) Avez-vous des problèmes osseux ou articulaires (par exemple, au dos, au genoux ou à la hanche) qui pourraient s’aggraver par une modification de votre niveau de participation à une activité physique? : </b>" . $row['q05'] . "</p>";
+                echo "<b><p>" . "6) Des médicaments vous sont-ils actuellement prescrits pour contrôler votre tension artérielle ou un problème cardiaque (par exemple, des diurétiques)? : </b>" . $row['q06'] . "</p>";
+                echo "<b><p>" . "7) Connaissez-vous une autre raison pour laquelle vous ne devriez pas faire de l’activité physique? : </b>" . $row['q07'] . "</p>";
+
+            }
+            $res->free();
+        } else {
+            echo "ERROR 3: Nom non trouvé";
+        }
+    } else {
+        echo "ERROR 2: Impossible d'exécuter $sql. " . $connexion->error;
+    }
+
+            $sql = "SELECT * FROM `questionaireplanalimentaire` WHERE codUtilisateur = '$locCodUtil'";
+   
+    if ($res = $connexion->query($sql)) {
+        if ($res->num_rows > 0) {
+            echo ("<h2>Questionnaire pour plan alimentaire</h2></br>");
+            while ($row = $res->fetch_assoc()) {
+                echo "<b><p>" . "1) Avez-vous des allergies ou intolérances alimentaires? </b>" . $row['q01'] . "</p>";
+                echo "<b><p>" . "Si Oui indiquez lesquels : </b>" . $row['q01R'] . "</p>";
+                echo "<b><p>" . "2) Combien de fois par semaine pratiquez-vous du sport et à quelle intensité? </b>" . $row['q02'] . "</p>";
+                echo "<b><p>" . "Si Oui sélectionner l'intensité : </b>" . $row['q02R'] . "</p>";
+                echo "<b><p>" . "3) Consommez-vous des produits laitiers? </b>" . $row['q03'] . "</p>";
+                echo "<b><p>" . "Si Oui indiquez lesquels : </b>" . $row['q03R'] . "</p>";
+                echo "<b><p>" . "4) Quels sont les légumes que vous consommez et que vous aimez? </b>" . $row['q04'] . "</p>";
+                echo "<b><p>" . "5) Quels sont les légumes que vous n’aimez pas? </b>" . $row['q05'] . "</p>";
+                echo "<b><p>" . "6) Quels sont les fruits que vous consommez et que vous aimez? </b>" . $row['q06'] . "</p>";
+                echo "<b><p>" . "7) Quels sont les fruits que vous n’aimez pas? </b>" . $row['q07'] . "</p>";
+                echo "<b><p>" . "8) Quels types de protéines consommez-vous? Et lesquels vous préférez? </b>" . $row['q08'] . "</p>";
+                echo "<b><p>" . "9) Quels sont les types de protéines que vous n’aimez pas? </b>" . $row['q09'] . "</p>";
+                echo "<b><p>" . "10) Consommez-vous des protéines en poudre ou en barre? Lesquels et à quel moment? </b>" . $row['q10'] . "</p>";
+                echo "<b><p>" . "Si Oui indiquez lesquels : </b>" . $row['q10R'] . "</p>";
+                echo "<b><p>" . "11) Consommez-vous des suppléments alimentaires et si oui lesquels? </b>" . $row['q11'] . "</p>";
+                echo "<b><p>" . "Si Oui indiquez lesquels :</b>" . $row['q11R'] . "</p>";
+            }
+            $res->free();
+        } else {
+            echo "ERROR 3: Nom non trouvé";
+        }
+    } else {
+        echo "ERROR 2: Impossible d'exécuter $sql. " . $connexion->error;
+    }
+
     $connexion->close();
 
 
