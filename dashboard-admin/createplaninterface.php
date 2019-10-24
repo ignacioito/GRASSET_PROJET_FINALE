@@ -425,28 +425,29 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                Calories :
-                                                <p id="day1IngCalories">0</p>
+                                                <input class="form-control" value="Calories :" disabled>
+                                                <input class="form-control" id="day2IngCalories" value=0 disabled>
+                                                <!-- <p id="day1IngCalories">0</p> -->
                                             </div>
                                             <div class="col">
-                                                Protéines :
-                                                <p id="day1IngProteins">0</p>
+                                                <input class="form-control" value="Protéines :" disabled>
+                                                <input class="form-control" id="day2IngProteins" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Lipides :
-                                                <p id="day1IngLipids">0</p>
+                                                <input class="form-control" value="Lipides :" disabled>
+                                                <input class="form-control" id="day2IngLipids" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glucides :
-                                                <p id="day1IngCarbohydrates">0</p>
+                                                <input class="form-control" value="Glucides :" disabled>
+                                                <input class="form-control" id="day2IngCarbohydrates" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Fibres :
-                                                <p id="day1IngFibers">0</p>
+                                                <input class="form-control" value="Fibres :" disabled>
+                                                <input class="form-control" id="day2IngFibers" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glycémique :
-                                                <p id="day1IngGlycemiks">0</p>
+                                                <input class="form-control" value="Glycémique :" disabled>
+                                                <input class="form-control" id="day2IngGlycemiks" value=0 disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -525,27 +526,27 @@ $current = $_SESSION['utilisateur'];
                                         <div class="row">
                                             <div class="col">
                                                 Calories :
-                                                <p id="day1Calories">0</p>
+                                                <p id="day2Calories">0</p>
                                             </div>
                                             <div class="col">
                                                 Protéines :
-                                                <p id="day1Proteins">0</p>
+                                                <p id="day2Proteins">0</p>
                                             </div>
                                             <div class="col">
                                                 Lipides :
-                                                <p id="day1Lipids">0</p>
+                                                <p id="day2Lipids">0</p>
                                             </div>
                                             <div class="col">
                                                 Glucides :
-                                                <p id="day1Carbohydrates">0</p>
+                                                <p id="day2Carbohydrates">0</p>
                                             </div>
                                             <div class="col">
                                                 Fibres :
-                                                <p id="day1Fibers">0</p>
+                                                <p id="day2Fibers">0</p>
                                             </div>
                                             <div class="col">
                                                 Glycémique :
-                                                <p id="day1Glycemik">0</p>
+                                                <p id="day2Glycemik">0</p>
                                             </div>
                                         </div>
                                     </div>
@@ -607,28 +608,29 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                Calories :
-                                                <p id="day3Calories">0</p>
+                                                <input class="form-control" value="Calories :" disabled>
+                                                <input class="form-control" id="day3IngCalories" value=0 disabled>
+                                                <!-- <p id="day1IngCalories">0</p> -->
                                             </div>
                                             <div class="col">
-                                                Protéines :
-                                                <p id="day3Proteins">0</p>
+                                                <input class="form-control" value="Protéines :" disabled>
+                                                <input class="form-control" id="day3IngProteins" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Lipides :
-                                                <p id="day3Lipids">0</p>
+                                                <input class="form-control" value="Lipides :" disabled>
+                                                <input class="form-control" id="day3IngLipids" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glucides :
-                                                <p id="day3Carbohydrates">0</p>
+                                                <input class="form-control" value="Glucides :" disabled>
+                                                <input class="form-control" id="day3IngCarbohydrates" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Fibres :
-                                                <p id="day3Fibers">0</p>
+                                                <input class="form-control" value="Fibres :" disabled>
+                                                <input class="form-control" id="day3IngFibers" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glycémique :
-                                                <p id="day3Glycemik">0</p>
+                                                <input class="form-control" value="Glycémique :" disabled>
+                                                <input class="form-control" id="day3IngGlycemiks" value=0 disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -701,6 +703,37 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-center"> Total Cumulé du Jour</h5>
+                                        <div class="row">
+                                            <div class="col">
+                                                Calories :
+                                                <p id="day3Calories">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Protéines :
+                                                <p id="day3Proteins">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Lipides :
+                                                <p id="day3Lipids">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glucides :
+                                                <p id="day3Carbohydrates">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Fibres :
+                                                <p id="day3Fibers">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glycémique :
+                                                <p id="day3Glycemik">0</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- day4 -->
@@ -758,28 +791,29 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                Calories :
-                                                <p id="day4Calories">0</p>
+                                                <input class="form-control" value="Calories :" disabled>
+                                                <input class="form-control" id="day4IngCalories" value=0 disabled>
+                                                <!-- <p id="day1IngCalories">0</p> -->
                                             </div>
                                             <div class="col">
-                                                Protéines :
-                                                <p id="day4Proteins">0</p>
+                                                <input class="form-control" value="Protéines :" disabled>
+                                                <input class="form-control" id="day4IngProteins" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Lipides :
-                                                <p id="day4Lipids">0</p>
+                                                <input class="form-control" value="Lipides :" disabled>
+                                                <input class="form-control" id="day4IngLipids" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glucides :
-                                                <p id="day4Carbohydrates">0</p>
+                                                <input class="form-control" value="Glucides :" disabled>
+                                                <input class="form-control" id="day4IngCarbohydrates" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Fibres :
-                                                <p id="day4Fibers">0</p>
+                                                <input class="form-control" value="Fibres :" disabled>
+                                                <input class="form-control" id="day4IngFibers" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glycémique :
-                                                <p id="day4Glycemik">0</p>
+                                                <input class="form-control" value="Glycémique :" disabled>
+                                                <input class="form-control" id="day4IngGlycemiks" value=0 disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -852,6 +886,37 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-center"> Total Cumulé du Jour</h5>
+                                        <div class="row">
+                                            <div class="col">
+                                                Calories :
+                                                <p id="day4Calories">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Protéines :
+                                                <p id="day4Proteins">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Lipides :
+                                                <p id="day4Lipids">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glucides :
+                                                <p id="day4Carbohydrates">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Fibres :
+                                                <p id="day4Fibers">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glycémique :
+                                                <p id="day4Glycemik">0</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- day5 -->
@@ -909,28 +974,29 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                Calories :
-                                                <p id="day5Calories">0</p>
+                                                <input class="form-control" value="Calories :" disabled>
+                                                <input class="form-control" id="day5IngCalories" value=0 disabled>
+                                                <!-- <p id="day1IngCalories">0</p> -->
                                             </div>
                                             <div class="col">
-                                                Protéines :
-                                                <p id="day5Proteins">0</p>
+                                                <input class="form-control" value="Protéines :" disabled>
+                                                <input class="form-control" id="day5IngProteins" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Lipides :
-                                                <p id="day5Lipids">0</p>
+                                                <input class="form-control" value="Lipides :" disabled>
+                                                <input class="form-control" id="day5IngLipids" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glucides :
-                                                <p id="day5Carbohydrates">0</p>
+                                                <input class="form-control" value="Glucides :" disabled>
+                                                <input class="form-control" id="day5IngCarbohydrates" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Fibres :
-                                                <p id="day5Fibers">0</p>
+                                                <input class="form-control" value="Fibres :" disabled>
+                                                <input class="form-control" id="day5IngFibers" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glycémique :
-                                                <p id="day5Glycemik">0</p>
+                                                <input class="form-control" value="Glycémique :" disabled>
+                                                <input class="form-control" id="day5IngGlycemiks" value=0 disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -1003,6 +1069,37 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-center"> Total Cumulé du Jour</h5>
+                                        <div class="row">
+                                            <div class="col">
+                                                Calories :
+                                                <p id="day5Calories">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Protéines :
+                                                <p id="day5Proteins">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Lipides :
+                                                <p id="day5Lipids">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glucides :
+                                                <p id="day5Carbohydrates">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Fibres :
+                                                <p id="day5Fibers">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glycémique :
+                                                <p id="day5Glycemik">0</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- day6 -->
@@ -1060,28 +1157,29 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                Calories :
-                                                <p id="day6Calories">0</p>
+                                                <input class="form-control" value="Calories :" disabled>
+                                                <input class="form-control" id="day6IngCalories" value=0 disabled>
+                                                <!-- <p id="day1IngCalories">0</p> -->
                                             </div>
                                             <div class="col">
-                                                Protéines :
-                                                <p id="day6Proteins">0</p>
+                                                <input class="form-control" value="Protéines :" disabled>
+                                                <input class="form-control" id="day6IngProteins" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Lipides :
-                                                <p id="day6Lipids">0</p>
+                                                <input class="form-control" value="Lipides :" disabled>
+                                                <input class="form-control" id="day6IngLipids" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glucides :
-                                                <p id="day6Carbohydrates">0</p>
+                                                <input class="form-control" value="Glucides :" disabled>
+                                                <input class="form-control" id="day6IngCarbohydrates" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Fibres :
-                                                <p id="day6Fibers">0</p>
+                                                <input class="form-control" value="Fibres :" disabled>
+                                                <input class="form-control" id="day6IngFibers" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glycémique :
-                                                <p id="day6Glycemik">0</p>
+                                                <input class="form-control" value="Glycémique :" disabled>
+                                                <input class="form-control" id="day6IngGlycemiks" value=0 disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -1154,6 +1252,37 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-center"> Total Cumulé du Jour</h5>
+                                        <div class="row">
+                                            <div class="col">
+                                                Calories :
+                                                <p id="day6Calories">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Protéines :
+                                                <p id="day6Proteins">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Lipides :
+                                                <p id="day6Lipids">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glucides :
+                                                <p id="day6Carbohydrates">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Fibres :
+                                                <p id="day6Fibers">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glycémique :
+                                                <p id="day6Glycemik">0</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- day7 -->
@@ -1211,28 +1340,29 @@ $current = $_SESSION['utilisateur'];
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                Calories :
-                                                <p id="day7Calories">0</p>
+                                                <input class="form-control" value="Calories :" disabled>
+                                                <input class="form-control" id="day7IngCalories" value=0 disabled>
+                                                <!-- <p id="day1IngCalories">0</p> -->
                                             </div>
                                             <div class="col">
-                                                Protéines :
-                                                <p id="day7Proteins">0</p>
+                                                <input class="form-control" value="Protéines :" disabled>
+                                                <input class="form-control" id="day7IngProteins" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Lipides :
-                                                <p id="day7Lipids">0</p>
+                                                <input class="form-control" value="Lipides :" disabled>
+                                                <input class="form-control" id="day7IngLipids" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glucides :
-                                                <p id="day7Carbohydrates">0</p>
+                                                <input class="form-control" value="Glucides :" disabled>
+                                                <input class="form-control" id="day7IngCarbohydrates" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Fibres :
-                                                <p id="day7Fibers">0</p>
+                                                <input class="form-control" value="Fibres :" disabled>
+                                                <input class="form-control" id="day7IngFibers" value=0 disabled>
                                             </div>
                                             <div class="col">
-                                                Glycémique :
-                                                <p id="day7Glycemik">0</p>
+                                                <input class="form-control" value="Glycémique :" disabled>
+                                                <input class="form-control" id="day7IngGlycemiks" value=0 disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -1301,6 +1431,37 @@ $current = $_SESSION['utilisateur'];
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-center"> Total Cumulé du Jour</h5>
+                                        <div class="row">
+                                            <div class="col">
+                                                Calories :
+                                                <p id="day7Calories">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Protéines :
+                                                <p id="day7Proteins">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Lipides :
+                                                <p id="day7Lipids">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glucides :
+                                                <p id="day7Carbohydrates">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Fibres :
+                                                <p id="day7Fibers">0</p>
+                                            </div>
+                                            <div class="col">
+                                                Glycémique :
+                                                <p id="day7Glycemik">0</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1495,12 +1656,47 @@ $current = $_SESSION['utilisateur'];
                                     document.getElementById("day1IngFibers").value = tempIng[i].fibre;
                                     document.getElementById("day1IngGlycemiks").value = tempIng[i].glycemique;
                                     // Day2
-                                    // document.getElementById("day2IngCalories").value = tempIng[i].calorie;
-                                    // document.getElementById("day2IngProteins").value = tempIng[i].proteine;
-                                    // document.getElementById("day2IngLipids").value = tempIng[i].lipid;
-                                    // document.getElementById("day2IngCarbohydrates").value = tempIng[i].glucide;
-                                    // document.getElementById("day2IngFibers").value = tempIng[i].fibre;
-                                    // document.getElementById("day2IngGlycemiks").value = tempIng[i].glycemique;
+                                    document.getElementById("day2IngCalories").value = tempIng[i].calorie;
+                                    document.getElementById("day2IngProteins").value = tempIng[i].proteine;
+                                    document.getElementById("day2IngLipids").value = tempIng[i].lipid;
+                                    document.getElementById("day2IngCarbohydrates").value = tempIng[i].glucide;
+                                    document.getElementById("day2IngFibers").value = tempIng[i].fibre;
+                                    document.getElementById("day2IngGlycemiks").value = tempIng[i].glycemique;
+                                    // Day3
+                                    document.getElementById("day3IngCalories").value = tempIng[i].calorie;
+                                    document.getElementById("day3IngProteins").value = tempIng[i].proteine;
+                                    document.getElementById("day3IngLipids").value = tempIng[i].lipid;
+                                    document.getElementById("day3IngCarbohydrates").value = tempIng[i].glucide;
+                                    document.getElementById("day3IngFibers").value = tempIng[i].fibre;
+                                    document.getElementById("day3IngGlycemiks").value = tempIng[i].glycemique;
+                                    // Day4
+                                    document.getElementById("day4IngCalories").value = tempIng[i].calorie;
+                                    document.getElementById("day4IngProteins").value = tempIng[i].proteine;
+                                    document.getElementById("day4IngLipids").value = tempIng[i].lipid;
+                                    document.getElementById("day4IngCarbohydrates").value = tempIng[i].glucide;
+                                    document.getElementById("day4IngFibers").value = tempIng[i].fibre;
+                                    document.getElementById("day4IngGlycemiks").value = tempIng[i].glycemique;
+                                    // Day5
+                                    document.getElementById("day5IngCalories").value = tempIng[i].calorie;
+                                    document.getElementById("day5IngProteins").value = tempIng[i].proteine;
+                                    document.getElementById("day5IngLipids").value = tempIng[i].lipid;
+                                    document.getElementById("day5IngCarbohydrates").value = tempIng[i].glucide;
+                                    document.getElementById("day5IngFibers").value = tempIng[i].fibre;
+                                    document.getElementById("day5IngGlycemiks").value = tempIng[i].glycemique;
+                                    // Day6
+                                    document.getElementById("day6IngCalories").value = tempIng[i].calorie;
+                                    document.getElementById("day6IngProteins").value = tempIng[i].proteine;
+                                    document.getElementById("day6IngLipids").value = tempIng[i].lipid;
+                                    document.getElementById("day6IngCarbohydrates").value = tempIng[i].glucide;
+                                    document.getElementById("day6IngFibers").value = tempIng[i].fibre;
+                                    document.getElementById("day6IngGlycemiks").value = tempIng[i].glycemique;
+                                    // Day7
+                                    document.getElementById("day7IngCalories").value = tempIng[i].calorie;
+                                    document.getElementById("day7IngProteins").value = tempIng[i].proteine;
+                                    document.getElementById("day7IngLipids").value = tempIng[i].lipid;
+                                    document.getElementById("day7IngCarbohydrates").value = tempIng[i].glucide;
+                                    document.getElementById("day7IngFibers").value = tempIng[i].fibre;
+                                    document.getElementById("day7IngGlycemiks").value = tempIng[i].glycemique;
                                 }
                             }
 
@@ -1790,12 +1986,12 @@ $current = $_SESSION['utilisateur'];
         let day2Fibers = 0;
         let day2Glycemik = 0;
         // Variables for Day2
-        let day2CaloriesNum;
-        let day2CarbohydratesNum;
-        let day2LipidsNum;
-        let day2ProteinsNum;
-        let day2FibersNum;
-        let day2GlycemikNum;
+        let day2CaloriesNum = 0;
+        let day2CarbohydratesNum = 0;
+        let day2LipidsNum = 0;
+        let day2ProteinsNum = 0;
+        let day2FibersNum = 0;
+        let day2GlycemikNum = 0;
         // Variables for Day2
         let ingCaloriesDay2 = 0;
         let ingCarbohydratesDay2 = 0;
@@ -1928,6 +2124,12 @@ $current = $_SESSION['utilisateur'];
             //         console.log(this.innerHTML + " INDEX = " + liIndex);
             //     };
             // }
+            document.getElementById("day2IngCalories").value = 0;
+            document.getElementById("day2IngProteins").value = 0;
+            document.getElementById("day2IngLipids").value = 0;
+            document.getElementById("day2IngCarbohydrates").value = 0;
+            document.getElementById("day2IngFibers").value = 0;
+            document.getElementById("day2IngGlycemiks").value = 0;
         }
 
 
@@ -1964,12 +2166,12 @@ $current = $_SESSION['utilisateur'];
         let day3Fibers = 0;
         let day3Glycemik = 0;
         // Variables for Day3
-        let day3CaloriesNum;
-        let day3CarbohydratesNum;
-        let day3LipidsNum;
-        let day3ProteinsNum;
-        let day3FibersNum;
-        let day3GlycemikNum;
+        let day3CaloriesNum = 0;
+        let day3CarbohydratesNum = 0;
+        let day3LipidsNum = 0;
+        let day3ProteinsNum = 0;
+        let day3FibersNum = 0;
+        let day3GlycemikNum = 0;
         // Variables for Day3
         let ingCaloriesDay3 = 0;
         let ingCarbohydratesDay3 = 0;
@@ -2102,6 +2304,12 @@ $current = $_SESSION['utilisateur'];
             //         console.log(this.innerHTML + " INDEX = " + liIndex);
             //     };
             // }
+            document.getElementById("day3IngCalories").value = 0;
+            document.getElementById("day3IngProteins").value = 0;
+            document.getElementById("day3IngLipids").value = 0;
+            document.getElementById("day3IngCarbohydrates").value = 0;
+            document.getElementById("day3IngFibers").value = 0;
+            document.getElementById("day3IngGlycemiks").value = 0;
         }
 
 
@@ -2120,12 +2328,12 @@ $current = $_SESSION['utilisateur'];
         let day4Fibers = 0;
         let day4Glycemik = 0;
         // Variables for Day4
-        let day4CaloriesNum;
-        let day4CarbohydratesNum;
-        let day4LipidsNum;
-        let day4ProteinsNum;
-        let day4FibersNum;
-        let day4GlycemikNum;
+        let day4CaloriesNum = 0;
+        let day4CarbohydratesNum = 0;
+        let day4LipidsNum = 0;
+        let day4ProteinsNum = 0;
+        let day4FibersNum = 0;
+        let day4GlycemikNum = 0;
         // Variables for Day4
         let ingCaloriesDay4 = 0;
         let ingCarbohydratesDay4 = 0;
@@ -2258,6 +2466,12 @@ $current = $_SESSION['utilisateur'];
             //         console.log(this.innerHTML + " INDEX = " + liIndex);
             //     };
             // }
+            document.getElementById("day4IngCalories").value = 0;
+            document.getElementById("day4IngProteins").value = 0;
+            document.getElementById("day4IngLipids").value = 0;
+            document.getElementById("day4IngCarbohydrates").value = 0;
+            document.getElementById("day4IngFibers").value = 0;
+            document.getElementById("day4IngGlycemiks").value = 0;
         }
 
 
@@ -2278,12 +2492,12 @@ $current = $_SESSION['utilisateur'];
         let day5Fibers = 0;
         let day5Glycemik = 0;
         // Variables for Day5
-        let day5CaloriesNum;
-        let day5CarbohydratesNum;
-        let day5LipidsNum;
-        let day5ProteinsNum;
-        let day5FibersNum;
-        let day5GlycemikNum;
+        let day5CaloriesNum = 0;
+        let day5CarbohydratesNum = 0;
+        let day5LipidsNum = 0;
+        let day5ProteinsNum = 0;
+        let day5FibersNum = 0;
+        let day5GlycemikNum = 0;
         // Variables for Day5
         let ingCaloriesDay5 = 0;
         let ingCarbohydratesDay5 = 0;
@@ -2416,6 +2630,12 @@ $current = $_SESSION['utilisateur'];
             //         console.log(this.innerHTML + " INDEX = " + liIndex);
             //     };
             // }
+            document.getElementById("day5IngCalories").value = 0;
+            document.getElementById("day5IngProteins").value = 0;
+            document.getElementById("day5IngLipids").value = 0;
+            document.getElementById("day5IngCarbohydrates").value = 0;
+            document.getElementById("day5IngFibers").value = 0;
+            document.getElementById("day5IngGlycemiks").value = 0;
         }
 
 
@@ -2440,12 +2660,12 @@ $current = $_SESSION['utilisateur'];
         let day6Fibers = 0;
         let day6Glycemik = 0;
         // Variables for Day6
-        let day6CaloriesNum;
-        let day6CarbohydratesNum;
-        let day6LipidsNum;
-        let day6ProteinsNum;
-        let day6FibersNum;
-        let day6GlycemikNum;
+        let day6CaloriesNum = 0;
+        let day6CarbohydratesNum = 0;
+        let day6LipidsNum = 0;
+        let day6ProteinsNum = 0;
+        let day6FibersNum = 0;
+        let day6GlycemikNum = 0;
         // Variables for Day6
         let ingCaloriesDay6 = 0;
         let ingCarbohydratesDay6 = 0;
@@ -2578,6 +2798,12 @@ $current = $_SESSION['utilisateur'];
             //         console.log(this.innerHTML + " INDEX = " + liIndex);
             //     };
             // }
+            document.getElementById("day6IngCalories").value = 0;
+            document.getElementById("day6IngProteins").value = 0;
+            document.getElementById("day6IngLipids").value = 0;
+            document.getElementById("day6IngCarbohydrates").value = 0;
+            document.getElementById("day6IngFibers").value = 0;
+            document.getElementById("day6IngGlycemiks").value = 0;
         }
 
 
@@ -2600,12 +2826,12 @@ $current = $_SESSION['utilisateur'];
         let day7Fibers = 0;
         let day7Glycemik = 0;
         // Variables for Day7
-        let day7CaloriesNum;
-        let day7CarbohydratesNum;
-        let day7LipidsNum;
-        let day7ProteinsNum;
-        let day7FibersNum;
-        let day7GlycemikNum;
+        let day7CaloriesNum = 0;
+        let day7CarbohydratesNum = 0;
+        let day7LipidsNum = 0;
+        let day7ProteinsNum = 0;
+        let day7FibersNum = 0;
+        let day7GlycemikNum = 0;
         // Variables for Day7
         let ingCaloriesDay7 = 0;
         let ingCarbohydratesDay7 = 0;
@@ -2738,6 +2964,12 @@ $current = $_SESSION['utilisateur'];
             //         console.log(this.innerHTML + " INDEX = " + liIndex);
             //     };
             // }
+            document.getElementById("day7IngCalories").value = 0;
+            document.getElementById("day7IngProteins").value = 0;
+            document.getElementById("day7IngLipids").value = 0;
+            document.getElementById("day7IngCarbohydrates").value = 0;
+            document.getElementById("day7IngFibers").value = 0;
+            document.getElementById("day7IngGlycemiks").value = 0;
         }
 
 
