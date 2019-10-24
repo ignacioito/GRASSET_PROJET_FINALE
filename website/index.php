@@ -50,30 +50,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="index.php">
                             <i class="fas fa-home"></i> Acceuil
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-question-circle"></i> FAQ
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item active mx-5">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="contact.php">
                             <i class="fas fa-map-marker-alt"></i> Contact
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item active dropdown mx-5">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true">
-                            <i class="fas fa-user"></i> Profile </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                            <a class="dropdown-item" href="login.php">Me connecter</a>
-                            <a class="dropdown-item" href="#">Abonnement</a>
-                        </div>
+                    <li class="nav-item active mx-5">
+                        <a class="nav-link" href="login.php">
+                            <i class="fas fa-user"></i> Me connecter
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -84,9 +76,8 @@
 
 
     <section>
-        <hr class="my-4">
         <div class="container">
-            <div class="text-center my-5 ">
+            <div class="text-center my-5">
                 <h3 id="titleSection">BF-21 Conditionnement physique et mental</h3>
                 <h5>Coach Particulier a Montreal</h5>
                 <h5>Ouvert aujourd'hui jusqu'à 20:00</h5>
@@ -99,15 +90,15 @@
     <section>
         <div class="container">
             <div class="text-center">
-                <img alt="BF21" src="../dashboard-admin/dist/img/banner.jpg" class="img-fluid rounded" alt="Responsive image">
+                <img alt="BF21" src="../dashboard-admin/dist/img/banner.jpg" class="img-fluid rounded" style="width: 100%; height: auto;" alt="Responsive image">
             </div>
         </div>
     </section>
 
     <!-- Testimonials 2 -->
-    <section class="team-section text-center">
+    <section class="team-section text-center my-5">
         <hr class="my-4">
-        <h2 class="h1-responsive font-weight-bold my-5">Temoignages</h2>
+        <h2 class="h1-responsive font-weight-bold">Temoignages</h2>
         <div class="row align-items-start">
             <div class="col px-5">
 
@@ -134,11 +125,11 @@
 
             </div>
         </div>
-        <hr class="my-4">
     </section>
 
+
     <!-- Footer -->
-    <footer class="page-footer font-small indigo bg-light">
+    <footer class="page-footer font-small indigo bg-dark">
 
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
@@ -146,24 +137,41 @@
             <!-- Grid row -->
             <div class="row">
 
+
+                <hr class="clearfix w-100 d-md-none">
+
                 <!-- Grid column -->
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Coordonées</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Very long link 1</a>
+                        <a href="tel:514-581-9849"><button type="button" class="btn btn-outline-light btn-lg">Appeler Maintenant</button></a>
                         </li>
                         <li>
-                            <a href="#!">Very long link 2</a>
+                            <p>(514) 581-9849</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Adresse</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.google.com/maps/dir//BF21-Conditionnement+physique+et+mental/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cc91d6736d5a30d:0x8fab8755ba9a16e6!2m2!1d-73.5449733!2d45.5564466" target="_blank"><button type="button" class="btn btn-outline-light btn-lg">Itinéraire</button></a>
                         </li>
                         <li>
-                            <a href="#!">Very long link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Very long link 4</a>
+                            <p>4500 rue Hochelaga<br>Montreal, QC H1V 3N8<br>Canada</p>
                         </li>
                     </ul>
 
@@ -176,72 +184,17 @@
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Horaires d'ouverture</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
+                            <p>lun.:	08:00 – 20:00<br>
+                                mar.:	08:00 – 20:00<br>
+                                mer.:	08:00 – 20:00<br>
+                                jeu.:	08:00 – 20:00<br>
+                                ven.:	08:00 – 20:00<br>
+                                sam.:	08:00 – 20:00<br>
+                                dim.:	08:00 – 20:00</p>
                         </li>
                     </ul>
 
