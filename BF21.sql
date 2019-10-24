@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  sam. 19 oct. 2019 à 18:06
+-- Généré le :  mar. 22 oct. 2019 à 18:30
 -- Version du serveur :  10.4.8-MariaDB
 -- Version de PHP :  7.1.32
 
@@ -51,7 +51,11 @@ INSERT INTO `aliment` (`codAliment`, `nomAliment`, `uniteMesure`, `typeAliment`,
 (3, 'Boeuf 200g', 'g', NULL, 100, 50, 10, 10, 10, 5),
 (12, 'Banane moyenne', '', NULL, 80, 50, 10, 10, 10, 5),
 (13, 'Boeuf 200g', 'g', NULL, 100, 50, 10, 10, 10, 5),
-(14, 'Poulet 400g', 'g', NULL, 200, 100, 20, 20, 20, 10);
+(14, 'Poulet 400g', 'g', NULL, 200, 100, 20, 20, 20, 10),
+(17, 'arroz', 'grama', NULL, 100, 50, 10, 10, 5, 3),
+(18, 'arroz', 'grama', NULL, 100, 50, 10, 10, 5, 3),
+(19, '', '', NULL, 0, 0, 0, 0, 0, 0),
+(20, '', '', NULL, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -286,7 +290,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `aliment`
 --
 ALTER TABLE `aliment`
-  MODIFY `codAliment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `codAliment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT pour la table `habitudesdevie`
