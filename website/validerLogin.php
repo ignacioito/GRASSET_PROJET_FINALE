@@ -18,6 +18,7 @@ $row = mysqli_num_rows($result);
 $profil = mysqli_fetch_array($result);
 $nomUtilisateur = $profil['nom'];
 $emailUtilisateur = $profil['eMail'];
+$_SESSION['idUtilisateur'] = $profil['codUtilisateur'];
 
 
 
