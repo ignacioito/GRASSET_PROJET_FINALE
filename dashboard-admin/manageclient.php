@@ -140,6 +140,21 @@ $current = $_SESSION['utilisateur'];
       </div>
       <!-- /.content-header -->
 
+      <div class="container">
+          <form method="post" action="efacerCli.php">
+          <label> Client
+            <br>
+            <input type="text" name="cliEfaccer" />
+          </label>
+
+            <input  type="submit" class="btn btn-danger"  value="Effacer">
+          <br>
+          <br>
+      </div>
+        
+      
+
+      
       <!-- Main content -->
       <a href="createclient.php" class="btn btn-primary col-2">Nouveau Client</a>
       <?php

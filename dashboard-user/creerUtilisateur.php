@@ -14,6 +14,7 @@ if ($_POST) {
     $numRegistros = mysqli_num_rows($resultado);
 
     if($numRegistros > 0 ){
+        
 
         $sql = "UPDATE utilisateurs
                 SET eMail = '$email', motDePasse = $motDePass "
@@ -44,6 +45,6 @@ if ($_POST) {
    
     
    header('Location: ../dashboard-admin/manageclient.php');
-    $var = "<script>javascript:history.back(-1)</script>";
+#s    $var = "<script>javascript:history.back(-1)</script>";
 #    echo $var;
 ?>

@@ -200,47 +200,60 @@ $current = $_SESSION['utilisateur'];
       <?php if ($msg) : ?>
         <p><?php echo $msg; ?></p>
       <?php endif; ?>
+        
+        
+      <div class="container">
+          <form method="post" action="efacerIngredient.php">
+          <label> Aliments
+            <br>
+            <input type="text" name="alimentEfaccer" />
+          </label>
 
+            <input  type="submit" class="btn btn-danger"  value="Effacer">
+          <br>
+          <br>
+      </div>
+        
       <div class="container">
         <form method="post" action="manageingredients.php">
           <label> Aliments
             <br>
-            <input type="text" name="nomAliment" required/>
+            <input type="text" name="nomAliment" />
           </label>
 
           <label> Unite de Mesure
             <br>
-            <input type="text" name="uniteMesure" required/>
+            <input type="text" name="uniteMesure" />
           </label>
 
           <label> Calories
             <br>
-            <input type="text" name="calorie" required/>
+            <input type="text" name="calorie" />
           </label>
 
           <label> Lipides
             <br>
-            <input type="text" name="lipid" required/>
+            <input type="text" name="lipid" />
           </label>
 
           <label> Glucides
             <br>
-            <input type="text" name="glucide" required/>
+            <input type="text" name="glucide" />
           </label>
 
           <label> Proteines
             <br>
-            <input type="text" name="proteine" required/>
+            <input type="text" name="proteine" />
           </label>
 
           <label> Fibres
             <br>
-            <input type="text" name="fibre" required/>
+            <input type="text" name="fibre" />
           </label>
 
           <label> Glycemique
             <br>
-            <input type="text" name="glycemique" required/>
+            <input type="text" name="glycemique" />
           </label>
           <br>
           <br>
