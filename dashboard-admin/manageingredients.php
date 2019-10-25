@@ -182,12 +182,8 @@ $current = $_SESSION['utilisateur'];
                 $sql = "INSERT INTO aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) Values " .
                   "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "', '" . $fibre . "', '" . $glycemique . "');";
 
-                echo($sql);
-                
                 $resultado = mysqli_query($connexion, $sql);
                 
-                echo ($resultado);
-
                 if ($resultado == 1) {
                   $msg = '<h1>Aliment crée avec sucess</h1>';
                 } else {
