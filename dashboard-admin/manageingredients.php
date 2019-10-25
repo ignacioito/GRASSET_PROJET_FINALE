@@ -150,13 +150,7 @@ $current = $_SESSION['utilisateur'];
       <?php
       $msg = ' ';
       if ($_POST) {
-        define('HOST', '127.0.0.1');
-        define('USUARIO', 'root');
-        define('SENHA', '');
-        define('DB', 'BF21');
-        $conection = new mysqli(HOST, USUARIO, SENHA, DB) or die('Ne Pas Conectée!');
-        // mysql_select_db('', $conection) or die(mysql_error());
-        // echo 'test de connection';
+        include('../website/connexion.php');
 
 
         $nomAliment = $_POST['nomAliment'];
