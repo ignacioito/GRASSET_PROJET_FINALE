@@ -251,12 +251,12 @@ $current = $_SESSION['utilisateur'];
             <div class="col-12">
               <div class="card">
                 <div class="card-header">
-                  <nav class="navbar navbar-light bg-light justify-content-right">
+<!--                  <nav class="navbar navbar-light bg-light justify-content-right">
                     <form class="form-inline">
                       <input class="form-control col" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-success my-2 col col-lg-2" type="submit">Search</button>
                     </form>
-                  </nav>
+                  </nav>-->
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
