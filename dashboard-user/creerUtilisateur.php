@@ -32,7 +32,7 @@ if ($_POST) {
             $resultado = mysqli_query($connexion, $sql);
 
             if ($resultado == 1) {
-              $msg = '<h1>Aliment crée avec sucess</h1>';
+              $msg = '<h1>Utilisateur crée avec sucess</h1>';
             } else {
               $msg = 'Error';
             }
