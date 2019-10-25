@@ -102,7 +102,7 @@ $current = $_SESSION['utilisateur'];
               <a href="manageclient.php" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
-                  Gestion des Clients
+                  Gestion des Utilisateurs
                 </p>
               </a>
             </li>
@@ -161,7 +161,6 @@ $current = $_SESSION['utilisateur'];
 
         $nomAliment = $_POST['nomAliment'];
         $uniteMesure = $_POST['uniteMesure'];
-        $typeAliment = $_POST['typeAliment'];
         $calorie = $_POST['calorie'];
         $lipid = $_POST['lipid'];
         $glucide = $_POST['glucide'];

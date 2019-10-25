@@ -10,7 +10,7 @@ $current = $_SESSION['utilisateur'];
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Gestion des Clients BF21 - Conditionnement physique et mental</title>
+  <title>Gestion des Utilisateurs BF21 - Conditionnement physique et mental</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -97,7 +97,7 @@ $current = $_SESSION['utilisateur'];
               <a href="manageclient.php" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
-                  Gestion des Clients
+                  Gestion des Utilisateurs
                 </p>
               </a>
             </li>

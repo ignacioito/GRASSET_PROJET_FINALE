@@ -96,7 +96,7 @@ $current = $_SESSION['utilisateur'];
               <a href="manageclient.php" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
-                  Gestion des Clients
+                  Gestion des Utilisateurs
                 </p>
               </a>
             </li>
@@ -110,6 +110,7 @@ $current = $_SESSION['utilisateur'];
                 </p>
               </a>
             </li>
+
 
             <!-- Logout -->
             <li class="nav-item">
