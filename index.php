@@ -56,7 +56,7 @@
                         </a>
                     </li>
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="contact.php">
+                        <a class="nav-link" href="website/contact.php">
                             <i class="fas fa-map-marker-alt"></i> Contact
                             <span class="sr-only">(current)</span>
                         </a>

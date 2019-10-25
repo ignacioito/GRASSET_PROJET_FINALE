@@ -262,7 +262,8 @@ $current = $_SESSION['utilisateur'];
                 <div class="card-body">
                   <table id="example" class="table table-bordered table-hover">
                     <?php
-                    $mysqli = new mysqli("127.0.0.1", "root", "", "BF21");
+                    include('../website/connexion.php');
+                    $mysqli = $connexion;// new mysqli("23.235.197.135", "instit43_bf21_admin", "@bfnutri21", "instit43_bf21_test");
 
                     if ($mysqli === false) {
                       die("------------------------------------------------------ERROR 1: Could not connect. "
