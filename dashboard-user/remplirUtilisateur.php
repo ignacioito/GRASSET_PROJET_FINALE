@@ -58,17 +58,11 @@ if ($_POST) {
         $sql = "delete from questionaireplanalimentaire where codUtilisateur = '{$idUtilisateur}';";
         $resultado = mysqli_query($connexion, $sql);
 
-        echo ($resultado);
-
         $sql = "delete from reseignementsmedicaux where codUtilisateur = '{$idUtilisateur}';";
         $resultado = mysqli_query($connexion, $sql);
 
-        echo ($resultado);
-
         $sql = "delete from habitudesdevie where codUtilisateur = '{$idUtilisateur}';";
         $resultado = mysqli_query($connexion, $sql);
-
-        echo ($resultado);
 
         $sql = "UPDATE utilisateurs
                 SET nom = '$name', type = '2',  poid = '$weight', taille = '$height', dateNaissance = '$birthdate', "
@@ -77,13 +71,9 @@ if ($_POST) {
 
         $resultado = mysqli_query($connexion, $sql);
 
-        echo ($resultado);
-
-
         $sql = "INSERT INTO habitudesdevie (codUtilisateur, codAdministrateur)
                 VALUES ('$idUtilisateur', '1');";
         $resultado = mysqli_query($connexion, $sql);
-        echo ($resultado);
 
         $sql = "UPDATE habitudesdevie
                 SET codUtilisateur = '$idUtilisateur', codAdministrateur = '1', date = curdate(), poidsActuel = '$weight', "
@@ -100,8 +90,8 @@ if ($_POST) {
         $sql = "INSERT INTO reseignementsmedicaux (codUtilisateur, codAdministrateur)
                 VALUES ('$idUtilisateur', '1');";
         $resultado = mysqli_query($connexion, $sql);
-        echo ($resultado);
 
+        
         $sql = "UPDATE reseignementsmedicaux
                 SET codUtilisateur = '$idUtilisateur', codAdministrateur = '1', date = curdate(), q01 = '$question01', "
                 . "q02 = '$question02', q03 = '$question03', q04 = '$question04', q05 = '$question05', "
@@ -111,12 +101,10 @@ if ($_POST) {
 
         $resultado = mysqli_query($connexion, $sql);
 
-        echo ($resultado);
-
+        
         $sql = "INSERT INTO questionaireplanalimentaire (codUtilisateur, codAdministrateur)
                 VALUES ('$idUtilisateur', '1');";
         $resultado = mysqli_query($connexion, $sql);
-        echo ($resultado);
 
         $sql = "UPDATE questionaireplanalimentaire
                 SET codUtilisateur = '$idUtilisateur', codAdministrateur = '1', date = curdate(), q01 = '$questAlim01', "
@@ -129,7 +117,6 @@ if ($_POST) {
 
         $resultado = mysqli_query($connexion, $sql);
 
-        echo ($resultado);
 }
 
 

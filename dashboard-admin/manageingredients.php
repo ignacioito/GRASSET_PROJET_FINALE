@@ -161,18 +161,44 @@ $current = $_SESSION['utilisateur'];
         $proteine = $_POST['proteine'];
         $fibre = $_POST['fibre'];
         $glycemique = $_POST['glycemique'];
+                
+        
+        $sql = "select * from aliment where nomAliment = '$nomAliment';";
+        
+        $resultado = mysqli_query($connexion, $sql);
+        
+        $numRegistros = mysqli_num_rows($resultado);
 
-        $query = "INSERT INTO Aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) Values " .
-          "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "', '" . $fibre . "', '" . $glycemique . "')";
+        if($numRegistros > 0 ){
 
-        if ($conection->query($query) === TRUE) {
-          $msg = '<h1>Aliment crée avec sucess</h1>';
+            $sql = "UPDATE aliment
+                    SET uniteMesure = '$uniteMesure', calorie = $calorie, lipid = '$lipid', "
+                    . "glucide = '$glucide', proteine = '$proteine', fibre = '$fibre', glycemique = '$glycemique' "
+                    . "WHERE nomAliment = '$nomAliment';";
+
+            $resultado = mysqli_query($connexion, $sql);
+            
         } else {
-          $msg = 'Error' . $conection->error;
+                $sql = "INSERT INTO aliment (nomAliment, uniteMesure, calorie, lipid, glucide, proteine, fibre, glycemique) Values " .
+                  "('" . $nomAliment . "', '" . $uniteMesure . "', '" . $calorie . "', '" . $lipid . "', '" . $glucide . "', '" . $proteine . "', '" . $fibre . "', '" . $glycemique . "');";
+
+                echo($sql);
+                
+                $resultado = mysqli_query($connexion, $sql);
+                
+                echo ($resultado);
+
+                if ($resultado == 1) {
+                  $msg = '<h1>Aliment crée avec sucess</h1>';
+                } else {
+                  $msg = 'Error';
+                }
+            }
+            
+        $connexion->close();
+        
         }
 
-        $conection->close();
-      }
       ?>
 
       <?php if ($msg) : ?>
@@ -222,7 +248,7 @@ $current = $_SESSION['utilisateur'];
           </label>
           <br>
           <br>
-          <input type="submit" class="btn btn-success" value="Ajouter aliment">
+          <input type="submit" class="btn btn-success" value="Mettre à Jour">
           <br>
           <br>
       </div>
