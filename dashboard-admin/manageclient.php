@@ -152,9 +152,6 @@ $current = $_SESSION['utilisateur'];
           <br>
       </div>
         
-      
-
-      
       <!-- Main content -->
       <a href="createclient.php" class="btn btn-primary col-2">Nouveau Client</a>
       <?php
