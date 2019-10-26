@@ -17,7 +17,7 @@ if ($_POST) {
     $sql = "SET foreign_key_checks = 0";
     $resultado = mysqli_query($connexion, $sql);
     
-    $sql = "delete from utilisateurs where nom = '$nom'";
+    $sql = "delete from utilisateurs where nom = '$nom' and type != '1'";
     $resultado = mysqli_query($connexion, $sql);
     
     $sql = "SET foreign_key_checks = 1";
